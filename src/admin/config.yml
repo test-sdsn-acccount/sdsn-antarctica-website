@@ -5,3 +5,18 @@ publish_mode: editorial_workflow
 site_url: "https://sdsn-rn-network.netlify.app"
 media_folder: "src/assets/images"
 public_folder: "images"
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Homepage"
+        delete: false
+        file: "src/index.md"
+        slug: "{{slug}}"
+        create: false
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page-home.njk"}
+          - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
+          - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+          - {label: "Body", name: "body", widget: "markdown"}

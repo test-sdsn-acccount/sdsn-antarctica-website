@@ -2,6 +2,7 @@ module.exports = function(config) {
 
     // Layout aliases
     config.addLayoutAlias('base', 'layouts/base.njk');
+    config.addLayoutAlias('page-home', 'layouts/page-home.njk');
 
     // Passthrough copy
     config.addPassthroughCopy('src/_includes');
