@@ -3,6 +3,8 @@ module.exports = function(config) {
     // Layout aliases
     config.addLayoutAlias('base', 'layouts/base.njk');
     config.addLayoutAlias('page-home', 'layouts/page-home.njk');
+    config.addLayoutAlias('banner', 'layouts/banner.njk');
+    config.addLayoutAlias('contact-us', 'layouts/contact-us.njk');
 
     // Passthrough copy
     config.addPassthroughCopy('src/_includes');
