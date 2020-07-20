@@ -11,6 +11,8 @@ sections:
   label: Homepage
   create: documents
   match: "**/*"
+- type: heading
+  label: Edit Resources, Blog, Events, News
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
