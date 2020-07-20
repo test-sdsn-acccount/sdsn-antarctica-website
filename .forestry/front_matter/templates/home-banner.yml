@@ -1,17 +1,15 @@
 ---
-label: homepage
+label: Homepage
 hide_body: false
 fields:
-- name: home_intro
+- name: introbanner
   type: blocks
-  label: Home Intro
+  label: Intro Banner
   template_types:
   - default-block
   - default-block
   config:
     min: 
     max: 
-  description: Introduction of the homepage
+  description: Page introduction
   hidden: false
-pages:
-- src/homepage/homepage-banner.md
