@@ -1,0 +1,23 @@
+{% if navigation.items %}
+  <nav class="nav">
+    <ul class="[ nav__list ] [ box-flex align-center md:space-before ]">
+          <a href="/" class="link nav-item"{{ 'aria-current=page' if page.url == '/' | safe }}>
+        <span class="visually-hidden">{{ 'BACK TO HOMEPAGE' if page.url != '/' else 'HOMEPAGE' }}</span>
+      </a>
+      {% for item in navigation.items %}
+        {% set relAttribute = '' %}
+        {% set currentAttribute = '' %}
+
+        {% if item.rel %}
+          {% set relAttribute = ' rel="' + item.rel + '"' %}
+        {% endif %}
+
+        {% if page.url == item.url %}
+          {% set currentAttribute = ' aria-current="page"' %}
+        {% endif %}
+
+          <a href="{{ item.url }}" class="link nav-item"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text }}</a>
+      {% endfor %}
+    </ul>
+  </nav>
+{% endif %}
