@@ -9,6 +9,8 @@ sections:
   label: Website content
   create: documents
   match: "**/*"
+  templates:
+  - homepage
 - type: heading
   label: Edit network information
 upload_dir: uploads
