@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: homepage
+  label: Homepage
+  match: "**/*"
 - type: heading
   label: Edit network information
 upload_dir: uploads
