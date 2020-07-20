@@ -1,0 +1,22 @@
+{
+  "name": "rn-networks-template",
+  "version": "1.0.0",
+  "description": "Repository for Regional/National Networks Website Boilerplate Template",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run cms:bundle -- --watch\" \"chokidar \\\"src/_includes/**\\\" -c \\\"npm run cms:precompile\\\"\" \"npm run serve\"",
+    "serve": "cross-env ELEVENTY_ENV=development npx eleventy --serve",
+    "production": "npm run cms:precompile && npm run cms:bundle && npx eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sph-huynh@github.com/sdsna/rn-networks-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdsna/rn-networks-template/issues"
+  },
+  "homepage": "https://github.com/sdsna/rn-networks-template#readme"
+}
