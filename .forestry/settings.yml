@@ -5,8 +5,8 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: src/homepage
-  label: Homepage
+  path: src/content/pages
+  label: Website content
   create: documents
   match: "**/*"
   templates:
