@@ -13,6 +13,12 @@ sections:
   match: "**/*"
 - type: heading
   label: Edit Resources, Blog, Events, News
+- type: directory
+  label: Network Information
+  path: src/_data
+  match: "*.json"
+  new_doc_ext: ".json"
+  create: all
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
@@ -24,10 +30,3 @@ build:
   mount_path: "/srv"
   working_dir: "/srv"
   instant_preview_command: npm run develop
-- type: directory
-  label: Network Information
-  path: src/_data
-  match: "*.json"
-  new_doc_ext: ".json"
-  create: all
-  
