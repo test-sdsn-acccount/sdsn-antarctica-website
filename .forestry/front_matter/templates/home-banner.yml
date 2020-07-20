@@ -1,5 +1,5 @@
 ---
-label: home-banner
+label: homepage
 hide_body: false
 fields:
 - name: home_intro
