@@ -1,4 +1,13 @@
 ---
 label: Homepage
 hide_body: true
-fields: []
+fields:
+- name: homepage
+  type: blocks
+  label: Homepage
+  template_types:
+  - default-block
+  - green-pop-feature
+  config:
+    min: 
+    max: 
