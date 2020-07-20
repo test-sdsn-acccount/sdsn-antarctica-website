@@ -5,7 +5,9 @@ fields:
 - name: home_intro
   type: blocks
   label: Home Intro
-  template_types: []
+  template_types:
+  - default-block
+  - default-block
   config:
     min: 
     max: 
