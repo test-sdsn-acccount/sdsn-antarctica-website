@@ -7,18 +7,18 @@ sections:
 - type: heading
   label: Edit network information
 - type: directory
+  label: Network Information
+  path: src/_data
+  match: "*.json"
+  new_doc_ext: ".json"
+  create: all
+- type: directory
   path: src/content/homepage
   label: Homepage
   create: documents
   match: "**/*"
 - type: heading
   label: Edit Resources, Blog, Events, News
-- type: directory
-  label: Network Information
-  path: src/_data
-  match: "*.json"
-  new_doc_ext: ".json"
-  create: all
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
