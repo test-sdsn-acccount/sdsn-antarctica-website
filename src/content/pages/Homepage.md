@@ -5,7 +5,7 @@ homepage:
   button_link: Mobilizing SDG implementation through solution initiatives and long-term
     pathways in Antarctica.
 - template: green-pop-feature
-  title: ''
+  title: About the network
   buttonlink: ''
 
 ---
