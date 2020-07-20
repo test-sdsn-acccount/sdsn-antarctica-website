@@ -1,4 +1,9 @@
 ---
 label: example image
 hide_body: false
-fields: []
+fields:
+- name: image
+  type: file
+  config:
+    maxSize: 0.7
+  label: image
