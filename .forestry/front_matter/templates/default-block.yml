@@ -1,5 +1,5 @@
 ---
-label: default block
+label: Intro Banner
 hide_body: false
 fields:
 - name: title
@@ -7,15 +7,6 @@ fields:
   config:
     required: false
   label: Title
-- name: content
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Content
 - name: button_link
   type: text
   config:
