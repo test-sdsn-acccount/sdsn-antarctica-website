@@ -7,3 +7,5 @@ fields:
   config:
     maxSize: 0.7
   label: image
+pages:
+- src/_data/logo.json
