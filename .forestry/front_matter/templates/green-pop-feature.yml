@@ -12,3 +12,5 @@ fields:
   config:
     required: false
   label: Button lInk
+pages:
+- src/content/homepage/about-the-network.md
