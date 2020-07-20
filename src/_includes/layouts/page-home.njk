@@ -4,7 +4,10 @@
 {% block content %}
   <main id="main-content" tabindex="-1">
     <div class="home-container">
-        YO YO YOYY OIT WORKED
+        {% include "partials/components/home-banner.njk" %}
+        {% include "partials/components/home-about.njk" %}
+        {% include "partials/components/home-recent-news.njk" %}
+        {% include "partials/components/contact-us.njk" %}
     </div>
   </main>
 {% endblock %}
