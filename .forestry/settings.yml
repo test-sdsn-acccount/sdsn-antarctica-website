@@ -5,12 +5,10 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: src/content/pages
-  label: Website content
+  path: src/content/homepage
+  label: Homepage
   create: documents
   match: "**/*"
-  templates:
-  - homepage
 - type: heading
   label: Edit network information
 upload_dir: uploads
