@@ -1,4 +1,13 @@
 ---
 label: home-banner
 hide_body: false
-fields: []
+fields:
+- name: home_intro
+  type: blocks
+  label: Home Intro
+  template_types: []
+  config:
+    min: 
+    max: 
+  description: Introduction of the homepage
+  hidden: false
