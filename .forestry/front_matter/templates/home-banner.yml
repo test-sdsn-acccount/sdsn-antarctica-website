@@ -13,3 +13,5 @@ fields:
     max: 
   description: Introduction of the homepage
   hidden: false
+pages:
+- src/homepage/homepage-banner.md
