@@ -11,5 +11,3 @@ fields:
   config:
     min: 
     max: 
-pages:
-- src/content/pages/Homepage.md
