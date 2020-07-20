@@ -1,8 +1,8 @@
 {
-    "Network Name": "SDSN Antarctica",
+    "networkName": "SDSN Antarctica",
     "shortDesc": "Short descriptoin",
     "url": "https://sdsn-rn-network.netlify.app",
     "networkEmail": "antarc@unsdsn.org",
-    "image": "/uploads/sdsn-antarc.png"
+    "logo": "/uploads/sdsn-antarc.png"
 }
   

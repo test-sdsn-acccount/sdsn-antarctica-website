@@ -1,0 +1,31 @@
+---
+label: example image
+hide_body: false
+fields:
+- name: networkName
+  type: text
+  config:
+    required: false
+  label: Network Name
+- name: shortDesc
+  type: text
+  config:
+    required: false
+  label: Short Description
+- name: url
+  type: text
+  config:
+    required: false
+  label: Network Website
+- name: networkEmail
+  type: text
+  config:
+    required: false
+  label: Network Email
+- name: logo
+  type: file
+  config:
+    maxSize: 0.7
+  label: Network Logo
+pages:
+- src/_data/network-info.json
