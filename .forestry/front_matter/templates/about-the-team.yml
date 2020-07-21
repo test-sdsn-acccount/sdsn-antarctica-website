@@ -2,7 +2,7 @@
 label: About the team
 hide_body: true
 fields:
-- name: pagetitle
+- name: title
   type: text
   config:
     required: true
