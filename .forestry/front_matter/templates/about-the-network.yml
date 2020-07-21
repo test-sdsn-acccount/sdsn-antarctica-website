@@ -1,5 +1,5 @@
 ---
-label: About the network
+label: 'Page Content: About SDSN'
 hide_body: true
 fields:
 - name: title
@@ -22,3 +22,9 @@ fields:
     schema:
       format: html-blocks
   label: About SDSN
+- name: featuretitle
+  type: text
+  config:
+    required: false
+  label: Feature Title
+  default: Mobilizing sustainable development in Antarctica
