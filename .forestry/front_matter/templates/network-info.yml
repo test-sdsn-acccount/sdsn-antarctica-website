@@ -27,5 +27,24 @@ fields:
   config:
     required: true
   label: Network Email
+- name: networkObjectives
+  type: field_group_list
+  fields:
+  - name: objective
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Objective
+    description: Please try to keep this under 70 words
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Network Objectives
+  description: Please add between 1-3 objectives
 pages:
 - src/_data/networkInfo.json
