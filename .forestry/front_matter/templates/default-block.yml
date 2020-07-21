@@ -18,11 +18,17 @@ fields:
     max: 
     step: 1
     required: true
-- name: button_link
+- name: buttonlink
   type: text
   config:
     required: false
   label: Button Link
+  description: URL
+- name: buttontext
+  type: text
+  config:
+    required: false
+  label: Button Text
   description: Call to Action
 - name: layout
   type: text

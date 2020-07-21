@@ -1,0 +1,12 @@
+  <section class="section-banner light">
+    <div class="extra-banner-wrapper">
+        <div class="extra-banner-title">
+          <h1>{{ homepageBanner.title }}</h1>
+        </div>
+        <div class="extra-banner-body banner-sub-title">
+         <p>{{ homepageBanner.bodyText }}</p>
+          <a href="{{ homepageBanner.buttonlink }}" class="link text-button light" rel="bookmark">{{ homepageBanner.buttonText if homepageBanner.buttonText else '' }}</a>
+        </div>
+    </div>
+    {{ content | safe }}
+  </section>

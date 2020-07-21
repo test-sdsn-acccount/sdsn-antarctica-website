@@ -1,0 +1,16 @@
+{% extends 'layouts/base.njk' %}
+{% set pageType = 'Homepage' %}
+
+{% block content %}
+<main id="main-content" tabindex="-1">
+<div class="home-container">
+    {% set homepageBanner = { title: 'Sustainable Development Solutions Network - Antarctica', buttonlink: '', buttonText: '', bodyText: 'Mobilizing SDG implementation through solution initiatives and long-term pathways in Antarctica.' } %}
+    {% include "layouts/section-banner.njk" %}
+    
+    {% set homepageBanner = { title: 'About the network', buttonlink: '/', buttonText: 'Learn more', bodyText: 'SDSN Antarctia is a community of universities, research centers, and other knowledge institutions to translate the latest expertise in sustainable development into action.  
+  
+We have 20 members across the continent, with presence in the top 3 counties: City, Cotlus, and Cats.' } %}
+    {% include "layouts/section-banner.njk" %}
+</div>
+</main>
+{% endblock %}

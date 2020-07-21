@@ -11,12 +11,31 @@ h1, h2, h3, h4, h5, h6, span {
     font-family: 'Lato', sans-serif;
 }
 
+h1 {
+    font-weight: 600;
+    font-size: 3em;
+}
+
 .light {
     color: white;
 }
 
 .dark {
     color: #575757;
+}
+
+a.link {
+    text-decoration: none!important;
+}
+
+a.link.dark:hover {
+    color: #575757;
+    border-bottom: .2rem solid #575757!important;
+}
+
+a.link.light:hover {
+    color: #eeeeee;
+    border-bottom: .2rem solid #eeeeee!important;
 }
 
 /* Nav Bar */
@@ -52,4 +71,18 @@ a.nav-item:hover {
 
 .arrow-svg {
     transform: rotate(90deg);
+}
+
+/* Section Banner */
+.banner-sub-title {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.extra-banner-wrapper {
+    padding: 2em 40% 5% 15%;
+}
+
+a.text-button {
+    vertical-align: bottom;  
 }
