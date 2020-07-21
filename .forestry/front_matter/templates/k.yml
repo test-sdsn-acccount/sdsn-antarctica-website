@@ -1,4 +1,16 @@
 ---
 label: k
 hide_body: true
-fields: []
+fields:
+- name: exampe
+  type: select
+  default: items
+  config:
+    required: true
+    options: []
+    source:
+      type: documents
+      section: network-information
+      file: src/_data/navigation.json
+      path: 
+  label: exampe
