@@ -130,4 +130,4 @@ fields:
   label: Youth Team Description
   description: What do the Youth Team do?
 pages:
-- src/_data/LeadershipCouncilMembers.json
+- src/_data/TeamInfo.json
