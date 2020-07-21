@@ -11,11 +11,18 @@ sections:
   label: Network Information
   create: all
   match: "*.json"
+  exclude: navigation.json
   new_doc_ext: json
 - type: directory
   path: src/content/homepage
   label: Homepage
   create: documents
+  match: "**/*"
+- type: heading
+  label: Website structure
+- type: document
+  path: src/_data/navigation.json
+  label: Navigation Bar
   match: "**/*"
 - type: heading
   label: Edit Resources, Blog, Events, News
