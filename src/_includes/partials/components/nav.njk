@@ -1,23 +1,26 @@
 {% if navigation.items %}
   <nav class="bar">
-    <ul class="[ nav__list ] [ box-flex align-center md:space-before ]">
-          <a href="/" class="link nav-item"{{ 'aria-current=page' if page.url == '/' | safe }}>
-        <span class="visually-hidden">{{ 'BACK TO HOMEPAGE' if page.url != '/' else 'HOMEPAGE' }}</span>
-      </a>
-      {% for item in navigation.items %}
-        {% set relAttribute = '' %}
-        {% set currentAttribute = '' %}
+  <ul class="nav-list">
+          <img src="assets/{{ networkInfo.logo }}" class="nav-logo"/>
+  </ul>
+    <ul class="nav-list">
+        <a href="/" class="link nav-item light"{{ 'aria-current=page' if page.url == '/' | safe }}>
+            <span class="visually-hidden">{{ 'BACK TO HOMEPAGE' if page.url != '/' else 'HOMEPAGE' }}</span>
+        </a>
+        {% for item in navigation.items %}
+            {% set relAttribute = '' %}
+            {% set currentAttribute = '' %}
 
-        {% if item.rel %}
-          {% set relAttribute = ' rel="' + item.rel + '"' %}
-        {% endif %}
+            {% if item.rel %}
+                {% set relAttribute = ' rel="' + item.rel + '"' %}
+            {% endif %}
 
-        {% if page.url == item.url %}
-          {% set currentAttribute = ' aria-current="page"' %}
-        {% endif %}
+            {% if page.url == item.url %}
+                {% set currentAttribute = ' aria-current="page"' %}
+            {% endif %}
 
-          <a href="{{ item.url }}" class="link nav-item"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text }}</a>
-      {% endfor %}
+            <a href="{{ item.url }}" class="link nav-item light"{{ relAttribute | safe }}{{ currentAttribute | safe }}><span>{{ item.text }}</span></a>
+        {% endfor %}
     </ul>
   </nav>
 {% endif %}
