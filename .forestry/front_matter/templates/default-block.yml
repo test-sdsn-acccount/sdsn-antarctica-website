@@ -8,10 +8,16 @@ fields:
     required: false
   label: Title
 - name: order
-  type: text
-  config:
-    required: false
+  type: number
   label: Order in page
+  description: ''
+  default: 2
+  required: true
+  config:
+    min: 1
+    max: 
+    step: 1
+    required: true
 - name: button_link
   type: text
   config:
@@ -23,7 +29,7 @@ fields:
   config:
     required: true
   label: Layout
-  default: banner
+  default: section-banner
   hidden: true
 pages:
 - src/content/homepage/sustainable-development-solutions-network-antarctica.md
