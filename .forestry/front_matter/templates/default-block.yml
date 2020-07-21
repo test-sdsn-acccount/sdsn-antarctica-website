@@ -7,11 +7,23 @@ fields:
   config:
     required: false
   label: Title
+- name: order
+  type: text
+  config:
+    required: false
+  label: Order in page
 - name: button_link
   type: text
   config:
     required: false
   label: Button Link
   description: Call to Action
+- name: layout
+  type: text
+  config:
+    required: true
+  label: Layout
+  default: banner
+  hidden: true
 pages:
 - src/content/homepage/sustainable-development-solutions-network-antarctica.md
