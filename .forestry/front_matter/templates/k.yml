@@ -14,5 +14,3 @@ fields:
       file: src/_data/navigation.json
       path: 
   label: exampe
-pages:
-- src/_data/u.json
