@@ -4,6 +4,10 @@
   "networkimpact": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu. Vivamus fermentum ex ut mauris feugiat convallis. Fusce cursus diam vel nunc lobortis, nec finibus orci lacinia.",
   "networkmetrics": [
     {
+      "metric": "3 years",
+      "metricdesc": "Awarded the Sustainability Award in Antarctica, 3 years in a row."
+    },
+    {
       "metric": "129",
       "metricdesc": "Scored 129 in the Antarctic region for driving SDG implementation."
     },
