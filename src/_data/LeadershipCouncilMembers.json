@@ -37,6 +37,11 @@
   ],
   "nm": [
     {
+      "nmname": "John Name",
+      "nmtitle": "Network Manager",
+      "nmphoto": "/uploads/men-s-wearing-black-suit-jacket-and-pants-937481.jpg"
+    },
+    {
       "nmname": "Marie Name",
       "nmtitle": "Network Manager",
       "nmphoto": "/uploads/photo-of-woman-wearing-head-scarf-2951093.jpg"
