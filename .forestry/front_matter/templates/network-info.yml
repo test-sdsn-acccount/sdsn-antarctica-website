@@ -2,6 +2,11 @@
 label: Network Information
 hide_body: false
 fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
 - name: logo
   type: file
   config:
