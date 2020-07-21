@@ -7,7 +7,7 @@ p {
     font-family: 'Crimson Text', serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, span {
     font-family: 'Lato', sans-serif;
 }
 
@@ -22,9 +22,34 @@ h1, h2, h3, h4, h5, h6 {
 /* Nav Bar */
 nav.bar {
     margin: 4.5rem 3.6rem 4.5rem 3.6rem;
+    left: auto;
+    right: auto;
+}
+
+.nav-list {
+    display: inline;
+    vertical-align: middle;
 }
 
 .nav-item {
-    margin: 1.25rem 1.5rem 0 1.5rem;
+    margin-right: 5%;
     display: inline;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+a.nav-item:hover {
+    color: rgb(223, 223, 223)!important;
+    border-bottom: .2rem solid #82492C!important;
+}
+
+.nav-logo {
+    max-height: 4.5rem;
+    object-fit: contain;
+    margin-right: 4%;
+    display: inline;
+}
+
+.arrow-svg {
+    transform: rotate(90deg);
 }

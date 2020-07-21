@@ -1,5 +1,5 @@
 ---
-label: example image
+label: Network Information
 hide_body: false
 fields:
 - name: networkName
@@ -28,4 +28,4 @@ fields:
     maxSize: 0.7
   label: Network Logo
 pages:
-- src/_data/network-info.json
+- src/_data/networkInfo.json
