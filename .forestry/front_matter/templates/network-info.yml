@@ -2,30 +2,42 @@
 label: Network Information
 hide_body: false
 fields:
-- name: networkName
-  type: text
-  config:
-    required: false
-  label: Network Name
-- name: shortDesc
-  type: text
-  config:
-    required: false
-  label: Short Description
-- name: url
-  type: text
-  config:
-    required: false
-  label: Network Website
-- name: networkEmail
-  type: text
-  config:
-    required: false
-  label: Network Email
 - name: logo
   type: file
   config:
     maxSize: 0.7
   label: Network Logo
+- name: networkName
+  type: text
+  config:
+    required: true
+  label: Network Name
+- name: hostInstitution
+  type: text
+  config:
+    required: true
+  label: Host Institution
+- name: networkVision
+  type: text
+  config:
+    required: true
+  label: Network Vision
+- name: networkObjectives
+  type: field_group_list
+  label: Network Objectives
+  description: Please add between 1-3 objectives
+  fields:
+  - type: textarea
+    name: objectivee
+    label: "Objective"
+      config:
+      required: false
+  config:
+    labelField: objective
+- name: networkEmail
+  type: text
+  config:
+    required: true
+  label: Network Email
 pages:
 - src/_data/networkInfo.json
