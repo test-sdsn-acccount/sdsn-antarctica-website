@@ -5,6 +5,12 @@
   "youthdesc": "The Youth Team mobilizes young people locally to create sustainable solutions.",
   "lcprofiles": [
     {
+      "lcname": "Bob The Builder",
+      "networkposition": "Council Advisor",
+      "position": "",
+      "lcphoto": "/uploads/man-in-red-jacket-1681010.jpg"
+    },
+    {
       "lcname": "Lorem Ipsum",
       "networkposition": "Council Advisor",
       "position": "CEO, AOIF",
