@@ -129,3 +129,5 @@ fields:
       format: markdown
   label: Youth Team Description
   description: What do the Youth Team do?
+pages:
+- src/_data/LeadershipCouncilMembers.json
