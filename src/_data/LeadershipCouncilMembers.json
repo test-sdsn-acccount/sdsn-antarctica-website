@@ -36,7 +36,11 @@
     }
   ],
   "nm": [
-
+    {
+      "nmname": "Marie Name",
+      "nmtitle": "Network Manager",
+      "nmphoto": "/uploads/photo-of-woman-wearing-head-scarf-2951093.jpg"
+    }
   ],
   "youthprofiles": [
 
