@@ -22,11 +22,6 @@ fields:
   config:
     required: true
   label: Network Vision
-- name: networkEmail
-  type: text
-  config:
-    required: true
-  label: Network Email
 - name: networkObjectives
   type: field_group_list
   fields:
@@ -46,5 +41,10 @@ fields:
     labelField: 
   label: Network Objectives
   description: Please add between 1-3 objectives
+- name: networkEmail
+  type: text
+  config:
+    required: true
+  label: Network Email
 pages:
 - src/_data/networkInfo.json
