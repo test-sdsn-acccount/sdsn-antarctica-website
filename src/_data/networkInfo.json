@@ -1,9 +1,12 @@
 {
-    "logo": "/uploads/sdsn-antarc.png",
-    "networkName": "SDSN Antarctica",
-    "hostInstitution": "University of the South Pole",
-    "networkVision": "Mobilizing SDG implementation through solution initiatives and long-term pathways in Antarctica.",
-    "networkEmail": "antarc@unsdsn.org"
-
+  "logo": "/uploads/sdsn-antarc.png",
+  "networkName": "SDSN Antarctica",
+  "hostInstitution": "University of the South Pole",
+  "networkVision": "Mobilizing SDG implementation through solution initiatives and long-term pathways in Antarctica.",
+  "networkEmail": "antarc@unsdsn.org",
+  "networkObjectives": [
+    {
+      "objective": "Localize the SDGs to Antarctica 1"
+    }
+  ]
 }
-  
