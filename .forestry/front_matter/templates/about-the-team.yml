@@ -1,4 +1,131 @@
 ---
 label: About the team
 hide_body: true
-fields: []
+fields:
+- name: pagetitle
+  type: text
+  config:
+    required: true
+  label: Page Title
+  default: The Team
+- name: lcdesc
+  type: textarea
+  default: The Network is guided by a Leadership Council, which brings together global
+    sustainable development leaders from all regions and all sectors, including civil
+    society, public, and private sectors.
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Network Leadership Council Description
+- name: lcprofiles
+  type: field_group_list
+  fields:
+  - name: lcname
+    type: text
+    config:
+      required: false
+    label: Full name
+  - name: networkposition
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Network Position Title
+  - name: position
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Position Title (if applicable)
+    description: If the Leadership Council has a position outside that you want to
+      highlight, list it here.
+  - name: lcphoto
+    type: file
+    config:
+      maxSize: 0.8
+    label: Photo
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Leadership Council Profiles
+- name: nmdesc
+  type: textarea
+  default: Network Managers coordinate the network, working with Member Institutions
+    to identify potential collaboration within the network.
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Network Manager Description
+  description: What do the Network Managers do?
+- name: nm
+  type: field_group_list
+  fields:
+  - name: nmname
+    type: text
+    config:
+      required: false
+    label: Full Name
+  - name: nmtitle
+    type: text
+    config:
+      required: false
+    label: Network Manager Position Title
+    default: Network Manager
+  - name: nmphoto
+    type: file
+    config:
+      maxSize: 0.7
+    label: Photo
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Network Managers Profiles
+- name: youthprofiles
+  type: field_group_list
+  fields:
+  - name: yname
+    type: text
+    config:
+      required: false
+    label: Full name
+  - name: ytitle
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Youth Member Position Title
+  - name: yphoto
+    type: file
+    config:
+      maxSize: 0.7
+    label: Photo
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Youth Team Profiles
+- name: youthdesc
+  type: textarea
+  default: The Youth Team mobilizes young people locally to create sustainable solutions.
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Youth Team Description
+  description: What do the Youth Team do?
