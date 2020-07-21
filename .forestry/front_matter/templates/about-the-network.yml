@@ -7,3 +7,18 @@ fields:
   config:
     required: false
   label: Page Title
+- name: bannerTitle
+  type: text
+  config:
+    required: true
+  label: Banner Title
+  default: The Sustainable Development Solutions Network
+- name: aboutsdsn
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: About SDSN
