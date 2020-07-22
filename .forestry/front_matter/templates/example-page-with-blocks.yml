@@ -7,3 +7,5 @@ fields:
   config: {}
   template: content-example
   label: example content blogk
+pages:
+- src/_data/pages/block-page.json
