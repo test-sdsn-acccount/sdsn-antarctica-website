@@ -1,0 +1,16 @@
+<div class="one-image-two-text-container">
+    <div class="one-image">
+        <div class="one-image-title">
+            <h6 class="close-header">HOSTED BY</h6>
+            <h2 class="close-header">{{ header }}</h2>
+        </div>
+        <div class="one-image-image">
+            <img src="/assets/{{ logo }}" class="nav-logo"/>
+        </div>
+    </div>
+    <div class="two-text">
+      <p>{{ content | safe }}{% include "partials/components/li.njk" %}</p>
+
+    </div>
+</div>
+

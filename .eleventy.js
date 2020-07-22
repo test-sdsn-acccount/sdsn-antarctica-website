@@ -5,8 +5,11 @@ module.exports = function(config) {
     config.addLayoutAlias('page', 'layouts/page.njk');
     config.addLayoutAlias('homepage', 'layouts/homepage.njk');
     config.addLayoutAlias('home', 'layouts/home.njk');
+    config.addLayoutAlias('about-sdsn', 'layouts/about-sdsn.njk');
+    config.addLayoutAlias('about-team', 'layouts/about-team.njk');
     config.addLayoutAlias('banner', 'layouts/banner.njk');
     config.addLayoutAlias('section-banner', 'layouts/section-banner.njk');
+    config.addLayoutAlias('intro-banner', 'layouts/intro-banner.njk');
     config.addLayoutAlias('contact-us', 'layouts/contact-us.njk');
 
     // Passthrough copy

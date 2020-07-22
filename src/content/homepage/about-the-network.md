@@ -1,6 +1,8 @@
 ---
 title: About the network
 buttonlink: ''
+layout: section-banner
+order: 2
 
 ---
 SDSN Antarctia is a community of universities, research centers, and other knowledge institutions to translate the latest expertise in sustainable development into action.  

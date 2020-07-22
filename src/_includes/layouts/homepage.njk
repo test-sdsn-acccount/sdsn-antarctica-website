@@ -1,0 +1,10 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+<main id="main-content" tabindex="-1">
+<div class="home-container">
+    {% set sectionList = collections.homepageSections %}
+    {% include "partials/components/post-list.njk" %}
+</div>
+</main>
+{% endblock %}

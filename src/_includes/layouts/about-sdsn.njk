@@ -1,0 +1,53 @@
+{% extends 'layouts/base.njk' %}
+{% set pageType = 'Homepage' %}
+
+{% block content %}
+<main id="main-content" tabindex="-1">
+<div class="home-container">
+  <section class="intro-banner light">
+    {% if networkInfo %}
+        {% set header = 'The Sustainable Development Solutions Network' %}
+        {% set subtitle = 'About SDSN Global' %}
+            {% include "layouts/intro-banner.njk" %}
+    {% endif %}
+  </section>
+  <section class="section-banner light">
+    {% if networkInfo %}
+        {% set header = networkInfo.networkName %}
+        {% set subtitle = AboutTheNetwork.networkdesc %}
+        {% set buttonText = networkInfo.networkName if networkInfo.networkName else '' %}
+        {% set buttonlink = networkInfo.networkName if networkInfo.networkName else '' %}
+            {% include "layouts/section-banner.njk" %}
+    {% endif %}
+  </section>
+    <section class="feature-banner light">
+        {% if networkInfo.networkObjectives %}
+            {% set item = networkInfo.networkObjectives  %}
+                {% include "partials/components/large-feature.njk" %}
+        {% endif %}
+    </section>
+    <section class="full-bleed light green-bg">
+        {% if networkInfo.networkObjectives %}
+            {% set header = networkInfo.networkVision  %}
+            {% set buttonText = networkInfo.networkName if networkInfo.networkName else '' %}
+            {% set buttonlink = networkInfo.networkName if networkInfo.networkName else '' %}
+                {% include "partials/components/full-bleed.njk" %}
+        {% endif %}
+    </section>
+    <section class="one-image-two-text light">
+        {% if networkInfo.networkObjectives %}
+            {% set header = networkInfo.hostInstitution  %}
+            {% set logo = networkInfo.logo  %}
+                {% include "partials/components/one-image-two-text.njk" %}
+        {% endif %}
+    </section>
+    <section class="text-top-metrics-bottom dark white-pop-out">
+    {% if AboutTheNetwork.networkmetrics %}
+        {% set desc = AboutTheNetwork.networkimpact  %}
+        {% set item = AboutTheNetwork.networkmetrics  %}
+            {% include "partials/components/text-top-metrics-bottom.njk" %}
+    {% endif %}
+    </section>
+</div>
+</main>
+{% endblock %}

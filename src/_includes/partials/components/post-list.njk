@@ -1,0 +1,15 @@
+{% for section in sectionList %}
+  <section class="post-list">
+    <div class="inner-wrapper">
+      <ol class="post-list__items">
+            <div class="post-list__item wrapper">
+                <h3 class="h3-post-title">
+                  {{ section.data.title }}
+                </h3>
+                    {{ content | safe }}
+                 <a href="{{ section.data.buttonlink }}" class="link text-button" rel="bookmark">{{ section.data.buttontext if section.data.buttontext else '' }}</a>
+            </div>
+      </ol>
+    </div>
+  </section>
+{% endfor %}

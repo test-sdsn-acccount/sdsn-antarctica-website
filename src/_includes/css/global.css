@@ -16,6 +16,31 @@ h1 {
     font-size: 3em;
 }
 
+h2 {
+    font-weight: 600;
+    font-size: 2em;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.4em;
+}
+
+h6 {
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+.close-header {
+    margin-top: 0;
+    margin-block-end: 0;
+}
+
+.closer-header {
+    margin-block-end: 0.3em;
+    margin-bottom: 0.3em!important;
+}
+
 .light {
     color: white;
 }
@@ -36,6 +61,17 @@ a.link.dark:hover {
 a.link.light:hover {
     color: #eeeeee;
     border-bottom: .2rem solid #eeeeee!important;
+}
+
+main#main-content, body {
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
+}
+
+main#main-content:focus {
+    outline: none;
 }
 
 /* Nav Bar */
@@ -73,16 +109,140 @@ a.nav-item:hover {
     transform: rotate(90deg);
 }
 
+/* Colour pop outs  */
+.green-bg {
+    background-color: #12635E;
+}
+
+/* Intro Banner */
+
+.intro-banner-wrapper {
+    padding: 2em 40% 5% 15%;
+}
+
 /* Section Banner */
 .banner-sub-title {
     font-weight: 400;
     font-size: 1.5em;
 }
 
-.extra-banner-wrapper {
-    padding: 2em 40% 5% 15%;
+.section-banner-wrapper {
+    padding: 2em 40% 5% 12%;
 }
 
 a.text-button {
     vertical-align: bottom;  
+}
+
+/* Feature Cards */
+
+.small-card {
+    height: 15em;
+}
+
+.tall-card {
+    height: 25em;
+}
+
+.feature-banner-container {
+    margin: 2em 15% 5% 12%;
+}
+
+.feature-card.big {
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 3em;
+    width: 29%;
+    margin-right: 2em;
+    vertical-align: top;
+}
+
+.feature-card.title {
+    margin: 3.5em 2em 2em 2em;
+}
+
+.feature-card.content {
+    margin: 0 2em 2em 2em;
+    line-height: 1.6em;
+}
+
+/* Full Bleed Banner */
+
+section.full-bleed {
+    margin: 2em 0 5% 0;
+    left: 0;
+    right: 0;
+}
+
+.intro-banner-wrapper {
+    padding: 2em 40% 5% 15%;
+}
+
+/* 1:2 One Image Two Text */
+.one-image-two-text-container {
+    margin: 2em 15% 5% 12%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.one-image {
+    margin: 0 0 0 2em;
+    width: 30%;
+    text-align: left;
+    float: left;
+}
+
+.one-image-title {
+    margin-bottom: 2em;
+    margin-right: 2em;
+}
+
+.two-text {
+    line-height: 1.2em;
+    width: 60%;
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: initial;
+    float: right;
+}
+
+/* Text Top and Metrics Bottom Banner */
+
+.white-pop-out {
+    background-color: #EAEAEA;
+    margin: 2em 0 5% 8%!important;
+}
+
+.text-top-metrics-bottom-container {
+    padding: 2em 13em 5em 6em;
+    vertical-align: top;
+}
+
+.text-top  {
+    height: 15em;
+    margin-top: 5%;
+}
+
+.text-top-left  {
+    height: 15em;
+    width: 30%;
+    text-align: left;
+    float: left;
+}
+
+.text-top-right {
+    line-height: 1.4em;
+    width: 68%;
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: initial;
+    float: right;
+}
+
+.text-top-right > p {
+    margin-block-start: 0;
+}
+
+.metrics-bottom  {
+    height: 15em;
 }

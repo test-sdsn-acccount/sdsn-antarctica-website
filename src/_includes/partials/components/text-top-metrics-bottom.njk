@@ -1,0 +1,24 @@
+<div class="text-top-metrics-bottom-container">
+    <div class="text-top">
+        <div class="text-top-left">
+            <div class="text-top-title">
+                <h2 class="close-header">Our Impact</h2>
+            </div>
+        </div>
+        <div class="text-top-right">
+        <p>{{ desc }}</p>
+        </div>
+    </div>
+    <div class="metrics-bottom">
+        {% for met in item %}
+        <div class="feature-card big green-bg light small-card">
+            <div class="feature-card title closer-header">
+                <h1 class="closer-header">{{ met.metric }}</h1>
+            </div>
+            <div class="feature-card content">
+                {{ met.metricdesc }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
