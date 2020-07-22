@@ -1,4 +1,57 @@
 ---
 label: Design example
 hide_body: false
-fields: []
+fields:
+- name: numberfield
+  type: number
+  label: number field
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: toggle
+  type: boolean
+  label: toggle
+- name: selectfield
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - option 1
+    - option 2
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: selectfield
+- name: date
+  type: datetime
+  label: date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
+- name: color
+  type: color
+  label: color
+  config:
+    required: false
+    color_format: Hex
+  default: "#1F5382"
+- name: tags
+  type: tag_list
+  default: []
+  label: tags
+- name: sectiontemplate
+  type: include
+  config: {}
+  template: INFO-about-the-team
+  label: sectiontemplate
