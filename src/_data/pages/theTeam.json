@@ -1,0 +1,24 @@
+{
+  "numberfield": 0,
+  "selectfield": "option 1",
+  "date": "2020-07-22T06:24:01Z",
+  "color": "#1F5382",
+  "tags": [
+    "tag 1",
+    "tag 2"
+  ],
+  "title": "The Team",
+  "lcdesc": "The Network is guided by a Leadership Council, which brings together global sustainable development leaders from all regions and all sectors, including civil society, public, and private sectors.",
+  "nmdesc": "Network Managers coordinate the network, working with Member Institutions to identify potential collaboration within the network.",
+  "youthdesc": "The Youth Team mobilizes young people locally to create sustainable solutions.",
+  "toggle": true,
+  "lcprofiles": [
+
+  ],
+  "nm": [
+
+  ],
+  "youthprofiles": [
+
+  ]
+}
