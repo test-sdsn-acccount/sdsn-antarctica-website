@@ -7,11 +7,10 @@ sections:
 - type: heading
   label: Edit network information
 - type: directory
-  path: src/_data
+  path: src/_data/information
   label: Network Information
   create: all
   match: "*.json"
-  exclude: navigation.json
   new_doc_ext: json
 - type: directory
   path: src/_data/pages

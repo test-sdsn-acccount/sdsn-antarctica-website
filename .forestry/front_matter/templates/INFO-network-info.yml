@@ -52,4 +52,4 @@ fields:
     required: true
   label: Network Email
 pages:
-- src/_data/networkInfo.json
+- src/_data/information/networkInfo.json
