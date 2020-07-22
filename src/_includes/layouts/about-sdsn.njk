@@ -26,7 +26,8 @@
                 {% include "partials/components/large-feature.njk" %}
         {% endif %}
     </section>
-    <section class="full-bleed light green-bg">
+    {% set fcolor1 = colourscheme.fcolor1 %}
+    <section class="full-bleed light" {% if fcolor1 %} style="background-color:{{ fcolor1 }}"{% endif %}>
         {% if information.networkInfo.networkObjectives %}
             {% set header = information.networkInfo.networkVision | safe %}
             {% set buttonText = information.networkInfo.networkName if information.networkInfo.networkName else '' %}

@@ -1,0 +1,33 @@
+---
+label: Website Colour Scheme
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Page Title
+  default: "Website Colours"
+- name: bgcolor
+  type: color
+  label: Background Colour
+  config:
+    required: true
+    color_format: Hex
+  default: "#1F5382"
+- name: fcolor1
+  type: color
+  label: Primary feature colour
+  config:
+    required: true
+    color_format: Hex
+  default: "#12635E"
+- name: fcolor2
+  type: color
+  label: Secondary feature colour
+  config:
+    required: true
+    color_format: Hex
+  default: "#EAEAEA"
+pages:
+- src/_data/colourscheme.json

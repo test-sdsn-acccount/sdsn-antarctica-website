@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+{% set bgcolor = colourscheme.bgcolor %}
+<html lang="en" class="no-js" {% if bgcolor %} style="background-color:{{ bgcolor }}"{% endif %}>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">

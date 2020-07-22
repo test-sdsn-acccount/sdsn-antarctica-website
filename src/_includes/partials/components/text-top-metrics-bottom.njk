@@ -11,7 +11,8 @@
     </div>
     <div class="metrics-bottom">
         {% for met in item %}
-        <div class="feature-card big green-bg light small-card">
+        {% set fcolor1 = colourscheme.fcolor1 %}
+        <div class="feature-card big light small-card" {% if fcolor1 %} style="background-color:{{ fcolor1 }}"{% endif %}>
             <div class="feature-card title closer-header">
                 <h1 class="closer-header">{{ met.metric }}</h1>
             </div>
