@@ -16,7 +16,7 @@ sections:
   path: src/_data/pages
   label: Edit pages
   create: documents
-  match: '"*.json"'
+  match: "*.json"
 - type: directory
   path: src/content/homepage
   label: Homepage

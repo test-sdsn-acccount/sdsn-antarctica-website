@@ -29,5 +29,3 @@ fields:
     required: true
   label: Call to Action
   default: See benefits of joining the network
-pages:
-- src/_data/pages/our-members.json
