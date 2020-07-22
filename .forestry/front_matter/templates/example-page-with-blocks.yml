@@ -7,5 +7,32 @@ fields:
   config: {}
   template: content-example
   label: example content blogk
+- name: mardown
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: mardown
+- name: html
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: html
+- name: inlinehtml
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html
+  label: inlinehtml
 pages:
 - src/_data/pages/block-page.json
