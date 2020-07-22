@@ -1,4 +1,9 @@
 ---
 label: example page with blocks
 hide_body: true
-fields: []
+fields:
+- name: example_content_blogk
+  type: include
+  config: {}
+  template: content-example
+  label: example content blogk
