@@ -6,8 +6,8 @@
 <div class="home-container">
   <section class="intro-banner light">
     {% if networkInfo %}
-        {% set header = 'The Sustainable Development Solutions Network' %}
-        {% set subtitle = 'About SDSN Global' %}
+        {% set header = AboutTheNetwork.bannerTitle %}
+        {% set subtitle = AboutTheNetwork.aboutsdsn %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
