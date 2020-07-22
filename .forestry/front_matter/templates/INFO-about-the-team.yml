@@ -17,7 +17,7 @@ fields:
     required: false
     wysiwyg: true
     schema:
-      format: markdown
+      format: html-blocks
   label: Network Leadership Council Description
 - name: lcprofiles
   type: field_group_list
@@ -34,7 +34,7 @@ fields:
       required: false
       wysiwyg: true
       schema:
-        format: markdown
+        format: html-blocks
     label: Network Position Title
   - name: position
     type: textarea
@@ -43,7 +43,7 @@ fields:
       required: false
       wysiwyg: true
       schema:
-        format: markdown
+        format: html-blocks
     label: Position Title (if applicable)
     description: If the Leadership Council has a position outside that you want to
       highlight, list it here.
@@ -65,7 +65,7 @@ fields:
     required: false
     wysiwyg: true
     schema:
-      format: markdown
+      format: html-blocks
   label: Network Manager Description
   description: What do the Network Managers do?
 - name: nm
@@ -107,7 +107,7 @@ fields:
       required: false
       wysiwyg: true
       schema:
-        format: markdown
+        format: html-blocks
     label: Youth Member Position Title
   - name: yphoto
     type: file
@@ -126,7 +126,7 @@ fields:
     required: false
     wysiwyg: true
     schema:
-      format: markdown
+      format: html-blocks
   label: Youth Team Description
   description: What do the Youth Team do?
 pages:

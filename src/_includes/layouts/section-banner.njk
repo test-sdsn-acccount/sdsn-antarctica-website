@@ -1,9 +1,9 @@
 <div class="section-banner-wrapper">
     <div class="section-banner-title">
-      <h1>{{ header }}</h1>
+      <h1>{{ header | safe }}</h1>
     </div>
     <div class="section-banner-body banner-sub-title">
-      <p>{{ subtitle }}</p>
+      <p>{{ subtitle | safe }}</p>
       <a href="{{ buttonlink }}" class="link text-button light" rel="bookmark">{{ buttonText if buttonText else '' }}</a>
     </div>
 </div>

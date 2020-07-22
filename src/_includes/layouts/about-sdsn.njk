@@ -6,15 +6,15 @@
 <div class="home-container">
   <section class="intro-banner light">
     {% if information.networkInfo %}
-        {% set header = AboutTheNetwork.bannerTitle %}
-        {% set subtitle = AboutTheNetwork.aboutsdsn %}
+        {% set header = AboutTheNetwork.bannerTitle | safe %}
+        {% set subtitle = AboutTheNetwork.aboutsdsn | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
   <section class="section-banner light">
     {% if information.networkInfo %}
-        {% set header = information.networkInfo.networkName %}
-        {% set subtitle = AboutTheNetwork.networkdesc %}
+        {% set header = information.networkInfo.networkName | safe %}
+        {% set subtitle = AboutTheNetwork.networkdesc | safe %}
         {% set buttonText = information.networkInfo.networkName if information.networkInfo.networkName else '' %}
         {% set buttonlink = information.networkInfo.networkName if information.networkInfo.networkName else '' %}
             {% include "layouts/section-banner.njk" %}
@@ -22,13 +22,13 @@
   </section>
     <section class="feature-banner light">
         {% if information.networkInfo.networkObjectives %}
-            {% set item = information.networkInfo.networkObjectives  %}
+            {% set item = information.networkInfo.networkObjectives %}
                 {% include "partials/components/large-feature.njk" %}
         {% endif %}
     </section>
     <section class="full-bleed light green-bg">
         {% if information.networkInfo.networkObjectives %}
-            {% set header = information.networkInfo.networkVision  %}
+            {% set header = information.networkInfo.networkVision | safe %}
             {% set buttonText = information.networkInfo.networkName if information.networkInfo.networkName else '' %}
             {% set buttonlink = information.networkInfo.networkName if information.networkInfo.networkName else '' %}
                 {% include "partials/components/full-bleed.njk" %}
@@ -36,15 +36,15 @@
     </section>
     <section class="one-image-two-text light">
         {% if information.networkInfo.networkObjectives %}
-            {% set header = information.networkInfo.hostInstitution  %}
-            {% set logo = information.networkInfo.logo  %}
+            {% set header = information.networkInfo.hostInstitution | safe %}
+            {% set logo = information.networkInfo.logo %}
                 {% include "partials/components/one-image-two-text.njk" %}
         {% endif %}
     </section>
     <section class="text-top-metrics-bottom dark white-pop-out">
     {% if AboutTheNetwork.networkmetrics %}
-        {% set desc = AboutTheNetwork.networkimpact  %}
-        {% set item = AboutTheNetwork.networkmetrics  %}
+        {% set desc = AboutTheNetwork.networkimpact | safe %}
+        {% set item = AboutTheNetwork.networkmetrics %}
             {% include "partials/components/text-top-metrics-bottom.njk" %}
     {% endif %}
     </section>

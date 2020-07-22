@@ -37,7 +37,7 @@ fields:
       required: false
       wysiwyg: true
       schema:
-        format: markdown
+        format: html-blocks
     label: Objective
     description: Please try to keep this under 70 words
   config:
