@@ -6,11 +6,42 @@ fields:
   name: title
   label: title
 - type: text
-  name: buttonlink
-  label: buttonlink
-- type: text
-  name: layout
-  label: layout
-- type: number
-  name: order
-  label: order
+  name: header
+  label: Banner Title
+  default: Sustainable Development Solutions Network - Antarctica
+  description: e.g. Sustainable Development Solutions Network - Antarctica
+  config:
+    required: true
+- name: subtitle
+  type: textarea
+  default: "<p>Mobilizing SDG implementation through solution initiatives and long-term
+    pathways locally.</p>"
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Banner Sub Title
+  description: e.g. Mobilizing SDG implementation through solution initiatives and
+    long-term pathways in Antarctica.
+- name: featuretitle
+  type: text
+  config:
+    required: false
+  label: Feature Title
+  default: About the network
+- name: featurecontent
+  type: textarea
+  default: "<p>The network is a community of universities, research centers, and other
+    knowledge institutions to translate the latest expertise in sustainable development
+    into action.</p>"
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Feature content
+  description: 'e.g. SDSN Antarctia is a community of universities, research centers,
+    and other knowledge institutions to translate the latest expertise in sustainable
+    development into action.<br><br>We have 20 members across the continent, with
+    presence in the top 3 counties: City, Cotlus, and Cats.'
