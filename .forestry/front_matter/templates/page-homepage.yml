@@ -46,4 +46,4 @@ fields:
     development into action.<br><br>We have 20 members across the continent, with
     presence in the top 3 counties: City, Cotlus, and Cats.'
 pages:
-- src/_data/pages/page-homepage.json
+- src/_data/pages/homepage.json

@@ -246,3 +246,46 @@ section.full-bleed {
 .metrics-bottom  {
     height: 15em;
 }
+
+/* Big side feature green */
+
+section.pop-out {
+    margin: 2em 0 5% 8%!important;
+    min-height: 20em;
+}
+
+.big-side-feature-container {
+    padding: 2em 13em 5em 6em;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5%;
+    height: 100%;
+    width: 100%;
+}
+
+.big-side-left  {
+    height: 100%;
+    width: 37%;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 2em;
+    margin-right: 2em;
+}
+
+.big-side-subtitle {
+    line-height: 1.4em;
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: initial;
+}
+
+.big-side-right{
+    width: 60%;
+    display: inline-block;
+}
+
+.big-side-right > p {
+    margin-block-start: 0;
+}
