@@ -4,10 +4,13 @@
   "description": "Repository for Regional/National Networks Website Boilerplate Template",
   "main": ".eleventy.js",
   "scripts": {
+    "cms:precompile": "make-dir dist/admin && nunjucks-precompile src/_includes > dist/admin/templates.js -i \"\\.(njk|css|svg)$\"",
+    "cms:bundle": "rollup --config",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run serve",
     "serve": "npx eleventy --serve",
-    "debug": "DEBUG=* npx eleventy"
+    "debug": "DEBUG=* npx eleventy",
+    "production": "npm run cms:precompile && npm run cms:bundle && npx eleventy"
   },
   "repository": {
     "type": "git",
