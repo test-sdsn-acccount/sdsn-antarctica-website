@@ -31,6 +31,11 @@ h6 {
     font-size: 0.9em;
 }
 
+p.feature {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
 .close-header {
     margin-top: 0;
     margin-block-end: 0;
@@ -288,4 +293,28 @@ section.pop-out {
 
 .big-side-right > p {
     margin-block-start: 0;
+}
+
+/* Resource Features */
+
+.resource-feature-banner {
+    margin: 2em 15% 5% 12%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Contact us banner */
+
+section.contact-us-banner {
+    margin: 2em 8% 5% 0!important;
+    min-height: 20em;
+}
+
+.contact-us-container {
+    padding: 2em 13em 5em 6em;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5%;
+    height: 100%;
+    width: 100%;
 }
