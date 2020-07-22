@@ -14,6 +14,11 @@ sections:
   exclude: navigation.json
   new_doc_ext: json
 - type: directory
+  path: src/_data/pages
+  label: Edit pages
+  create: documents
+  match: '"*.json"'
+- type: directory
   path: src/content/homepage
   label: Homepage
   create: documents
