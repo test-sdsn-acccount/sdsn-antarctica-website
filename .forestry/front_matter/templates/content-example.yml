@@ -7,5 +7,3 @@ fields:
   config:
     required: false
   label: title
-pages:
-- src/_data/pages/title.json

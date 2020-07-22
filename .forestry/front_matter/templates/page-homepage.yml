@@ -1,0 +1,16 @@
+---
+label: 'Page: Homepage'
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: buttonlink
+  label: buttonlink
+- type: text
+  name: layout
+  label: layout
+- type: number
+  name: order
+  label: order

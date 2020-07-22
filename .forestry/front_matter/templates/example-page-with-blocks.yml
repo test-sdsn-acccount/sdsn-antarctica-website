@@ -34,5 +34,3 @@ fields:
     schema:
       format: html
   label: inlinehtml
-pages:
-- src/_data/pages/block-page.json

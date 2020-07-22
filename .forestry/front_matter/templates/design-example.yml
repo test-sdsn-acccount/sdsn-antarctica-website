@@ -55,5 +55,3 @@ fields:
   config: {}
   template: INFO-about-the-team
   label: sectiontemplate
-pages:
-- src/_data/pages/the-team.json
