@@ -37,6 +37,7 @@
     </section>
     <section class="one-image-two-text light">
         {% if information.networkInfo.networkObjectives %}
+            {% set pretext = 'HOSTED BY' | safe %}
             {% set header = information.networkInfo.hostInstitution | safe %}
             {% set logo = information.networkInfo.logo %}
                 {% include "partials/components/one-image-two-text.njk" %}

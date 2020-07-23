@@ -1,11 +1,14 @@
 <div class="one-image-two-text-container">
     <div class="one-image">
         <div class="one-image-title">
-            <h6 class="close-header">HOSTED BY</h6>
+            <h6 class="close-header">{{ pretext }}</h6>
             <h2 class="close-header">{{ header }}</h2>
         </div>
         <div class="one-image-image">
-            <img src="/assets/{{ logo }}" class="nav-logo"/>
+            {% if logo %}
+                <img src="/assets/{{ logo }}" class="nav-logo"/>
+            {% endif %}
+
         </div>
     </div>
     <div class="two-text">

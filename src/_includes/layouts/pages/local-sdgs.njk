@@ -11,6 +11,22 @@
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
+    {% set colour = colourscheme.fcolor2 %}
+    <section class="full-bleed dark" {% if colour %} style="background-color:{{ colour }}"{% endif %}>
+        {% if information.networkInfo.networkObjectives %}
+            {% set header = 'The Sustainable Development Goals' | safe %}
+            {% set buttonText = information.networkInfo.networkName if information.networkInfo.networkName else '' %}
+            {% set buttonlink = information.networkInfo.networkName if information.networkInfo.networkName else '' %}
+                {% include "partials/components/full-bleed.njk" %}
+        {% endif %}
+    </section>
+    <section class="one-image-two-text light">
+        {% if information.networkInfo.networkObjectives %}
+            {% set pretext = 'ACTION BY' | safe %}
+            {% set header = 'Government' | safe %}
+                {% include "partials/components/one-image-two-text.njk" %}
+        {% endif %}
+    </section>
 </div>
 </main>
 {% endblock %}

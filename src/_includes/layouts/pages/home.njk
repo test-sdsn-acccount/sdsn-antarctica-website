@@ -30,6 +30,7 @@
     </section>
     {% set fcolor1 = colourscheme.fcolor1 %}
     <section class="contact-us-banner light pop-out" {% if fcolor1 %} style="background-color:{{ fcolor1 }}"{% endif %}>
+        {% set header = 'Contact us' %}
         {% set cta = 'Get in touch at ' %}
         {% set email = information.networkInfo.networkEmail %}
         {% include "partials/components/contact-us-banner.njk" %}

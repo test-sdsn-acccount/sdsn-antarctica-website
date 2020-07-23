@@ -11,7 +11,24 @@
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
+    <section class="section-banner light">
+        {% set header = 'Highlight projects' %}
+        {% set subtitle = 'Read more about our current work' %}
+        {% include "layouts/section-banner.njk" %}
+    </section>
+    <section class="resource-feature-banner light">
+        {% include "partials/components/resource-feature-banner.njk" %}
+    </section>
+    {% set colour = colourscheme.fcolor2 %}
+    <section class="full-bleed light" {% if colour %} style="background-color:{{ colour }}"{% endif %}>
 
+    </section>
+    {% set fcolor1 = colourscheme.fcolor1 %}
+    <section class="contact-us-banner light pop-out" {% if fcolor1 %} style="background-color:{{ fcolor1 }}"{% endif %}>
+        {% set header = 'See benefits' %}
+        {% set cta = 'See benefits of joining the network' %}
+        {% include "partials/components/contact-us-banner.njk" %}
+    </section>
 </div>
 </main>
 {% endblock %}

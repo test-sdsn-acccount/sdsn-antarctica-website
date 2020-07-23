@@ -11,6 +11,29 @@
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
+    <section class="text-top-metrics-bottom light">
+    {% if AboutTheNetwork.networkmetrics %}
+        {% set desc = AboutTheNetwork.networkimpact | safe %}
+        {% set item = AboutTheNetwork.networkmetrics %}
+            {% include "partials/components/text-top-metrics-bottom.njk" %}
+    {% endif %}
+    </section>
+    <section class="section-banner light">
+        {% if information.networkInfo %}
+            {% set header = 'Member Requirements' | safe %}
+            {% set subtitle = AboutTheNetwork.networkdesc | safe %}
+            {% set buttonText = information.networkInfo.networkName if information.networkInfo.networkName else '' %}
+            {% set buttonlink = information.networkInfo.networkName if information.networkInfo.networkName else '' %}
+                {% include "layouts/section-banner.njk" %}
+        {% endif %}
+    </section>
+    {% set fcolor1 = colourscheme.fcolor1 %}
+    <section class="contact-us-banner light pop-out" {% if fcolor1 %} style="background-color:{{ fcolor1 }}"{% endif %}>
+        {% set header = 'Want to learn more?' %}
+        {% set cta = 'Get in touch at ' %}
+        {% set email = information.networkInfo.networkEmail %}
+        {% include "partials/components/contact-us-banner.njk" %}
+    </section>
 </div>
 </main>
 {% endblock %}
