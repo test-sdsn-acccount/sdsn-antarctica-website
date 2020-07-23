@@ -20,12 +20,12 @@ collections:
           - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
           - {label: "Body", name: "body", widget: "markdown"}
-  - name: "homepage"
-    label: "Homepage Sections"
-    folder: "src/content/homepage"
+  - name: "News"
+    label: "News"
+    folder: "src/content/news"
     create: true
     slug: "{{slug}}"    
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/homepage.njk"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/resources.njk"}
       - {label: "Body", name: "body", widget: "markdown"}
 

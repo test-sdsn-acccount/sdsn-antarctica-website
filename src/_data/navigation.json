@@ -22,22 +22,22 @@
         "menuitems": [ 
           {
             "text": "Activities and Members",
-            "url": "/what/members",
+            "url": "/what-we-do",
             "external": false
           },
           {
             "text": "Youth-led Action",
-            "url": "/what/youth",
+            "url": "/youth",
             "external": false
           },
           {
             "text": "News",
-            "url": "/what/news",
+            "url": "/news",
             "external": false
           },
           {
             "text": "Case Studies",
-            "url": "/what/case-studies",
+            "url": "/case-studies",
             "external": false
           }
         ]
@@ -48,12 +48,12 @@
         "menuitems": [ 
           {
             "text": "The SDGs in Antarctica",
-            "url": "/sdgs/antarctica",
+            "url": "/antarctica",
             "external": false
           },
           {
             "text": "SDG Resources",
-            "url": "/sdgs/resources",
+            "url": "/resources",
             "external": false
           }
         ]
@@ -61,7 +61,7 @@
       {
         "megamenu": false,
         "text" : "GET INVOLVED",
-        "url": "/",
+        "url": "/get-involved",
         "external": false
       }
     ]
