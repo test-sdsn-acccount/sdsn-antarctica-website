@@ -3,14 +3,28 @@
   "version": "1.0.0",
   "description": "Repository for Regional/National Networks Website Boilerplate Template",
   "main": ".eleventy.js",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.6",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
+    "@tbranyen/jsdom": "^13.0.0",
+    "concurrently": "^4.1.0"
+  },
+  "devDependencies": {
+    "@erquhart/rollup-plugin-node-builtins": "^2.1.5",
+    "chokidar-cli": "^2.0.0",
+    "cross-env": "^5.2.0",
+    "make-dir-cli": "^2.0.0",
+    "rollup": "^1.16.1",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.0.3"
+  },
   "scripts": {
     "cms:precompile": "make-dir dist/admin && nunjucks-precompile src/_includes > dist/admin/templates.js -i \"\\.(njk|css|svg)$\"",
-    "cms:bundle": "rollup --config",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run serve",
-    "serve": "npx eleventy --serve",
-    "debug": "DEBUG=* npx eleventy",
-    "production": "npm run cms:precompile && npm run cms:bundle && npx eleventy"
+    "start": "concurrently \"chokidar \\\"src/_includes/**\\\" -c \\\"npm run cms:precompile\\\"\" \"npm run serve\"",
+    "serve": "cross-env ELEVENTY_ENV=development npx eleventy --serve",
+    "production": "npm run cms:precompile && npx eleventy"
   },
   "repository": {
     "type": "git",
@@ -21,8 +35,5 @@
   "bugs": {
     "url": "https://github.com/sdsna/rn-networks-template/issues"
   },
-  "homepage": "https://github.com/sdsna/rn-networks-template#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.11.0"
-  }
+  "homepage": "https://github.com/sdsna/rn-networks-template#readme"
 }
