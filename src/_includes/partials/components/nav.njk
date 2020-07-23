@@ -1,25 +1,43 @@
 {% if navigation.items %}
   <nav class="bar">
-  <ul class="nav-list">
-          <img src="/assets/{{ information.networkInfo.logo }}" class="nav-logo"/>
-  </ul>
-    <ul class="nav-list">
-        <a href="/" class="link nav-item light"{{ 'aria-current=page' if page.url == '/' | safe }}>
-            <span class="visually-hidden">{{ 'BACK TO HOMEPAGE' if page.url != '/' else 'HOMEPAGE' }}</span>
-        </a>
+            <a href="/" class="link nav-item">
+            <img src="/assets/{{ information.networkInfo.logo }}" class="nav-logo"/>
+            </a>
+            <a href="/" class="link nav-item light"{{ 'aria-current=page' if page.url == '/' | safe }}>
+                <span class="visually-hidden">{{ 'BACK TO HOMEPAGE' if page.url != '/' else 'HOMEPAGE' }}</span>
+            </a>
+
+       
         {% for item in navigation.items %}
             {% set relAttribute = '' %}
-            {% set currentAttribute = '' %}
 
             {% if item.rel %}
                 {% set relAttribute = ' rel="' + item.rel + '"' %}
             {% endif %}
 
-            {% if page.url == item.url %}
-                {% set currentAttribute = ' aria-current="page"' %}
-            {% endif %}
+            {% if item.megamenu == true %}
+            <div class="mega-menu">
+                <button class="mega-menu-button">
+                    <span>{{ item.text }}{% include "src/assets/images/arrow.svg" %}</span>
+                </button>
+                <div class="mega-menu-content">
+                    <ul class="mega-menu-list" aria-label="submenu">
+                        {% for drop in item.menuitems %}   
+                        <li class="nav"><a href="{{ drop.url }}" class="nav-list-item">{{ drop.text }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {% else %}
+                {% set currentAttribute = '' %}
 
-            <a href="{{ item.url }}" class="link nav-item light"{{ relAttribute | safe }}{{ currentAttribute | safe }}><span>{{ item.text }}</span></a>
+                {% if page.url == item.url %}
+                    {% set currentAttribute = ' aria-current="page"' %}
+                {% endif %}
+               
+                    <a href="{{ item.url }}" class="link nav-item light"{{ relAttribute | safe }}{{ currentAttribute | safe }}><span>{{ item.text }}</span></a>
+               
+            {% endif %}
         {% endfor %}
     </ul>
   </nav>

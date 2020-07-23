@@ -76,26 +76,69 @@ main#main-content:focus {
 
 /* Nav Bar */
 nav.bar {
-    margin: 4.5rem 3.6rem 4.5rem 3.6rem;
+    margin: 5% auto;
     left: auto;
     right: auto;
+    overflow: hidden;
 }
 
-.nav-list {
-    display: inline;
-    vertical-align: middle;
-}
-
-.nav-item {
-    margin-right: 5%;
-    display: inline;
-    font-weight: 500;
+nav.bar a,
+.mega-menu {
     text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5%;
 }
 
-a.nav-item:hover {
+.mega-menu {
+    overflow: hidden;
+}
+
+.mega-menu .mega-menu-button {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+nav.bar a.nav-item:hover {
+    cursor: pointer;
     color: rgb(223, 223, 223)!important;
-    border-bottom: .2rem solid #82492C!important;
+    border-bottom: .2rem solid #ffff!important;
+}
+
+.mega-menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 15%;
+    z-index: 1;
+  }
+  
+  .mega-menu-content .header {
+    background: red;
+    padding: 16px;
+    color: white;
+  }
+  
+  .mega-menu:hover .mega-menu-content {
+    display: block;
+  }
+
+ul.mega-menu-list {
+    padding-inline-start: 5px;
+}
+
+
+li.nav{
+    list-style: none;
+    text-align: left;
+	margin: 0;
+	padding-left: 0;
 }
 
 .nav-logo {
@@ -105,8 +148,15 @@ a.nav-item:hover {
     display: inline;
 }
 
-.arrow-svg {
-    transform: rotate(90deg);
+a.nav-list-item {
+    color: #222222;
+    text-decoration: none!important;
+    margin-bottom: 10px;
+}
+
+a.nav-list-item:hover {
+    color: #222222;
+    border-bottom: .2rem solid #222222!important;
 }
 
 /* Intro Banner */

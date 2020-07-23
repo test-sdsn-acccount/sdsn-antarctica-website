@@ -1,22 +1,66 @@
 {
     "items": [
       {
-        "text": "ABOUT",
-        "url": "/",
-        "external": false
+        "megamenu": true,
+        "text" : "ABOUT",
+        "menuitems": [ 
+          {
+            "text": "About SDSN",
+            "url": "/about/sdsn",
+            "external": false
+          },
+          {
+            "text": "About the Team",
+            "url": "/about/team",
+            "external": false
+          }
+        ]
       },
       {
-        "text": "WHAT WE DO",
-        "url": "/",
-        "external": false
+        "megamenu": true,
+        "text" : "WHAT WE DO",
+        "menuitems": [ 
+          {
+            "text": "Activities and Members",
+            "url": "/what/members",
+            "external": false
+          },
+          {
+            "text": "Youth-led Action",
+            "url": "/what/youth",
+            "external": false
+          },
+          {
+            "text": "News",
+            "url": "/what/news",
+            "external": false
+          },
+          {
+            "text": "Case Studies",
+            "url": "/what/case-studies",
+            "external": false
+          }
+        ]
       },
       {
-        "text": "THE SDGs",
-        "url": "/",
-        "external": false
+        "megamenu": true,
+        "text" : "THE SDGs",
+        "menuitems": [ 
+          {
+            "text": "The SDGs in Antarctica",
+            "url": "/sdgs/antarctica",
+            "external": false
+          },
+          {
+            "text": "SDG Resources",
+            "url": "/sdgs/resources",
+            "external": false
+          }
+        ]
       },
       {
-        "text": "GET INVOLVED",
+        "megamenu": false,
+        "text" : "GET INVOLVED",
         "url": "/",
         "external": false
       }
