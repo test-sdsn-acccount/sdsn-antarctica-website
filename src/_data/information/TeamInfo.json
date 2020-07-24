@@ -5,53 +5,53 @@
   "youthdesc": "The Youth Team mobilizes young people locally to create sustainable solutions.",
   "lcprofiles": [
     {
-      "lcname": "The Fifth Member",
+      "name": "The Fifth Member",
       "networkposition": "Council Member",
       "position": "",
-      "lcphoto": "/uploads/photo-of-woman-wearing-head-scarf-2951093.jpg"
+      "photo": "/uploads/photo-of-woman-wearing-head-scarf-2951093.jpg"
     },
     {
-      "lcname": "Sally by the Seashore",
+      "name": "Sally by the Seashore",
       "networkposition": "Council Member",
       "position": "",
-      "lcphoto": "/uploads/men-s-wearing-black-suit-jacket-and-pants-937481.jpg"
+      "photo": "/uploads/men-s-wearing-black-suit-jacket-and-pants-937481.jpg"
     },
     {
-      "lcname": "Bob The Builder",
+      "name": "Bob The Builder",
       "networkposition": "Council Advisor",
       "position": "",
-      "lcphoto": "/uploads/man-in-red-jacket-1681010.jpg"
+      "photo": "/uploads/man-in-red-jacket-1681010.jpg"
     },
     {
-      "lcname": "Lorem Ipsum",
+      "name": "Lorem Ipsum",
       "networkposition": "Council Advisor",
       "position": "CEO, AOIF",
-      "lcphoto": "/uploads/man-wearing-black-zip-up-jacket-near-beach-smiling-at-the-736716.jpg"
+      "photo": "/uploads/man-wearing-black-zip-up-jacket-near-beach-smiling-at-the-736716.jpg"
     },
     {
-      "lcname": "Shiloh Name Shiloh Name Shiloh Name Shiloh Name",
+      "name": "Shiloh Name Shiloh Name Shiloh Name Shiloh Name",
       "networkposition": "Network Chair",
       "position": "",
-      "lcphoto": "/uploads/photo-of-woman-wearing-yellow-floral-top-871495.jpg"
+      "photo": "/uploads/photo-of-woman-wearing-yellow-floral-top-871495.jpg"
     }
   ],
-  "nm": [
+  "nmprofiles": [
     {
       "nmname": "John Name",
-      "nmtitle": "Network Manager",
-      "nmphoto": "/uploads/men-s-wearing-black-suit-jacket-and-pants-937481.jpg"
+      "networkposition": "Network Manager",
+      "photo": "/uploads/men-s-wearing-black-suit-jacket-and-pants-937481.jpg"
     },
     {
       "nmname": "Marie Name",
-      "nmtitle": "Network Manager",
-      "nmphoto": "/uploads/photo-of-woman-wearing-head-scarf-2951093.jpg"
+      "networkposition": "Network Manager",
+      "photo": "/uploads/photo-of-woman-wearing-head-scarf-2951093.jpg"
     }
   ],
   "youthprofiles": [
     {
-      "yname": "Lee Name",
-      "ytitle": "Youth Network Coordinator",
-      "yphoto": "/uploads/man-in-red-jacket-1681010.jpg"
+      "name": "Lee Name",
+      "networkposition": "Youth Network Coordinator",
+      "photo": "/uploads/man-in-red-jacket-1681010.jpg"
     }
   ],
   "title": "The Team"

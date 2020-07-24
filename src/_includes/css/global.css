@@ -358,3 +358,45 @@ section.contact-us-banner {
     height: 100%;
     width: 100%;
 }
+
+
+/* People Cards */
+
+.small-card {
+    height: 15em;
+}
+
+.tall-card {
+    height: 25em;
+}
+
+.people-container {
+    margin: 0 15% 5% 12%;
+}
+
+.people-card.big {
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 3em;
+    height: 100%;
+    width: 22%;
+    margin-right: 2em;
+    vertical-align: top;
+}
+
+img.people-profile {
+    object-fit: cover;
+    width: 100%;
+    height: 30rem;
+    display: block;
+}
+
+.people-card.title {
+    margin: 3.5em 2rem 2rem 2rem;
+    width: 100%;
+}
+
+.people-card.content {
+    margin: 0 2em 2em 2em;
+    line-height: 1.6em;
+}

@@ -22,7 +22,7 @@ fields:
 - name: lcprofiles
   type: field_group_list
   fields:
-  - name: lcname
+  - name: name
     type: text
     config:
       required: false
@@ -47,7 +47,7 @@ fields:
     label: Position Title (if applicable)
     description: If the Leadership Council has a position outside that you want to
       highlight, list it here.
-  - name: lcphoto
+  - name: photo
     type: file
     config:
       maxSize: 0.8
@@ -68,7 +68,7 @@ fields:
       format: html-blocks
   label: Network Manager Description
   description: What do the Network Managers do?
-- name: nm
+- name: nmprofiles
   type: field_group_list
   fields:
   - name: nmname
@@ -76,13 +76,13 @@ fields:
     config:
       required: false
     label: Full Name
-  - name: nmtitle
+  - name: networkposition
     type: text
     config:
       required: false
     label: Network Manager Position Title
     default: Network Manager
-  - name: nmphoto
+  - name: photo
     type: file
     config:
       maxSize: 0.7
@@ -95,12 +95,12 @@ fields:
 - name: youthprofiles
   type: field_group_list
   fields:
-  - name: yname
+  - name: name
     type: text
     config:
       required: false
     label: Full name
-  - name: ytitle
+  - name: networkposition
     type: textarea
     default: ''
     config:
@@ -109,7 +109,7 @@ fields:
       schema:
         format: html-blocks
     label: Youth Member Position Title
-  - name: yphoto
+  - name: photo
     type: file
     config:
       maxSize: 0.7

@@ -11,6 +11,40 @@
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
+  <section class="section-banner light">
+    {% if information.TeamInfo.lcdesc %}
+        {% set header = 'Leadership Council' %}
+        {% set subtitle = information.TeamInfo.lcdesc | safe %}
+            {% include "layouts/section-banner.njk" %}
+        {% set people = information.TeamInfo.lcprofiles %}
+          {% include "partials/components/people.njk" %}
+    {% endif %}
+  </section>
+  <section class="section-banner light">
+    {% if information.TeamInfo.nmdesc %}
+        {% set header = 'Network Managers' %}
+        {% set subtitle = information.TeamInfo.nmdesc | safe %}
+            {% include "layouts/section-banner.njk" %}
+        {% set people = information.TeamInfo.nmprofiles %}
+            {% include "partials/components/people.njk" %}
+    {% endif %}
+  </section>
+  <section class="section-banner light">
+    {% if information.TeamInfo.youthdesc %}
+        {% set header = 'Youth Team' %}
+        {% set subtitle = information.TeamInfo.youthdesc | safe %}
+            {% include "layouts/section-banner.njk" %}
+        {% set people = information.TeamInfo.youthprofiles %}
+            {% include "partials/components/people.njk" %}
+    {% endif %}
+  </section>
+  {% set fcolor1 = colourscheme.fcolor1 %}
+  <section class="contact-us-banner light pop-out" {% if fcolor1 %} style="background-color:{{ fcolor1 }}"{% endif %}>
+      {% set header = 'Contact us' %}
+      {% set cta = 'Get in touch at ' %}
+      {% set email = information.networkInfo.networkEmail %}
+      {% include "partials/components/contact-us-banner.njk" %}
+  </section>
 </div>
 </main>
 {% endblock %}
