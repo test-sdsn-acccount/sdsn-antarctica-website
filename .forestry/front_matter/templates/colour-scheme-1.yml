@@ -1,5 +1,5 @@
 ---
-label: Website Colour Scheme
+label: Website Colour Scheme 1
 hide_body: false
 fields:
 - name: title
@@ -29,5 +29,3 @@ fields:
     required: true
     color_format: Hex
   default: "#EAEAEA"
-pages:
-- src/_data/colourscheme.json

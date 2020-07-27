@@ -50,5 +50,3 @@ fields:
     schema:
       format: html-blocks
   label: Theme 1
-pages:
-- src/_data/colourscheme.json
