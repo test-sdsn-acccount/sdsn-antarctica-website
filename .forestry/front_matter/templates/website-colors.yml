@@ -31,14 +31,14 @@ fields:
   default: "#EAEAEA"
 - name: colourtheme
   type: select
-  default: src/_data/information/networkInfo.json
+  default: fcolor1
   config:
     required: true
     options: []
     source:
-      type: pages
-      section: network-information-c6a7fe3c-3760-4b29-9d81-6294f96c7d8f
-      file: 
+      type: documents
+      section: edit-colour-theme
+      file: src/_data/colourscheme.json
       path: 
   label: Colour Theme
 pages:
