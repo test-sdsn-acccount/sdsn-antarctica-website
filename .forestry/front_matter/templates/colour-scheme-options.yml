@@ -31,13 +31,15 @@ fields:
   default: "#EAEAEA"
 - name: colourtheme
   type: select
-  default: fcolor1
+  default: ''
   config:
     required: true
-    options: []
+    options:
+    - Theme1
+    - Theme2
     source:
-      type: documents
-      section: edit-colour-theme
+      type: simple
+      section: edit-colour-theme-abc142de-5b77-4994-a38d-58704facd747
       file: src/_data/colourscheme.json
       path: 
   label: Colour Theme
