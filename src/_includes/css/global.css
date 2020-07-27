@@ -388,7 +388,7 @@ img.people-profile {
 
 /* Post list */
 
-section.post-list {
+.post-list-container {
     margin: 0 15% 5% 12%;
 }
 
@@ -418,6 +418,19 @@ section.post-list {
     width: 100%;
     height: 20vh;
     object-fit: cover;
+}
+
+.post-img-replacement {
+    border: 0;
+    width: 100%;
+    height: 20vh;
+    background-color: #b8b8b8;
+    text-align: center;
+}
+
+img.img-replacement {
+    width: 60%;
+    padding: 10%;
 }
 
 .post-card-content {

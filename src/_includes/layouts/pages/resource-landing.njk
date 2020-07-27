@@ -11,8 +11,10 @@
     {% endif %}
   </section>
   <section class="full-bleed" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }}"{% endif %}>
+    <div class="post-list-container">
     {% set sectionList = collections.newsArticles %}
     {% include "partials/components/post-list.njk" %}
+    </div>
 </section>
 
 </div>
