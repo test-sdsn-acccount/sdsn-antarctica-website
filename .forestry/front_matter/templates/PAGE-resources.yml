@@ -1,0 +1,54 @@
+---
+label: CONTENT Resources
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Page Title
+  default: Resource News Stories Pages
+  hidden: true
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: desc
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Content
+- name: ctaTitle
+  type: text
+  config:
+    required: true
+  label: Call to Action Title
+- name: ctaURL
+  type: text
+  config:
+    required: true
+  label: Call to Action Link
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
+- name: toggle
+  type: boolean
+  label: Featured content
+  description: 'Mark this content if you want it featured on the homepage or What we do pages.'
+- name: fImage
+  type: file
+  config:
+    maxSize: 0.7
+  label: Featured Image

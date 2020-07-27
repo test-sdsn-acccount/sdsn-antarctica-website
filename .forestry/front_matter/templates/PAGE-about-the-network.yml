@@ -6,7 +6,8 @@ fields:
   type: text
   config:
     required: false
-  label: Page Title
+  label: Page Content About SDSN
+  hidden: true
 - name: bannerTitle
   type: text
   config:

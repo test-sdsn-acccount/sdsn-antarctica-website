@@ -19,8 +19,8 @@ sections:
   match: "*.json"
   new_doc_ext: json
 - type: directory
-  path: src/content/homepage
-  label: Homepage
+  path: src/content/news
+  label: News
   create: documents
   match: "**/*"
 - type: heading
