@@ -71,5 +71,3 @@ fields:
     required: true
     color_format: Hex
   default: "#222222"
-pages:
-- src/_data/information/colourscheme.json
