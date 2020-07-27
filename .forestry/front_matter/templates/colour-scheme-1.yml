@@ -58,18 +58,18 @@ fields:
     color_format: Hex
   default: "#ffff"
 - name: megaMenuBg
-type: color
-label: Navigation menu background colour
-config:
-  required: true
-  color_format: Hex
-default: "#f9f9f9"
+  type: color
+  label: Navigation menu background colour
+  config:
+    required: true
+    color_format: Hex
+  default: "#f9f9f9"
 - name: megaMenuFontColor
-type: color
-label: Navigation menu font colour
-config:
-  required: true
-  color_format: Hex
-default: "#222222"
+  type: color
+  label: Navigation menu font colour
+  config:
+    required: true
+    color_format: Hex
+  default: "#222222"
 pages:
 - src/_data/information/colourscheme.json
