@@ -14,25 +14,6 @@ fields:
   config:
     required: true
   label: Title
-- name: desc
-  type: textarea
-  default: ''
-  config:
-    required: true
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: Content
-- name: ctaTitle
-  type: text
-  config:
-    required: true
-  label: Call to Action Title
-- name: ctaURL
-  type: text
-  config:
-    required: true
-  label: Call to Action Link
 - name: date
   type: datetime
   label: Date
@@ -43,21 +24,57 @@ fields:
     time_format: 
     display_utc: false
   default: now
-- name: toggle
-  type: boolean
-  label: Featured content
-  description: Mark this content if you want it featured on the homepage or What we
-    do pages.
+- name: author
+  type: text
+  config:
+    required: false
+  label: Author
+  default: Network Secretariat
+- name: quote
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Featured quote
+- name: ctaTitle
+  type: text
+  config:
+    required: true
+  label: Call to Action Title
+- name: ctaURL
+  type: text
+  config:
+    required: true
+  label: Call to Action Link
 - name: fImage
   type: file
   config:
     maxSize: 0.7
   label: Featured Image
+- name: toggle
+  type: boolean
+  label: Featured content
+  description: Mark this content if you want it featured on the homepage or What we
+    do pages.
 - name: tags
   type: tag_list
   default: []
   label: Tags
   description: Put some tags to make finding content easier for your website visitors!
     E.g. Antarctica, Youth, Climate change, etc.
+- name: aboutAuthor
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: About the author
+  description: Put any additional information you want to write about the author,
+    organization, or initiative here.
 pages:
 - src/content/news/sustainable-development-solutions-network-antarctica.md
