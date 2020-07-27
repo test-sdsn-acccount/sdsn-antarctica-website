@@ -37,5 +37,3 @@ fields:
   label: Layout
   default: section-banner
   hidden: true
-pages:
-- src/content/homepage/sustainable-development-solutions-network-antarctica.md

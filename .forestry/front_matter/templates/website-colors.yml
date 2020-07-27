@@ -7,7 +7,7 @@ fields:
   config:
     required: true
   label: Page Title
-  default: "Website Colours"
+  default: Website Colours
 - name: bgcolor
   type: color
   label: Background Colour
@@ -29,5 +29,15 @@ fields:
     required: true
     color_format: Hex
   default: "#EAEAEA"
-pages:
-- src/_data/colourscheme.json
+- name: colourtheme
+  type: select
+  default: src/_data/information/networkInfo.json
+  config:
+    required: true
+    options: []
+    source:
+      type: pages
+      section: network-information-c6a7fe3c-3760-4b29-9d81-6294f96c7d8f
+      file: 
+      path: 
+  label: Colour Theme
