@@ -53,3 +53,5 @@ fields:
   config:
     maxSize: 0.7
   label: Featured Image
+pages:
+- src/content/news/sustainable-development-solutions-network-antarctica.md
