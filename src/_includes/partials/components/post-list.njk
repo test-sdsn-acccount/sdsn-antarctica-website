@@ -1,15 +1,33 @@
-{% for section in sectionList %}
   <section class="post-list">
     <div class="inner-wrapper">
-      <ol class="post-list__items">
-            <div class="post-list__item wrapper">
-                <h3 class="h3-post-title">
-                  {{ section.data.title }}
-                </h3>
-                    {{ content | safe }}
-                 <a href="{{ section.data.buttonlink }}" class="link text-button" rel="bookmark">{{ section.data.buttontext if section.data.buttontext else '' }}</a>
+      {% for section in sectionList %}
+        <ol class="post-item">
+            <div class="post-card-top">
+              <a href="{{ section.url }}">
+                <img src="/assets{{ section.data.fImage }}" class="post-item-img" />
+              </a>
             </div>
-      </ol>
+            <div class="post-card-content">
+              <div class="post-list-tags">
+                {% for tag in section.data.tags %}
+                  <p class="tag-item">
+                    {{ tag }}
+                  </p>
+                {% endfor %}
+              </div>
+              <div class="post-list-title">
+                    <a href="{{ section.url }}"><h3>{{ section.data.title }}</h3></a>
+              </div>
+              <div class="post-list-excerpt">
+                <p class="post-excerpt">
+                    {{ section.data.desc }}
+                </p>
+              </div>
+              <div class="post-list-author">
+                    <i>Written by {{ section.data.author }}</i>
+              </div>
+          </ol>
+      {% endfor %}
     </div>
   </section>
-{% endfor %}
+

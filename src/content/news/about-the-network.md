@@ -9,7 +9,7 @@ desc: MDP of Universidad de los Andes grants 25 scholarships to leaders of Colom
 ctaURL: mailto:lucia.rodriguez@unsdsn.org
 ctaTitle: For more information about the MDP program, please contact the Director
   of MDP, Lucia Rodriguez, at lucia.rodriguez@unsdsn.org.
-fImage: "/uploads/mdp-students-1920w-1.webp"
+fImage: "/uploads/mdp.png"
 toggle: true
 quote: MDP of Universidad de los Andes grants 25 scholarships to leaders of Colombia's
   Pacific Region.

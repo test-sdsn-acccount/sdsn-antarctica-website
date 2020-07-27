@@ -24,7 +24,8 @@ collections:
     label: "News"
     folder: "src/content/news"
     create: true
-    slug: "{{slug}}"    
+    slug: "{{slug}}"
+    preview_path: "/{{slug}}" 
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/resources.njk"}
       - {label: "Body", name: "body", widget: "markdown"}

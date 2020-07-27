@@ -2,7 +2,7 @@
 label: CONTENT Resources
 hide_body: false
 fields:
-- name: pagetitlenj
+- name: pagetitle
   type: text
   config:
     required: false
@@ -78,3 +78,4 @@ fields:
     organization, or initiative here.
 pages:
 - src/content/news/sustainable-development-solutions-network-antarctica.md
+- src/content/news/about-the-network.md
