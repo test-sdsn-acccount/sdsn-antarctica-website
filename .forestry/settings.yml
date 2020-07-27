@@ -29,7 +29,7 @@ sections:
   path: src/_data/navigation.json
   label: Navigation Bar
 - type: document
-  path: src/_data/colourscheme.json
+  path: src/_data/colour-scheme-options.json
   label: Edit Colour Theme
 - type: heading
   label: Edit Resources, Blog, Events, News
