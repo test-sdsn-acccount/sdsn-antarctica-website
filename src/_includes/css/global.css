@@ -41,13 +41,13 @@ p.feature {
     margin-bottom: 0.3em!important;
 }
 
-.light {
-    color: white;
-}
+/* .light {
+    color: #fff;
+} */
 
-.dark {
+/* .dark {
     color: #575757;
-}
+} */
 
 a.link {
     text-decoration: none!important;
@@ -98,7 +98,6 @@ nav.bar a,
     font-size: 16px;  
     border: none;
     outline: none;
-    color: white;
     padding: 14px 16px;
     background-color: inherit;
     font: inherit;
@@ -107,22 +106,14 @@ nav.bar a,
 
 nav.bar a.nav-item:hover {
     cursor: pointer;
-    color: rgb(223, 223, 223)!important;
     border-bottom: .2rem solid #ffff!important;
 }
 
 .mega-menu-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
     width: 15%;
     z-index: 1;
-  }
-  
-  .mega-menu-content .header {
-    background: red;
-    padding: 16px;
-    color: white;
   }
   
   .mega-menu:hover .mega-menu-content {
@@ -149,13 +140,11 @@ li.nav{
 }
 
 a.nav-list-item {
-    color: #222222;
     text-decoration: none!important;
     margin-bottom: 10px;
 }
 
 a.nav-list-item:hover {
-    color: #222222;
     border-bottom: .2rem solid #222222!important;
 }
 
@@ -252,11 +241,6 @@ section.full-bleed {
 }
 
 /* Text Top and Metrics Bottom Banner */
-
-.white-pop-out {
-    background-color: #EAEAEA;
-    margin: 2em 0 5% 8%!important;
-}
 
 .text-top-metrics-bottom-container {
     padding: 2em 13em 5em 6em;

@@ -4,14 +4,14 @@
 {% block content %}
 <main id="main-content" tabindex="-1">
 <div class="home-container">
-  <section class="intro-banner light">
+  <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.networkInfo %}
         {% set header = 'The Team' | safe %}
         {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.' | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
-  <section class="section-banner light">
+  <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.TeamInfo.lcdesc %}
         {% set header = 'Leadership Council' %}
         {% set subtitle = information.TeamInfo.lcdesc | safe %}
@@ -20,7 +20,7 @@
           {% include "partials/components/people.njk" %}
     {% endif %}
   </section>
-  <section class="section-banner light">
+  <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.TeamInfo.nmdesc %}
         {% set header = 'Network Managers' %}
         {% set subtitle = information.TeamInfo.nmdesc | safe %}
@@ -29,7 +29,7 @@
             {% include "partials/components/people.njk" %}
     {% endif %}
   </section>
-  <section class="section-banner light">
+  <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.TeamInfo.youthdesc %}
         {% set header = 'Youth Team' %}
         {% set subtitle = information.TeamInfo.youthdesc | safe %}
@@ -38,8 +38,7 @@
             {% include "partials/components/people.njk" %}
     {% endif %}
   </section>
-  {% set fcolor1 = colourscheme.fcolor1 %}
-  <section class="contact-us-banner light pop-out" {% if fcolor1 %} style="background-color:{{ fcolor1 }}"{% endif %}>
+  <section class="contact-us-banner pop-out" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
       {% set header = 'Contact us' %}
       {% set cta = 'Get in touch at ' %}
       {% set email = information.networkInfo.networkEmail %}

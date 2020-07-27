@@ -4,14 +4,14 @@
 {% block content %}
 <main id="main-content" tabindex="-1">
 <div class="about-container">
-  <section class="intro-banner light">
+  <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.networkInfo %}
         {% set header = AboutTheNetwork.bannerTitle | safe %}
         {% set subtitle = AboutTheNetwork.aboutsdsn | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
-  <section class="section-banner light">
+  <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.networkInfo %}
         {% set header = information.networkInfo.networkName | safe %}
         {% set subtitle = AboutTheNetwork.networkdesc | safe %}
@@ -20,14 +20,13 @@
             {% include "layouts/section-banner.njk" %}
     {% endif %}
   </section>
-    <section class="feature-banner light">
+    <section class="feature-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
         {% if information.networkInfo.networkObjectives %}
             {% set item = information.networkInfo.networkObjectives %}
                 {% include "partials/components/large-feature.njk" %}
         {% endif %}
     </section>
-    {% set fcolor1 = colourscheme.fcolor1 %}
-    <section class="full-bleed light" {% if fcolor1 %} style="background-color:{{ fcolor1 }}"{% endif %}>
+    <section class="full-bleed" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }}"{% endif %}>
         {% if information.networkInfo.networkObjectives %}
             {% set header = information.networkInfo.networkVision | safe %}
             {% set buttonText = information.networkInfo.networkName if information.networkInfo.networkName else '' %}
@@ -35,7 +34,7 @@
                 {% include "partials/components/full-bleed.njk" %}
         {% endif %}
     </section>
-    <section class="one-image-two-text light">
+    <section class="one-image-two-text" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
         {% if information.networkInfo.networkObjectives %}
             {% set pretext = 'HOSTED BY' | safe %}
             {% set header = information.networkInfo.hostInstitution | safe %}
@@ -43,7 +42,7 @@
                 {% include "partials/components/one-image-two-text.njk" %}
         {% endif %}
     </section>
-    <section class="text-top-metrics-bottom dark white-pop-out">
+    <section class="text-top-metrics-bottom pop-out" {% if fcolor2Text %} style="color:{{ fcolor2Text }};background-color:{{ fcolor2 }}"{% endif %}>
     {% if AboutTheNetwork.networkmetrics %}
         {% set desc = AboutTheNetwork.networkimpact | safe %}
         {% set item = AboutTheNetwork.networkmetrics %}

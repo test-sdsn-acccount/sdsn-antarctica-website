@@ -4,27 +4,26 @@
 {% block content %}
 <main id="main-content" tabindex="-1">
 <div class="home-container">
-  <section class="intro-banner light">
+  <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.networkInfo %}
         {% set header = 'What we do' | safe %}
         {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.' | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
-    <section class="section-banner light">
+    <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
         {% set header = 'Highlight projects' %}
         {% set subtitle = 'Read more about our current work' %}
         {% include "layouts/section-banner.njk" %}
     </section>
-    <section class="resource-feature-banner light">
+    <section class="resource-feature-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
         {% include "partials/components/resource-feature-banner.njk" %}
     </section>
     {% set colour = colourscheme.fcolor2 %}
-    <section class="full-bleed light" {% if colour %} style="background-color:{{ colour }}"{% endif %}>
+    <section class="full-bleed" {% if colour %} style="background-color:{{ colour }};color:{{ bgText }};"{% endif %}>
 
     </section>
-    {% set fcolor1 = colourscheme.fcolor1 %}
-    <section class="contact-us-banner light pop-out" {% if fcolor1 %} style="background-color:{{ fcolor1 }}"{% endif %}>
+    <section class="contact-us-banner pop-out" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
         {% set header = 'See benefits' %}
         {% set cta = 'See benefits of joining the network' %}
         {% include "partials/components/contact-us-banner.njk" %}

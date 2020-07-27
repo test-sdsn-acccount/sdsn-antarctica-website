@@ -53,4 +53,4 @@ fields:
       format: html-blocks
   label: Theme 1
 pages:
-- src/_data/information/website-colours.json
+- src/_data/information/websitecolours.json

@@ -1,8 +1,7 @@
 <div class="people-container">
     <div class="people-wrapper">
         {% for person in people %}
-        {% set fcolor1 = colourscheme.fcolor1 %}
-        <div class="people-card big light small-card">
+        <div class="people-card big small-card {% if bgText %} style="color:{{ bgText }}"{% endif %}">
             <div class="people-card title closer-header">
                 <img src="/assets/{{ person.photo }}" class="people-profile"/>
             </div>

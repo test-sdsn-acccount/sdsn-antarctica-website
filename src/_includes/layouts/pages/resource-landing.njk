@@ -3,7 +3,7 @@
 {% block content %}
 <main id="main-content" tabindex="-1">
 <div class="home-container">
-  <section class="intro-banner light">
+  <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.networkInfo %}
         {% set header = 'Resources' | safe %}
         {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.' | safe %}

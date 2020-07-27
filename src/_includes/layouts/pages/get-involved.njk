@@ -4,21 +4,21 @@
 {% block content %}
 <main id="main-content" tabindex="-1">
 <div class="home-container">
-  <section class="intro-banner light">
+  <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.networkInfo %}
         {% set header = 'Get involved' | safe %}
         {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.' | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
-    <section class="text-top-metrics-bottom light">
+    <section class="text-top-metrics-bottom" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if AboutTheNetwork.networkmetrics %}
         {% set desc = AboutTheNetwork.networkimpact | safe %}
         {% set item = AboutTheNetwork.networkmetrics %}
             {% include "partials/components/text-top-metrics-bottom.njk" %}
     {% endif %}
     </section>
-    <section class="section-banner light">
+    <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
         {% if information.networkInfo %}
             {% set header = 'Member Requirements' | safe %}
             {% set subtitle = AboutTheNetwork.networkdesc | safe %}
@@ -27,8 +27,7 @@
                 {% include "layouts/section-banner.njk" %}
         {% endif %}
     </section>
-    {% set fcolor1 = colourscheme.fcolor1 %}
-    <section class="contact-us-banner light pop-out" {% if fcolor1 %} style="background-color:{{ fcolor1 }}"{% endif %}>
+    <section class="contact-us-banner pop-out" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }}"{% endif %}>
         {% set header = 'Want to learn more?' %}
         {% set cta = 'Get in touch at ' %}
         {% set email = information.networkInfo.networkEmail %}

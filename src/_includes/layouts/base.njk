@@ -1,5 +1,35 @@
 <!DOCTYPE html>
-{% set bgcolor = colourscheme.bgcolor %}
+{% if information.websitecolours.colourtheme == "Theme1" %}
+  {% set bgcolor = themes.theme1.bgcolor %}
+  {% set bgText = themes.theme1.bgText %}
+  {% set bgTextHighlight = themes.theme1.bgTextHighlight %}
+  {% set fcolor1 = themes.theme1.fcolor1 %}
+  {% set fcolor1Text = themes.theme1.fcolor1Text %}
+  {% set fcolor2 = themes.theme1.fcolor2 %}
+  {% set fcolor2Text = themes.theme1.fcolor2Text %}
+  {% set megaMenuBg = themes.theme1.megaMenuBg %}
+  {% set megaMenuFontColor = themes.theme1.megaMenuFontColor %}
+{% elif information.websitecolours.colourtheme == "Theme2" %}
+  {% set bgcolor = themes.theme2.bgcolor %}
+  {% set bgText = themes.theme2.bgText %}
+  {% set bgTextHighlight = themes.theme2.bgTextHighlight %}
+  {% set fcolor1 = themes.theme2.fcolor1 %}
+  {% set fcolor1Text = themes.theme2.fcolor1Text %}
+  {% set fcolor2 = themes.theme2.fcolor2 %}
+  {% set fcolor2Text = themes.theme2.fcolor2Text %}
+  {% set megaMenuBg = themes.theme2.megaMenuBg %}
+  {% set megaMenuFontColor = themes.theme2.megaMenuFontColor %}
+{% else %}
+  {% set bgcolor = "#1F5382" %}
+  {% set bgText = "#ffff" %}
+  {% set bgTextHighlight = "#575757" %}
+  {% set fcolor1 = "#12635E" %}
+  {% set fcolor1Text = "#ffff" %}
+  {% set fcolor2 = "#EAEAEA" %}
+  {% set fcolor2Text = "#575757" %}
+  {% set megaMenuBg = "#f9f9f9" %}
+  {% set megaMenuFontColor = "#22222" %}
+{% endif %}
 <html lang="en" class="no-js" {% if bgcolor %} style="background-color:{{ bgcolor }}"{% endif %}>
 <head>
   <meta charset="UTF-8">

@@ -2,7 +2,6 @@
 
 <div class="feature-banner-container">
     {% for obj in item %}
-    {% set fcolor1 = colourscheme.fcolor1 %}
     <div class="feature-card big tall-card pop-out" {% if fcolor1 %} style="background-color:{{ fcolor1 }}"{% endif %}>
         <div class="feature-card title">
             <h3>{{ obj.objective }}</h3>

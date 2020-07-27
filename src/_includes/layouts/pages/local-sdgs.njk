@@ -4,15 +4,14 @@
 {% block content %}
 <main id="main-content" tabindex="-1">
 <div class="home-container">
-  <section class="intro-banner light">
+  <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.networkInfo %}
         {% set header = 'SDGs in Antarctica' | safe %}
         {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.' | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
-    {% set colour = colourscheme.fcolor2 %}
-    <section class="full-bleed dark" {% if colour %} style="background-color:{{ colour }}"{% endif %}>
+    <section class="full-bleed" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}>
         {% if information.networkInfo.networkObjectives %}
             {% set header = 'The Sustainable Development Goals' | safe %}
             {% set buttonText = information.networkInfo.networkName if information.networkInfo.networkName else '' %}
@@ -20,7 +19,7 @@
                 {% include "partials/components/full-bleed.njk" %}
         {% endif %}
     </section>
-    <section class="one-image-two-text light">
+    <section class="one-image-two-text" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
         {% if information.networkInfo.networkObjectives %}
             {% set pretext = 'ACTION BY' | safe %}
             {% set header = 'Government' | safe %}

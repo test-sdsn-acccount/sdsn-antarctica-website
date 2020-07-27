@@ -4,7 +4,7 @@
     </div>
     <div class="section-banner-body banner-sub-title">
       <p>{{ subtitle | safe }}</p>
-      <a href="{{ buttonlink }}" class="link text-button light" rel="bookmark">{{ buttonText if buttonText else '' }}</a>
+      <a href="{{ buttonlink }}" class="link text-button" rel="bookmark" {% if bgText %} style="color:{{ bgText }}"{% endif %}>{{ buttonText if buttonText else '' }}</a>
     </div>
 </div>
 {{ content | safe }}
