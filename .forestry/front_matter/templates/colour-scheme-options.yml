@@ -7,7 +7,19 @@ fields:
   config:
     required: true
   label: Page Title
-  default: Website Colours
+  default: Edit website color palette
+  hidden: true
+- name: description
+  type: textarea
+  default: "<p>Please scroll down the page, and review the different color palettes.
+    You can choose any of the color palettes by selecting a theme in the drop-down
+    below.</p>"
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Description
 - name: colourtheme
   type: select
   default: ''
@@ -22,6 +34,7 @@ fields:
       file: src/_data/colourscheme.json
       path: 
   label: Colour Theme
+  description: Use this drop-down to choose a color palatte.
 - name: theme1
   type: textarea
   default: <p><strong>Theme 1</strong></p><p><img src="https://cdn.dribbble.com/users/487509/screenshots/13900378/media/5dd038505daee05ffca7402378739914.png"></p>
@@ -32,4 +45,5 @@ fields:
       format: html-blocks
   label: Theme 1
 pages:
+- src/_data/information/websitecolours.json
 - src/_data/information/websitecolours.json
