@@ -70,9 +70,9 @@ fields:
   default: ''
   config:
     required: false
-    wysiwyg: false
+    wysiwyg: true
     schema:
-      format: markdown
+      format: html-blocks
   label: About the author
   description: Put any additional information you want to write about the author,
     organization, or initiative here.
