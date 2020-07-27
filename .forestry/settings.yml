@@ -23,6 +23,8 @@ sections:
   label: News
   create: documents
   match: "**/*"
+  templates:
+  - PAGE-resources
 - type: heading
   label: Website structure
 - type: document
