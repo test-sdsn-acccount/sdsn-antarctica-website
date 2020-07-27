@@ -8,6 +8,7 @@ fields:
     required: true
   label: Page Title
   default: Website Colours
+  hidden: true
 - name: bgcolor
   type: color
   label: Background Colour
