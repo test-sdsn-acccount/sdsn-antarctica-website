@@ -15,6 +15,10 @@ quote: MDP of Universidad de los Andes grants 25 scholarships to leaders of Colo
   Pacific Region.
 tags:
 - MDP
+pagetitle: ''
+date: 2020-07-26T14:00:00Z
+author: Network Secretariat
+aboutAuthor: ''
 
 ---
 With the intention of promoting the training of future leaders, the [Master's in Development Practice ( MDP) program](http://www.mdpglobal.org/) of Universidad de Los Andes has decided to award a 100% scholarship to 25 leaders of Colombia´s Pacific Region. These scholarships will be awarded in alliance with Fundación Manos Visibles and the support of the Ford Foundation and Fundación SURA. The purpose of these scholarships is to encourage leaders of this region, characterized by decades of violence and poverty, to solving crises in an innovative way, taking advantage of opportunities, and proposing solutions for economic well-being with social equity and environmental sustainability. Moreover, the purpose is for these leaders to become professionals with a global perspective who lead organizations within the framework of sustainable development.

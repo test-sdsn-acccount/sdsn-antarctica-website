@@ -77,5 +77,5 @@ fields:
   description: Put any additional information you want to write about the author,
     organization, or initiative here.
 pages:
-- src/content/news/sustainable-development-solutions-network-antarctica.md
 - src/content/news/about-the-network.md
+- src/content/news/sustainable-development-solutions-network-antarctica.md
