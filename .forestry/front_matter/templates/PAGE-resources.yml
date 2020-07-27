@@ -53,5 +53,11 @@ fields:
   config:
     maxSize: 0.7
   label: Featured Image
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: Put some tags to make finding content easier for your website visitors!
+    E.g. Antarctica, Youth, Climate change, etc.
 pages:
 - src/content/news/sustainable-development-solutions-network-antarctica.md
