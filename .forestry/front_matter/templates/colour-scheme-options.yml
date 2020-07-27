@@ -8,27 +8,6 @@ fields:
     required: true
   label: Page Title
   default: Website Colours
-- name: bgcolor
-  type: color
-  label: Background Colour
-  config:
-    required: true
-    color_format: Hex
-  default: "#1F5382"
-- name: fcolor1
-  type: color
-  label: Primary feature colour
-  config:
-    required: true
-    color_format: Hex
-  default: "#12635E"
-- name: fcolor2
-  type: color
-  label: Secondary feature colour
-  config:
-    required: true
-    color_format: Hex
-  default: "#EAEAEA"
 - name: colourtheme
   type: select
   default: ''
@@ -53,5 +32,4 @@ fields:
       format: html-blocks
   label: Theme 1
 pages:
-- src/_data/information/websitecolours.json
 - src/_data/information/websitecolours.json

@@ -19,8 +19,7 @@
     <section class="resource-feature-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
         {% include "partials/components/resource-feature-banner.njk" %}
     </section>
-    {% set colour = colourscheme.fcolor2 %}
-    <section class="full-bleed" {% if colour %} style="background-color:{{ colour }};color:{{ bgText }};"{% endif %}>
+    <section class="full-bleed" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ bgText }};"{% endif %}>
 
     </section>
     <section class="contact-us-banner pop-out" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>

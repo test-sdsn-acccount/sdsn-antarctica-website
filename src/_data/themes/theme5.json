@@ -1,0 +1,12 @@
+{
+  "title": "Website Colour Scheme",
+  "bgcolor": "#dda15e",
+  "bgText": "#000",
+  "bgTextHighlight": "#575757",
+  "fcolor1": "#606c38",
+  "fcolor1Text": "#fff",
+  "fcolor2": "#bc6c25",
+  "fcolor2Text": "#ffff",
+  "megaMenuBg": "#f9f9f9",
+  "megaMenuFontColor": "#222222"
+}

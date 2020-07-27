@@ -11,7 +11,12 @@ fields:
   type: file
   config:
     maxSize: 0.7
-  label: Network Logo
+  label: Blue Network Logo
+- name: whitelogo
+  type: file
+  config:
+    maxSize: 0.7
+  label: White Network Logo
 - name: networkName
   type: text
   config:

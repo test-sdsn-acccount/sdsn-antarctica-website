@@ -20,7 +20,7 @@
             {% include "layouts/section-banner.njk" %}
     {% endif %}
   </section>
-    <section class="feature-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+    <section class="feature-banner">
         {% if information.networkInfo.networkObjectives %}
             {% set item = information.networkInfo.networkObjectives %}
                 {% include "partials/components/large-feature.njk" %}
