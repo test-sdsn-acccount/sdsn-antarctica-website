@@ -46,7 +46,8 @@ fields:
 - name: toggle
   type: boolean
   label: Featured content
-  description: 'Mark this content if you want it featured on the homepage or What we do pages.'
+  description: Mark this content if you want it featured on the homepage or What we
+    do pages.
 - name: fImage
   type: file
   config:
