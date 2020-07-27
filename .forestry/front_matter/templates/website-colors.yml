@@ -41,3 +41,5 @@ fields:
       file: 
       path: 
   label: Colour Theme
+pages:
+- src/_data/colourscheme.json

@@ -31,7 +31,6 @@ sections:
 - type: document
   path: src/_data/colourscheme.json
   label: Edit Colour Theme
-  match: "**/*"
 - type: heading
   label: Edit Resources, Blog, Events, News
 upload_dir: src/assets/uploads

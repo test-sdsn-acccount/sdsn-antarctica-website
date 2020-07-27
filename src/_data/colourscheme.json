@@ -1,6 +1,7 @@
 {
-    "title": "Website Colour Scheme",
-    "bgcolor": "#1F5382",
-    "fcolor1": "#12635E",
-    "fcolor2": "#EAEAEA"
+  "title": "Website Colour Scheme",
+  "bgcolor": "#1F5382",
+  "fcolor1": "#12635E",
+  "fcolor2": "#EAEAEA",
+  "colourtheme": "src/_data/information/networkInfo.json"
 }
