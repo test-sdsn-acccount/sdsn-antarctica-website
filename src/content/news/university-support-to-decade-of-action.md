@@ -1,6 +1,6 @@
 ---
 pagetitle: Resource News Stories Pages
-date: 2020-07-21T01:00:00+00:00
+date: 2020-07-21T01:00:00.000+00:00
 author: Lauren Barredo
 tags:
 - United Nations
@@ -13,6 +13,11 @@ ctaURL: https://irp-cdn.multiscreensite.com/6f2c9f57/files/uploaded/200716%20Sum
 fImage: ''
 toggle: true
 aboutAuthor: ''
+embeddedcontent:
+- embedhtml: <p>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/5d0b31x0bRc"
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen&gt;&lt;/iframe&gt;</p>
+  embedlink: https://youtu.be/2JSRLGzCYO0
 
 ---
 On July 9 and 10, over 100 universities from about 65 countries gathered to explore how academia as a sector can support the Decade of Action on the SDGs, particularly in the new era of COVID-19. This is part of the core mission of the Sustainable Development Solutions Network (SDSN), launched in 2012 to bring universities together in support of the SDGs. The pandemic is making it harder to achieve the SDGs globally, but universities have always been leaders in problem solving and addressing the world’s greatest challenges, and can help countries ‘build back better.’
