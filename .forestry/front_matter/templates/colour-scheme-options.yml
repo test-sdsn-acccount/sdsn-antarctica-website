@@ -17,6 +17,10 @@ fields:
     options:
     - Theme1
     - Theme2
+    - Theme3
+    - Theme4
+    - Theme5
+    - Theme6
     source:
       type: simple
       section: edit-colour-theme-abc142de-5b77-4994-a38d-58704facd747
