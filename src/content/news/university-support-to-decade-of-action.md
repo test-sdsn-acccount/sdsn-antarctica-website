@@ -14,10 +14,12 @@ fImage: ''
 toggle: true
 aboutAuthor: ''
 embeddedcontent:
-- embedhtml: <p>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/5d0b31x0bRc"
+- embedhtml: '&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/2JSRLGzCYO0"
     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen&gt;&lt;/iframe&gt;</p>
-  embedlink: https://youtu.be/2JSRLGzCYO0
+    allowfullscreen&gt;&lt;/iframe&gt;'
+  embedlink: <iframe width="560" height="315" src="https://www.youtube.com/embed/2JSRLGzCYO0"
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
 
 ---
 On July 9 and 10, over 100 universities from about 65 countries gathered to explore how academia as a sector can support the Decade of Action on the SDGs, particularly in the new era of COVID-19. This is part of the core mission of the Sustainable Development Solutions Network (SDSN), launched in 2012 to bring universities together in support of the SDGs. The pandemic is making it harder to achieve the SDGs globally, but universities have always been leaders in problem solving and addressing the world’s greatest challenges, and can help countries ‘build back better.’
