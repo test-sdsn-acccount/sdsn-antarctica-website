@@ -11,7 +11,7 @@ quote: MDP of Universidad de los Andes grants 25 scholarships to leaders of Colo
 tags:
 - MDP
 pagetitle: ''
-date: 2020-07-26T14:00:00Z
+date: 2020-07-27T01:00:00+00:00
 author: Network Secretariat
 aboutAuthor: ''
 
