@@ -30,9 +30,13 @@
         {{ content | safe }}
       </div>
       <div class="news-page-video">
-        {# {% if video !== "" %}
-          <iframe src="{{ video }}"><iframe/>
-        {% endif %} #}
+        {% if embeddedcontent.length !== 0 %}
+          {% for item in embeddedcontent %}
+            <div class="embed-container">
+            {{ item.embedlink | safe }}
+            </div>
+          {% endfor %}
+        {% endif %}
       </div>
       <div class="news-page-supp-line">
       </div>

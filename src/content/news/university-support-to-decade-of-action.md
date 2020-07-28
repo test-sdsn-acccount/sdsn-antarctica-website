@@ -14,10 +14,7 @@ fImage: ''
 toggle: true
 aboutAuthor: ''
 embeddedcontent:
-- embedhtml: '&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/2JSRLGzCYO0"
-    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen&gt;&lt;/iframe&gt;'
-  embedlink: <iframe width="560" height="315" src="https://www.youtube.com/embed/2JSRLGzCYO0"
+- embedlink: <iframe width="560" height="315" src="https://www.youtube.com/embed/2JSRLGzCYO0"
     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe>
 
@@ -30,6 +27,3 @@ Deputy Secretary-General Amina Mohammed said that the SDSN has made a valuable c
 
 Over the course of the two-day event, participants discussed how Universities can respond to the COVID-19 crisis and fulfill their missions to teach, leveraging new technologies for online education and helping bridge the digital divide to ensure all students have access; ensuring that research work supports the immediate response to the health crisis and a long-term green recovery; and putting the SDGs into practice in their own communities and on their own campuses.
 
-[https://www.youtube.com/watch?v=5d0b31x0bRc#action=share](https://www.youtube.com/watch?v=5d0b31x0bRc#action=share "https://www.youtube.com/watch?v=5d0b31x0bRc#action=share")
-
-[**https://youtu.be/2JSRLGzCYO0**](https://youtu.be/2JSRLGzCYO0 "https://youtu.be/2JSRLGzCYO0")
