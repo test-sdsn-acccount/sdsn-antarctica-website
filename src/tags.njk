@@ -12,20 +12,16 @@ permalink: /tags/{{ tag }}/
 ---
 
 {% extends 'layouts/base.njk' %}
-{% set pageType = 'Tag Archive' %}
-
-{# Intro content #}
-{% set introHeading %}Posts filed under “{{ tag }}”{% endset %}
-{% set introHeadingLevel = '2' %}
 
 {# Post list content #}
 {% set postListHeadingLevel = '2' %}
 {% set postListHeading = 'Posts' %}
-{% set postListItems = collections[tag] %}
+{% set sectionList = collections[tag] %}
 
 {% block content %}
-  <main id="main-content" tabindex="-1">
-    {% include "partials/components/archive-list.njk" %}
+  <div class="post-list-container" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+  <h1>Tagged under "{{ tag }}"</h1>
+    {% include "partials/components/news-list.njk" %}
     {% include "partials/components/pagination.njk" %}
-  </main>
+  </div>
 {% endblock %}

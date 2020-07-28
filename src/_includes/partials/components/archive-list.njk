@@ -1,10 +1,9 @@
-{% if postListItems.length %}
+{% if sectionList.length %}
   <section class="post-list">
     <div class="inner-wrapper">
       <ol class="post-list__items">
-        {% for item in postListItems %}
-          {% if item.date.getTime() <= global.now %}
-          3
+        {% for item in sectionList %}
+        9{{ item.data.title }}
             <div class="post-list__item wrapper">
               <div class="post-list__item left-2 wrapped-item">
                 <img src="/{{ item.data.featureimage }}" class"post-image" />
