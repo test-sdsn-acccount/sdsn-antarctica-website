@@ -3,7 +3,7 @@ title: Lanzan la primera iniciativa científica mundial de alto nivel dedicada a
   supervivencia de la Amazonía
 buttonlink: ''
 order: 1
-date: '2019-08-02T14:00:00Z'
+date: 2019-08-02T14:00:00Z
 desc: Con la asesoría de políticos, presidentes de compañías, íconos culturales y
   líderes indígenas, el panel científico dirigido por Carlos Nobre, Andrea Encalada
   y Jeffrey Sachs presentará el camino hacia una bioeconomía equitativa, basada en
@@ -21,17 +21,17 @@ quote: Con la asesoría de políticos, presidentes de compañías, íconos cultu
 tags:
 - Amazon
 - Guest article
-aboutAuthor: <p><em>El Panel Científico por la Amazonía (</em><a href="https://www.theamazonwewant.org/"
-  target="_blank"><em>SPA</em></a><em>) se convoca bajo los auspicios de la Red de
-  Soluciones para el Desarrollo Sostenible (Sustainable Development Solutions Network,</em>
-  <a href="http://www.unsdsn.org/" target="_blank"><em>SDSN</em></a><em>, en inglés).
-  El objetivo del SPA es proporcionar, de manera integral, objetiva, abierta y transparente,
-  la información necesaria para una evaluación científica rigurosa del estado de los
-  diversos ecosistemas, impulsores y tendencias del uso de la tierra y los cambios
-  climáticos de la Amazonía, y las implicaciones a largo plazo del bienestar de la
-  región, así como explorar oportunidades y opciones relevantes para las políticas
-  de conservación y desarrollo sostenible de la Amazonía.</em></p>
+aboutAuthor: <p><em>El Panel Científico por la Amazonía (</em><a href="https://www.theamazonwewant.org/"><em>SPA</em></a><em>)
+  se convoca bajo los auspicios de la Red de Soluciones para el Desarrollo Sostenible
+  (Sustainable Development Solutions Network,</em> <a href="http://www.unsdsn.org/"><em>SDSN</em></a><em>,
+  en inglés). El objetivo del SPA es proporcionar, de manera integral, objetiva, abierta
+  y transparente, la información necesaria para una evaluación científica rigurosa
+  del estado de los diversos ecosistemas, impulsores y tendencias del uso de la tierra
+  y los cambios climáticos de la Amazonía, y las implicaciones a largo plazo del bienestar
+  de la región, así como explorar oportunidades y opciones relevantes para las políticas
+  de conservación y desarrollo sostenible de la Amazonía. </em></p>
 pagetitle: ''
+embeddedcontent: []
 
 ---
 **Nota del editor:** _El 3 de septiembre de 2020, el Panel Científico por la Amazonía organizará un seminario científico online donde se presentarán los principales temas que aborda el informe sobre el estado de la Amazonía, incluida la necesidad de contar con la biodiversidad y el conocimiento indígena para crear una bioeconomía. Para inscribirse, los periodistas pueden escribir a: jessica.tome@unsdsn.org._
