@@ -1,11 +1,6 @@
 ---
 title: 25 Leaders of Colombia's Pacific Region Will Join the MDP of Unversidad de
   los Andes
-buttonlink: ''
-layout: section-banner
-order: 2
-desc: MDP of Universidad de los Andes grants 25 scholarships to leaders of Colombia's
-  Pacific Region.
 ctaURL: mailto:lucia.rodriguez@unsdsn.org
 ctaTitle: For more information about the MDP program, please contact the Director
   of MDP, Lucia Rodriguez, at lucia.rodriguez@unsdsn.org.

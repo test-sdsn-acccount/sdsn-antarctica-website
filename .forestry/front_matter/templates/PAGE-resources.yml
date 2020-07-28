@@ -37,7 +37,7 @@ fields:
     required: false
     wysiwyg: true
     schema:
-      format: markdown
+      format: html-blocks
   label: Featured quote
 - name: ctaTitle
   type: text

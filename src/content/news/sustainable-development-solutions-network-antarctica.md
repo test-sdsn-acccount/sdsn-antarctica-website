@@ -2,7 +2,6 @@
 title: Lanzan la primera iniciativa científica mundial de alto nivel dedicada a la
   supervivencia de la Amazonía
 buttonlink: ''
-layout: section-banner
 order: 1
 date: 2020-07-27T05:31:58Z
 desc: Con la asesoría de políticos, presidentes de compañías, íconos culturales y
@@ -34,9 +33,7 @@ aboutAuthor: <p><em>El Panel Científico por la Amazonía (</em><a href="https:/
   de conservación y desarrollo sostenible de la Amazonía.</em></p>
 
 ---
-**Nota del editor:** _El 3 de septiembre de 2020, el Panel Científico por la Amazonía organizará un seminario científico online donde se presentarán los principales temas que aborda el informe sobre el estado de la Amazonía, incluida la necesidad de contar con la biodiversidad y el conocimiento indígena para crear una bioeconomía._
-
-_Para inscribirse, los periodistas pueden escribir a:_ _jessica.tome@unsdsn.org._
+**Nota del editor:** _El 3 de septiembre de 2020, el Panel Científico por la Amazonía organizará un seminario científico online donde se presentarán los principales temas que aborda el informe sobre el estado de la Amazonía, incluida la necesidad de contar con la biodiversidad y el conocimiento indígena para crear una bioeconomía. Para inscribirse, los periodistas pueden escribir a: jessica.tome@unsdsn.org._
 
 **NUEVA YORK (Y ZOOM)** - (23 de julio de 2020) Impulsados ​​por la urgencia de las crecientes y catastróficas amenazas ambientales a las que la Amazonía se enfrenta, un grupo de 150 renombrados científicos de ocho países amazónicos, la Guayana Francesa y socios globales lanzaron formalmente hoy una iniciativa científica cuya tarea es la de entregar, por primera vez, una evaluación científica del estado de la cuenca del Amazonas. Sus recomendaciones incluirán un plan para la formulación de políticas en una región vulnerable, cuyos líderes han prometido salvar el bosque tropical más grande y con mayor biodiversidad del mundo.
 

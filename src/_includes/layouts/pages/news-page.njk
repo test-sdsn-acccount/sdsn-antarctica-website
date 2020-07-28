@@ -1,0 +1,46 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+  <main id="main-content" class="content-colour" tabindex="-1">
+    <div class="news-page-container">
+      <div class="news-page-title-info">
+        <h2>{{ title }}</h2>
+        {{ date }} Written by: {{ author }}
+          <div class="post-list-tags">
+            {% for tag in tags %}
+              <a href="/tags/{{ tag }}/"><p class="tag-item">
+                {{ tag }}
+              </p></a>
+            {% endfor %}
+          <div class="post-list-tags">
+      </div>
+      <div class="news-page-img">
+        {% if fImage !== "" %}
+          <img src="/assets{{ fImage }}" class="news-img" /> 
+        {% else %} 
+          <div class="post-img-replacement">
+            <img src="/assets{{ logo }}" class="img-replacement" />
+          </div>
+        {% endif %}
+      </div>
+      <div class="news-page-intro-quote">
+        <i>{{ quote | safe }}</i> 
+      </div>
+      <div class="news-page-content">
+        {{ content | safe }}
+      </div>
+      <div class="news-page-video">
+        {# {% if video !== "" %}
+          <iframe src="{{ video }}"><iframe/>
+        {% endif %} #}
+      </div>
+      <div class="news-page-supp-line">
+      </div>
+      <div class="news-page-supp-info">
+        <p>{{ aboutAuthor | safe }}</p>
+      </div>
+        
+    </div>
+  </main>
+{% endblock %}
+

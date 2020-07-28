@@ -16,6 +16,7 @@ module.exports = function(config) {
     config.addLayoutAlias('get-involved', 'layouts/pages/get-involved.njk');
     config.addLayoutAlias('resources', 'layouts/pages/resources.njk');
     config.addLayoutAlias('resource-landing', 'layouts/pages/resource-landing.njk');
+    config.addLayoutAlias('news-page', 'layouts/pages/news-page.njk');
 
 
 

@@ -16,9 +16,9 @@
             <div class="post-card-content">
               <div class="post-list-tags">
                 {% for tag in section.data.tags %}
-                  <p class="tag-item">
+                  <a href="/tags/{{ tag }}/"><p class="tag-item">
                     {{ tag }}
-                  </p>
+                  </p></a>
                 {% endfor %}
               </div>
               <div class="post-list-title">
