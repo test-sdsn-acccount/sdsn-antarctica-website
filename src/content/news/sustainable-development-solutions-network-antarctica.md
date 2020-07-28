@@ -3,7 +3,7 @@ title: Lanzan la primera iniciativa científica mundial de alto nivel dedicada a
   supervivencia de la Amazonía
 buttonlink: ''
 order: 1
-date: 2020-07-27T05:31:58Z
+date: 2020-07-26T00:00:00+00:00
 desc: Con la asesoría de políticos, presidentes de compañías, íconos culturales y
   líderes indígenas, el panel científico dirigido por Carlos Nobre, Andrea Encalada
   y Jeffrey Sachs presentará el camino hacia una bioeconomía equitativa, basada en
@@ -31,6 +31,7 @@ aboutAuthor: <p><em>El Panel Científico por la Amazonía (</em><a href="https:/
   climáticos de la Amazonía, y las implicaciones a largo plazo del bienestar de la
   región, así como explorar oportunidades y opciones relevantes para las políticas
   de conservación y desarrollo sostenible de la Amazonía.</em></p>
+pagetitle: ''
 
 ---
 **Nota del editor:** _El 3 de septiembre de 2020, el Panel Científico por la Amazonía organizará un seminario científico online donde se presentarán los principales temas que aborda el informe sobre el estado de la Amazonía, incluida la necesidad de contar con la biodiversidad y el conocimiento indígena para crear una bioeconomía. Para inscribirse, los periodistas pueden escribir a: jessica.tome@unsdsn.org._
