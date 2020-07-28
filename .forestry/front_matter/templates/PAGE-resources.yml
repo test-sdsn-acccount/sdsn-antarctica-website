@@ -23,6 +23,7 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
+    export_format: YYYY-MM-DDT00:00:00Z
   default: now
 - name: author
   type: text
