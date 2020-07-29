@@ -18,7 +18,8 @@
     </section>
     <section class="resource-feature-banner">
         {% set sectionList = collections.newsArticles %}
-        {% include "partials/components/resource-feature-banner.njk" %}
+        {% set tagToFeatureBy = 'youth' %}
+        {% include "partials/components/resource-feature-tag-banner.njk" %}
     </section>
     <section class="full-bleed" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}>
         {# TEMPORARY #}

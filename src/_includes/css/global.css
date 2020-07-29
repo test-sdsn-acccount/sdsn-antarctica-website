@@ -445,6 +445,7 @@ img.img-replacement {
     border-radius: 1em 1em;
     font-size: 0.9rem;
     margin-bottom: 0;
+    text-transform: capitalize;
 }
 
 .post-list-title a {
@@ -460,12 +461,15 @@ img.img-replacement {
     -webkit-box-orient: vertical;
 }
 
-p.post-excerpt {
+p.post-excerpt,
+.post-list-excerpt p {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3; 
     -webkit-box-orient: vertical;
+    margin-block-start: 0;
+    margin-block-end: 0.5em;
 }
 
 .post-list-author {

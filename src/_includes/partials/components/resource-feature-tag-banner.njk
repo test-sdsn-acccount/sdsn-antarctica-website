@@ -3,7 +3,8 @@
     {# Show the first three posts #}
     {% set length = sectionList.length if sectionList.length < 4 else 4 %} 
     {% for section in sectionList %}
-        {% if section.data.toggle == true %}
+      {% for tag in section.data.tags %}
+        {% if tag == 'youth' %}
         <ol class="post-item">
             <div class="post-card-top">
               <a href="{{ section.url }}">
@@ -31,14 +32,15 @@
               </div>
               <div class="post-list-excerpt">
                 <p class="post-excerpt">
-                    {{ section.data.quote }}
+                    {{ section.data.quote | safe }}
                 </p>
               </div>
               <div class="post-list-author">
                     <i>Written by {{ section.data.author }}</i>
               </div>
           </ol>
-          {% endif %}
+            {% endif %}
+          {% endfor %}
       {% endfor %}
     </div>
 </div>
