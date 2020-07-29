@@ -346,6 +346,10 @@ section.contact-us-banner {
     width: 100%;
 }
 
+.contact-us-subtitle span {
+    font-size: 1.3rem;
+}
+
 /* People Cards */
 
 .small-card {

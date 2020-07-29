@@ -26,7 +26,11 @@
         {% if information.networkInfo.networkObjectives %}
             {% set pretext = 'ACTION BY' | safe %}
             {% set header = 'Government' | safe %}
-                {% include "partials/components/one-image-two-text.njk" %}
+            {% set actionContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.' %}
+            {% set cta = 'Read more on government website' %}
+            {% set ctaLink = '/get-involved' %}
+            {% set ctaColour = bgText %}
+            {% include "partials/components/one-image-two-text.njk" %}
         {% endif %}
     </section>
 </div>

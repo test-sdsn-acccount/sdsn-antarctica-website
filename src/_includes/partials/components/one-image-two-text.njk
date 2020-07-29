@@ -10,8 +10,10 @@
         </div>
     </div>
     <div class="two-text">
-      <p>{{ content | safe }}{% include "partials/components/li.njk" %}</p>
-
+      <p>{{ actionContent | safe }}</p>
+        {% if cta %}
+            {% include "partials/components/cta-button.njk" %}
+        {% endif %}
     </div>
 </div>
 
