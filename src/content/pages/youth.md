@@ -1,5 +1,5 @@
 ---
-layout: what-we-do
+layout: youth
 title: Our Youth Initiative
 permalink: /youth/
 ---

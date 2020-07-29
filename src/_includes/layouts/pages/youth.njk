@@ -1,0 +1,37 @@
+{% extends 'layouts/base.njk' %}
+{% set pageType = 'About the Team' %}
+
+{% block content %}
+<main id="main-content" tabindex="-1">
+<div class="home-container">
+  <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+    {% if information.networkInfo %}
+        {% set header = 'Our Youth Initiative' | safe %}
+        {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.' | safe %}
+            {% include "layouts/intro-banner.njk" %}
+    {% endif %}
+  </section>
+    <section class="section-banner as-header" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+        {% set header = 'Highlight projects' %}
+        {% set subtitle = 'Read more about our current work' %}
+        {% include "layouts/section-banner.njk" %}
+    </section>
+    <section class="resource-feature-banner">
+        {% set sectionList = collections.newsArticles %}
+        {% include "partials/components/resource-feature-banner.njk" %}
+    </section>
+    <section class="full-bleed" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}>
+        {# TEMPORARY #}
+        {% set header = 'Member List' %}
+        {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu.' %}
+        {% include "partials/components/table-section.njk" %}
+    </section>
+    <section class="contact-us-banner pop-out" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
+        {% set header = 'See benefits' %}
+        {% set cta = 'See benefits of joining the network' %}
+        {% set ctaLink = '/get-involved' %}
+        {% include "partials/components/contact-us-banner.njk" %}
+    </section>
+</div>
+</main>
+{% endblock %}

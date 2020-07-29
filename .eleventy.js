@@ -12,6 +12,7 @@ module.exports = function(config) {
     config.addLayoutAlias('about-sdsn', 'layouts/pages/about-sdsn.njk');
     config.addLayoutAlias('about-team', 'layouts/pages/about-team.njk');
     config.addLayoutAlias('what-we-do', 'layouts/pages/what-we-do.njk');
+    config.addLayoutAlias('youth', 'layouts/pages/youth.njk');
     config.addLayoutAlias('local-sdgs', 'layouts/pages/local-sdgs.njk');
     config.addLayoutAlias('get-involved', 'layouts/pages/get-involved.njk');
     config.addLayoutAlias('resources', 'layouts/pages/resources.njk');
