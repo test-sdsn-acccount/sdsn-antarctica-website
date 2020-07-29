@@ -8,50 +8,58 @@
       "name": "The Fifth Member",
       "networkposition": "Council Member",
       "position": "",
-      "photo": "/uploads/photo-of-woman-wearing-head-scarf-2951093.jpg"
+      "photo": "/uploads/photo-of-woman-wearing-head-scarf-2951093.jpg",
+      "email": ""
     },
     {
       "name": "Sally by the Seashore",
       "networkposition": "Council Member",
       "position": "",
-      "photo": "/uploads/men-s-wearing-black-suit-jacket-and-pants-937481.jpg"
+      "photo": "/uploads/men-s-wearing-black-suit-jacket-and-pants-937481.jpg",
+      "email": ""
     },
     {
       "name": "Bob The Builder",
       "networkposition": "Council Advisor",
       "position": "",
-      "photo": "/uploads/man-in-red-jacket-1681010.jpg"
+      "photo": "/uploads/man-in-red-jacket-1681010.jpg",
+      "email": ""
     },
     {
-      "name": "Lorem Ipsum",
+      "name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       "networkposition": "Council Advisor",
       "position": "CEO, AOIF",
-      "photo": "/uploads/man-wearing-black-zip-up-jacket-near-beach-smiling-at-the-736716.jpg"
+      "photo": "/uploads/man-wearing-black-zip-up-jacket-near-beach-smiling-at-the-736716.jpg",
+      "email": ""
     },
     {
-      "name": "Shiloh Name Shiloh Name Shiloh Name Shiloh Name",
+      "name": "Shiloh Name",
       "networkposition": "Network Chair",
       "position": "",
-      "photo": "/uploads/photo-of-woman-wearing-yellow-floral-top-871495.jpg"
+      "photo": "/uploads/photo-of-woman-wearing-yellow-floral-top-871495.jpg",
+      "email": ""
     }
   ],
   "nmprofiles": [
     {
-      "nmname": "John Name",
+      "name": "John Name",
       "networkposition": "Network Manager",
-      "photo": "/uploads/men-s-wearing-black-suit-jacket-and-pants-937481.jpg"
+      "photo": "/uploads/men-s-wearing-black-suit-jacket-and-pants-937481.jpg",
+      "email": ""
     },
     {
-      "nmname": "Marie Name",
+      "name": "Marie Name",
       "networkposition": "Network Manager",
-      "photo": "/uploads/photo-of-woman-wearing-head-scarf-2951093.jpg"
+      "photo": "/uploads/photo-of-woman-wearing-head-scarf-2951093.jpg",
+      "email": ""
     }
   ],
   "youthprofiles": [
     {
       "name": "Lee Name",
       "networkposition": "Youth Network Coordinator",
-      "photo": "/uploads/man-in-red-jacket-1681010.jpg"
+      "photo": "/uploads/man-in-red-jacket-1681010.jpg",
+      "email": "antarctica@sdsnyouth.org"
     }
   ],
   "title": "The Team"

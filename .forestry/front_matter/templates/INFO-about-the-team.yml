@@ -27,6 +27,11 @@ fields:
     config:
       required: false
     label: Full name
+  - name: email
+    type: text
+    config:
+      required: false
+    label: Email
   - name: networkposition
     type: textarea
     default: ''
@@ -71,7 +76,7 @@ fields:
 - name: nmprofiles
   type: field_group_list
   fields:
-  - name: nmname
+  - name: name
     type: text
     config:
       required: false
