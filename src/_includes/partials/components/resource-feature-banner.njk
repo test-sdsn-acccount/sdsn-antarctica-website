@@ -3,7 +3,7 @@
     {# Show the first three posts #}
     {% set length = sectionList.length if sectionList.length < 4 else 4 %} 
     {% for section in sectionList %}
-        {% if loop.index < length %}
+        {% if section.data.toggle == true %}
         <ol class="post-item">
             <div class="post-card-top">
               <a href="{{ section.url }}">
