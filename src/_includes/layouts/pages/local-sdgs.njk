@@ -14,9 +14,12 @@
     <section class="full-bleed" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}>
         {% if information.networkInfo.networkObjectives %}
             {% set header = 'The Sustainable Development Goals' | safe %}
-            {% set buttonText = information.networkInfo.networkName if information.networkInfo.networkName else '' %}
-            {% set buttonlink = information.networkInfo.networkName if information.networkInfo.networkName else '' %}
-                {% include "partials/components/full-bleed.njk" %}
+            {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.' | safe %}
+            {% set cta = 'Learn more about the SDGs' %}
+            {% set ctaLink = '/get-involved' %}
+            {% set ctaColour = fcolor2Text %}
+            {% include "layouts/section-banner.njk" %}
+            {% include "partials/components/sdgs.njk" %}
         {% endif %}
     </section>
     <section class="one-image-two-text" {% if bgText %} style="color:{{ bgText }}"{% endif %}>

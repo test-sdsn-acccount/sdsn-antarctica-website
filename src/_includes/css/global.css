@@ -530,3 +530,16 @@ img.news-img {
 .news-page-supp-info p {
   color: #474747;
 }
+
+/* SDG section */
+.sdg-section {
+    margin: 0 15% 0 12%;
+    padding-bottom: 4%;
+}
+
+.sdg-section img {
+    display: inline;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    width: 12%;
+}

@@ -1,15 +1,6 @@
 <div class="contact-us-container">
         <div class="contact-us-title">
             <h2 class="close-header">{{ header }}</h2>
-        <div class="contact-us-subtitle">
-                <p class="feature">
-                {% if ctaLink %}
-                        <a href="{{ctaLink}}" class="link" {% if fcolor1 %} style="color:{{ fcolor1Text }}"{% endif %}>
-                                <span>{{ cta }}{% include "src/assets/images/right-arrow.svg" %}</span>
-                        </a>
-                {% else %}
-                        {{ cta }}{{ email }}
-                {% endif %}</p>
-        </div>
+        {% include "partials/components/cta-button.njk" %}
         </div>
 </div>
