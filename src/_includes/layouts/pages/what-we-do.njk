@@ -26,10 +26,10 @@
         {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu.' %}
         {% include "partials/components/table-section.njk" %}
     </section>
-    <section class="contact-us-banner pop-out" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
+    <section class="contact-us-banner" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
         {% set header = 'See benefits' %}
         {% set cta = 'See benefits of joining the network' %}
-        {% set ctaLink = '/get-involved' %}
+        {% set ctaLink = '/join' %}
         {% set ctaColour = fcolor1Text %}
         {% include "partials/components/contact-us-banner.njk" %}
     </section>

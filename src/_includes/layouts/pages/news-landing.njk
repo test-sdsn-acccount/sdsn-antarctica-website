@@ -2,18 +2,18 @@
 
 {% block content %}
 <main id="main-content" tabindex="-1">
-<div class="resource-landing-container">
+<div class="home-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.networkInfo %}
-        {% set header =  title %}
+        {% set header = 'News' | safe %}
         {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.' | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
   <section class="full-bleed" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }}"{% endif %}>
     <div class="post-list-container">
-    {% set sectionList = collections.resourceArticles %}
-    {% include "partials/components/resources-list.njk" %}
+    {% set sectionList = collections.newsArticles %}
+    {% include "partials/components/news-list.njk" %}
     </div>
 </section>
 

@@ -1,5 +1,5 @@
 ---
-layout: resources
+layout: resource-landing
 title: Resources
 permalink: /resources/
 ---

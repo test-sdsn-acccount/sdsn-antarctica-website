@@ -1,12 +1,11 @@
 {% extends 'layouts/base.njk' %}
-{% set pageType = 'About the Team' %}
 
 {% block content %}
 <main id="main-content" tabindex="-1">
 <div class="home-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.networkInfo %}
-        {% set header = 'Get involved' | safe %}
+        {% set header = 'Join the network' | safe %}
         {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.' | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
@@ -28,10 +27,11 @@
                 {% include "layouts/section-banner.njk" %}
         {% endif %}
     </section>
-    <section class="contact-us-banner pop-out" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }}"{% endif %}>
+    <section class="contact-us-banner" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
         {% set header = 'Want to learn more?' %}
         {% set cta = 'Get in touch at ' %}
         {% set email = information.networkInfo.networkEmail %}
+        {% set ctaColour = fcolor1Text %}
         {% include "partials/components/contact-us-banner.njk" %}
     </section>
 </div>

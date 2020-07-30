@@ -1,5 +1,5 @@
 ---
-label: CONTENT Resources
+label: CONTENT News
 hide_body: false
 fields:
 - name: pagetitle
@@ -7,7 +7,7 @@ fields:
   config:
     required: false
   label: Page Title
-  default: Resource
+  default: News Stories Pages
   hidden: true
 - name: title
   type: text
@@ -31,6 +31,15 @@ fields:
     required: false
   label: Author
   default: Network Secretariat
+- name: quote
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Featured quote
 - name: fImage
   type: file
   config:
@@ -47,12 +56,7 @@ fields:
   label: Tags
   description: Put some tags to make finding content easier for your website visitors!
     E.g. Antarctica, Youth, Climate change, etc.
-- name: file
-  type: file
-  config:
-    maxSize: 5
-  label: File
-- name: desc
+- name: aboutAuthor
   type: textarea
   default: ''
   config:
@@ -60,39 +64,30 @@ fields:
     wysiwyg: true
     schema:
       format: html-blocks
-  label: Description
-- name: ctaURL
-  type: text
-  config:
-    required: false
-  label: Call to action URL
-- name: ctaTitle
-  type: text
-  config:
-    required: false
-  label: Call to action button text
-- name: otherResources
+  label: About the author
+  description: Put any additional information you want to write about the author,
+    organization, or initiative here.
+- name: embeddedcontent
   type: field_group_list
   fields:
-  - name: oResources
-    type: text
-    config:
-      required: false
-    label: Sub Title for additional informational section
-  - name: oResourceContent
+  - name: embedlink
     type: textarea
     default: ''
     config:
       required: false
       wysiwyg: true
       schema:
-        format: html-blocks
-    label: Highlight Information Content
+        format: markdown
+    label: Embed Link
+    description: 'Copy and paste anything you want to embed. Please note that it must
+      be formatted like this: &lt;iframe&gt;....&lt;/iframe&gt;'
   config:
     min: 
     max: 
     labelField: 
-  label: Other Highlight Content
-  description: 'If you want to highlight more content, you can put it here.'
+  label: Embedded content
+  description: 'Add any embedded content here. '
 pages:
-- src/content/resources/SDR2020.md
+- src/content/news/about-the-network.md
+- src/content/news/sustainable-development-solutions-network-antarctica.md
+- src/content/news/university-support-to-decade-of-action.md

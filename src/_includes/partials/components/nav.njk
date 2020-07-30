@@ -1,8 +1,11 @@
 {% if navigation.items %}
-  <nav class="bar">
+<section class="nav-section">
             <a href="/" class="link">
             <img src="/assets/{{ logo }}" class="nav-logo"/>
             </a>
+  <nav class="bar">
+  
+
             <a href="/" class="link nav-item"{{ 'aria-current=page' if page.url == '/' | safe }} {% if bgText %} style="color:{{ bgText }}"{% endif %}>
                 <span class="visually-hidden">{{ 'BACK TO HOMEPAGE' if page.url != '/' else 'HOMEPAGE' }}</span>
             </a>
@@ -41,4 +44,5 @@
         {% endfor %}
     </ul>
   </nav>
+  </section>
 {% endif %}

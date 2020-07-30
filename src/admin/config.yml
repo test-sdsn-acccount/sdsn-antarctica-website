@@ -27,6 +27,23 @@ collections:
     slug: "{{slug}}"
     preview_path: "/{{slug}}" 
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/resources.njk"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/news-page.njk"}
       - {label: "Body", name: "body", widget: "markdown"}
-
+  - name: "Resources"
+    label: "News"
+    folder: "src/content/news"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "/{{slug}}" 
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/resource-page.njk"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Events"
+    label: "Events"
+    folder: "src/content/events"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "/{{slug}}" 
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/events-page.njk"}
+      - {label: "Body", name: "body", widget: "markdown"}

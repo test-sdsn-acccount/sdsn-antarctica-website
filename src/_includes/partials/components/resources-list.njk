@@ -1,0 +1,34 @@
+    <div class="inner-wrapper">
+      {% for section in sectionList %}
+        <ol class="resource-item">
+            <div class="resource-card-left">
+                {% if section.data.fImage !== "" %}
+                  <img src="/assets{{ section.data.fImage }}" class="resource-item-img" /> 
+                {% else %} 
+                  <div class="resource-img-replacement">
+                    <img src="/assets{{ logo }}" class="img-replacement" />
+                  </div>
+                {% endif %}
+              </div>
+            <div class="resource-card-content">
+              <div class="resource-list-tags">
+                {% for tag in section.data.tags %}
+                  <a href="/tags/{{ tag }}/"><p class="tag-item">
+                    {{ tag }}
+                  </p></a>
+                {% endfor %}
+              </div>
+              <div class="resource-list-title">
+                    <a href="{{ section.url }}"><h3>{{ section.data.title }}</h3></a>
+              </div>
+              <div class="resource-list-excerpt">
+                <p class="resource-excerpt">
+                    {{ section.data.quote }}
+                </p>
+              </div>
+              <div class="resource-list-author">
+                    <i>Written by {{ section.data.author }}</i>
+              </div>
+          </ol>
+      {% endfor %}
+    </div>

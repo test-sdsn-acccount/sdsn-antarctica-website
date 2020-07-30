@@ -1,3 +1,13 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow-x: hidden;
+}
+
 p {
     font-family: 'Crimson Text', serif;
 }
@@ -74,11 +84,26 @@ main#main-content:focus {
 
 /* Nav Bar */
 
+section.nav-section {
+    margin: 5% 5%;
+}
+
+section.nav-section a.logo {
+    vertical-align: middle;
+}
+
 nav.bar {
-    margin: 5% auto;
+    float: right;
     left: auto;
     right: auto;
     overflow: hidden;
+    vertical-align: middle;
+}
+
+nav.bar .nav-item:hover,
+nav.bar .mega-menu:hover,
+.mega-menu .mega-menu-button:hover {
+    cursor: pointer;
 }
 
 nav.bar a,
@@ -86,7 +111,7 @@ nav.bar a,
     text-decoration: none;
     display: inline-block;
     vertical-align: middle;
-    margin-left: 5%;
+    margin-left: 2em;
 }
 
 .mega-menu {
@@ -111,7 +136,7 @@ nav.bar a.nav-item:hover {
 .mega-menu-content {
     display: none;
     position: absolute;
-    width: 15%;
+    width: 19%;
     z-index: 1;
   }
   
@@ -136,6 +161,7 @@ li.nav{
     object-fit: contain;
     margin-right: 4%;
     display: inline;
+    vertical-align: middle;
 }
 
 a.nav-list-item {
@@ -282,17 +308,20 @@ section.full-bleed {
 /* Big side feature green */
 
 section.pop-out {
-    margin: 2em 0 5% 8%!important;
+    float: right;
+    margin-bottom: 1%;
     min-height: 20em;
+    width: 90%;
 }
 
 .big-side-feature-container {
-    padding: 2em 13em 5em 6em;
+    padding: 2em 0 5em 6em;
     display: inline-block;
     vertical-align: top;
     margin-top: 5%;
     height: 100%;
     width: 100%;
+    right: 0;
 }
 
 .big-side-left  {
@@ -314,9 +343,15 @@ section.pop-out {
 }
 
 .big-side-right{
-    width: 60%;
+    height: 100%;
     display: inline-block;
 }
+
+.big-side-right img{
+    object-fit: cover;
+}
+
+
 
 .big-side-right > p {
     margin-block-start: 0;
@@ -333,12 +368,14 @@ section.pop-out {
 /* Contact us banner */
 
 section.contact-us-banner {
-    margin: 2em 8% 5% 0!important;
+    float: right;
+    padding-right: 60%;
+    margin-bottom: 1%;
     min-height: 20em;
 }
 
 .contact-us-container {
-    padding: 2em 13em 5em 6em;
+    padding: 2em 0 5em 6em;
     display: inline-block;
     vertical-align: top;
     margin-top: 5%;
@@ -434,7 +471,9 @@ img.people-profile {
 
 img.img-replacement {
     width: 60%;
-    padding: 10%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    text-align: center;
 }
 
 .post-card-content {
@@ -477,6 +516,93 @@ p.post-excerpt,
 }
 
 .post-list-author {
+    color: #474747;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; 
+    -webkit-box-orient: vertical;
+}
+
+/* Resource post list */
+.resource-list-container {
+    margin: 0 15% 5% 12%;
+}
+
+.resource-item {
+    border: 0;
+    border-radius: 2px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: 40vh;
+    background-color: #fff;
+    padding: 0;
+    margin-right: 2em;
+}
+
+.resource-card-left {
+    width: 20%;
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    height: 100%;
+}
+
+.resource-card-left img.img-replacement {
+    padding-top: 40%;
+}
+
+.resource-item-img {
+    vertical-align: top!important;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.resource-img-replacement {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #b8b8b8;
+    text-align: center;
+}
+
+.resource-card-content {
+    width: 74%;
+    padding: 1em;
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+}
+
+.resource-list-title a {
+    color: #222222;
+    text-decoration: none;
+}
+
+.resource-list-title a h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+}
+
+p.resource-excerpt,
+.resource-list-excerpt p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    margin-block-start: 0;
+    margin-block-end: 0.5em;
+}
+
+.resource-list-author {
     color: #474747;
     overflow: hidden;
     text-overflow: ellipsis;

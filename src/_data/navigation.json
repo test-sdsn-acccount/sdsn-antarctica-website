@@ -59,10 +59,25 @@
         ]
       },
       {
-        "megamenu": false,
+        "megamenu": true,
         "text" : "GET INVOLVED",
-        "url": "/get-involved",
-        "external": false
+        "menuitems": [ 
+          {
+            "text": "Join the network",
+            "url": "/join",
+            "external": false
+          },
+          {
+            "text": "Events",
+            "url": "/events",
+            "external": false
+          },
+          {
+            "text": "Contact us",
+            "url": "/contact-us",
+            "external": false
+          }
+        ]
       }
     ]
   }

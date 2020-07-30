@@ -38,7 +38,7 @@
             {% include "partials/components/people.njk" %}
     {% endif %}
   </section>
-  <section class="contact-us-banner pop-out" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
+  <section class="contact-us-banner" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
       {% set header = 'Contact us' %}
       {% set cta = 'Get in touch at ' %}
       {% set email = information.networkInfo.networkEmail %}

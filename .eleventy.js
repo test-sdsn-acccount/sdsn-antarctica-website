@@ -6,18 +6,21 @@ module.exports = function(config) {
     config.addLayoutAlias('banner', 'layouts/banner.njk');
     config.addLayoutAlias('section-banner', 'layouts/section-banner.njk');
     config.addLayoutAlias('intro-banner', 'layouts/intro-banner.njk');
-    config.addLayoutAlias('contact-us', 'layouts/contact-us.njk');
 
+    config.addLayoutAlias('contact-us', 'layouts/pages/contact-us.njk');
     config.addLayoutAlias('home', 'layouts/pages/home.njk');
     config.addLayoutAlias('about-sdsn', 'layouts/pages/about-sdsn.njk');
     config.addLayoutAlias('about-team', 'layouts/pages/about-team.njk');
     config.addLayoutAlias('what-we-do', 'layouts/pages/what-we-do.njk');
     config.addLayoutAlias('youth', 'layouts/pages/youth.njk');
     config.addLayoutAlias('local-sdgs', 'layouts/pages/local-sdgs.njk');
-    config.addLayoutAlias('get-involved', 'layouts/pages/get-involved.njk');
-    config.addLayoutAlias('resources', 'layouts/pages/resources.njk');
+    config.addLayoutAlias('join', 'layouts/pages/join.njk');
     config.addLayoutAlias('resource-landing', 'layouts/pages/resource-landing.njk');
+    config.addLayoutAlias('resource-page', 'layouts/pages/resource-page.njk');
+    config.addLayoutAlias('news-landing', 'layouts/pages/news-landing.njk');
     config.addLayoutAlias('news-page', 'layouts/pages/news-page.njk');
+    config.addLayoutAlias('events-page', 'layouts/pages/events-page.njk');
+
 
 
 
@@ -33,6 +36,17 @@ module.exports = function(config) {
         return [...collection.getFilteredByGlob('./src/content/news/*.md')]
         .reverse();
       });
+
+    config.addCollection('resourceArticles', collection => {
+      return [...collection.getFilteredByGlob('./src/content/resources/*.md')]
+      .reverse();
+    });
+
+    config.addCollection('eventsArticles', collection => {
+      return [...collection.getFilteredByGlob('./src/content/events/*.md')]
+      .reverse();
+    });
+
 
     return {
 		pathPrefix: "/",
