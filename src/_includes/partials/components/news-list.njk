@@ -1,37 +1,39 @@
     <div class="inner-wrapper">
       {% for section in sectionList %}
-        <ol class="post-item">
-            <div class="post-card-top">
+        {% if loop.index < 10 %}
+        <ol class="news-item">
+            <div class="news-card-top">
               <a href="{{ section.url }}">
                 {% if section.data.fImage !== "" %}
-                  <img src="/assets{{ section.data.fImage }}" class="post-item-img" /> 
+                  <img src="/assets{{ section.data.fImage }}" class="news-item-img" /> 
                 {% else %} 
-                  <div class="post-img-replacement">
+                  <div class="news-img-replacement">
                     <img src="/assets{{ logo }}" class="img-replacement" />
                   </div>
                 {% endif %}
                 
               </a>
             </div>
-            <div class="post-card-content">
-              <div class="post-list-tags">
+            <div class="news-card-content">
+              <div class="news-list-tags">
                 {% for tag in section.data.tags %}
                   <a href="/tags/{{ tag }}/"><p class="tag-item">
                     {{ tag }}
                   </p></a>
                 {% endfor %}
               </div>
-              <div class="post-list-title">
+              <div class="news-list-title">
                     <a href="{{ section.url }}"><h3>{{ section.data.title }}</h3></a>
               </div>
-              <div class="post-list-excerpt">
-                <p class="post-excerpt">
+              <div class="news-list-excerpt">
+                <p class="news-excerpt">
                     {{ section.data.quote }}
                 </p>
               </div>
-              <div class="post-list-author">
+              <div class="news-list-author">
                     <i>Written by {{ section.data.author }}</i>
               </div>
           </ol>
+          {% endif %}
       {% endfor %}
     </div>

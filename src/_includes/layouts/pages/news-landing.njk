@@ -10,13 +10,28 @@
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
-  <section class="full-bleed" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }}"{% endif %}>
+  <section class="full-bleed" style="background-color:#fff;color:#aeaeae;">
     <div class="post-list-container">
     {% set sectionList = collections.newsArticles %}
     {% include "partials/components/news-list.njk" %}
     </div>
-</section>
-
+  </section>
+    <section class="intro-banner" style="color:#074075">
+    {% if information.networkInfo %}
+        {% set header = 'Global SDSN News' | safe %}
+        {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.' | safe %}
+            {% include "layouts/intro-banner.njk" %}
+    {% endif %}
+  </section>
+  <section class="full-bleed" style="color:#fff">
+    <div class="post-list-container">
+      <div class="rss-post-list">
+      {# {% include "/js/components/rss.js" %} #}
+      {# <script type="text/javascript" src="/js/components/rss.js"></script> #}
+{# <script src="//rss.bloople.net/?url=https%3A%2F%2Fwww.unsdsn.org%2Ffeed%2Frss2&detail=-1&limit=5&showtitle=false&type=js"></script> #}
+<script src="//rss.bloople.net/?url=https%3A%2F%2Fwww.unsdsn.org%2Ffeed%2Frss2&detail=40&limit=5&showtitle=false&type=js"></script>      </div>
+    </div>
+  </section>
 </div>
 </main>
 {% endblock %}
