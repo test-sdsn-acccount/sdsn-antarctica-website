@@ -1,38 +1,39 @@
     <div class="inner-wrapper">
       {% for section in sectionList %}
         {% if loop.index < 10 %}
+        <div class="nav-item-line"></div>
         <ol class="news-item">
-            <div class="news-card-top">
-              <a href="{{ section.url }}">
+            <div class="news-card-content">
+                <div class="news-list-title">
+                      <a href="{{ section.url }}"><h3>{{ section.data.title }}</h3></a>
+                </div>
+                <div class="news-list-excerpt">
+                  <p class="news-excerpt">
+                      {{ section.data.quote }}
+                  </p>
+                </div>
+                <div class="news-list-author">
+                      <i>Written by {{ section.data.author }}</i>
+                </div>
+                <div class="news-list-tags">
+                  {% for tag in section.data.tags %}
+                    <a href="/tags/{{ tag }}/"><p class="tag-item">
+                      {{ tag }}
+                    </p></a>
+                  {% endfor %}
+                </div>
+            </div>
+              <div class="news-card-top">
                 {% if section.data.fImage !== "" %}
-                  <img src="/assets{{ section.data.fImage }}" class="news-item-img" /> 
+                  <div class="news-img-container">
+                    <img src="/assets{{ section.data.fImage }}" class="news-item-img" /> 
+                  </div>
                 {% else %} 
                   <div class="news-img-replacement">
                     <img src="/assets{{ logo }}" class="img-replacement" />
                   </div>
                 {% endif %}
-                
-              </a>
-            </div>
-            <div class="news-card-content">
-              <div class="news-list-tags">
-                {% for tag in section.data.tags %}
-                  <a href="/tags/{{ tag }}/"><p class="tag-item">
-                    {{ tag }}
-                  </p></a>
-                {% endfor %}
-              </div>
-              <div class="news-list-title">
-                    <a href="{{ section.url }}"><h3>{{ section.data.title }}</h3></a>
-              </div>
-              <div class="news-list-excerpt">
-                <p class="news-excerpt">
-                    {{ section.data.quote }}
-                </p>
-              </div>
-              <div class="news-list-author">
-                    <i>Written by {{ section.data.author }}</i>
-              </div>
+                </div>
           </ol>
           {% endif %}
       {% endfor %}
