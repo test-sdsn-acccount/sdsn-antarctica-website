@@ -86,6 +86,8 @@ main#main-content:focus {
 
 section.nav-section {
     margin: 5% 5%;
+    display: grid;
+    grid-template-columns: minmax(10%, 20%) 1fr;
 }
 
 section.nav-section a.logo {
@@ -93,10 +95,13 @@ section.nav-section a.logo {
 }
 
 nav.bar {
-    float: right;
-    left: auto;
-    right: auto;
-    overflow: hidden;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.nav-logo {
+    max-height: 4.5rem;
+    object-fit: contain;
     vertical-align: middle;
 }
 
@@ -154,14 +159,6 @@ li.nav{
     text-align: left;
 	margin: 0;
 	padding-left: 0;
-}
-
-.nav-logo {
-    max-height: 4.5rem;
-    object-fit: contain;
-    margin-right: 4%;
-    display: inline;
-    vertical-align: middle;
 }
 
 a.nav-list-item {
@@ -237,8 +234,17 @@ section.full-bleed {
     right: 0;
 }
 
+section.full-bleed.resources-bg {
+    background-color: #fff;
+    color: #aeaeae;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
 .intro-banner-wrapper {
     padding: 2em 40% 5% 15%;
+    
 }
 
 /* 1:2 One Image Two Text */
@@ -613,26 +619,25 @@ p.post-excerpt,
 .resource-item {
     border: 0;
     border-radius: 2px;
-    position: relative;
+    /* position: relative;
     display: inline-block;
     vertical-align: top;
     width: 100%;
-    height: 40vh;
+    height: 40vh; */
+
+    display: grid;
+    grid-template-columns: minmax(40%, 40%) 1fr;
     background-color: #fff;
     padding: 0;
     margin-right: 2em;
 }
 
 .resource-card-left {
-    width: 20%;
+    /* width: 40%;
     display: inline-block;
-    float: left;
+    float: left; */
     vertical-align: top;
     height: 100%;
-}
-
-.resource-card-left img.img-replacement {
-    padding-top: 40%;
 }
 
 .resource-item-img {
@@ -643,20 +648,12 @@ p.post-excerpt,
     object-fit: cover;
 }
 
-.resource-img-replacement {
-    border: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #b8b8b8;
-    text-align: center;
-}
-
 .resource-card-content {
-    width: 74%;
+    /* width: 74%; */
     padding: 1em;
-    display: inline-block;
-    vertical-align: top;
-    float: right;
+    /* display: inline-block; */
+    /* vertical-align: top; */
+    /* float: right; */
 }
 
 .resource-list-title a {
