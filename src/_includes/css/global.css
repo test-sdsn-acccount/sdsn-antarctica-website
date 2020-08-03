@@ -655,6 +655,7 @@ p.post-excerpt,
     height: 100%;
     display: grid;
     place-items: center;
+    object-fit: contain;
 }
 
 .resource-card-content {
@@ -675,9 +676,32 @@ p.post-excerpt,
 
 }
 
+li.resource-sub-title,
+li.resource-sub-title p,
+a.resource-link {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: #222222;
+    border-bottom: #222222;
+}
+
+button.resource-link-btn {
+    margin-top: 1em;
+    font-size: .8em;
+    border: 1px solid #222222;
+    background-color: #fff;
+    padding: 1em;
+    cursor: pointer;
+}
+
 .resource-card-content-right {
     padding-left: 1em;
     padding-right: 1em;
+}
+
+.resource-card-content-right ul {
+    padding-inline-start: 19px;
+    font-size: .8em;
 }
 
 .resource-list-title a {
@@ -691,6 +715,10 @@ p.post-excerpt,
     display: -webkit-box;
     -webkit-line-clamp: 3; 
     -webkit-box-orient: vertical;
+}
+
+.resource-list-tags .tag-item {
+    margin-block-start: 0;
 }
 
 p.resource-excerpt,

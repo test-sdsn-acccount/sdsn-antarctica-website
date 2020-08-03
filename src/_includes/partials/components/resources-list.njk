@@ -11,7 +11,14 @@
                 {% endif %}
               </div>
             <div class="resource-card-content">
-                <div class="resource-card-content-left">
+              <div class="resource-card-content-left">
+                <div class="resource-list-tags">
+                  {% for tag in section.data.tags %}
+                    <a href="/tags/{{ tag }}/"><p class="tag-item">
+                      {{ tag }}
+                    </p></a>
+                  {% endfor %}
+                </div>
                   <div class="resource-list-title">
                         <a href="{{ section.url }}"><h3>{{ section.data.title }}</h3></a>
                   </div>
@@ -23,38 +30,29 @@
                   <div class="resource-list-author">
                         <i>Written by {{ section.data.author }}</i>
                   </div>
-                  <div class="resource-list-tags">
-                  {% for tag in section.data.tags %}
-                    <a href="/tags/{{ tag }}/"><p class="tag-item">
-                      {{ tag }}
-                    </p></a>
-                  {% endfor %}
-                </div>
+                  {% if section.data.ctaURL | length !== 0 %}
+                      <a href="{{ section.data.ctaURL }}" class="resource-link">
+                              <button class="resource-link-btn">{{ section.data.ctaTitle }}</button>
+                      </a>
+                  {% endif %}
                 </div>
               <div class="resource-card-content-right">
-
                   {% if section.data.oResources | length !== 0 %}
                     <h4>{{ section.data.oResources }}<h4>
+                    <ul>
                   {% for resource in section.data.otherResources %}
-                  {{ resource.resourceURL }}
-                    {% if resource.resourceFile | length !== 0 %}
-                    hello{{ resource.resourceFile }}
-                    url{{ resource.resourceURL }}
-                    conten{{ resource.oResourceContent }}
-                      <a href="/assets/{{ resource.resourceFile }}">
-                        <h5 class="resource-item">{{ resource.oResourceContent }}</h5>
-                      </a>
-                    {% elif resource.resourceURL %}
-                      <a href="{{ resource.resourceURL }}">
-                        <h5 class="resource-item">{{ resource.oResources }}</h5>
-                      </a> 
-                    {% else %}
-
-                    {% endif %}
-                      
-                      {{ oResourceContent }}
-                    
+                      {% if resource.resourceFile | length !== 0 %}
+                        <a href="/assets{{ resource.resourceFile }}">
+                          <li class="resource-sub-title"><p>{{ resource.oResourceContent | safe }}</p></li>
+                        </a>
+                      {% elif resource.resourceURL | length !== 0 %}
+                        <a href="{{ resource.resourceURL }}">
+                          <li class="resource-sub-title"><p>{{ resource.oResourceContent | safe }}</p></li>
+                        </a> 
+                      {% else %}
+                      {% endif %}
                   {% endfor %}
+                  </ul>
                   {% endif %}
 
 
