@@ -3,7 +3,7 @@ title: Lanzan la primera iniciativa científica mundial de alto nivel dedicada a
   supervivencia de la Amazonía
 buttonlink: ''
 order: 1
-date: 2014-08-02T14:00:00Z
+date: 2018-08-02T14:00:00Z
 desc: Con la asesoría de políticos, presidentes de compañías, íconos culturales y
   líderes indígenas, el panel científico dirigido por Carlos Nobre, Andrea Encalada
   y Jeffrey Sachs presentará el camino hacia una bioeconomía equitativa, basada en
