@@ -4,13 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: directory
-  path: src/content/resources
-  label: Resources
-  create: all
-  match: "**/*"
-  templates:
-  - PAGE-resources
 - type: heading
   label: Edit network information
 - type: directory
@@ -39,6 +32,13 @@ sections:
   path: src/content/news
   label: News
   create: documents
+  match: "**/*"
+  templates:
+  - PAGE-news
+- type: directory
+  path: src/content/resources
+  label: Resources
+  create: all
   match: "**/*"
   templates:
   - PAGE-resources
