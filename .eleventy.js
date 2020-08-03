@@ -1,3 +1,4 @@
+
 module.exports = function(config) {
 
     // Layout aliases
@@ -19,9 +20,8 @@ module.exports = function(config) {
     config.addLayoutAlias('resource-page', 'layouts/pages/resource-page.njk');
     config.addLayoutAlias('news-landing', 'layouts/pages/news-landing.njk');
     config.addLayoutAlias('news-page', 'layouts/pages/news-page.njk');
+    config.addLayoutAlias('events-landing', 'layouts/pages/events-landing.njk');
     config.addLayoutAlias('events-page', 'layouts/pages/events-page.njk');
-
-
 
 
     // Passthrough copy
@@ -30,6 +30,7 @@ module.exports = function(config) {
     config.addPassthroughCopy('src/assets/images');
     config.addPassthroughCopy('src/assets/uploads');
     config.addPassthroughCopy('src/content');
+    config.addPassthroughCopy('src/js/components/rss.js');
 
     // Custom collections
     config.addCollection('newsArticles', collection => {
