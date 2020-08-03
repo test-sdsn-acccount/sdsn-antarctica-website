@@ -1,5 +1,5 @@
 ---
-layout: resource-landing
+layout: events-landing
 title: Events
 permalink: /events/
 ---
