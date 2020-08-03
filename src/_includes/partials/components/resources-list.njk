@@ -1,34 +1,68 @@
     <div class="inner-wrapper">
       {% for section in sectionList %}
         <ol class="resource-item">
-            <div class="resource-card-left">
+            <div class="resource-card-img">
                 {% if section.data.fImage !== "" %}
                   <img src="/assets{{ section.data.fImage }}" class="resource-item-img" /> 
                 {% else %} 
-                  <div class="resource-img-replacement">
+                  <div class="img-replacement">
                     <img src="/assets{{ logo }}" class="img-replacement" />
                   </div>
                 {% endif %}
               </div>
             <div class="resource-card-content">
-              <div class="resource-list-tags">
-                {% for tag in section.data.tags %}
-                  <a href="/tags/{{ tag }}/"><p class="tag-item">
-                    {{ tag }}
-                  </p></a>
-                {% endfor %}
+                <div class="resource-card-content-left">
+                  <div class="resource-list-title">
+                        <a href="{{ section.url }}"><h3>{{ section.data.title }}</h3></a>
+                  </div>
+                  <div class="resource-list-excerpt">
+                    <p class="resource-excerpt">
+                        {{ section.data.desc }}
+                    </p>
+                  </div>
+                  <div class="resource-list-author">
+                        <i>Written by {{ section.data.author }}</i>
+                  </div>
+                  <div class="resource-list-tags">
+                  {% for tag in section.data.tags %}
+                    <a href="/tags/{{ tag }}/"><p class="tag-item">
+                      {{ tag }}
+                    </p></a>
+                  {% endfor %}
+                </div>
+                </div>
+              <div class="resource-card-content-right">
+
+                  {% if section.data.oResources | length !== 0 %}
+                    <h4>{{ section.data.oResources }}<h4>
+                  {% for resource in section.data.otherResources %}
+                  {{ resource.resourceURL }}
+                    {% if resource.resourceFile | length !== 0 %}
+                    hello{{ resource.resourceFile }}
+                    url{{ resource.resourceURL }}
+                    conten{{ resource.oResourceContent }}
+                      <a href="/assets/{{ resource.resourceFile }}">
+                        <h5 class="resource-item">{{ resource.oResourceContent }}</h5>
+                      </a>
+                    {% elif resource.resourceURL %}
+                      <a href="{{ resource.resourceURL }}">
+                        <h5 class="resource-item">{{ resource.oResources }}</h5>
+                      </a> 
+                    {% else %}
+
+                    {% endif %}
+                      
+                      {{ oResourceContent }}
+                    
+                  {% endfor %}
+                  {% endif %}
+
+
+
+
               </div>
-              <div class="resource-list-title">
-                    <a href="{{ section.url }}"><h3>{{ section.data.title }}</h3></a>
-              </div>
-              <div class="resource-list-excerpt">
-                <p class="resource-excerpt">
-                    {{ section.data.quote }}
-                </p>
-              </div>
-              <div class="resource-list-author">
-                    <i>Written by {{ section.data.author }}</i>
-              </div>
+
+            </div>
           </ol>
       {% endfor %}
     </div>

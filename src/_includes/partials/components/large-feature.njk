@@ -2,11 +2,12 @@
 
 <div class="feature-banner-container">
     {% for obj in item %}
-    <div class="feature-card big tall-card pop-out" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }}"{% endif %}>
-        <div class="feature-card title">
-            <h3>{{ obj.objective }}</h3>
-        </div>
+    <div class="feature-card big pop-out" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }}"{% endif %}>
+        {# <div class="feature-card title">
+            
+        </div> #}
         <div class="feature-card content">
+        <h3>{{ obj.objective }}</h3>
             {{ desc }}
         </div>
     </div>

@@ -19,7 +19,7 @@
                 {% include "partials/components/big-side-feature.njk" %}
         {% endif %}
     </section>
-    <section class="section-banner as-header" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+    <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
         {% set header = 'Recent News' %}
         {% set subtitle = 'Read more about our current work' %}
         {% include "layouts/section-banner.njk" %}

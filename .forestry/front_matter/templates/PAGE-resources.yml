@@ -71,14 +71,24 @@ fields:
   config:
     required: false
   label: Call to action button text
+- name: oResources
+  type: text
+  config:
+    required: false
+  label: Sub Title for additional informational section
 - name: otherResources
   type: field_group_list
   fields:
-  - name: oResources
+  - name: resourceFile
+    type: file
+    config:
+      maxSize: 2
+    label: Upload File
+  - name: resourceURL
     type: text
     config:
       required: false
-    label: Sub Title for additional informational section
+    label: OR - URL to resource
   - name: oResourceContent
     type: textarea
     default: ''
@@ -96,3 +106,6 @@ fields:
   description: 'If you want to highlight more content, you can put it here.'
 pages:
 - src/content/resources/SDR2020.md
+- src/content/resources/Example-resource.md
+- src/content/resources/Example-resource-no-img.md
+- src/content/resources/Example-resource-no-links.md

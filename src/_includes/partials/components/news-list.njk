@@ -23,13 +23,13 @@
                   {% endfor %}
                 </div>
             </div>
-              <div class="news-card-top">
+              <div class="news-card-img">
                 {% if section.data.fImage !== "" %}
                   <div class="news-img-container">
                     <img src="/assets{{ section.data.fImage }}" class="news-item-img" /> 
                   </div>
                 {% else %} 
-                  <div class="news-img-replacement">
+                  <div class="img-replacement">
                     <img src="/assets{{ logo }}" class="img-replacement" />
                   </div>
                 {% endif %}

@@ -10,7 +10,7 @@
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
-  <section class="full-bleed" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }}"{% endif %}>
+  <section class="full-bleed resources-bg">
     <div class="post-list-container">
     {% set sectionList = collections.resourceArticles %}
     {% include "partials/components/resources-list.njk" %}
