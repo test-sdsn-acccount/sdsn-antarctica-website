@@ -1,0 +1,64 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+  <main id="main-content" class="content-colour" tabindex="-1">
+    <div class="events-page-container">
+      <div class="news-page-title-info">
+            <div class="resource-card-content">
+                <div class="resource-card-content-left">
+                    <div class="events-page-img">
+                        {% if fImage !== "" %}
+                        <img src="/assets{{ fImage }}" class="news-img" /> 
+                        {% else %} 
+                        <div class="img-replacement">
+                            <img src="/assets{{ logo }}" class="img-replacement" />
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="resource-card-content-right">
+                    <h3>{{ date | date }}</h3>
+                    <h2>{{ title }}</h2>
+                    <h4>by: {{ author }}</h4>
+                    <a href="{{ ctaURL }}" class="resource-link">
+                          {# <button class="btn-link wide">{{ ctaTitle }}</button> #}
+                          {% include "partials/components/btn.njk" %}
+                    </a>
+                </div>
+            </div>
+            <div class="news-page-supp-line">
+            </div>
+            <div class="resource-card-content">
+                <div class="resource-card-content-left">
+                    <h3>Description</h3>
+                    <div class="news-page-content">
+                        {{ content | safe }}
+                    </div>
+                </div>
+                <div class="resource-card-content-right">
+                    <h3>Date and Time</h3>
+                    {{ date | date("MMMM Do YYYY")}}
+
+                    <h3>Location</h3>
+                    {{ location }}
+                    <div class="post-list-tags margin-top-1">
+                    {% for tag in tags %}
+                    <a href="/tags/{{ tag }}/"><p class="tag-item">
+                        {{ tag }}
+                    </p></a>
+                    {% endfor %}
+                    </div>
+                </div>
+            </div>
+        
+        
+
+      </div>
+
+
+
+        
+    </div>
+  </main>
+{% endblock %}
+

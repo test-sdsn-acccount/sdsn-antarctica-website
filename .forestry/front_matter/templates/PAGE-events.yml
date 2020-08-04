@@ -67,7 +67,7 @@ fields:
   config:
     required: false
   label: Call to action button text
-- name: Location
+- name: location
   type: textarea
   default: ''
   config:

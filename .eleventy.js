@@ -1,3 +1,4 @@
+var dateFilter = require('nunjucks-date-filter');
 
 module.exports = function(config) {
 
@@ -47,6 +48,10 @@ module.exports = function(config) {
       return [...collection.getFilteredByGlob('./src/content/events/*.md')]
       .reverse();
     });
+
+
+    config.addFilter('date', dateFilter);
+    dateFilter.setDefaultFormat('MMMM Do');
 
 
     return {
