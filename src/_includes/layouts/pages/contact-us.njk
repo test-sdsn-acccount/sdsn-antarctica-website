@@ -1,25 +1,11 @@
+
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
 <main id="main-content" tabindex="-1">
-    <div class="home-container">
-        <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-            {% if pages.homepage.header %}
-                {% set header = 'Contact us' %}
-                {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' %}
-                    {% include "layouts/intro-banner.njk" %}
-            {% endif %}
-        </section>
+    <div class="two-half-container" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+                    {% include "partials/components/two-half-map.njk" %}
     </div>
-    <div class="home-container">
-    {% set ok = 'dddd' %}
-    {{ ok }}
-    <form action={% set ok = 'efefe' %}>
-        <input type="checkbox" id="theme1" name="vehicle1" value="Bike">
-        <label for="vehicle1"> Theme 1</label><br>
-        <input type="submit" value="Submit">
-    </form>
-    {{ ok }}
-    </div>
+
 </main>
 {% endblock %}

@@ -16,14 +16,14 @@
     {% include "partials/components/news-list.njk" %}
     </div>
   </section>
-    <section class="intro-banner" style="color:#074075">
+    <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.networkInfo %}
         {% set header = 'Global SDSN News' | safe %}
         {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.' | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
-  <section class="full-bleed" style="color:#fff">
+  <section class="full-bleed resources-bgs">
     <div class="post-list-container">
       <div class="rss-post-list">
       {# {% include "/js/components/rss.js" %} #}

@@ -35,6 +35,11 @@ fields:
 - name: networkObjectives
   type: field_group_list
   fields:
+  - name: objTitle
+    type: text
+    config:
+      required: true
+    label: Objective sub title
   - name: objective
     type: textarea
     default: ''
@@ -43,7 +48,7 @@ fields:
       wysiwyg: true
       schema:
         format: html-blocks
-    label: Objective
+    label: Objective Description
     description: Please try to keep this under 70 words
   config:
     min: 
@@ -51,6 +56,16 @@ fields:
     labelField: 
   label: Network Objectives
   description: Please add between 1-3 objectives
+- name: address
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Address
+  description: Please try to keep this under 70 words
 - name: networkEmail
   type: text
   config:

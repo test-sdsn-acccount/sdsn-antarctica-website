@@ -90,6 +90,11 @@ main#main-content:focus {
     outline: none;
 }
 
+.resources-bgs {
+    padding-top: 1em;
+    background-color: white;
+}
+
 /* Nav Bar */
 
 section.nav-section {
@@ -226,7 +231,15 @@ a.text-button {
     flex-direction: column;
     padding: 1rem;
     justify-content: space-between;
+}
 
+.feature-card.big.metric {
+    width: 28%;
+    margin-right: 1em;
+}
+
+.feature-card.content h3 {
+    font-weight: 600;
 }
 
 .feature-card.content {
@@ -323,10 +336,12 @@ section.full-bleed.resources-bg {
 
 section.pop-out {
     float: right;
-    margin-bottom: 1%;
+    margin-bottom: 7%;
     min-height: 20em;
     width: 90%;
 }
+
+
 
 .big-side-feature-container {
     padding: 2em 0 5em 6em;
@@ -377,6 +392,20 @@ section.pop-out {
     margin: 2em 15% 5% 12%;
     display: inline-block;
     vertical-align: top;
+}
+
+.resource-feature-banner .post-item {
+    vertical-align: top;
+}
+
+.resource-feature-banner .post-card-top {
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+}
+
+.resource-feature-banner .img-replacement {
+    height: 20vh;
 }
 
 /* Contact us banner */
@@ -723,6 +752,12 @@ button.btn-link {
     width: 100%;
 }
 
+button.btn-link.small {
+    font-size: .7em;
+    border: 3px solid #222222;
+    width: 50%;
+}
+
 .events-page-container a.resource-link {
     width: 50%;
 }
@@ -732,23 +767,6 @@ button.btn-link:hover {
     color: #494949 !important;
     border-radius: 50px;
     transition: all 0.3s ease 0s;
-}
-
-/* buttons */
-.square_btn{
-    display: inline-block;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    background: #668ad8;/*Button Color*/
-    color: #FFF;
-    border-bottom: solid 4px #627295;
-    border-radius: 3px;
-}
-.square_btn:active {/*on Click*/
-    -ms-transform: translateY(4px);
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);/*Move down*/
-    border-bottom: none;/*disappears*/
 }
 
 
@@ -881,7 +899,8 @@ img.news-img {
 } */
 
 .card-entire-link:hover,
-.event-item:hover {
+.event-item:hover,
+.resource-feature-banner .post-item:hover {
     box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.57);
     -webkit-box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.57);
     -moz-box-shadow: 0px 5px 25px -10px rgba(0,0,0,0.57);
@@ -900,4 +919,50 @@ img.news-img {
     margin-right: 1em;
     margin-bottom: 1em;
     width: 12%;
+}
+
+/* Two half map page */
+
+.two-half-container,
+.two-half-wrapper {
+    height: 100%;
+}
+
+.two-half-wrapper {
+    display: grid;
+    grid-template-columns: 49% 49%;
+}
+
+.two-half-right {
+    text-align: center;
+}
+
+.two-half-right-info {
+    display: block;
+    display: grid;
+    place-items: center;
+}
+
+.two-half-right-info.title {
+    width: 100%;
+    margin-bottom: 1em;
+    display: grid;
+    place-items: center;
+}
+
+.two-half-right-info.title img.contact-us {
+    width: 40%;
+    display: grid;
+    place-items: center;
+}
+
+.two-half-right-info.address {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+.two-half-right-info.copyright {
+    margin-top: 4em;
+    bottom: 0;
 }

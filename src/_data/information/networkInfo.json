@@ -7,15 +7,19 @@
   "whitehilogo": "/uploads/sdsn-antsarc.png",
   "networkVision": "Mobilizing SDG implementation through solution initiatives and long-term pathways in Antarctica.",
   "networkEmail": "antarc@unsdsn.org",
+  "address": "15 W Third St. / Antarctic Drive 20571",
   "networkObjectives": [
     {
-      "objective": "Localize the SDGs to Antarctica 1"
+      "objTitle": "Localize the SDGs to Antarctica 1",
+      "objective": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.</p>"
     },
     {
-      "objective": "<p>Localize the SDGs to Antarctica 5</p>"
+      "objTitle": "Localize the SDGs to Antarctica 5",
+      "objective": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu."
     },
     {
-      "objective": "Localize the SDGs to Antarctica 3"
+      "objTitle": "Localize the SDGs to Antarctica 3",
+      "objective": ""
     }
   ],
   "title": "Network Information"

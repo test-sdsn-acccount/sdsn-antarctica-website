@@ -8,7 +8,9 @@
             <div class="post-card-top">
               <a href="{{ section.url }}">
                 {% if section.data.fImage !== "" %}
+                  <div class="event-img-container">
                   <img src="/assets{{ section.data.fImage }}" class="post-item-img" /> 
+                  </div>
                 {% else %} 
                   <div class="img-replacement">
                     {# If there is no feature image, the img-replacement div will show the logo in a grey box instead #}
