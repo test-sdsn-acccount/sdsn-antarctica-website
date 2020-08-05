@@ -63,7 +63,7 @@ fields:
   label: Call to action URL
 - name: ctaTitle
   type: text
-  default: 'Register'
+  default: Register
   config:
     required: false
   label: Call to action button text
@@ -71,14 +71,7 @@ fields:
   type: textarea
   default: ''
   config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: html-blocks
-  label: Location
-  config:
     min: 
     max: 
     labelField: 
-pages:
-- src/content/events/example-event.md
+  label: Location
