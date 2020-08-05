@@ -78,8 +78,8 @@ fields:
   default: 0
   required: true
   config:
-    min: -100
-    max: 100
+    min: -90
+    max: 90
     step: 
 - name: longitude
   type: number
@@ -88,8 +88,8 @@ fields:
   default: 0
   required: true
   config:
-    min: -100
-    max: 100
+    min: -180
+    max: 180
     step: 
 pages:
 - src/_data/information/networkInfo.json
