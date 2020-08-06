@@ -71,3 +71,5 @@ fields:
     max: 
     labelField: 
   label: Contact profiles
+pages:
+- src/_data/pages/contactPage.json
