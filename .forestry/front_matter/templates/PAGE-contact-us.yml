@@ -31,6 +31,18 @@ fields:
     config:
       required: true
     label: Full name
+  - name: contactPerson
+    type: select
+    default: nmprofiles
+    config:
+      required: false
+      options: []
+      source:
+        type: documents
+        section: network-information-c6a7fe3c-3760-4b29-9d81-6294f96c7d8f
+        file: src/_data/information/TeamInfo.json
+        path: 
+    label: Contact Person
   - name: contactHeader
     type: text
     default: Contact our Network Manager
