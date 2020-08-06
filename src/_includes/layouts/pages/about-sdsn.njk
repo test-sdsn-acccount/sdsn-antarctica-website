@@ -39,11 +39,13 @@
     <section class="one-image-two-text" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
         {% if information.networkInfo.networkObjectives %}
             {% set pretext = 'HOSTED BY' | safe %}
-            {% set header = information.networkInfo.hostInstitution | safe %}
-            {% set logo = information.networkInfo.logo %}
-            {% set ctaColour = bgText %}
-            {% set actionContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu. Vivamus fermentum ex ut mauris feugiat convallis. Fusce cursus diam vel nunc lobortis, nec finibus orci lacinia.' %}
+            {% for host in information.networkInfo.hostInstitution %}
+                {% set header = host.hostInstitution | safe %}
+                {% set logoImg = host.hiLogo %}
+                {% set ctaColour = bgText %}
+                {% set actionContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu. Vivamus fermentum ex ut mauris feugiat convallis. Fusce cursus diam vel nunc lobortis, nec finibus orci lacinia.' %}
                 {% include "partials/components/one-image-two-text.njk" %}
+            {% endfor %}
         {% endif %}
     </section>
     <section class="text-top-metrics-bottom pop-out" {% if fcolor2Text %} style="color:{{ fcolor2Text }};background-color:{{ fcolor2 }}"{% endif %}>

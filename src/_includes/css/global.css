@@ -90,6 +90,26 @@ a.link.light:hover {
     right: 0; */
 }
 
+.iframe-wrapper-dimen iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.white-bg-logo {
+    background-color: #fff;
+    width: 150px;
+    height: 150px;
+    place-items: center;
+    display: grid !important;
+    border-radius: 50%;
+}
+
+.white-bg-logo img {
+    max-height: 130px;
+    max-width: 130px;
+    object-fit: contain;
+}
+
 *.content-colour {
     padding-top: 2em;
     background-color: white!important;
@@ -110,6 +130,25 @@ main#main-content:focus {
 .resources-bgs {
     padding-top: 1em;
     background-color: white;
+}
+
+.lean-container {
+    display: block;
+    width: 100%;
+}
+
+.lean-left-40 {
+    display: inline-block;
+    width: 35%;
+}
+
+.lean-left-40.block > * {
+    display: block;
+}
+
+.lean-right-60 {
+    display: inline-block;
+    width: 59%;
 }
 
 /* Nav Bar */
@@ -943,10 +982,13 @@ img.news-img {
 
 /* Contact us page */
 
-section.contact-us-container {
+.contact-us-page {
     position: relative;
+}
+
+section.contact-us-container {
+    position: absolute;
     min-height: 25vh;
-    display: flex;
 }
 
 section.contact-us-container::before {
@@ -974,8 +1016,15 @@ section.contact-us-container::before {
 
 .two-half-wrapper {
     margin-top: 3em;
+    margin-bottom: 3em;
     display: inline-grid;
     grid-template-columns: 40% 40%;
+}
+
+.two-half-more-content {
+    margin-top: 3em;
+    display: inline-grid;
+    width: 100%;
 }
 
 .contact-box {
@@ -1021,6 +1070,19 @@ section.contact-us-container::before {
     padding: 0;
 }
 
-section.contact-us-socials-container {
-    padding: 2em 0 5em 6em;
+.two-half-more-content .lean-container .lean-left-40 {
+    vertical-align: top;
+    padding-right: 2em;
+}
+
+.two-half-more-content .lean-container {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.two-half-more-content .lean-container .iframe-wrapper-dimen iframe {
+    vertical-align: top;
+    padding-right: 2em;
+    min-height: 42vh;
+    width: 80%;
 }
