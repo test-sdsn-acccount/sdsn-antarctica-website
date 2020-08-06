@@ -16,7 +16,6 @@ fields:
   default: Contact us
 - name: bannerDesc
   type: textarea
-  default: 'Get in touch with us and let's work towards acheiving the SDGs together.'
   config:
     required: true
     wysiwyg: true
