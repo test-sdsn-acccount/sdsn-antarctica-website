@@ -1,0 +1,22 @@
+{
+    "title": "Page Content: Contact us",
+    "bannerTitle": "Contact us",
+    "bannerDesc": "Get in touch with us and let's work towards acheiving the SDGs together.",
+    "contactProfiles": [
+      {
+        "person": "Localize the SDGs to Antarctica 1",
+        "contactHeader": "Contact our Network Manager",
+        "contactDesc": "Discuss partnerships opportunities or how to join our network.",
+        "ctaTitle": "Contact our team",
+        "ctaEmail": "antarc@unsdsn.org"
+      },
+      {
+        "person": "Localize the SDGs to Antarctica 1",
+        "contactHeader": "Contact our Youth Team",
+        "contactDesc": "Explore collaboration with our youth initiatives.",
+        "ctaTitle": "Contact our youth team",
+        "ctaEmail": "antarc@unsdsn.org"
+      }
+    ]
+  }
+  
