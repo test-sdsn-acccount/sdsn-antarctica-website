@@ -98,7 +98,7 @@ fields:
     required: false
     wysiwyg: true
     schema:
-      format: html-blocks
+      format: markdown
   label: Map
   description: Please copy and paste Google Map code here
 pages:
