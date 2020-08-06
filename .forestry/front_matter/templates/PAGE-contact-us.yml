@@ -22,6 +22,7 @@ fields:
     schema:
       format: html-blocks
   label: Banner Sub Title
+  default: "<p>Get in touch with us and let's work towards acheiving the SDGs together.</p>"
 - name: contactProfiles
   type: field_group_list
   fields:
@@ -32,19 +33,19 @@ fields:
     label: Full name
   - name: contactHeader
     type: text
-    default: 'Contact our Network Manager'
+    default: Contact our Network Manager
     config:
       required: true
     label: Contact Title
   - name: contactDesc
     type: text
-    default: 'Discuss partnerships opportunities or how to join our network.'
+    default: Discuss partnerships opportunities or how to join our network.
     config:
       required: true
     label: Contact Description
   - name: ctaTitle
     type: text
-    default: 'Contact our team'
+    default: Contact our team
     config:
       required: true
     label: CTA Text
