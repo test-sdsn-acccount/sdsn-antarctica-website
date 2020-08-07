@@ -1,0 +1,103 @@
+---
+label: CONTENT Get Involved
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Page Title
+  default: Get involved page
+- name: header
+  type: text
+  config:
+    required: true
+  label: Page Header
+  default: Join the network
+- name: subtitle
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Banner Sub Title
+- name: ourImpactHeader
+  type: text
+  config:
+    required: true
+  label: Impact Header
+  default: Our Impact
+- name: ourImpactSubTitle
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Impact Sub Title
+- name: memberBenefits
+  type: field_group_list
+  fields:
+  - name: benefitHeader
+    type: text
+    config:
+      required: false
+    label: Benefit Title
+  - name: benefitDesc
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Benefit Description
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Membership Benefits
+- name: joinHeader
+  type: text
+  config:
+    required: true
+  label: Join the Network Title
+  default: Member Requirements
+- name: joinSubtitle
+  type: textarea
+  default: 'Membership in the Sustainable Development Solutions Network is free and open to not-for-profit institutions (not individuals). Institutions must be knowledge-generating, i.e. they must conduct research, analyses, and/or data collection, and can be universities, research institutions, foundations, or civil society groups. Member institutions should have deep expertise in one or more areas related to sustainable development and commit a substantial amount of their own work towards finding and/or implementing solutions for the SDGs.'
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Join the Network Sub Title
+- name: joinCta
+  type: text
+  config:
+    required: true
+  label: Join the network Text
+  default: Join our network
+- name: joinCtaURL
+  type: text
+  config:
+    required: true
+  label: Join the network URL
+  default: https://www.unsdsn.org/join-the-sdsn
+- name: contactHeader
+  type: text
+  config:
+    required: true
+  label: Contact CTA Header
+  default: Want to learn more?
+- name: contactCta
+  type: text
+  config:
+    required: true
+  label: Contact CTA Text
+  default: Get in touch
+pages:
+- src/_data/pages/getInvolvedPage.json

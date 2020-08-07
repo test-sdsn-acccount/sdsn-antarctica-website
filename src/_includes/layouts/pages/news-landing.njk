@@ -4,9 +4,9 @@
 <main id="main-content" tabindex="-1">
 <div class="home-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if information.networkInfo %}
-        {% set header = 'News' | safe %}
-        {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.' | safe %}
+    {% if pages.newsPage %}
+        {% set header = pages.newsPage.header %}
+        {% set subtitle = pages.newsPage.subtitle | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
@@ -18,8 +18,8 @@
   </section>
     <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.networkInfo %}
-        {% set header = 'Global SDSN News' | safe %}
-        {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.' | safe %}
+        {% set header = pages.newsPage.globalHeader | safe %}
+        {% set subtitle = pages.newsPage.globalSubtitle | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>

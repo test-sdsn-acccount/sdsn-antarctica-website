@@ -2,76 +2,26 @@
 label: CONTENT Events
 hide_body: false
 fields:
-- name: pagetitle
-  type: text
-  config:
-    required: false
-  label: Page Title
-  default: Resource
-  hidden: true
 - name: title
   type: text
   config:
     required: true
-  label: Title
-- name: date
-  type: datetime
-  label: Date
-  description: ''
-  config:
-    required: false
-    date_format: MM/DD/YYYY
-    time_format: h:mm A Z
-    display_utc: true
-    export_format: YYYY-MM-DDThh:mm:ssZ
-  default: now
-- name: author
+  label: Page Title
+  default: Events Landing Page
+- name: header
   type: text
   config:
-    required: false
-  label: Author
-  default: Network Secretariat
-- name: fImage
-  type: file
-  config:
-    maxSize: 0.7
-  label: Featured Image
-- name: toggle
-  type: boolean
-  label: Featured content
-  description: Mark this content if you want it featured on the homepage or What we
-    do pages.
-- name: tags
-  type: tag_list
-  default: []
-  label: Tags
-  description: Put some tags to make finding content easier for your website visitors!
-    E.g. Antarctica, Youth, Climate change, etc.
-- name: desc
+    required: true
+  label: Page Header
+  default: Events
+- name: subtitle
   type: textarea
   default: ''
   config:
-    required: false
+    required: true
     wysiwyg: true
     schema:
       format: html-blocks
-  label: Description
-- name: ctaURL
-  type: text
-  config:
-    required: false
-  label: Call to action URL
-- name: ctaTitle
-  type: text
-  default: Register
-  config:
-    required: false
-  label: Call to action button text
-- name: location
-  type: textarea
-  default: ''
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: Location
+  label: Banner Sub Title
+pages:
+- src/_data/pages/eventsPage.json

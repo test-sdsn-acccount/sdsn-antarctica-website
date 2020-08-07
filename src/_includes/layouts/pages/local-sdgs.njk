@@ -5,34 +5,34 @@
 <main id="main-content" tabindex="-1">
 <div class="home-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if information.networkInfo %}
-        {% set header = 'SDGs in Antarctica' | safe %}
-        {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.' | safe %}
+    {% if pages.sdgsPage %}
+        {% set header = pages.sdgsPage.header %}
+        {% set subtitle = pages.sdgsPage.subtitle %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
     <section class="full-bleed" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}>
         {% if information.networkInfo.networkObjectives %}
-            {% set header = 'The Sustainable Development Goals' | safe %}
-            {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.' | safe %}
-            {% set cta = 'Learn more about the SDGs' %}
-            {% set ctaLink = '/join' %}
+            {% set header = pages.sdgsPage.sdgsHeader %}
+            {% set subtitle = pages.sdgsPage.sdgsSubtitle %}
+            {% set cta = pages.sdgsPage.sdgsCta %}
+            {% set ctaLink = pages.sdgsPage.sdgsCtaURL %}
             {% set ctaColour = fcolor2Text %}
             {% include "layouts/section-banner.njk" %}
             {% include "partials/components/sdgs.njk" %}
         {% endif %}
     </section>
     <section class="one-image-two-text" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-        {% if information.networkInfo.networkObjectives %}
-            {% set pretext = 'ACTION BY' | safe %}
-            {% set header = 'Government' | safe %}
-            {% set actionContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.' %}
-            {% set cta = 'Read more on government website' %}
-            {% set ctaLink = '/join' %}
+        {% for ft in pages.sdgsPage.featuredActions %}
+            {% set pretext = ft.pretextFeature | safe %}
+            {% set header = ft.featureHeader | safe %}
+            {% set actionContent = ft.featureSubtitle %}
+            {% set cta = ft.featureCta %}
+            {% set ctaLink = ft.featureCtaURL %}
             {% set ctaColour = bgText %}
-            {% set logoImg = host.hiLogo %}
+            {% set logoImg = ft.featureImg %}
             {% include "partials/components/one-image-two-text.njk" %}
-        {% endif %}
+        {% endfor %}
     </section>
 </div>
 </main>

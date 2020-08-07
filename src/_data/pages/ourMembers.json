@@ -1,6 +1,12 @@
 {
-  "title": "Page: Our Members",
-  "memberCtaTitle": "See benefits",
-  "membercta": "See benefits of joining the network",
-  "membedesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu."
+  "title" : "Page: Network Activities Members",
+  "header" : "What we do",
+  "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.",
+  "highlightProjectsHeader" : "Highlight projects",
+  "highlightProjectsSubtitle" : "Read more about our current work",
+  "memberTitle" : "Member List",
+  "memberSubtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.",
+  "contactTitle" : "See benefits",
+  "contactCTA" : "See benefits of joining the network",
+  "contactCTAURL" : "/join"
 }

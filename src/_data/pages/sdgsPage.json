@@ -1,0 +1,19 @@
+{
+"title": "SDGs in Antarctica Page",
+"header": "SDGs in Antarctica",
+"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.",
+"sdgsHeader": "The Sustainable Development Goals",
+"sdgsSubtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.",
+"sdgsCta": "Learn more about the SDGs",
+"sdgsCtaURL": "https://www.undp.org/content/undp/en/home/sustainable-development-goals.html",
+"featuredActions": [
+        {
+            "pretextFeature": "ACTION BY",
+            "featureHeader": "Government",
+            "featureSubtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.",
+            "featureCta": "Read more on government website",
+            "featureCtaURL": "https://www.ke.undp.org/content/kenya/en/home/sustainable-development-goals.html",
+            "featureImg": ""
+        }
+    ]
+}

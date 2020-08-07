@@ -21,7 +21,7 @@
         "text" : "WHAT WE DO",
         "menuitems": [ 
           {
-            "text": "Activities and Members",
+            "text": "Our Network and Members",
             "url": "/what-we-do",
             "external": false
           },
@@ -31,13 +31,8 @@
             "external": false
           },
           {
-            "text": "News",
+            "text": "News and Activities",
             "url": "/news",
-            "external": false
-          },
-          {
-            "text": "Case Studies",
-            "url": "/case-studies",
             "external": false
           }
         ]

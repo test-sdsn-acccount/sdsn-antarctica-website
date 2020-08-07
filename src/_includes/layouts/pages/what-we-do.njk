@@ -5,15 +5,15 @@
 <main id="main-content" tabindex="-1">
 <div class="home-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if information.networkInfo %}
-        {% set header = 'What we do' | safe %}
-        {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.' | safe %}
+    {% if pages.ourMembers %}
+        {% set header = pages.ourMembers.header | safe %}
+        {% set subtitle = pages.ourMembers.subtitle | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
     <section class="section-banner as-header" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-        {% set header = 'Highlight projects' %}
-        {% set subtitle = 'Read more about our current work' %}
+        {% set header = pages.ourMembers.highlightProjectsHeader %}
+        {% set subtitle = pages.ourMembers.highlightProjectsSubtitle %}
         {% include "layouts/section-banner.njk" %}
     </section>
     <section class="resource-feature-banner">
@@ -21,15 +21,14 @@
         {% include "partials/components/resource-feature-banner.njk" %}
     </section>
     <section class="full-bleed" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}>
-        {# TEMPORARY #}
-        {% set header = 'Member List' %}
-        {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu.' %}
+        {% set header = pages.ourMembers.memberTitle %}
+        {% set subtitle = pages.ourMembers.memberSubtitle %}
         {% include "partials/components/table-section.njk" %}
     </section>
     <section class="contact-us-banner" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
-        {% set header = 'See benefits' %}
-        {% set cta = 'See benefits of joining the network' %}
-        {% set ctaLink = '/join' %}
+        {% set header = pages.ourMembers.contactTitle %}
+        {% set cta = pages.ourMembers.contactCTA %}
+        {% set ctaLink = pages.ourMembers.contactCTAURL %}
         {% set ctaColour = fcolor1Text %}
         {% include "partials/components/contact-us-banner.njk" %}
     </section>

@@ -2,92 +2,41 @@
 label: CONTENT News
 hide_body: false
 fields:
-- name: pagetitle
-  type: text
-  config:
-    required: false
-  label: Page Title
-  default: News Stories Pages
-  hidden: true
 - name: title
   type: text
   config:
     required: true
-  label: Title
-- name: date
-  type: datetime
-  label: Date
-  description: ''
-  config:
-    required: false
-    date_format: MM/DD/YYYY
-    time_format: h:mm A Z
-    display_utc: true
-    export_format: YYYY-MM-DDThh:mm:ssZ
-  default: now
-- name: author
+  label: Page Title
+  default: News Landing Page
+- name: header
   type: text
   config:
-    required: false
-  label: Author
-  default: Network Secretariat
-- name: quote
+    required: true
+  label: Page Header
+  default: News
+- name: subtitle
   type: textarea
   default: ''
   config:
-    required: false
+    required: true
     wysiwyg: true
     schema:
       format: html-blocks
-  label: Featured quote
-- name: fImage
-  type: file
+  label: Banner Sub Title
+- name: globalHeader
+  type: text
   config:
-    maxSize: 0.7
-  label: Featured Image
-- name: toggle
-  type: boolean
-  label: Featured content
-  description: Mark this content if you want it featured on the homepage or What we
-    do pages.
-- name: tags
-  type: tag_list
-  default: []
-  label: Tags
-  description: Put some tags to make finding content easier for your website visitors!
-    E.g. Antarctica, Youth, Climate change, etc.
-- name: aboutAuthor
+    required: true
+  label: Global News Header
+  default: SDSN Global News
+- name: globalSubtitle
   type: textarea
   default: ''
   config:
-    required: false
+    required: true
     wysiwyg: true
     schema:
       format: html-blocks
-  label: About the author
-  description: Put any additional information you want to write about the author,
-    organization, or initiative here.
-- name: embeddedcontent
-  type: field_group_list
-  fields:
-  - name: embedlink
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: markdown
-    label: Embed Link
-    description: 'Copy and paste anything you want to embed. Please note that it must
-      be formatted like this: &lt;iframe&gt;....&lt;/iframe&gt;'
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: Embedded content
-  description: 'Add any embedded content here. '
+  label: Global News Sub Title
 pages:
-- src/content/news/about-the-network.md
-- src/content/news/sustainable-development-solutions-network-antarctica.md
-- src/content/news/university-support-to-decade-of-action.md
+- src/_data/pages/newsPage.json
