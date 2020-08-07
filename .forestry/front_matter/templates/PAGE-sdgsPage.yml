@@ -8,6 +8,7 @@ fields:
     required: true
   label: Page Title
   default: SDGs Page
+  hidden: true
 - name: header
   type: text
   config:

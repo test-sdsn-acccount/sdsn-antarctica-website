@@ -8,6 +8,7 @@ fields:
     required: true
   label: Page Title
   default: Get involved page
+  hidden: true
 - name: header
   type: text
   config:
