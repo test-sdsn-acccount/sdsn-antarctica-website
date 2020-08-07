@@ -29,3 +29,5 @@ fields:
     required: false
   label: Feature Title
   default: Mobilizing sustainable development in Antarctica
+pages:
+- src/_data/pages/aboutPage.json

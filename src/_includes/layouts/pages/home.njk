@@ -16,6 +16,7 @@
                 {% set header = pages.homepage.featuretitle %}
                 {% set subtitle = pages.homepage.featurecontent | safe %}
                 {% set img = '/uploads/map.png' %}
+                {% set featureContent = pages.homepage.map %}
                 {% include "partials/components/big-side-feature.njk" %}
 
                     {# <iframe width="500" height="300" src="https://api.maptiler.com/maps/voyager/?key=EG4iGHqupGVZXijHzjl6#{{information.networkInfo.zoom}}/{{information.networkInfo.latitude}}/{{information.networkInfo.longitude}}"></iframe> #}

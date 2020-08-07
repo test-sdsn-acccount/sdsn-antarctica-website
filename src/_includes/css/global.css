@@ -431,6 +431,7 @@ section.pop-out {
     display: inline-block;
     margin-bottom: 2em;
     margin-right: 2em;
+    vertical-align: middle;
 }
 
 .big-side-subtitle {
@@ -442,7 +443,9 @@ section.pop-out {
 
 .big-side-right{
     height: 100%;
+    width: 60%;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .big-side-right img{

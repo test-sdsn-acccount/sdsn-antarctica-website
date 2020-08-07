@@ -6,8 +6,8 @@
 <div class="about-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.networkInfo %}
-        {% set header = AboutTheNetwork.bannerTitle | safe %}
-        {% set subtitle = AboutTheNetwork.aboutsdsn | safe %}
+        {% set header = pages.aboutPage.bannerTitle | safe %}
+        {% set subtitle = pages.aboutPage.aboutsdsn | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
