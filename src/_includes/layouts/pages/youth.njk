@@ -6,14 +6,20 @@
 <div class="home-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.networkInfo %}
-        {% set header = 'Our Youth Initiative' | safe %}
-        {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.' | safe %}
+        {% set header = pages.youthPage.header %}
+        {% set subtitle = pages.youthPage.subtitle | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
+      <section class="feature-banner">
+        {% if pages.youthPage.youthObjectives.length !== 0 %}
+            {% set item = pages.youthPage.youthObjectives %}
+                {% include "partials/components/large-feature.njk" %}
+        {% endif %}
+    </section>
     <section class="section-banner as-header" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-        {% set header = 'Highlight projects' %}
-        {% set subtitle = 'Read more about our current work' %}
+        {% set header = pages.youthPage.highlightProjectsHeader %}
+        {% set subtitle = pages.youthPage.highlightProjectsSubtitle %}
         {% include "layouts/section-banner.njk" %}
     </section>
     <section class="resource-feature-banner">
@@ -22,15 +28,14 @@
         {% include "partials/components/resource-feature-tag-banner.njk" %}
     </section>
     <section class="full-bleed" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}>
-        {# TEMPORARY #}
-        {% set header = 'Member List' %}
-        {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu.' %}
+        {% set header = pages.youthPage.youthMemberTitle %}
+        {% set subtitle = pages.youthPage.youthMemberSubtitle %}
         {% include "partials/components/table-section.njk" %}
     </section>
     <section class="contact-us-banner" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
-        {% set header = 'See benefits' %}
-        {% set cta = 'See benefits of joining the network' %}
-        {% set ctaLink = '/join' %}
+        {% set header = pages.youthPage.youthContactTitle %}
+        {% set cta = pages.youthPage.youthContactCTA %}
+        {% set ctaLink = pages.youthPage.youthContactCTAURL %}
         {% include "partials/components/contact-us-banner.njk" %}
     </section>
 </div>

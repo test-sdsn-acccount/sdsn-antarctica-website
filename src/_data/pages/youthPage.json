@@ -1,0 +1,29 @@
+{
+    "title" : "Page: Youth",
+    "header" : "Our Youth Initiative",
+    "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.",
+    "youthObjectives" : [
+        {
+            "objTitle": "Localize the SDGs to Antarctica 1",
+            "objective": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.</p>",
+            "link": "https://sdgstudent.org"
+          },
+          {
+            "objTitle": "Localize the SDGs to Antarctica 5",
+            "objective": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.",
+            "link": "https://sdgstudent.org"
+          },
+          {
+            "objTitle": "Localize the SDGs to Antarctica 3",
+            "objective": "",
+            "link": "https://sdgstudent.org"
+          }
+    ],
+    "highlightProjectsHeader" : "Highlight projects",
+    "highlightProjectsSubtitle" : "Read more about our current work",
+    "youthMemberTitle" : "Youth Member List",
+    "youthMemberSubtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.",
+    "youthContactTitle" : "Work together with us.",
+    "youthContactCTA" : "Get in touch with our youth team",
+    "youthContactCTAURL" : "mailto:antarc@sdsnyouth.org"
+}

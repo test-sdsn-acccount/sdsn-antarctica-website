@@ -74,6 +74,11 @@ fields:
         format: html-blocks
     label: Objective Description
     description: Please try to keep this under 70 words
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Relevant link for objective (optional)
   config:
     min: 
     max: 

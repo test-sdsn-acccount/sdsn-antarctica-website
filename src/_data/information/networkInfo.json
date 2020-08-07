@@ -20,15 +20,18 @@
   "networkObjectives": [
     {
       "objTitle": "Localize the SDGs to Antarctica 1",
-      "objective": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.</p>"
+      "objective": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.</p>",
+      "link": "sdgstudent.org"
     },
     {
       "objTitle": "Localize the SDGs to Antarctica 5",
-      "objective": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu."
+      "objective": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.",
+      "link": "sdgstudent.org"
     },
     {
       "objTitle": "Localize the SDGs to Antarctica 3",
-      "objective": ""
+      "objective": "",
+      "link": "sdgstudent.org"
     }
   ],
   "title": "Network Information"

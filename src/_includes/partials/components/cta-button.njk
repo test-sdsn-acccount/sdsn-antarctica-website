@@ -1,7 +1,7 @@
         <div class="contact-us-subtitle">
                 <p class="feature">
                 {% if ctaLink %}
-                        <a href="{{ctaLink}}" class="link" {% if ctaColour %} style="color:{{ ctaColour }}"{% endif %}>
+                        <a href="{{ctaLink}}" class="link with-arrow" {% if ctaColour %} style="color:{{ ctaColour }}"{% endif %}>
                                 <span>{{ cta }}{% include "src/assets/images/right-arrow.svg" %}</span>
                         </a>
                 {% else %}

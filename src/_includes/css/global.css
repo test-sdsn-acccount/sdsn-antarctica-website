@@ -59,6 +59,10 @@ p.feature {
     margin-top: 1em;
 }
 
+a:-webkit-any-link {
+    color: #474747;
+}
+
 a.link {
     text-decoration: none!important;
 }
@@ -276,6 +280,10 @@ a.text-button {
     vertical-align: bottom;  
 }
 
+.with-arrow:hover {
+    border-bottom: 2px solid #b8b8b8;
+}
+
 /* Feature Cards */
 
 .small-card {
@@ -305,6 +313,7 @@ a.text-button {
 .feature-card.big.metric {
     width: 28%;
     margin-right: 1em;
+    min-height: 14em;
 }
 
 .feature-card.content h3 {
