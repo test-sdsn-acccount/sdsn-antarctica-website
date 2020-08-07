@@ -69,7 +69,13 @@ fields:
   default: Member Requirements
 - name: joinSubtitle
   type: textarea
-  default: 'Membership in the Sustainable Development Solutions Network is free and open to not-for-profit institutions (not individuals). Institutions must be knowledge-generating, i.e. they must conduct research, analyses, and/or data collection, and can be universities, research institutions, foundations, or civil society groups. Member institutions should have deep expertise in one or more areas related to sustainable development and commit a substantial amount of their own work towards finding and/or implementing solutions for the SDGs.'
+  default: Membership in the Sustainable Development Solutions Network is free and
+    open to not-for-profit institutions (not individuals). Institutions must be knowledge-generating,
+    i.e. they must conduct research, analyses, and/or data collection, and can be
+    universities, research institutions, foundations, or civil society groups. Member
+    institutions should have deep expertise in one or more areas related to sustainable
+    development and commit a substantial amount of their own work towards finding
+    and/or implementing solutions for the SDGs.
   config:
     required: true
     wysiwyg: true

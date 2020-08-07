@@ -1,18 +1,27 @@
 {
-    "header" : "Join the network",
-    "subtitle" : "W",
-    "ourImpactHeader" : "Our Impact",
-    "ourImpactSubTitle" : "Lorem Ipsum",
-    "memberBenefits" : [
-        {
-            "benefitHeader" : "Collaborate with a global network",
-            "benefitDesc" : "Local, National, and Regional Problem Solving for Sustainable Development"
-        }
-    ],
-    "joinHeader" : "Member Requirements",
-    "joinSubtitle" : "Membership in the Sustainable Development Solutions Network is free and open to not-for-profit institutions (not individuals). Institutions must be knowledge-generating, i.e. they must conduct research, analyses, and/or data collection, and can be universities, research institutions, foundations, or civil society groups. Member institutions should have deep expertise in one or more areas related to sustainable development and commit a substantial amount of their own work towards finding and/or implementing solutions for the SDGs.",
-    "joinCta" : "Join our network",
-    "joinCtaURL" : "https://www.unsdsn.org/join-the-sdsn",
-    "contactHeader" : "Want to learn more?",
-    "contactCta" : "Get in touch at antarc@unsdsn.org"
+  "header": "Join the network",
+  "subtitle": "W",
+  "ourImpactHeader": "Our Impact",
+  "ourImpactSubTitle": "Lorem Ipsum",
+  "memberBenefits": [
+    {
+      "benefitHeader": "Pursue joint fundraising",
+      "benefitDesc": "<p>SDSN members are better positioned to mobilize resources locally and internationally through SDSN brand recognition and additional networking opportunities. The SDSN team will support member organizations in mobilizing resources for Solutions Initiatives, National or Regional SDSNs, and other eforts done under the SDSN banner.</p>"
+    },
+    {
+      "benefitHeader": "Get involved in SDSN Solutions Initiatives",
+      "benefitDesc": "<p>SDSN members are invited to participate hands-on in the implementation of SDSN Solutions Initiatives. Many initiatives are already under way; others will be launched in the near future.</p>"
+    },
+    {
+      "benefitHeader": "Participate in National and Regional SDSNs",
+      "benefitDesc": "<p>SDSN members can participate in one or more of the National or Regional SDSNs depending on their interests and areas of activity. Active participation in these networks will enable SDSN members to propose and participate in the implementation of Solutions Initiatives, education and training eforts (including access to online education material), joint research, and policy work with governments.</p>"
+    }
+  ],
+  "joinHeader": "Member Requirements",
+  "joinSubtitle": "Membership in the Sustainable Development Solutions Network is free and open to not-for-profit institutions (not individuals). Institutions must be knowledge-generating, i.e. they must conduct research, analyses, and/or data collection, and can be universities, research institutions, foundations, or civil society groups. Member institutions should have deep expertise in one or more areas related to sustainable development and commit a substantial amount of their own work towards finding and/or implementing solutions for the SDGs.",
+  "joinCta": "Join our network",
+  "joinCtaURL": "https://www.unsdsn.org/join-the-sdsn",
+  "contactHeader": "Want to learn more?",
+  "contactCta": "Get in touch at antarc@unsdsn.org",
+  "title": ""
 }

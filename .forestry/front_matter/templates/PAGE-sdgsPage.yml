@@ -14,7 +14,7 @@ fields:
   config:
     required: true
   label: Page Header
-  default: SDGs in 
+  default: SDGs in
 - name: subtitle
   type: textarea
   default: ''
@@ -76,10 +76,10 @@ fields:
     description: Write a short description about this initiative
   - name: featureCta
     type: text
-    default: 'Read more'
+    default: Read more
     config:
       required: false
-    label: Call to action 
+    label: Call to action
     description: What can people do with this information?
   - name: featureCtaURL
     type: text
@@ -97,6 +97,7 @@ fields:
     max: 
     labelField: 
   label: Featured Non SDSN Initiatives
-  description: Feature national/regional initiatives for the SDGs here. For example, does the government have a grant for SDG research or grants?
+  description: Feature national/regional initiatives for the SDGs here. For example,
+    does the government have a grant for SDG research or grants?
 pages:
 - src/_data/pages/sdgsPage.json

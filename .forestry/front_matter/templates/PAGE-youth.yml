@@ -48,7 +48,8 @@ fields:
     max: 
     labelField: 
   label: Youth Team Objectives and Activities
-  description: Space to add details about the initiatives of the youth team e.g. student engagement
+  description: Space to add details about the initiatives of the youth team e.g. student
+    engagement
 - name: highlightProjectsHeader
   type: text
   config:
