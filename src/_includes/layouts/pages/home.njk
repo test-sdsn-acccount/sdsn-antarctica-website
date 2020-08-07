@@ -4,7 +4,7 @@
 {% block content %}
 <main id="main-content" tabindex="-1">
 <div class="home-container">
-    <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+    <section class="intro-banner with-logo" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
         {% if pages.homepage.header %}
             {% set header = pages.homepage.header %}
             {% set subtitle = pages.homepage.subtitle | safe %}
@@ -17,6 +17,12 @@
                 {% set subtitle = pages.homepage.featurecontent | safe %}
                 {% set img = '/uploads/map.png' %}
                 {% include "partials/components/big-side-feature.njk" %}
+
+                    {# <iframe width="500" height="300" src="https://api.maptiler.com/maps/voyager/?key=EG4iGHqupGVZXijHzjl6#{{information.networkInfo.zoom}}/{{information.networkInfo.latitude}}/{{information.networkInfo.longitude}}"></iframe> #}
+                    {# <iframe width="100%" height="100%" src="https://api.maptiler.com/maps/voyager/?key=icNCSAmBYGpRHDXt1sue#{{information.networkInfo.zoom}}/{{information.networkInfo.latitude}}/{{information.networkInfo.longitude}}"></iframe> #}
+                    {# <div class="map-svg" style="background-image: url(/assets/uploads/kenyaHigh.svg);">
+                        {% include "src/assets/uploads/kenyaHigh.svg" %}
+                    </div>  #}
         {% endif %}
     </section>
     <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>

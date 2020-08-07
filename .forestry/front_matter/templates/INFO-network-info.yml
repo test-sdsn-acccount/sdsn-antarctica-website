@@ -40,15 +40,15 @@ fields:
         format: markdown
     label: Address
     description: Please copy and paste Google Map code here
-  config:
-    min: 
-    max: 
-    labelField: 
   - name: hilogo
     type: file
     config:
       maxSize: 0.7
     label: Host Institution Logo
+  config:
+    min: 
+    max: 
+    labelField: 
   label: Host Institution
   description: ''
 - name: networkVision

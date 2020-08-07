@@ -80,15 +80,9 @@ a.link.light:hover {
     padding: 0; /* reset */
     padding-bottom: calc(100% * 3 / 4);
 }
-.map-svg svg {
-    /* width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0; */
-}
+
+
+
 
 .iframe-wrapper-dimen iframe {
     width: 100%;
@@ -237,6 +231,25 @@ a.nav-list-item {
 
 a.nav-list-item:hover {
     border-bottom: .2rem solid #222222!important;
+}
+
+/* Homepage */
+.home-container section.intro-banner.with-logo::before {
+    background-image: url(/assets/images/globev3.svg);
+    background-position: left top;
+    background-attachment: scroll;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    display: block;
+    margin: 0 0 1rem;
+    z-index: -1;
+    color: #c9c9c927;
 }
 
 /* Intro Banner */
