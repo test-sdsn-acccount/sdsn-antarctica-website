@@ -42,16 +42,16 @@ fields:
 - name: memberBenefits
   type: field_group_list
   fields:
-  - name: benefitHeader
+  - name: header
     type: text
     config:
       required: false
     label: Benefit Title
-  - name: benefitDesc
+  - name: desc
     type: textarea
     default: ''
     config:
-      required: true
+      required: false
       wysiwyg: true
       schema:
         format: html-blocks

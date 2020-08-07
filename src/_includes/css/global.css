@@ -325,6 +325,11 @@ a.text-button {
     line-height: 1.6em;
 }
 
+.get-involved-container .feature-card.content h1 {
+    line-height: normal;
+    font-size: 2em;
+}
+
 /* Full Bleed Banner */
 
 section.full-bleed {

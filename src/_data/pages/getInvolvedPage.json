@@ -5,28 +5,28 @@
   "ourImpactSubTitle": "<p>Accelerating practical problem solving for sustainable development.</p>",
   "memberBenefits": [
     {
-      "benefitHeader": "Engage with the media",
-      "benefitDesc": "<p>The SDSN and its members are regularly approached by media outlets to provide contributions and viewpoints on sustainable development. We work with SDSN members to showcase their work.</p>"
+      "header": "Engage with the media",
+      "desc": "<p>The SDSN and its members are regularly approached by media outlets to provide contributions and viewpoints on sustainable development. We work with SDSN members to showcase their work.</p>"
     },
     {
-      "benefitHeader": "Share teaching solutions for sustainable development",
-      "benefitDesc": "<p>SDSN seeks to identify best practices, key actors, and to promote the difusion of good practices. To this end, we will launch a survey on teaching initiatives on sustainable development that are undertaken or planned by SDSN members. The results of the survey will be disseminated to all SDSN members.</p>"
+      "header": "Share teaching solutions for sustainable development",
+      "desc": "<p>SDSN seeks to identify best practices, key actors, and to promote the difusion of good practices. To this end, we will launch a survey on teaching initiatives on sustainable development that are undertaken or planned by SDSN members. The results of the survey will be disseminated to all SDSN members.</p>"
     },
     {
-      "benefitHeader": " Design and share online educational materials and courses",
-      "benefitDesc": "<p>All SDSN members are invited to use the online resources developed by the SDSN and its members. Members of the SDSN Academic Advisory Committee will also help shape the network’s strategy for online education, with a view towards eventually creating an online university for sustainable development.</p>"
+      "header": " Design and share online educational materials and courses",
+      "desc": "<p>All SDSN members are invited to use the online resources developed by the SDSN and its members. Members of the SDSN Academic Advisory Committee will also help shape the network’s strategy for online education, with a view towards eventually creating an online university for sustainable development.</p>"
     },
     {
-      "benefitHeader": "Pursue joint fundraising",
-      "benefitDesc": "<p>SDSN members are better positioned to mobilize resources locally and internationally through SDSN brand recognition and additional networking opportunities. The SDSN team will support member organizations in mobilizing resources for Solutions Initiatives, National or Regional SDSNs, and other eforts done under the SDSN banner.</p>"
+      "header": "Pursue joint fundraising",
+      "desc": "<p>SDSN members are better positioned to mobilize resources locally and internationally through SDSN brand recognition and additional networking opportunities. The SDSN team will support member organizations in mobilizing resources for Solutions Initiatives, National or Regional SDSNs, and other eforts done under the SDSN banner.</p>"
     },
     {
-      "benefitHeader": "Get involved in SDSN Solutions Initiatives",
-      "benefitDesc": "<p>SDSN members are invited to participate hands-on in the implementation of SDSN Solutions Initiatives. Many initiatives are already under way; others will be launched in the near future.</p>"
+      "header": "Get involved in SDSN Solutions Initiatives",
+      "desc": "<p>SDSN members are invited to participate hands-on in the implementation of SDSN Solutions Initiatives. Many initiatives are already under way; others will be launched in the near future.</p>"
     },
     {
-      "benefitHeader": "Participate in National and Regional SDSNs",
-      "benefitDesc": "<p>SDSN members can participate in one or more of the National or Regional SDSNs depending on their interests and areas of activity. Active participation in these networks will enable SDSN members to propose and participate in the implementation of Solutions Initiatives, education and training eforts (including access to online education material), joint research, and policy work with governments.</p>"
+      "header": "Participate in National and Regional SDSNs",
+      "desc": "<p>SDSN members can participate in one or more of the National or Regional SDSNs depending on their interests and areas of activity. Active participation in these networks will enable SDSN members to propose and participate in the implementation of Solutions Initiatives, education and training eforts (including access to online education material), joint research, and policy work with governments.</p>"
     }
   ],
   "joinHeader": "Member Requirements",

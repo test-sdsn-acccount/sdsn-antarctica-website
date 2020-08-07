@@ -2,7 +2,7 @@
     <div class="text-top">
         <div class="text-top-left">
             <div class="text-top-title">
-                <h2 class="close-header">Our Impact</h2>
+                <h2 class="close-header">{{ header }}</h2>
             </div>
         </div>
         <div class="text-top-right">
@@ -14,8 +14,8 @@
         <div class="feature-card big metric" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>               
             
             <div class="feature-card content">
-            <h1>{{ met.metric }}</h1>
-                {{ met.metricdesc }}
+            <h1>{{ met.header }}</h1>
+                {{ met.desc | safe }}
             </div>
         </div>
         {% endfor %}

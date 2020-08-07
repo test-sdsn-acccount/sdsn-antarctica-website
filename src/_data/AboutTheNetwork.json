@@ -4,16 +4,16 @@
   "networkimpact": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu. Vivamus fermentum ex ut mauris feugiat convallis. Fusce cursus diam vel nunc lobortis, nec finibus orci lacinia.",
   "networkmetrics": [
     {
-      "metric": "3 years",
-      "metricdesc": "Awarded the Sustainability Award in Antarctica, 3 years in a row."
+      "header": "3 years",
+      "desc": "Awarded the Sustainability Award in Antarctica, 3 years in a row."
     },
     {
-      "metric": "129",
-      "metricdesc": "Scored 129 in the Antarctic region for driving SDG implementation."
+      "header": "129",
+      "desc": "Scored 129 in the Antarctic region for driving SDG implementation."
     },
     {
-      "metric": "20",
-      "metricdesc": "Member Institutions in the South Pole - covering academia, fisheries and ice cap management firms."
+      "header": "20",
+      "desc": "Member Institutions in the South Pole - covering academia, fisheries and ice cap management firms."
     }
   ],
   "title": "About the network"

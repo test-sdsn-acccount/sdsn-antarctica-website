@@ -2,7 +2,7 @@
 
 {% block content %}
 <main id="main-content" tabindex="-1">
-<div class="home-container">
+<div class="get-involved-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.networkInfo %}
         {% set header = 'Join the network' | safe %}
@@ -11,9 +11,10 @@
     {% endif %}
   </section>
     <section class="text-top-metrics-bottom" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if AboutTheNetwork.networkmetrics %}
-        {% set desc = AboutTheNetwork.networkimpact | safe %}
-        {% set item = AboutTheNetwork.networkmetrics %}
+    {% if pages.getInvolvedPage.memberBenefits %}
+        {% set header = pages.getInvolvedPage.ourImpactHeader %}
+        {% set desc = pages.getInvolvedPage.ourImpactSubTitle | safe %}
+        {% set item = pages.getInvolvedPage.memberBenefits %}
             {% include "partials/components/text-top-metrics-bottom.njk" %}
     {% endif %}
     </section>
