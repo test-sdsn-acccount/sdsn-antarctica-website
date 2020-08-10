@@ -1,16 +1,16 @@
 <div class="text-top-metrics-bottom-container">
     <div class="text-top">
-        <div class="text-top-left">
+        <div class="split-boxes-30-70 left">
             <div class="text-top-title">
-                <h2 class="close-header">{{ header }}</h2>
+                <h2 class="close-header">{{ ttmheader }}</h2>
             </div>
         </div>
-        <div class="text-top-right">
-        <p class="three">{{ desc }}</p>
+        <div class="split-boxes-30-70 right">
+        <p class="three">{{ ttmdesc }}</p>
         </div>
     </div>
-    <div class="metrics-bottom">
-        {% for met in item %}
+    <div class="feature-card-cont">
+        {% for met in ttmitem %}
         <div class="feature-card big metric" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>               
             
             <div class="feature-card content">

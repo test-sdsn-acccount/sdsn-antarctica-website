@@ -50,8 +50,9 @@
     </section>
     <section class="text-top-metrics-bottom pop-out" {% if fcolor2Text %} style="color:{{ fcolor2Text }};background-color:{{ fcolor2 }}"{% endif %}>
     {% if AboutTheNetwork.networkmetrics %}
-        {% set desc = AboutTheNetwork.networkimpact | safe %}
-        {% set item = AboutTheNetwork.networkmetrics %}
+        {% set ttmheader = pages.aboutPage.metricsheader %}
+        {% set ttmdesc = AboutTheNetwork.networkimpact | safe %}
+        {% set ttmitem = AboutTheNetwork.networkmetrics %}
             {% include "partials/components/text-top-metrics-bottom.njk" %}
     {% endif %}
     </section>

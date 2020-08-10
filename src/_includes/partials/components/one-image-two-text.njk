@@ -1,5 +1,5 @@
-<div class="one-image-two-text-container">
-    <div class="one-image">
+<div class="resource-feature-banner">
+    <div class="split-boxes-30-70 left align-items-top">
         <div class="one-image-title">
             <h6 class="close-header">{{ pretext }}</h6>
             <h2 class="close-header">{{ header }}</h2>
@@ -10,7 +10,7 @@
             </div>
         </div>
     </div>
-    <div class="two-text">
+    <div class="split-boxes-30-70 right align-items-top">
       <p class="four">{{ actionContent | safe }}</p>
         {% if cta %}
             {% include "partials/components/cta-button.njk" %}

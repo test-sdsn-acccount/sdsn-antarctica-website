@@ -12,9 +12,9 @@
   </section>
     <section class="text-top-metrics-bottom" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if pages.getInvolvedPage.memberBenefits %}
-        {% set header = pages.getInvolvedPage.ourImpactHeader %}
-        {% set desc = pages.getInvolvedPage.ourImpactSubTitle | safe %}
-        {% set item = pages.getInvolvedPage.memberBenefits %}
+        {% set ttmheader = pages.getInvolvedPage.ourImpactHeader %}
+        {% set ttmdesc = pages.getInvolvedPage.ourImpactSubTitle | safe %}
+        {% set ttmitem = pages.getInvolvedPage.memberBenefits %}
             {% include "partials/components/text-top-metrics-bottom.njk" %}
     {% endif %}
     </section>

@@ -29,5 +29,11 @@ fields:
     required: false
   label: Feature Title
   default: Mobilizing sustainable development in Antarctica
+- name: metricsheader
+  type: text
+  config:
+    required: false
+  label: Our Impact Title
+  default: Our Impact
 pages:
 - src/_data/pages/aboutPage.json
