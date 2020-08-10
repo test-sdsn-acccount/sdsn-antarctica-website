@@ -2,7 +2,7 @@
 
 {% block content %}
   <main id="main-content" class="content-colour" tabindex="-1">
-    <div class="events-page-container">
+    <div class="content-container events">
       <div class="news-page-title-info">
             <div class="resource-card-content">
                 <div class="resource-card-content-left">
@@ -20,7 +20,7 @@
                     <h3>{{ date | date }}</h3>
                     <h2>{{ title }}</h2>
                     <h4>by: {{ author }}</h4>
-                    <a href="{{ ctaURL }}" class="resource-link">
+                    <a href="{{ ctaURL }}" class="resource-link width-50">
                           {# <button class="btn-link wide">{{ ctaTitle }}</button> #}
                           {% include "partials/components/btn.njk" %}
                     </a>

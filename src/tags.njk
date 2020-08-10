@@ -19,7 +19,7 @@ permalink: /tags/{{ tag }}/
 {% set sectionList = collections[tag] %}
 
 {% block content %}
-  <div class="post-list-container" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+  <div class="content-container " {% if bgText %} style="color:{{ bgText }}"{% endif %}>
   <h1>Tagged under "{{ tag }}"</h1>
     {% include "partials/components/news-list.njk" %}
     {% include "partials/components/pagination.njk" %}

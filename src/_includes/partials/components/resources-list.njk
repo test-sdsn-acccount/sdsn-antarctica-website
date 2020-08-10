@@ -41,7 +41,7 @@
               <div class="resource-card-content-right">
                   {% if section.data.oResources | length !== 0 %}
                     <h4>{{ section.data.oResources }}<h4>
-                    <ul>
+                    <ul class="extra-list">
                   {% for resource in section.data.otherResources %}
                       {% if resource.resourceFile | length !== 0 %}
                         <a href="/assets{{ resource.resourceFile }}">

@@ -5,8 +5,8 @@
 <div class="get-involved-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.networkInfo %}
-        {% set header = 'Join the network' | safe %}
-        {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.' | safe %}
+        {% set header = pages.getInvolvedPage.header %}
+        {% set subtitle = pages.getInvolvedPage.subtitle | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
@@ -19,11 +19,13 @@
     {% endif %}
     </section>
     <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-        {% if information.networkInfo %}
-            {% set header = 'Member Requirements' | safe %}
-            {% set subtitle = AboutTheNetwork.networkdesc | safe %}
-            {% set cta = information.networkInfo.networkName if information.networkInfo.networkName else '' %}
-            {% set ctaLink = information.networkInfo.networkName if information.networkInfo.networkName else '' %}
+        {% if pages.getInvolvedPage %}
+            {% set header = pages.getInvolvedPage.joinHeader | safe %}
+            {% set subtitle = pages.getInvolvedPage.joinSubtitle | safe %}
+            {% if pages.getInvolvedPage.joinCta %}
+                {% set cta = pages.getInvolvedPage.joinCta  %}
+                {% set ctaLink = pages.getInvolvedPage.joinCtaURL %}
+            {% endif %}
             {% set ctaColour = bgText %}
                 {% include "layouts/section-banner.njk" %}
         {% endif %}
