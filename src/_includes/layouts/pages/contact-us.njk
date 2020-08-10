@@ -2,62 +2,65 @@
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-    <section class="contact-us-container">
-        <div class="two-half-container" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-            <div class="first-half-title">
-                <div class="intro-banner-title">
-                <h1>{{ pages.contactPage.bannerTitle }}</h1>
+<main id="main-content" tabindex="-1">
+    <div class="cont-us-container">
+        <section class="contact-us-container" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+                <div class="width-40">
+                    <div class="intro-banner-title">
+                        <h1>{{ pages.contactPage.bannerTitle }}</h1>
+                    </div>
+                    <div class="intro-banner-body banner-sub-title">
+                        {{ pages.contactPage.bannerDesc }}
+                    </div>
                 </div>
-                <div class="intro-banner-body banner-sub-title">
-                {{ pages.contactPage.bannerDesc }}
-                </div>
-            </div>
+
                 <div class="two-half-wrapper">
-                            {% for person in pages.contactPage.contactProfiles %}
-                                <div class="contact-box-card">
-                                    <div class="contact-box img">
-                                        <img src="/assets/uploads/men-s-wearing-black-suit-jacket-and-pants-937481.jpg"></img>
-                                    </div>
-                                    <div class="contact-box title">
-                                        <h2>{{ person.contactHeader }}</h2>
-                                    </div>
-                                    <div class="contact-box subtitle">
-                                        <p>{{ person.contactDesc }}</p>
-                                    </div>
-                                    <div class="contact-box button">
-                                        <a href="mailto:{{ person.ctaEmail }}" class="resource-link">
-                                            <button class="btn-link wide" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}><p>{{ person.ctaTitle }}</p></button>
-                                        </a>
-                                    </div>
-                                </div>
-                            {% endfor %}
-        </div>
+                    {% for person in pages.contactPage.contactProfiles %}
+                        <div class="contact-box-card">
+                            <div class="contact-box img">
+                                <img src="/assets/uploads/men-s-wearing-black-suit-jacket-and-pants-937481.jpg"></img>
+                            </div>
+                            <div class="contact-box title">
+                                <h2>{{ person.contactHeader }}</h2>
+                            </div>
+                            <div class="contact-box subtitle">
+                                <p>{{ person.contactDesc }}</p>
+                            </div>
+                            <div class="contact-box button">
+                                <a href="mailto:{{ person.ctaEmail }}" class="resource-link">
+                                    <button class="btn-link wide" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}><p>{{ person.ctaTitle }}</p></button>
+                                </a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
 
-        <div class="two-half-more-content">
-            {% set 2header = 'Where you can find us' %}
-            <div class="row">
-                <div class="intro-banner-title">
-                <h1>{{ 2header }}</h1>
-                </div>
-            </div>
-            <div class="two-half-content">
-            {% for host in information.networkInfo.hostInstitution %}
-            <div class="lean-container">
-                <div class="lean-left-40 block">
-                    <h3>{{ host.hiName | safe }}</h3>
-                    <div class="white-bg-logo">
-                        <img src="/assets{{ host.hiLogo }}" class="nav-logo"></img>
+                <div class="two-half-more-content">
+                    {% set 2header = 'Where you can find us' %}
+                    <div class="row">
+                        <div class="intro-banner-title">
+                            <h1>{{ 2header }}</h1>
+                        </div>
                     </div>
-                </div>
-                <div class="lean-right-60">
-                    <div class="iframe-wrapper-dimen">
-                    {{ host.map | safe }}
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-            </div>
-        </div>
 
-    </section>
+                    {% for host in information.networkInfo.hostInstitution %}
+                    <div class="lean-container">
+                        <div class="split-boxes-30-70 left block align-items-top">
+                            <h3>{{ host.hiName | safe }}</h3>
+                            <div class="white-bg-logo">
+                                <img src="/assets{{ host.hiLogo }}" class="nav-logo"></img>
+                            </div>
+                        </div>
+                        <div class="split-boxes-30-70 right align-items-top">
+                            <div class="embed-container">
+                            {{ host.map | safe }}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                </div>
+        </section>
+    </div>
+</main>
 {% endblock %}
