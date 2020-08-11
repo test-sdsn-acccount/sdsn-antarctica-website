@@ -25,6 +25,11 @@ p {
     line-height: 1.6em;
 }
 
+li {
+    font-family: 'Crimson Text', serif;
+    line-height: 1.3em;
+}
+
 h1, h2, h3, h4, h5, h6, span {
     font-family: 'Lato', sans-serif;
 }
@@ -1107,6 +1112,10 @@ button.animate:hover {
     .resource-card-content {
         grid-template-columns: none;
         border-bottom: 1px solid #c7c7c7;    
+    }
+
+    .resource-card-content-right {
+        padding-left: 0;
     }
 }
 
