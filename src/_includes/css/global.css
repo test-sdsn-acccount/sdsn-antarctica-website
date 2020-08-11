@@ -244,6 +244,18 @@ a.link.light:hover {
     width: 59%;
 }
 
+a.back-to-top-button {
+    z-index: 1;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+}
+
+button.top-button {
+    padding: 0em 1em 0em 1em!important;
+    font-weight: 600;
+}
+
 /* Nav Bar */
 
 section.nav-section {
@@ -256,9 +268,15 @@ section.nav-section a.logo {
     vertical-align: middle;
 }
 
+#menuToggle input,
+section.mobile-nav {
+    display: none;
+}
+
 nav.bar {
     text-align: right;
     vertical-align: middle;
+ 
 }
 
 .nav-logo {
@@ -310,7 +328,7 @@ nav.bar a.nav-item:hover {
     display: block;
   }
 
-li.nav{
+li.nav {
     list-style: none;
     text-align: left;
 	margin: 0;
@@ -324,6 +342,114 @@ a.nav-list-item {
 
 a.nav-list-item:hover {
     border-bottom: .2rem solid #222222!important;
+}
+
+section.mobile-nav li {
+    list-style: disc;
+    text-align: left;
+	margin: 0;
+    padding-left: 0;
+    color: #212121!important;
+}
+
+@media screen and (max-width: 829px) {
+
+    /* Mobile navigation menu button */
+
+    section.nav-section {
+        display: none;
+    }
+
+    section.mobile-nav {
+        display: block;
+    }
+
+    nav {
+        height: 65px;
+    }
+      
+    #menuToggle {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    
+    #menuToggle input {
+        display: flex;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+    }
+    
+    #menuToggle span {
+        display: flex;
+        width: 29px;
+        height: 2px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #ffffff;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 5px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+    
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+    
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+    
+    #menuToggle input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-3px, -1px);
+        background: #36383F;
+    }
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+    #bar {
+        position: absolute;
+        width: 220px;
+        height: 800px;
+        left: -3%;
+        padding: 50px;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    
+    #bar li {
+        padding: 10px 0;
+        transition-delay: 2s;
+    }
+    
+    #menuToggle input:checked ~ ul {
+        transform: none;
+        background-color: #F5F6FA!important;
+    }
+
+    /* Go to the top box */
+
 }
 
 /* Homepage */
@@ -461,6 +587,10 @@ a.text-button {
 @media screen and (max-width: 660px) {
     .content-container.feature-card-cont, .feature-card-cont, .feature-card-cont-two {
         grid-template-columns: repeat(1, 1fr)!important;
+    }
+
+    .feature-card.big.metric {
+        min-height: 0;
     }
 }
 
@@ -914,6 +1044,9 @@ button.btn-link {
 .content-container.events a.resource-link:hover,
 button.btn-link:hover {
     color: #494949 !important;
+}
+
+button.animate:hover {
     border-radius: 50px;
     transition: all 0.3s ease 0s;
 }
@@ -1000,7 +1133,7 @@ img.news-img {
     padding-top: 56.25%;
 }
 
-.embed-container-feature.map {
+.embed-container.feature {
     position: relative;
     overflow: hidden;
     padding-top: 56.25%;
@@ -1185,7 +1318,7 @@ section.contact-us-container::before {
     }
 
     .two-half-more-content .lean-container {
-        margin: 2em;
+        margin: 0;
     }
 }
 
