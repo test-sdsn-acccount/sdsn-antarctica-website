@@ -1219,7 +1219,7 @@ img.news-img {
 
 /* SDG section */
 .sdg-section {
-    margin: 0 15% 0 12%;
+    margin: 0 12% 0 12%;
     padding-bottom: 4%;
 }
 
@@ -1228,6 +1228,24 @@ img.news-img {
     margin-right: 1em;
     margin-bottom: 1em;
     width: 12%;
+}
+
+@media screen and (max-width: 1090px) {
+    .sdg-section img {
+        width: 14%;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .sdg-section img {
+        width: 17%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .sdg-section img {
+        width: 20%;
+    }
 }
 
 /* Contact us page */
