@@ -23,7 +23,7 @@
             {% set header = pages.getInvolvedPage.joinHeader | safe %}
             {% set subtitle = pages.getInvolvedPage.joinSubtitle | safe %}
             {% if pages.getInvolvedPage.joinCta %}
-                {% set cta = pages.getInvolvedPage.joinCta  %}
+                {% set sbCta = pages.getInvolvedPage.joinCta  %}
                 {% set ctaLink = pages.getInvolvedPage.joinCtaURL %}
             {% endif %}
             {% set ctaColour = bgText %}
@@ -32,7 +32,7 @@
     </section>
     <section class="contact-us-banner" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
         {% set header = 'Want to learn more?' %}
-        {% set cta = 'Get in touch at ' %}
+        {% set cta = 'Get in touch at antarc@unsdsn.org' %}
         {% set ctaColour = fcolor1Text %}
         {% include "partials/components/contact-us-banner.njk" %}
     </section>

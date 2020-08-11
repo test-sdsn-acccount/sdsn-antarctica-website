@@ -299,6 +299,9 @@ nav.bar a,
     text-decoration: none;
     display: inline-block;
     vertical-align: middle;
+}
+
+.mega-menu {
     margin-left: 2em;
 }
 

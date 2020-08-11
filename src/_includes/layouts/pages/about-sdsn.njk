@@ -15,9 +15,6 @@
     {% if information.networkInfo %}
         {% set header = information.networkInfo.networkName | safe %}
         {% set subtitle = AboutTheNetwork.networkdesc | safe %}
-        {% set cta = information.networkInfo.networkName if information.networkInfo.networkName else '' %}
-        {% set ctaLink = information.networkInfo.networkName if information.networkInfo.networkName else '' %}
-        {% set ctaColour = bgText %}   
             {% include "layouts/section-banner.njk" %}
     {% endif %}
   </section>
@@ -29,10 +26,7 @@
     </section>
     <section class="full-bleed" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }}"{% endif %}>
         {% if information.networkInfo.networkObjectives %}
-            {% set header = information.networkInfo.networkVision | safe %}
-            {% set cta = information.networkInfo.networkName if information.networkInfo.networkName else '' %}
-            {% set ctaLink = information.networkInfo.networkName if information.networkInfo.networkName else '' %}
-            {% set ctaColour = fcolor1Text %}
+            {% set fbHeader = information.networkInfo.networkVision | safe %}
                 {% include "partials/components/full-bleed.njk" %}
         {% endif %}
     </section>

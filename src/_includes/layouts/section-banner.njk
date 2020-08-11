@@ -5,6 +5,9 @@
     <div class="section-banner-body banner-sub-title">
       <p>{{ subtitle | safe }}</p>
     </div>
-    {% include "partials/components/cta-button.njk" %}
+    {% if sbCta | length !== 0 %}
+      {% set cta = sbCta %}
+      {% include "partials/components/cta-button.njk" %}
+    {% endif %}
 </div>
 {{ content | safe }}
