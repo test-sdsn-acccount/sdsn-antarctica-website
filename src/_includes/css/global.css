@@ -919,7 +919,22 @@ img.people-profile {
     object-fit: contain;
 }
 
+@media screen and (max-width: 750px) {
+    .news-item {
+        grid-template-columns: none;
+        width: 100%;
+    }
 
+    .news-item-img, .news-card-img .img-replacement {
+        height: 200px!important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .news-card-img {
+        display: none;
+    }
+}
 
 
 /* Rss feeds */
