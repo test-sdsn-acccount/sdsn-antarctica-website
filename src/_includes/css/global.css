@@ -579,6 +579,12 @@ a.text-button {
     margin: 0 2em 2em 2em;
 }
 
+@media screen and (max-width: 1226px) {
+    .get-involved-container .feature-card-cont {
+        grid-template-columns: repeat(1, 1fr)!important;
+    }
+}
+
 @media screen and (max-width: 930px) {
     .feature-card.big {
         padding: 0;
