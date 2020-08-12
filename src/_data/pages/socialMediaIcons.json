@@ -5,5 +5,15 @@
       "someImage": "/uploads/whatsapp_logo_1.png"
     }
   ],
-  "title": "Social Media Icons"
+  "title": "Social Media Icons",
+  "whatsapp": [
+    {
+      "cta": "Connect with us on Whatsapp",
+      "name": "Whatsapp",
+      "someImage": "/uploads/whatsapp_logo_1.png"
+    }
+  ],
+  "f": {
+    "ex": ""
+  }
 }
