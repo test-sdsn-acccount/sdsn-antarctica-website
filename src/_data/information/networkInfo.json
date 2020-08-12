@@ -1,22 +1,9 @@
 {
   "logo": "/uploads/sdsn-antarc.png",
   "whitelogo": "/uploads/sdsn-antsarc.png",
-  "networkName": "SDSN Antarctica",
-  "hostInstitution": [
-    {
-      "hiName": "University of the South Pole",
-      "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11438.47688822849!2d35.27799216791971!3d0.5126212796744566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178101178732fe35%3A0x4a9e8d0e2d40ebfc!2sMOI%20UNIVERSITY!5e0!3m2!1sen!2sau!4v1596686975190!5m2!1sen!2sau\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>",
-      "hiLogo": "/uploads/sdsn-antarc.png"
-    },
-    {
-      "hiName": "Antarc university",
-      "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11438.47688822849!2d35.27799216791971!3d0.5126212796744566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x574d0c883551eb67!2sUniversity%20Of%20Nairobi!5e0!3m2!1sen!2sau!4v1596689983664!5m2!1sen!2sau\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>",
-      "hiLogo": "/uploads/sdsn-antarc.png"
-    }
-  ],
+  "networkName": "Antarctica",
+  "networkdesc": "<p>SDSN Antarctica is a community of universities, research centers, and other knowledge institutions to translate the latest expertise in sustainable development into action</p>",
   "networkVision": "Mobilizing SDG implementation through solution initiatives and long-term pathways in Antarctica.",
-  "networkEmail": "antarc@unsdsn.org",
-  "address": "<p>15 W Third St.  / Antarctic Drive 20571</p>",
   "networkObjectives": [
     {
       "objTitle": "Localize the SDGs to Antarctica 1",
@@ -25,7 +12,7 @@
     },
     {
       "objTitle": "Localize the SDGs to Antarctica 5",
-      "objective": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.",
+      "objective": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.</p>",
       "link": "sdgstudent.org"
     },
     {
@@ -34,5 +21,21 @@
       "link": "sdgstudent.org"
     }
   ],
+  "networkimpact": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu. Vivamus fermentum ex ut mauris feugiat convallis. Fusce cursus diam vel nunc lobortis, nec finibus orci lacinia.</p>",
+  "networkmetrics": [
+    {
+      "header": "3 years",
+      "desc": "<p>Awarded the Sustainability Award in Antarctica, 3 years in a row.</p>"
+    },
+    {
+      "header": "129",
+      "desc": "<p>Scored 129 in the Antarctic region for driving SDG implementation.</p>"
+    },
+    {
+      "header": "20",
+      "desc": "<p>Member Institutions in the South Pole - covering academia, fisheries and ice cap management firms.</p>"
+    }
+  ],
+  "networkEmail": "antarc@unsdsn.org",
   "title": "Network Information"
 }

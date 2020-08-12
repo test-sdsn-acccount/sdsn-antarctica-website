@@ -15,10 +15,10 @@
                 </div>
 
                 <div class="two-half-wrapper">
-                    {% for person in pages.contactPage.contactProfiles %}
+                    {% for person in information.contactInfo.contactProfiles %}
                         <div class="contact-box-card">
                             <div class="contact-box img">
-                                <img src="/assets/uploads/men-s-wearing-black-suit-jacket-and-pants-937481.jpg"></img>
+                                <img src="/assets{{ person.contactImg }}"></img>
                             </div>
                             <div class="contact-box title">
                                 <h2>{{ person.contactHeader }}</h2>
@@ -36,14 +36,13 @@
                 </div>
 
                 <div class="two-half-more-content">
-                    {% set 2header = 'Where you can find us' %}
                     <div class="row">
                         <div class="intro-banner-title">
-                            <h1>{{ 2header }}</h1>
+                            <h1>{{ pages.contactPage.locationTitle }}</h1>
                         </div>
                     </div>
 
-                    {% for host in information.networkInfo.hostInstitution %}
+                    {% for host in information.hostInformation.hostInstitution %}
                     <div class="lean-container">
                         <div class="split-boxes-30-70 left block align-items-top">
                             <h3>{{ host.hiName | safe }}</h3>
@@ -59,6 +58,31 @@
                     </div>
                     {% endfor %}
 
+                </div>
+                <div class="two-half-more-content">
+                    <div class="row">
+                        <div class="intro-banner-title">
+                            <h1>{{ pages.contactPage.socialsTitle }}</h1>
+                            <p class="three">{{ pages.contactPage.socialsDesc | safe }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="two-half-wrapper">
+                    {% for platform in information.contactInfo.socialMediaProfiles %}
+                        <div class="contact-box-card">
+                            <div class="contact-box img">
+                                {% include "partials/components/social-media-icon.njk" %}
+                            </div>
+                            <div class="contact-box title">
+                                <h2>{{ platform.socialHeader }}</h2>
+                            </div>
+                            <div class="contact-box button">
+                                <a href="{{ platform.ctaLink }}" class="resource-link">
+                                    <button class="btn-link wide animate" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}><p>{{ platform.ctaTitle }}</p></button>
+                                </a>
+                            </div>
+                        </div>
+                    {% endfor %}
                 </div>
         </section>
     </div>

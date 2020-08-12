@@ -5,42 +5,42 @@
 <main id="main-content" tabindex="-1">
 <div class="home-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if information.networkInfo %}
-        {% set header = 'The Team' | safe %}
-        {% set subtitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.' | safe %}
+    {% if information.teamInfo %}
+        {% set introHeader = pages.aboutTeamPage.pagetitle %}
+        {% set introSubtitle = information.teamInfo.teamDesc | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
   <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if information.TeamInfo.lcdesc %}
-        {% set header = 'Leadership Council' %}
-        {% set subtitle = information.TeamInfo.lcdesc | safe %}
+    {% if information.teamInfo.lcdesc | length !== 0 %}
+        {% set header = information.teamInfo.lcTitle %}
+        {% set subtitle = information.teamInfo.lcdesc | safe %}
             {% include "layouts/section-banner.njk" %}
-        {% set people = information.TeamInfo.lcprofiles %}
+        {% set people = information.teamInfo.lcprofiles %}
           {% include "partials/components/people.njk" %}
     {% endif %}
   </section>
   <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if information.TeamInfo.nmdesc %}
-        {% set header = 'Network Managers' %}
-        {% set subtitle = information.TeamInfo.nmdesc | safe %}
+    {% if information.teamInfo.nmdesc | length !== 0 %}
+        {% set header = information.teamInfo.nmTitle %}
+        {% set subtitle = information.teamInfo.nmdesc | safe %}
             {% include "layouts/section-banner.njk" %}
-        {% set people = information.TeamInfo.nmprofiles %}
+        {% set people = information.teamInfo.nmprofiles %}
             {% include "partials/components/people.njk" %}
     {% endif %}
   </section>
   <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if information.TeamInfo.youthdesc %}
-        {% set header = 'Youth Team' %}
-        {% set subtitle = information.TeamInfo.youthdesc | safe %}
+    {% if information.teamInfo.youthdesc | length !== 0 %}
+        {% set header = information.teamInfo.youthTitle %}
+        {% set subtitle = information.teamInfo.youthdesc | safe %}
             {% include "layouts/section-banner.njk" %}
-        {% set people = information.TeamInfo.youthprofiles %}
+        {% set people = information.teamInfo.youthprofiles %}
             {% include "partials/components/people.njk" %}
     {% endif %}
   </section>
   <section class="contact-us-banner" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
-      {% set header = 'Contact us' %}
-      {% set cta = 'Get in touch at ' %}
+      {% set contactHeader = pages.aboutTeamPage.teamCtaTitle %}
+      {% set cta = pages.aboutTeamPage.teamCtaText %}
       {% set email = information.networkInfo.networkEmail %}
       {% include "partials/components/contact-us-banner.njk" %}
   </section>

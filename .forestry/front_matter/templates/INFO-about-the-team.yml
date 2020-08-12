@@ -8,6 +8,32 @@ fields:
     required: true
   label: Page Title
   default: The Team
+- name: teamDesc
+  type: textarea
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Team Description
+- name: lcTitle
+  type: text
+  config:
+    required: true
+  label: Leadership Council Title
+  default: Leadership Council
+- name: nmTitle
+  type: text
+  config:
+    required: true
+  label: Network Managers Title
+  default: Network Managers
+- name: youthTitle
+  type: text
+  config:
+    required: true
+  label: Youth Team Title
+  default: Youth Team
 - name: lcdesc
   type: textarea
   default: The Network is guided by a Leadership Council, which brings together global
@@ -135,4 +161,4 @@ fields:
   label: Youth Team Description
   description: What do the Youth Team do?
 pages:
-- src/_data/information/TeamInfo.json
+- src/_data/information/teamInfo.json

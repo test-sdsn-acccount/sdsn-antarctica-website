@@ -5,8 +5,8 @@
 <div class="get-involved-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.networkInfo %}
-        {% set header = pages.getInvolvedPage.header %}
-        {% set subtitle = pages.getInvolvedPage.subtitle | safe %}
+        {% set introHeader = pages.getInvolvedPage.header %}
+        {% set introSubtitle = pages.getInvolvedPage.subtitle | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
@@ -31,7 +31,7 @@
         {% endif %}
     </section>
     <section class="contact-us-banner" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
-        {% set header = 'Want to learn more?' %}
+        {% set contactHeader = 'Want to learn more?' %}
         {% set cta = 'Get in touch at antarc@unsdsn.org' %}
         {% set ctaColour = fcolor1Text %}
         {% include "partials/components/contact-us-banner.njk" %}

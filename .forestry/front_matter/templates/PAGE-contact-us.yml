@@ -23,53 +23,26 @@ fields:
       format: html-blocks
   label: Banner Sub Title
   default: "<p>Get in touch with us and let's work towards acheiving the SDGs together.</p>"
-- name: contactProfiles
-  type: field_group_list
-  fields:
-  - name: person
-    type: text
-    config:
-      required: true
-    label: Full name
-  - name: contactPerson
-    type: select
-    default: nmprofiles
-    config:
-      required: false
-      options: []
-      source:
-        type: documents
-        section: network-information-c6a7fe3c-3760-4b29-9d81-6294f96c7d8f
-        file: src/_data/information/TeamInfo.json
-        path: 
-    label: Contact Person
-  - name: contactHeader
-    type: text
-    default: Contact our Network Manager
-    config:
-      required: true
-    label: Contact Title
-  - name: contactDesc
-    type: text
-    default: Discuss partnerships opportunities or how to join our network.
-    config:
-      required: true
-    label: Contact Description
-  - name: ctaTitle
-    type: text
-    default: Contact our team
-    config:
-      required: true
-    label: CTA Text
-  - name: ctaEmail
-    type: text
-    config:
-      required: true
-    label: CTA Email
+- name: locationTitle
+  type: text
   config:
-    min: 
-    max: 
-    labelField: 
-  label: Contact profiles
+    required: true
+  label: Location Section Title
+  default: Where you can find us
+- name: socialsTitle
+  type: text
+  config:
+    required: true
+  label: Social Media Section Title
+  default: Follow us online
+- name: socialsDesc
+  type: textarea
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Social Media Description
+  default: Like us on social media!
 pages:
 - src/_data/pages/contactPage.json

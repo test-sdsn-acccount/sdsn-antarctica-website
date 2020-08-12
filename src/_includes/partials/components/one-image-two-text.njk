@@ -10,9 +10,10 @@
             </div>
         </div>
     </div>
-    <div class="split-boxes-30-70 right align-items-top">
-      <p class="four">{{ actionContent | safe }}</p>
-        {% if cta %}
+    <div class="split-boxes-30-70 right align-items-top three">
+      <p class="three">{{ actionContent | safe }}</p>
+        {% if oneTwoCta | length !== 0 %}
+            {% set cta = oneTwoCta %}
             {% include "partials/components/cta-button.njk" %}
         {% endif %}
     </div>

@@ -5,16 +5,16 @@
 <main id="main-content" tabindex="-1">
 <div class="about-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if information.networkInfo %}
-        {% set header = pages.aboutPage.bannerTitle | safe %}
-        {% set subtitle = pages.aboutPage.aboutsdsn | safe %}
+    {% if pages.aboutPage %}
+        {% set introHeader = pages.aboutPage.bannerTitle %}
+        {% set introSubtitle = pages.aboutPage.aboutsdsn | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
   <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.networkInfo %}
-        {% set header = information.networkInfo.networkName | safe %}
-        {% set subtitle = AboutTheNetwork.networkdesc | safe %}
+        {% set header = information.networkInfo.networkName %}
+        {% set subtitle = information.networkInfo.networkdesc | safe %}
             {% include "layouts/section-banner.njk" %}
     {% endif %}
   </section>
@@ -26,27 +26,31 @@
     </section>
     <section class="full-bleed" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }}"{% endif %}>
         {% if information.networkInfo.networkObjectives %}
-            {% set fbHeader = information.networkInfo.networkVision | safe %}
+            {% set fbHeader = information.networkInfo.networkVision %}
                 {% include "partials/components/full-bleed.njk" %}
         {% endif %}
     </section>
     <section class="one-image-two-text" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
         {% if information.networkInfo.networkObjectives %}
             {% set pretext = 'HOSTED BY' | safe %}
-            {% for host in information.networkInfo.hostInstitution %}
-                {% set header = host.hostInstitution | safe %}
+            {% for host in information.hostInformation.hostInstitution %}
+                {% set header = host.hiName %}
                 {% set logoImg = host.hiLogo %}
-                {% set ctaColour = bgText %}
-                {% set actionContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu. Vivamus fermentum ex ut mauris feugiat convallis. Fusce cursus diam vel nunc lobortis, nec finibus orci lacinia.' %}
+                {% set actionContent = host.hidescription | safe %}
+                {% if host.hiLink | length !== 0 %}
+                    {% set ctaColour = bgText %}
+                    {% set oneTwoCta = 'Learn more' | safe %}
+                    {% set ctaLink = host.hiLink | safe %}
+                {% endif %}
                 {% include "partials/components/one-image-two-text.njk" %}
             {% endfor %}
         {% endif %}
     </section>
     <section class="text-top-metrics-bottom pop-out" {% if fcolor2Text %} style="color:{{ fcolor2Text }};background-color:{{ fcolor2 }}"{% endif %}>
-    {% if AboutTheNetwork.networkmetrics %}
+    {% if information.networkInfo.networkmetrics %}
         {% set ttmheader = pages.aboutPage.metricsheader %}
-        {% set ttmdesc = AboutTheNetwork.networkimpact | safe %}
-        {% set ttmitem = AboutTheNetwork.networkmetrics %}
+        {% set ttmdesc = information.networkInfo.networkimpact | safe %}
+        {% set ttmitem = information.networkInfo.networkmetrics %}
             {% include "partials/components/text-top-metrics-bottom.njk" %}
     {% endif %}
     </section>

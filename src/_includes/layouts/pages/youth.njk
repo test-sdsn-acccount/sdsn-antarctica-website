@@ -6,8 +6,8 @@
 <div class="home-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.networkInfo %}
-        {% set header = pages.youthPage.header %}
-        {% set subtitle = pages.youthPage.subtitle | safe %}
+        {% set introHeader = pages.youthPage.header %}
+        {% set introSubtitle = pages.youthPage.subtitle | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
@@ -33,7 +33,7 @@
         {% include "partials/components/table-section.njk" %}
     </section>
     <section class="contact-us-banner" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
-        {% set header = pages.youthPage.youthContactTitle %}
+        {% set contactHeader = pages.youthPage.youthContactTitle %}
         {% set cta = pages.youthPage.youthContactCTA %}
         {% set ctaLink = pages.youthPage.youthContactCTAURL %}
         {% include "partials/components/contact-us-banner.njk" %}

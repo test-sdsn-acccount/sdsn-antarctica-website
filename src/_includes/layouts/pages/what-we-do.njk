@@ -6,8 +6,8 @@
 <div class="what-we-do-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if pages.ourMembers %}
-        {% set header = pages.ourMembers.header | safe %}
-        {% set subtitle = pages.ourMembers.subtitle | safe %}
+        {% set introHeader = pages.ourMembers.header | safe %}
+        {% set introSubtitle = pages.ourMembers.subtitle | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
@@ -26,7 +26,7 @@
         {% include "partials/components/table-section.njk" %}
     </section>
     <section class="contact-us-banner" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
-        {% set header = pages.ourMembers.contactTitle %}
+        {% set contactHeader = pages.ourMembers.contactTitle %}
         {% set cta = pages.ourMembers.contactCTA %}
         {% set ctaLink = pages.ourMembers.contactCTAURL %}
         {% set ctaColour = fcolor1Text %}
@@ -34,4 +34,5 @@
     </section>
 </div>
 </main>
+
 {% endblock %}

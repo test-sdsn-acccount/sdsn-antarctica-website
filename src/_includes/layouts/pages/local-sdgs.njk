@@ -6,8 +6,8 @@
 <div class="home-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if pages.sdgsPage %}
-        {% set header = pages.sdgsPage.header %}
-        {% set subtitle = pages.sdgsPage.subtitle %}
+        {% set introHeader = pages.sdgsPage.header %}
+        {% set introSubtitle = pages.sdgsPage.subtitle %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>

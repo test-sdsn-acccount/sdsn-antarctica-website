@@ -5,8 +5,8 @@
 <div class="resource-landing-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.networkInfo %}
-        {% set header =  pages.eventsPage.header %}
-        {% set subtitle = pages.eventsPage.subtitle | safe %}
+        {% set introHeader =  pages.eventsPage.header %}
+        {% set introSubtitle = pages.eventsPage.subtitle | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>

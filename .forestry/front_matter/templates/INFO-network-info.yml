@@ -23,40 +23,22 @@ fields:
   type: text
   config:
     required: true
-  label: Network Name
-- name: hostInstitution
-  type: field_group_list
-  fields:
-  - name: hiName
-    type: text
-    config:
-      required: true
-    label: Host Institution Name
-  - name: map
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: markdown
-    label: Address
-    description: Please copy and paste Google Map code here
-  - name: hilogo
-    type: file
-    config:
-      maxSize: 0.7
-    label: Host Institution Logo
+  label: Network Nation/Region
+  description: e.g. Andes, Kenya, Northern Europe
+- name: networkdesc
+  type: textarea
+  default: ''
   config:
-    min: 
-    max: 
-    labelField: 
-  label: Host Institution
-  description: ''
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Network Description
+  description: Please try to keep this under 70 words
 - name: networkVision
   type: text
   config:
-    required: true
+    required: false
   label: Network Vision
 - name: networkObjectives
   type: field_group_list
@@ -87,6 +69,40 @@ fields:
     labelField: 
   label: Network Objectives
   description: Please add between 1-3 objectives
+- name: networkimpact
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Network Impact Description
+  description: Please try to keep this under 70 words
+- name: networkmetrics
+  type: field_group_list
+  fields:
+  - name: header
+    type: text
+    config:
+      required: true
+    label: Metric Title
+  - name: desc
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Metric Description
+    description: Please try to keep this under 50 words
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Network Impact
+  description: Please add between 1-3 items
 - name: networkEmail
   type: text
   config:
