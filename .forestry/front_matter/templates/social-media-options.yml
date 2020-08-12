@@ -11,7 +11,10 @@ fields:
   hidden: true
 - name: Whatsapp
   type: field_group
-  config: {}
+  config:
+    min: 
+    max: 
+    labelField: 
   fields:
   - name: name
     type: text
@@ -23,10 +26,4 @@ fields:
     config:
       maxSize: 1
     label: Social Media Image
-  config:
-    min: 
-    max: 
-    labelField: 
   label: Whatsapp
-pages:
-- src/_data/icons/socialMediaOptions.json
