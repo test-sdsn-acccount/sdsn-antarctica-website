@@ -1,33 +1,41 @@
 {
-    "contactProfiles": [
-      {
-        "contactHeader": "Contact our Network Manager",
-        "contactDesc": "Discuss partnerships opportunities or how to join our network.",
-        "ctaTitle": "Contact Sally today",
-        "ctaEmail": "antarc@unsdsn.org",
-        "contactImg": "/uploads/photo-of-woman-wearing-yellow-floral-top-871495.jpg"
-      },
-      {
-        "contactHeader": "Contact our Youth Team",
-        "contactDesc": "Explore collaboration with our youth initiatives.",
-        "ctaTitle": "Contact our youth team",
-        "ctaEmail": "antarc@unsdsn.org",
-        "contactImg": "/uploads/photo-of-woman-wearing-head-scarf-2951093.jpg"
-      }
-    ],
-    "socialMediaProfiles": [
-        {
-          "socialHeader": "Facebook",
-          "ctaTitle": "Follow us",
-          "ctaLink": "https://facebook.com/unsdsn",
-          "platform": "Whatsapp"
-        },
-        {
-          "socialHeader": "Linkedin",
-          "ctaTitle": "Connect with us",
-          "ctaLink": "https://facebook.com/unsdsn",
-          "platform": "Whatsapp"
-        }
-      ]
-  }
-  
+  "contactProfiles": [
+    {
+      "contactHeader": "Contact our Network Manager",
+      "contactDesc": "Discuss partnerships opportunities or how to join our network.",
+      "ctaTitle": "Contact Sally today",
+      "ctaEmail": "antarc@unsdsn.org",
+      "contactImg": "/uploads/photo-of-woman-wearing-yellow-floral-top-871495.jpg",
+      "photo": ""
+    },
+    {
+      "contactHeader": "Contact our Youth Team",
+      "contactDesc": "Explore collaboration with our youth initiatives.",
+      "ctaTitle": "Contact our youth team",
+      "ctaEmail": "antarc@unsdsn.org",
+      "contactImg": "/uploads/photo-of-woman-wearing-head-scarf-2951093.jpg",
+      "photo": ""
+    }
+  ],
+  "socialMediaProfiles": [
+    {
+      "platform": "whatsapp",
+      "ctaTitle": "Follow us",
+      "ctaLink": "https://",
+      "socialHeader": "Connect with us online"
+    },
+    {
+      "socialHeader": "Facebook",
+      "ctaTitle": "Follow us",
+      "ctaLink": "https://facebook.com/unsdsn",
+      "platform": "Whatsapp"
+    },
+    {
+      "socialHeader": "Linkedin",
+      "ctaTitle": "Connect with us",
+      "ctaLink": "https://facebook.com/unsdsn",
+      "platform": "Whatsapp"
+    }
+  ],
+  "title": ""
+}
