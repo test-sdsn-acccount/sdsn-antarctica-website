@@ -20,3 +20,5 @@ fields:
     max: 
     labelField: 
   label: Social Media Platforms
+pages:
+- src/_data/pages/socialMediaIcons.json
