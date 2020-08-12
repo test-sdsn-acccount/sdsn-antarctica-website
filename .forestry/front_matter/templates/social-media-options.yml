@@ -7,14 +7,20 @@ fields:
   config:
     required: false
   label: title
-- name: socialmediaplatforms
+- name: whatsapp
   type: field_group_list
   fields:
-  - name: somePlatform
+  - name: name
     type: text
     config:
       required: false
-    label: Platform
+    label: Name
+  - name: cta
+    type: text
+    config:
+      required: false
+    label: Call to Action
+    default: Connect with us on Whatsapp
   - name: someImage
     type: file
     config:
@@ -24,6 +30,6 @@ fields:
     min: 
     max: 
     labelField: 
-  label: Social Media Platforms
+  label: Whatsapp
 pages:
 - src/_data/pages/socialMediaIcons.json
