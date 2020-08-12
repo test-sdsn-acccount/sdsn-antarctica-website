@@ -19,7 +19,7 @@
   ],
   "socialMediaProfiles": [
     {
-      "platform": "whatsapp",
+      "platform": "Whatsapp",
       "ctaTitle": "Follow us",
       "ctaLink": "https://",
       "socialHeader": "Connect with us online"
@@ -28,7 +28,7 @@
       "socialHeader": "Facebook",
       "ctaTitle": "Follow us",
       "ctaLink": "https://facebook.com/unsdsn",
-      "platform": "Whatsapp"
+      "platform": ""
     },
     {
       "socialHeader": "Linkedin",
