@@ -7,20 +7,17 @@ fields:
   config:
     required: false
   label: title
-- name: whatsapp
-  type: field_group_list
+  default: 
+  hidden: true
+- name: Whatsapp
+  type: field_group
+  config: {}
   fields:
   - name: name
     type: text
     config:
       required: false
     label: Name
-  - name: cta
-    type: text
-    config:
-      required: false
-    label: Call to Action
-    default: Connect with us on Whatsapp
   - name: someImage
     type: file
     config:
@@ -31,15 +28,5 @@ fields:
     max: 
     labelField: 
   label: Whatsapp
-- name: f
-  type: field_group
-  config: {}
-  fields:
-  - name: ex
-    type: text
-    config:
-      required: false
-    label: ex
-  label: f
 pages:
-- src/_data/pages/socialMediaIcons.json
+- src/_data/icons/socialMediaOptions.json
