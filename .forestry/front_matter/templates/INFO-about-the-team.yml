@@ -161,4 +161,4 @@ fields:
   label: Youth Team Description
   description: What do the Youth Team do?
 pages:
-- src/_data/information/teamInfo.json
+- src/_data/information/TeamInfo.json

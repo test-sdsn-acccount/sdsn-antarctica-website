@@ -1,5 +1,5 @@
 ---
-label: 'Contact Information'
+label: Contact Information
 hide_body: true
 fields:
 - name: title
@@ -79,7 +79,7 @@ fields:
     label: CTA Text
   - name: ctaLink
     type: textarea
-    default: 'https://'
+    default: https://
     config:
       required: false
       wysiwyg: true
