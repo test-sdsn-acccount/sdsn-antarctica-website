@@ -1,4 +1,22 @@
 ---
 label: Social Media Options
 hide_body: true
-fields: []
+fields:
+- name: socialmediaplatforms
+  type: field_group_list
+  fields:
+  - name: somePlatform
+    type: text
+    config:
+      required: false
+    label: Platform
+  - name: someImage
+    type: file
+    config:
+      maxSize: 1
+    label: Social Media Image
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Social Media Platforms
