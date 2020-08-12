@@ -62,8 +62,8 @@ fields:
       - Website
       source:
         type: documents
-        section: edit-pages
-        file: src/_data/pages/socialMediaIcons.json
+        section: edit-social-media-icons
+        file: src/_data/icons/socialMediaOptions.json
         path: 
     label: Platform
   - name: socialHeader

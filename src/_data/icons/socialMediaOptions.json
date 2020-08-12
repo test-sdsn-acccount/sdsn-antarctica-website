@@ -2,6 +2,10 @@
   "title": "Social Media Options",
   "Whatsapp": [
     {
+      "name": "Instagram",
+      "someImage": ""
+    },
+    {
       "name": "Whatsapp",
       "someImage": "/uploads/whatsapp_logo_1.png"
     }
