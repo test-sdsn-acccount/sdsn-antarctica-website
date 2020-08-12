@@ -31,5 +31,15 @@ fields:
     max: 
     labelField: 
   label: Whatsapp
+- name: f
+  type: field_group
+  config: {}
+  fields:
+  - name: ex
+    type: text
+    config:
+      required: false
+    label: ex
+  label: f
 pages:
 - src/_data/pages/socialMediaIcons.json
