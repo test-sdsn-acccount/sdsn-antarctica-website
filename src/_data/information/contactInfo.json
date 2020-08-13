@@ -20,9 +20,9 @@
   "socialMediaProfiles": [
     {
       "platform": "Whatsapp",
-      "ctaTitle": "Follow us",
+      "ctaTitle": "Message us on Whatsapp",
       "ctaLink": "https://",
-      "socialHeader": "Connect with us online"
+      "socialHeader": "Whatsapp"
     },
     {
       "socialHeader": "Facebook",

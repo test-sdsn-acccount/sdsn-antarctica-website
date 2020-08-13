@@ -68,17 +68,19 @@
                     </div>
                 </div>
                 <div class="two-half-wrapper">
-                    {% for platform in information.contactInfo.socialMediaProfiles %}
+                    {% for pltm in information.contactInfo.socialMediaProfiles %}
                         <div class="contact-box-card">
                             <div class="contact-box img">
-                                {% include "partials/components/social-media-icon.njk" %}
+                            {{ set item to pltm.platform }}
+                                <img src="{{ icons.socialMediaIcons.item }}"></img>
+                                {{ pltm.socialMediaIcons.platform }}
                             </div>
                             <div class="contact-box title">
-                                <h2>{{ platform.socialHeader }}</h2>
+                                <h2>{{ pltm.socialHeader }}</h2>
                             </div>
                             <div class="contact-box button">
-                                <a href="{{ platform.ctaLink }}" class="resource-link">
-                                    <button class="btn-link wide animate" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}><p>{{ platform.ctaTitle }}</p></button>
+                                <a href="{{ pltm.ctaLink }}" class="resource-link">
+                                    <button class="btn-link wide animate" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}><p>{{ pltm.ctaTitle }}</p></button>
                                 </a>
                             </div>
                         </div>
