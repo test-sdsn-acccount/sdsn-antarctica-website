@@ -21,20 +21,20 @@
     {
       "platform": "Whatsapp",
       "ctaTitle": "Message us on Whatsapp",
-      "ctaLink": "",
+      "ctaLink": "https://",
       "socialHeader": "Whatsapp"
     },
     {
       "socialHeader": "Facebook",
-      "ctaTitle": "Follow us on Facebook",
+      "ctaTitle": "Follow us",
       "ctaLink": "https://facebook.com/unsdsn",
       "platform": "Facebook"
     },
     {
-      "socialHeader": "Kakao",
+      "socialHeader": "Linkedin",
       "ctaTitle": "Connect with us",
       "ctaLink": "https://facebook.com/unsdsn",
-      "platform": "Kakao"
+      "platform": "Linkedin"
     }
   ],
   "title": ""
