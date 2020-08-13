@@ -1,5 +1,9 @@
 ---
 layout: events-landing
 title: Events
-permalink: /events/
+pagination:
+  data: collections.eventsArticles
+  size: 6
+  alias: sectionList
+permalink: "/events/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
 ---
