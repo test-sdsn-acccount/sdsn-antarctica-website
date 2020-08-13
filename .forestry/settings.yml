@@ -27,7 +27,7 @@ sections:
   path: src/_data/information/websitecolours.json
   label: Edit Colour Theme
 - type: document
-  path: src/_data/icons/socialMediaOptions.json
+  path: src/_data/icons/socialMediaIcons.json
   label: Edit Social Media Icons
 - type: heading
   label: Edit Resources, Blog, Events, News
