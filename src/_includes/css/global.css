@@ -50,12 +50,12 @@ h3, p.three, .three p {
     font-size: 1.5em;
 }
 
-h4, p.four, .four p, .banner-sub-title, .banner-sub-title p {
+h4, p.four, .four p {
     font-weight: 400;
     font-size: 1.4em;
 }
 
-h5, p.five, .five p {
+h5, p.five, .five p, .banner-sub-title, .banner-sub-title p {
     font-weight: 400;
     font-size: 1.2em;
 }
@@ -92,6 +92,14 @@ ul {
     width: 50%;
 }
 
+.width-100 {
+    width: 100%;
+}
+
+.border-radius-50 {
+    border-radius: 50%;
+}
+
 .left, .right {
     display: inline-block;
 }
@@ -126,6 +134,18 @@ ul {
 
 .split-boxes-50-50-focus-left.right {
     width: 47%;
+}
+
+.repeat-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.repeat-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.repeat-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 @media screen and (max-width: 1350px) {
@@ -565,6 +585,7 @@ a.text-button {
     flex-direction: column;
     padding: 1rem;
     justify-content: space-between;
+    box-shadow: 0 5px 25px -10px rgba(0,0,0,0.57);
 }
 
 .feature-card.big.metric {
@@ -1294,7 +1315,6 @@ section.contact-us-container::before {
     margin-top: 3em;
     margin-bottom: 3em;
     display: inline-grid;
-    grid-template-columns: repeat(2, 1fr);
 }
 
 .two-half-more-content {
@@ -1306,6 +1326,7 @@ section.contact-us-container::before {
 .contact-box {
     text-align: center;
     display: block;
+    width: 100%;
 }
 
 .contact-box-card {
@@ -1319,13 +1340,36 @@ section.contact-us-container::before {
 .contact-box.img {
     text-align: center;
     display: block;
+    background-color: #fff;
+    border-radius: 50%;
 }
 
 .contact-box.img img {
     width: 100px; /* width of container */
     height: 100px; /* height of container */
     object-fit: cover;
+}
+
+
+.contact-box-card.socials {
+    place-items: center;
+    display: grid;
+}
+
+.contact-box-card.socials > .contact-box.img {
+    background-color: #fff;
     border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    place-items: center;
+    display: grid;
+    box-shadow: 1px 5px 6px -6px rgba(53, 53, 53, 0.57);
+}
+
+.contact-box-card.socials > .contact-box.img img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
 }
 
 .first-half-title {
