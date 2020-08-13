@@ -64,7 +64,7 @@ fields:
         type: documents
         section: edit-social-media-icons
         file: src/_data/icons/socialMediaIcons.json
-        path: 
+        path: exampleplat
     label: Platform
   - name: socialHeader
     type: text
