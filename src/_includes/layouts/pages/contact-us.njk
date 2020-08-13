@@ -71,9 +71,10 @@
                     {% for pltm in information.contactInfo.socialMediaProfiles %}
                         <div class="contact-box-card">
                             <div class="contact-box img">
-                            {{ set item to pltm.platform }}
+                            {% if pltm.platform %}
                                 <img src="{{ icons.socialMediaIcons.item }}"></img>
-                                {{ pltm.socialMediaIcons.platform }}
+                                {{ pltm.platform }}
+                                {% end if %}
                             </div>
                             <div class="contact-box title">
                                 <h2>{{ pltm.socialHeader }}</h2>
