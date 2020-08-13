@@ -12,7 +12,8 @@
   </section>
   <section class="full-bleed resources-bgs">
     <div class="content-container">
-    {% set sectionList = collections.newsArticles %}
+        {% include "partials/components/pagination.njk" %}
+
     {% include "partials/components/news-list.njk" %}
     </div>
   </section>
