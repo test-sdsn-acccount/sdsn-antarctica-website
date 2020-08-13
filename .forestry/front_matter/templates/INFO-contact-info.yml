@@ -62,9 +62,9 @@ fields:
       - Website
       source:
         type: documents
-        section: edit-social-media-icons
-        file: src/_data/icons/socialMediaIcons.json
-        path: exampleplat
+        section: navigation-bar
+        file: src/_data/navigation.json
+        path: ''
     label: Platform
   - name: socialHeader
     type: text
