@@ -64,3 +64,5 @@ fields:
       maxSize: 64
     label: Imgi
   label: ExamplePlat
+pages:
+- src/_data/icons/socialMediaIcons.json

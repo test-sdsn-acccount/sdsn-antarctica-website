@@ -7,5 +7,9 @@
   "WeChat": "/images/socials/WeChat.png",
   "Kakao": "/images/socials/Kakao.png",
   "Website": "/images/socials/Website.png",
-  "Newsletter": "/images/socials/Newsletter.png"
+  "Newsletter": "/images/socials/Newsletter.png",
+  "exampleplat": {
+    "name": "Plat1",
+    "imgi": "/uploads/sustainable-dev-report-cover-2020.png"
+  }
 }
