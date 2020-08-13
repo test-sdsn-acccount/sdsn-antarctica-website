@@ -49,20 +49,5 @@ fields:
   config:
     maxSize: 1
   label: Newsletter
-- name: exampleplat
-  type: field_group
-  config: {}
-  fields:
-  - name: name
-    type: text
-    config:
-      required: false
-    label: Name
-  - name: imgi
-    type: file
-    config:
-      maxSize: 64
-    label: Imgi
-  label: ExamplePlat
 pages:
 - src/_data/icons/socialMediaIcons.json
