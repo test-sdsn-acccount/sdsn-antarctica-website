@@ -28,6 +28,9 @@ collections:
     preview_path: "/{{slug}}" 
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/news-page.njk"}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Author", name: "author", widget: "string", required: true}
+      - {label: "Tags", name: "tags", widget: [], required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "Resources"
     label: "News"
@@ -37,6 +40,9 @@ collections:
     preview_path: "/{{slug}}" 
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/resource-page.njk"}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Author", name: "author", widget: "string", required: true}
+      - {label: "Tags", name: "tags", widget: [], required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "Events"
     label: "Events"
@@ -46,4 +52,7 @@ collections:
     preview_path: "/{{slug}}" 
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/events-page.njk"}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Author", name: "author", widget: "string", required: true}
+      - {label: "Tags", name: "tags", widget: [], required: false}
       - {label: "Body", name: "body", widget: "markdown"}

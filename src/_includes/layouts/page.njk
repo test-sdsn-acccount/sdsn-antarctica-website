@@ -1,9 +1,9 @@
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-  <main id="main-content" tabindex="-1">
-    <div class="home-container">
-        waut
+  <main id="main-content" class="content-colour" tabindex="-1">
+    <div class="content-container">
+        {{ content | safe }}
     </div>
   </main>
 {% endblock %}

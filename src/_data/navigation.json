@@ -73,6 +73,12 @@
             "external": false
           }
         ]
+      },
+      {
+        "megamenu": false,
+        "text" : "SEARCH",
+        "url": "/search",
+        "external": false
       }
     ]
   }

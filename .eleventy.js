@@ -23,6 +23,7 @@ module.exports = function(config) {
     config.addLayoutAlias('news-page', 'layouts/pages/news-page.njk');
     config.addLayoutAlias('events-landing', 'layouts/pages/events-landing.njk');
     config.addLayoutAlias('events-page', 'layouts/pages/events-page.njk');
+    config.addLayoutAlias('search-page', 'layouts/pages/search-page.njk');
 
 
     // Passthrough copy

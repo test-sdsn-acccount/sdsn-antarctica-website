@@ -348,7 +348,7 @@ nav.bar a.nav-item:hover {
     display: none;
     position: absolute;
     width: 19%;
-    z-index: 1;
+    z-index: 15;
   }
   
   .mega-menu:hover .mega-menu-content {
@@ -1453,4 +1453,91 @@ section.contact-us-container::before {
         margin-right: 0;
         margin-bottom: 2em;
     }
+}
+
+/* Search Bar */
+
+.search-section {
+    position: relative;
+    right: 10px;
+    top: 5px;
+    width: 100%;
+}
+
+.search-section .searchField.container {
+    position: relative;
+    right: 0;
+    background-color: #fff;
+    padding: 6px 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    /* width: 45em; */
+}
+
+input.search[type=search],
+input.search:invalid {
+    width: 100%;
+    border-radius: 2px/6%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    right: 0;
+    position: relative;
+    padding: 8px 9px;
+}
+
+/* .search-section input[type=search]:focus,
+.search-section input:valid {
+    width: 100%;
+    z-index: 10;
+} */
+
+.search-section label {
+    /* padding-left: 13px; */
+}
+
+input.search {
+    border-style: none;
+    width: 100%;
+    z-index: 10;
+    /* padding: 8px 33px 8px 12px; */
+}
+.search-section ol#searchResults {
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    padding-top: 21px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0;
+    z-index: 3;
+}
+
+.search-section ol#searchResults li {
+    padding-inline-start: 9px;
+    margin-inline-start: 0;
+    padding-inline-end: 0;
+    list-style: none;
+    text-align: left;
+}
+.search-section ol#searchResults li a::before {
+    content: url('/assets/images/magnifying-glass.svg');
+    display: inline;
+}
+/* 
+.search-section ol#searchResults li:nth-child(1) {
+    margin-top: 35px;
+} */
+
+.search-section ol#searchResults li * {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.search-section ol#searchResults a {
+    text-decoration: none;
 }
