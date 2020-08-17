@@ -35,6 +35,7 @@ module.exports = function(config) {
     config.addPassthroughCopy('src/assets/images');
     config.addPassthroughCopy('src/assets/uploads');
     config.addPassthroughCopy('src/content');
+    config.addPassthroughCopy('src/filters');
     config.addPassthroughCopy('src/js/components/rss.js');
 
     // Filters
