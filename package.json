@@ -8,6 +8,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
     "@tbranyen/jsdom": "^13.0.0",
     "concurrently": "^4.1.0",
+    "elasticlunr": "^0.9.5",
     "lunr": "^2.3.8",
     "node-fetch": "^2.6.0"
   },

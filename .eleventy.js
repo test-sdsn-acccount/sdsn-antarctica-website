@@ -1,4 +1,7 @@
 var dateFilter = require('nunjucks-date-filter');
+const searchFilter = require("./src/filters/searchFilter");
+const fs = require("fs");
+
 
 module.exports = function(config) {
 
@@ -34,7 +37,15 @@ module.exports = function(config) {
     config.addPassthroughCopy('src/content');
     config.addPassthroughCopy('src/js/components/rss.js');
 
+    // Filters
+    config.addFilter("search", searchFilter);
+
+    config.addFilter('date', dateFilter);
+    dateFilter.setDefaultFormat('MMMM Do');
+
     // Custom collections
+    // config.addCollection('tagList', require(".src/filters/getTagList.js"));
+
     config.addCollection('newsArticles', collection => {
         return [...collection.getFilteredByGlob('./src/content/news/*.md')]
         .reverse();
@@ -50,10 +61,21 @@ module.exports = function(config) {
       .reverse();
     });
 
+    
+    // 404 
+    config.setBrowserSyncConfig({
+      callbacks: {
+        ready: function(err, browserSync) {
+          const content_404 = fs.readFileSync('dist/404.html');
 
-    config.addFilter('date', dateFilter);
-    dateFilter.setDefaultFormat('MMMM Do');
-
+          browserSync.addMiddleware("*", (req, res) => {
+            // Provides the 404 content without redirect.
+            res.write(content_404);
+            res.end();
+          });
+        }
+      }
+    });
 
     return {
 		pathPrefix: "/",
