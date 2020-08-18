@@ -56,3 +56,5 @@ fields:
     max: 
     labelField: 
   label: Navigation Items
+pages:
+- src/_data/wdefaults/navigation.json
