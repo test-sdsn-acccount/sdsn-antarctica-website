@@ -35,5 +35,17 @@ fields:
     required: false
   label: Our Impact Title
   default: Our Impact
+- name: hostedPretext
+  type: text
+  config:
+    required: true
+  label: Hosted by Pretext
+  default: HOSTED BY
+- name: hostCtaText
+  type: text
+  config:
+    required: true
+  label: Hosted by CTA Text
+  default: Learn more
 pages:
 - src/_data/pages/aboutPage.json

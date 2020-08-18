@@ -31,8 +31,8 @@
         {% endif %}
     </section>
     <section class="contact-us-banner" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
-        {% set contactHeader = 'Want to learn more?' %}
-        {% set cta = 'Get in touch at antarc@unsdsn.org' %}
+        {% set contactHeader = pages.getInvolvedPage.contactHeader %}
+        {% set cta = pages.getInvolvedPage.contactCta %}
         {% set ctaColour = fcolor1Text %}
         {% include "partials/components/contact-us-banner.njk" %}
     </section>

@@ -50,4 +50,4 @@ fields:
     maxSize: 1
   label: Newsletter
 pages:
-- src/_data/icons/socialMediaIcons.json
+- src/_data/wdefaults/socialMediaIcons.json

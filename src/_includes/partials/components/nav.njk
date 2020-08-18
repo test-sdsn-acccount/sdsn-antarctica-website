@@ -1,4 +1,4 @@
-{% if navigation.items %}
+{% if wdefaults.navigation.items %}
 <a name="top"></a>
 <section class="mobile-nav">
     <nav role="navigation" {% if bgcolor %} style="background-color:{{ bgcolor }}"{% endif %}>
@@ -8,8 +8,8 @@
                 <span {% if bgText %} style="background:{{ bgText }}"{% endif %}></span>
                 <span {% if bgText %} style="background:{{ bgText }}"{% endif %}></span>
             <ul id="bar">
-            <ul><a href="/" class="link"><h5>HOMEPAGE</h5></a></ul>
-            {% for item in navigation.items %}
+            <ul><a href="/" class="link"><h5>{{ wdefaults.commonWords.homepage }}</h5></a></ul>
+            {% for item in wdefaults.navigation.items %}
                 {% if item.megamenu == true %}
                     <ul>
                         <h5>{{ item.text }}</h5>
@@ -32,11 +32,11 @@
   
         <div class="not mega-menu">
             <a href="/" class="link nav-item"{{ 'aria-current=page' if page.url == '/' | safe }} {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-                <span class="visually-hidden">{{ 'BACK TO HOMEPAGE' if page.url != '/' else 'HOMEPAGE' }}</span>
+                <span class="visually-hidden">{{ wdefaults.commonWords.homepage }}</span>
             </a>
         </div>
        
-        {% for item in navigation.items %}
+        {% for item in wdefaults.navigation.items %}
             {% set relAttribute = '' %}
 
             {% if item.rel %}

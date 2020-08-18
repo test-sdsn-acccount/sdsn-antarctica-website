@@ -5,7 +5,7 @@
     <div class="content-container ">
       <div class="news-page-title-info">
         <h2>{{ title }}</h2>
-        {{ date }} Written by: {{ author }}
+        {{ date }} {{ wdefaults.commonWords.writtenBy }} {{ author }}
           <div class="post-list-tags">
             {% for tag in tags %}
               <a href="/tags/{{ tag }}/"><p class="tag-item">

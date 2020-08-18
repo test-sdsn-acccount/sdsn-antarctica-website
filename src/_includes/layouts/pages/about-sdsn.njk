@@ -1,5 +1,5 @@
 {% extends 'layouts/base.njk' %}
-{% set pageType = 'Homepage' %}
+{% set pageType = 'About Network' %}
 
 {% block content %}
 <main id="main-content" tabindex="-1">
@@ -32,14 +32,14 @@
     </section>
     <section class="one-image-two-text" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
         {% if information.networkInfo.networkObjectives %}
-            {% set pretext = 'HOSTED BY' | safe %}
+            {% set pretext = pages.aboutPage.hostedPretext %}
             {% for host in information.hostInformation.hostInstitution %}
                 {% set header = host.hiName %}
                 {% set logoImg = host.hiLogo %}
                 {% set actionContent = host.hidescription | safe %}
                 {% if host.hiLink | length !== 0 %}
                     {% set ctaColour = bgText %}
-                    {% set oneTwoCta = 'Learn more' | safe %}
+                    {% set oneTwoCta = pages.aboutPage.hostCtaText %}
                     {% set ctaLink = host.hiLink | safe %}
                 {% endif %}
                 {% include "partials/components/one-image-two-text.njk" %}

@@ -1,5 +1,5 @@
 ---
-label: Website Colour Scheme 1
+label: Website Colour Scheme
 hide_body: false
 fields:
 - name: title
@@ -72,3 +72,9 @@ fields:
     required: true
     color_format: Hex
   default: "#222222"
+pages:
+- src/_data/themes/theme1.json
+- src/_data/themes/theme2.json
+- src/_data/themes/theme3.json
+- src/_data/themes/theme4.json
+- src/_data/themes/theme5.json

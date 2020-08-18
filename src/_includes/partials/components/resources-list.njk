@@ -28,7 +28,7 @@
                     </p>
                   </div>
                   <div class="resource-list-author">
-                        <i>Written by {{ section.data.author }}</i>
+                        <i>{{ wdefaults.commonWords.writtenBy }} {{ section.data.author }}</i>
                   </div>
                   {% if section.data.ctaURL | length !== 0 %}
                       <a href="{{ section.data.ctaURL }}" class="resource-link">

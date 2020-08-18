@@ -4,12 +4,10 @@
  <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
             <div class="section-banner-wrapper">
                 <div class="section-banner-title">
-                    {% set introHeader = 'Search' %}
-                    <h1>{{ introHeader | safe }}</h1>
+                    <h1>{{ pages.searchPage.searchHeader }}</h1>
                 </div>
                 <div class="section-banner-body banner-sub-title">
-                    {% set introSubtitle = 'Search this site' | safe %}
-                    <p>{{ introSubtitle | safe }}</p>
+                    <p>{{ pages.searchPage.searchHeader | safe }}</p>
                     {{ content | safe }}
                 
                 <input type="search" placeholder="Search..." id="searchField" class="search" required />

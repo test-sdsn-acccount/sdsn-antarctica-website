@@ -13,7 +13,7 @@
                   </p>
                 </div>
                 <div class="news-list-author">
-                      <i>Written by {{ section.data.author }}</i>
+                      <i>{{ wdefaults.commonWords.writtenBy }} {{ section.data.author }}</i>
                 </div>
                 <div class="news-list-tags">
                   {% for tag in section.data.tags %}

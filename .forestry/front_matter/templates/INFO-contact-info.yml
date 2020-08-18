@@ -63,7 +63,7 @@ fields:
       source:
         type: documents
         section: edit-social-media-icons
-        file: src/_data/icons/socialMediaIcons.json
+        file: src/_data/wdefaults/socialMediaIcons.json
         path: ''
     label: Platform
   - name: socialHeader
