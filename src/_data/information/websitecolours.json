@@ -1,10 +1,10 @@
 {
   "title": "Website Colours",
-  "theme1": "<p><strong>Theme 1</strong></p><p><img src=\"/uploads/screen-shot-2020-07-28-at-11-26-39.png\"></p><p><img src=\"/uploads/screen-shot-2020-07-28-at-11-26-39.png\"></p>",
-  "theme2": "<p><strong>Theme 1</strong></p><p><img src=\"/uploads/screen-shot-2020-07-28-at-11-26-39.png\"></p>",
-  "theme3": "<p><strong>Theme 1</strong></p><p><img src=\"/uploads/screen-shot-2020-07-28-at-11-26-39.png\"></p>",
-  "theme4": "<p><strong>Theme 1</strong></p><p><img src=\"/uploads/screen-shot-2020-07-28-at-11-26-39.png\"></p>",
-  "theme5": "<p><strong>Theme 1</strong></p><p><img src=\"/uploads/screen-shot-2020-07-28-at-11-26-39.png\"></p>",
+  "theme1": "<p><strong>Theme 1</strong></p><p><img src=\"/images/theme-screenshots/theme1A.png\"></p><p><img src=\"/images/theme-screenshots/theme1B.png\"></p>",
+  "theme2": "<p><strong>Theme 1</strong></p><p><img src=\"/images/theme-screenshots/theme2A.png\"></p><p><img src=\"/images/theme-screenshots/theme2B.png\"></p>",
+  "theme3": "<p><strong>Theme 1</strong></p><p><img src=\"/images/theme-screenshots/theme3A.png\"></p><p><img src=\"/images/theme-screenshots/theme3B.png\"></p>",
+  "theme4": "<p><strong>Theme 1</strong></p><p><img src=\"/images/theme-screenshots/theme4A.png\"></p><p><img src=\"/images/theme-screenshots/theme4B.png\"></p>",
+  "theme5": "<p><strong>Theme 1</strong></p><p><img src=\"/images/theme-screenshots/theme5A.png\"></p><p><img src=\"/images/theme-screenshots/theme5B.png\"></p>",
   "colourtheme": "Theme5",
   "description": "<p>Please scroll down the page, and review the different color palettes. You can choose any of the color palettes by selecting a theme in the drop-down below.</p>"
 }
