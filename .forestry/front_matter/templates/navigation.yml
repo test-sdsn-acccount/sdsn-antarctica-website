@@ -18,10 +18,14 @@ fields:
     config:
       required: false
     label: Link
+    showOnly:
+      field: megamenu
   - name: external
     type: boolean
     label: External Link
     description: Does this link outside of this website?
+    showOnly:
+      field: megamenu
   - name: menuitems
     type: field_group_list
     fields:
