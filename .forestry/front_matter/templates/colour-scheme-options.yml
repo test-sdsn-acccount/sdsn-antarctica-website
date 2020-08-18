@@ -11,7 +11,7 @@ fields:
   hidden: true
 - name: colourtheme
   type: select
-  default: ''
+  default: 'Theme1'
   config:
     required: true
     options:
@@ -20,7 +20,6 @@ fields:
     - Theme3
     - Theme4
     - Theme5
-    - Theme6
     source:
       type: simple
       section: edit-colour-theme-abc142de-5b77-4994-a38d-58704facd747
@@ -39,6 +38,41 @@ fields:
     schema:
       format: html-blocks
   label: Theme 1
+- name: theme2
+  type: textarea
+  default: <p><strong>Theme 1</strong></p><p><img src="https://cdn.dribbble.com/users/487509/screenshots/13900378/media/5dd038505daee05ffca7402378739914.png"></p>
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Theme 2
+- name: theme3
+  type: textarea
+  default: <p><strong>Theme 1</strong></p><p><img src="https://cdn.dribbble.com/users/487509/screenshots/13900378/media/5dd038505daee05ffca7402378739914.png"></p>
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Theme 3
+- name: theme4
+  type: textarea
+  default: <p><strong>Theme 1</strong></p><p><img src="https://cdn.dribbble.com/users/487509/screenshots/13900378/media/5dd038505daee05ffca7402378739914.png"></p>
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Theme 4
+- name: theme5
+  type: textarea
+  default: <p><strong>Theme 1</strong></p><p><img src="https://cdn.dribbble.com/users/487509/screenshots/13900378/media/5dd038505daee05ffca7402378739914.png"></p>
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Theme 5
 pages:
-- src/_data/information/websitecolours.json
 - src/_data/information/websitecolours.json
