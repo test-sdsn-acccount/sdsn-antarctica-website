@@ -7,7 +7,7 @@
         <div class="feature-card content">
         <h3>{{ obj.objTitle }}</h3>
             {{ obj.objective | safe }}
-            <a href="{{ obj.link | safe }}" class="link text-button with-arrow" rel="bookmark"><p>Learn more {% include "src/assets/images/right-arrow.svg" %}</p></a>
+            <a href="{{ obj.link | safe }}" class="link text-button with-arrow" rel="bookmark" {% if fcolor1Text %} style="color:{{ fcolor1Text }}"{% endif %}><p>Learn more {% include "src/assets/images/right-arrow.svg" %}</p></a>
         </div>
     </div>
     {% endfor %}
