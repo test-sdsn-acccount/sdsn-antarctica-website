@@ -34,5 +34,3 @@ fields:
     schema:
       format: markdown
   label: Team Page CTA Link
-pages:
-- src/_data/pages/aboutTeamPage.json
