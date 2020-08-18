@@ -11,7 +11,7 @@ fields:
   hidden: true
 - name: colourtheme
   type: select
-  default: 'Theme1'
+  default: Theme1
   config:
     required: true
     options:
@@ -75,4 +75,5 @@ fields:
       format: html-blocks
   label: Theme 5
 pages:
+- src/_data/information/websitecolours.json
 - src/_data/information/websitecolours.json
