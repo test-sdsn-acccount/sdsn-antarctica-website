@@ -1,4 +1,54 @@
 ---
 label: Navigation
 hide_body: true
-fields: []
+fields:
+- name: items
+  type: field_group_list
+  fields:
+  - name: megamenu
+    type: boolean
+    label: Drop Down Menu
+  - name: text
+    type: text
+    config:
+      required: false
+    label: Menu Label
+  - name: url
+    type: text
+    config:
+      required: false
+    label: Link
+  - name: external
+    type: boolean
+    label: External Link
+    description: Does this link outside of this website?
+  - name: menuitems
+    type: field_group_list
+    fields:
+    - name: text
+      type: text
+      config:
+        required: false
+      label: Drop Down Item Label
+    - name: url
+      type: text
+      config:
+        required: false
+      label: Drop Down Item Link
+    - name: external
+      type: boolean
+      label: External Link
+      description: Does this link outside of this website?
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Drop down items
+    showOnly:
+      field: megamenu
+      value: true
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Navigation Items
