@@ -18,7 +18,7 @@ sections:
   path: src/content/news
   label: News
   create: documents
-  match: "**/*"
+  match: "**/*.md"
   templates:
   - PAGE-news
 - type: directory
