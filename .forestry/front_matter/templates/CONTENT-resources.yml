@@ -105,7 +105,7 @@ fields:
   label: Other Highlight Content
   description: If you want to highlight more content, you can put it here.
 pages:
-- src/content/resources/Example-resource.md
 - src/content/resources/Example-resource-no-img.md
 - src/content/resources/Example-resource-no-links.md
+- src/content/resources/Example-resource.md
 - src/content/resources/SDR2020.md

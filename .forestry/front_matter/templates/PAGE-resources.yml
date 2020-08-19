@@ -24,5 +24,5 @@ fields:
     schema:
       format: html-blocks
   label: Banner Sub Title
-pages: 
+pages:
 - src/_data/pages/sdgs/resourcePage.json

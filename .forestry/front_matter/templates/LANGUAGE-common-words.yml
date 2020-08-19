@@ -84,5 +84,3 @@ fields:
   label: Previous Page Button
   hidden: false
   default: Previous
-pages:
-- src/_data/wdefaults/commonWords.json

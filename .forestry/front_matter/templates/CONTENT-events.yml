@@ -75,6 +75,3 @@ fields:
     max: 
     labelField: 
   label: Location
-pages:
-- src/content/events/example-event.md
-- src/content/events/example-event copy.md
