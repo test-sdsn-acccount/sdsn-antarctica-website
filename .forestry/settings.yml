@@ -24,6 +24,26 @@ sections:
   path: src/_data/pages/homepage.json
   label: Homepage content
   match: "**/*"
+- type: directory
+  path: src/_data/pages/about
+  label: About page content
+  create: documents
+  match: "**/*"
+- type: directory
+  path: src/_data/pages/what
+  label: What we do content
+  create: documents
+  match: "**/*"
+- type: directory
+  path: src/_data/pages/sdgs
+  label: Local SDGs content
+  create: documents
+  match: "**/*"
+- type: directory
+  path: src/_data/pages/involved
+  label: Get Involved content
+  create: documents
+  match: "**/*"
 - type: heading
   label: Website structure
 - type: document

@@ -59,3 +59,4 @@ fields:
   description: Please copy and paste Google Map code here
 pages:
 - src/_data/pages/homepage.json
+- src/_data/pages/homepage.json
