@@ -19,6 +19,12 @@ sections:
   match: "*.json"
   new_doc_ext: json
 - type: heading
+  label: Edit Page headings
+- type: document
+  path: src/_data/pages/homepage.json
+  label: Homepage content
+  match: "**/*"
+- type: heading
   label: Website structure
 - type: document
   path: src/_data/wdefaults/navigation.json
