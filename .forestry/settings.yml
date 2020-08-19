@@ -28,6 +28,13 @@ sections:
   match: "**/*"
   templates:
   - PAGE-resources
+- type: directory
+  path: src/content/events
+  label: Events
+  create: all
+  match: "**/*"
+  templates:
+  - CONTENT-events
 - type: heading
   label: Edit Page headings
 - type: document
@@ -56,7 +63,6 @@ sections:
 - type: document
   path: src/_data/pages/searchPage.json
   label: Search page
-  match: "**/*"
 - type: heading
   label: Website structure
 - type: document
