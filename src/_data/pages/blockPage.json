@@ -1,6 +1,0 @@
-{
-  "title": "Block page",
-  "mardown": "Mark down _page_ with **content**!\n\n* Dot list 1\n* dot list 3",
-  "html": "<p>HTMLn <em>page</em> with <strong>content</strong>!</p><ul><li><p>Dot list 1</p></li><li><p>dot list 3</p></li></ul>",
-  "inlinehtml": "INLINE HTML <em>page</em> <span style=\"text-decoration: underline;\">with</span> <strong>content</strong>!<br>you can't do dot list in inline"
-}
