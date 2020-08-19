@@ -24,5 +24,3 @@ fields:
       format: html-blocks
   label: Search Subtitle
   default: Search this site
-pages:
-- src/_data/pages/searchPage.json

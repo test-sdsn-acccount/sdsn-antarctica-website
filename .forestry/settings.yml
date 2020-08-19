@@ -12,12 +12,6 @@ sections:
   create: all
   match: "*.json"
   new_doc_ext: json
-- type: directory
-  path: src/_data/pages
-  label: Edit pages
-  create: all
-  match: "*.json"
-  new_doc_ext: json
 - type: heading
   label: Edit Resources, Blog, Events, News
 - type: directory
@@ -58,6 +52,10 @@ sections:
   path: src/_data/pages/involved
   label: Get Involved content
   create: documents
+  match: "**/*"
+- type: document
+  path: src/_data/pages/searchPage.json
+  label: Search page
   match: "**/*"
 - type: heading
   label: Website structure
