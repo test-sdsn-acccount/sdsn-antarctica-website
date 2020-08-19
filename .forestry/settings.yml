@@ -69,7 +69,7 @@ sections:
   path: src/_data/wdefaults/navigation.json
   label: Navigation Bar
 - type: document
-  path: src/_data/information/websitecolours.json
+  path: src/_data/wdefaults/websitecolours.json
   label: Edit Colour Theme
 - type: document
   path: src/_data/wdefaults/socialMediaIcons.json
