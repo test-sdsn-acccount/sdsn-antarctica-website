@@ -108,4 +108,4 @@ fields:
   label: Contact CTA Text
   default: Get in touch
 pages:
-- src/_data/pages/getInvolvedPage.json
+- src/_data/pages/involved/joinPage.json

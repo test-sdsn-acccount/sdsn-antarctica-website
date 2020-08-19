@@ -85,4 +85,4 @@ fields:
   hidden: false
   default: Previous
 pages:
-- src/_data/pages/aboutTeamPage.json
+- src/_data/wdefaults/commonWords.json

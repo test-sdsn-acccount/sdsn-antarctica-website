@@ -4,9 +4,9 @@
 <main id="main-content" tabindex="-1">
 <div class="home-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if pages.newsPage %}
-        {% set introHeader = pages.newsPage.header %}
-        {% set introSubtitle = pages.newsPage.subtitle | safe %}
+    {% if pages.what.newsPage %}
+        {% set introHeader = pages.what.newsPage.header %}
+        {% set introSubtitle = pages.what.newsPage.subtitle | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
@@ -18,8 +18,8 @@
   </section>
     <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.networkInfo %}
-        {% set introHeader = pages.newsPage.globalHeader | safe %}
-        {% set introSubtitle = pages.newsPage.globalSubtitle | safe %}
+        {% set introHeader = pages.what.newsPage.globalHeader | safe %}
+        {% set introSubtitle = pages.what.newsPage.globalSubtitle | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>

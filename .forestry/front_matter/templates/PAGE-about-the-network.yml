@@ -48,4 +48,4 @@ fields:
   label: Hosted by CTA Text
   default: Learn more
 pages:
-- src/_data/pages/aboutPage.json
+- src/_data/pages/about/aboutPage.json

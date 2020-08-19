@@ -25,4 +25,4 @@ fields:
       format: html-blocks
   label: Banner Sub Title
 pages:
-- src/_data/pages/eventsPage.json
+- src/_data/pages/involved/eventsPage.json

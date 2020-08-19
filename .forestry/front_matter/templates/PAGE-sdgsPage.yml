@@ -100,4 +100,4 @@ fields:
   description: Feature national/regional initiatives for the SDGs here. For example,
     does the government have a grant for SDG research or grants?
 pages:
-- src/_data/pages/sdgsPage.json
+- src/_data/pages/sdgs/sdgsPage.json

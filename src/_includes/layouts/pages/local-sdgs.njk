@@ -5,29 +5,29 @@
 <main id="main-content" tabindex="-1">
 <div class="home-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if pages.sdgsPage %}
-        {% set introHeader = pages.sdgsPage.header %}
-        {% set introSubtitle = pages.sdgsPage.subtitle %}
+    {% if pages.sdgs.sdgsPage %}
+        {% set introHeader = pages.sdgs.sdgsPage.header %}
+        {% set introSubtitle = pages.sdgs.sdgsPage.subtitle %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
     <section class="full-bleed" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}>
         {% if information.networkInfo.networkObjectives %}
-            {% set header = pages.sdgsPage.sdgsHeader %}
-            {% set subtitle = pages.sdgsPage.sdgsSubtitle %}
-            {% set sbCta = pages.sdgsPage.sdgsCta %}
-            {% set ctaLink = pages.sdgsPage.sdgsCtaURL %}
+            {% set header = pages.sdgs.sdgsPage.sdgsHeader %}
+            {% set subtitle = pages.sdgs.sdgsPage.sdgsSubtitle %}
+            {% set sbCta = pages.sdgs.sdgsPage.sdgsCta %}
+            {% set ctaLink = pages.sdgs.sdgsPage.sdgsCtaURL %}
             {% set ctaColour = fcolor2Text %}
             {% include "layouts/section-banner.njk" %}
             {% include "partials/components/sdgs.njk" %}
         {% endif %}
     </section>
     <section class="one-image-two-text" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-        {% for ft in pages.sdgsPage.featuredActions %}
+        {% for ft in pages.sdgs.sdgsPage.featuredActions %}
             {% set pretext = ft.pretextFeature | safe %}
             {% set header = ft.featureHeader | safe %}
             {% set actionContent = ft.featureSubtitle %}
-            {% set cta = ft.featureCta %}
+            {% set oneTwoCta = ft.featureCta %}
             {% set ctaLink = ft.featureCtaURL %}
             {% set ctaColour = bgText %}
             {% set logoImg = ft.featureImg %}

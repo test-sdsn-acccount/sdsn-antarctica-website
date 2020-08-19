@@ -6,20 +6,20 @@
 <div class="home-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.networkInfo %}
-        {% set introHeader = pages.youthPage.header %}
-        {% set introSubtitle = pages.youthPage.subtitle | safe %}
+        {% set introHeader = pages.what.youthPage.header %}
+        {% set introSubtitle = pages.what.youthPage.subtitle | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
       <section class="feature-banner">
-        {% if pages.youthPage.youthObjectives.length !== 0 %}
-            {% set item = pages.youthPage.youthObjectives %}
+        {% if pages.what.youthPage.youthObjectives.length !== 0 %}
+            {% set item = pages.what.youthPage.youthObjectives %}
                 {% include "partials/components/large-feature.njk" %}
         {% endif %}
     </section>
     <section class="section-banner as-header" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-        {% set header = pages.youthPage.highlightProjectsHeader %}
-        {% set subtitle = pages.youthPage.highlightProjectsSubtitle %}
+        {% set header = pages.what.youthPage.highlightProjectsHeader %}
+        {% set subtitle = pages.what.youthPage.highlightProjectsSubtitle %}
         {% include "layouts/section-banner.njk" %}
     </section>
     <section class="resource-feature-banner">
@@ -28,14 +28,14 @@
         {% include "partials/components/resource-feature-tag-banner.njk" %}
     </section>
     <section class="full-bleed" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}>
-        {% set header = pages.youthPage.youthMemberTitle %}
-        {% set subtitle = pages.youthPage.youthMemberSubtitle %}
+        {% set header = pages.what.youthPage.youthMemberTitle %}
+        {% set subtitle = pages.what.youthPage.youthMemberSubtitle %}
         {% include "partials/components/table-section.njk" %}
     </section>
     <section class="contact-us-banner" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
-        {% set contactHeader = pages.youthPage.youthContactTitle %}
-        {% set cta = pages.youthPage.youthContactCTA %}
-        {% set ctaLink = pages.youthPage.youthContactCTAURL %}
+        {% set contactHeader = pages.what.youthPage.youthContactTitle %}
+        {% set cta = pages.what.youthPage.youthContactCTA %}
+        {% set ctaLink = pages.what.youthPage.youthContactCTAURL %}
         {% include "partials/components/contact-us-banner.njk" %}
     </section>
 </div>

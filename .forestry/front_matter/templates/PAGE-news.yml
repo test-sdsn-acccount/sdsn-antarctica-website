@@ -40,4 +40,4 @@ fields:
       format: html-blocks
   label: Global News Sub Title
 pages:
-- src/_data/pages/newsPage.json
+- src/_data/pages/what/newsPage.json

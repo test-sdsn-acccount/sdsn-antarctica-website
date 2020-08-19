@@ -45,4 +45,4 @@ fields:
   label: Social Media Description
   default: Like us on social media!
 pages:
-- src/_data/pages/contactPage.json
+- src/_data/pages/involved/contactPage.json
