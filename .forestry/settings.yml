@@ -25,14 +25,14 @@ sections:
   path: src/content/resources
   label: Resources
   create: all
-  match: "**/*"
+  match: "**/*.md"
   templates:
   - PAGE-resources
 - type: directory
   path: src/content/events
   label: Events
   create: all
-  match: "**/*"
+  match: "**/*.md"
   templates:
   - CONTENT-events
 - type: heading
