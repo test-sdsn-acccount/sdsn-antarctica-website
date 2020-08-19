@@ -74,6 +74,3 @@ fields:
     schema:
       format: html-blocks
   label: Theme 5
-pages:
-- src/_data/information/websitecolours.json
-- src/_data/information/websitecolours.json
