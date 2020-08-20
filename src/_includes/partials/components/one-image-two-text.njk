@@ -5,9 +5,11 @@
             <h2 class="close-header">{{ header }}</h2>
         </div>
         <div class="one-image-image">
+        {% if host.hiLogo | length !== 0 %}
             <div class="white-bg-logo">
                 <img src="/assets{{ host.hiLogo }}" class="nav-logo"></img>
             </div>
+        {% endif %}
         </div>
     </div>
     <div class="split-boxes-30-70 right align-items-top three">

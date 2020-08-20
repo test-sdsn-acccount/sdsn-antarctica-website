@@ -1397,9 +1397,15 @@ img.news-img {
     }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 600px) {
     .sdg-section img {
         width: 20%;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .sdg-section img {
+        width: 45%;
     }
 }
 
