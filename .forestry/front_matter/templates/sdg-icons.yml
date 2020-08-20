@@ -28,5 +28,3 @@ fields:
     max: 
     labelField: 
   label: SDG Icons
-pages:
-- src/_data/wdefaults/sdgIcons.json

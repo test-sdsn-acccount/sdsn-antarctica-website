@@ -24,14 +24,14 @@ sections:
 - type: directory
   path: src/content/resources
   label: Resources
-  create: all
+  create: documents
   match: "**/*.md"
   templates:
   - PAGE-resources
 - type: directory
   path: src/content/events
   label: Events
-  create: all
+  create: documents
   match: "**/*.md"
   templates:
   - CONTENT-events
@@ -43,22 +43,22 @@ sections:
 - type: directory
   path: src/_data/pages/about
   label: About page content
-  create: documents
+  create: none
   match: "**/*"
 - type: directory
   path: src/_data/pages/what
   label: What we do content
-  create: documents
+  create: none
   match: "**/*"
 - type: directory
   path: src/_data/pages/sdgs
   label: Local SDGs content
-  create: documents
+  create: none
   match: "**/*"
 - type: directory
   path: src/_data/pages/involved
   label: Get Involved content
-  create: documents
+  create: none
   match: "**/*"
 - type: document
   path: src/_data/pages/searchPage.json
