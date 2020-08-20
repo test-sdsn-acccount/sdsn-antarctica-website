@@ -1,6 +1,6 @@
 var dateFilter = require('nunjucks-date-filter');
-const searchFilter = require("./src/filters/searchFilter");
-const fs = require("fs");
+const searchFilter = require('./src/filters/searchFilter.js');
+const fs = require('fs');
 
 
 module.exports = function(config) {
@@ -37,10 +37,10 @@ module.exports = function(config) {
     config.addPassthroughCopy('src/assets/uploads');
     config.addPassthroughCopy('src/content');
     config.addPassthroughCopy('src/filters');
-    config.addPassthroughCopy('src/js/components/rss.js');
+    config.addPassthroughCopy('src/js');
 
     // Filters
-    config.addFilter("search", searchFilter);
+    config.addFilter('search', searchFilter);
 
     config.addFilter('date', dateFilter);
     dateFilter.setDefaultFormat('MMMM Do');

@@ -1,5 +1,5 @@
 ---
-title: 2019 SDG Index for Antarctica No Links
+title: 2019 SDG Index for Antarctica No Linksada
 date: 2012-06-17T01:00:00.000+00:00
 author: SDSN Antarctica
 fImage: "/uploads/2019-lac-index-cover.png"
