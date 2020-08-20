@@ -69,6 +69,10 @@ fields:
     labelField: 
   label: Network Objectives
   description: Please add between 1-3 objectives
+- name: impactSection
+  type: boolean
+  label: Impact Section
+  description: Turn on or off the Impact section
 - name: networkimpact
   type: textarea
   default: ''
@@ -79,6 +83,9 @@ fields:
       format: html-blocks
   label: Network Impact Description
   description: Please try to keep this under 70 words
+  showOnly:
+    field: impactSection
+    value: true
 - name: networkmetrics
   type: field_group_list
   fields:
@@ -103,6 +110,9 @@ fields:
     labelField: 
   label: Network Impact
   description: Please add between 1-3 items
+  showOnly:
+    field: impactSection
+    value: true
 - name: networkEmail
   type: text
   config:

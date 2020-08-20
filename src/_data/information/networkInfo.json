@@ -21,6 +21,7 @@
       "link": "sdgstudent.org"
     }
   ],
+  "impactSection": true,
   "networkimpact": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu. Vivamus fermentum ex ut mauris feugiat convallis. Fusce cursus diam vel nunc lobortis, nec finibus orci lacinia.</p>",
   "networkmetrics": [
     {

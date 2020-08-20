@@ -47,7 +47,7 @@
         {% endif %}
     </section>
     <section class="text-top-metrics-bottom pop-out" {% if fcolor2Text %} style="color:{{ fcolor2Text }};background-color:{{ fcolor2 }}"{% endif %}>
-    {% if information.networkInfo.networkmetrics %}
+    {% if information.networkInfo.impactSection == true %}
         {% set ttmheader = pages.about.aboutPage.metricsheader %}
         {% set ttmdesc = information.networkInfo.networkimpact | safe %}
         {% set ttmitem = information.networkInfo.networkmetrics %}
