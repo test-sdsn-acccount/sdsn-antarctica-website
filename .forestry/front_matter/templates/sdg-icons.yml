@@ -23,10 +23,10 @@ fields:
     config:
       maxSize: 1
     label: SDG Icon
-config:
-  min: 
-  max: 
-  labelField: 
-label: SDG Icons
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: SDG Icons
 pages:
 - src/_data/wdefaults/sdgIcons.json
