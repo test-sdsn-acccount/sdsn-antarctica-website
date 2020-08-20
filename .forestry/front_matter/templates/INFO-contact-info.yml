@@ -44,6 +44,10 @@ fields:
     max: 
     labelField: 
   label: Contact profiles
+- name: socialMedia
+  type: boolean
+  label: Social Media
+  description: Turn on or off the Social Media section
 - name: socialMediaProfiles
   type: field_group_list
   fields:
@@ -92,5 +96,8 @@ fields:
     max: 
     labelField: 
   label: Social Media Platforms
+  showOnly:
+    field: socialMedia
+    value: true
 pages:
 - src/_data/information/contactInfo.json

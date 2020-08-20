@@ -69,6 +69,7 @@
                         </div>
                     </div>
                 </div>
+                {% if information.contactInfo.socialMedia == true %}
                 <div class="two-half-wrapper repeat-grid-4 width-100">
                     {% for pltm in information.contactInfo.socialMediaProfiles %}
                         <div class="contact-box-card socials">
@@ -88,6 +89,7 @@
                         </div>
                     {% endfor %}
                 </div>
+                {% endif %}
         </section>
     </div>
 </main>
