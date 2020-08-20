@@ -8,6 +8,7 @@ module.exports = function(config) {
     // Layout aliases
     config.addLayoutAlias('base', 'layouts/base.njk');
     config.addLayoutAlias('page', 'layouts/page.njk');
+    config.addLayoutAlias('page-white', 'layouts/page-white.njk');
     config.addLayoutAlias('banner', 'layouts/banner.njk');
     config.addLayoutAlias('section-banner', 'layouts/section-banner.njk');
     config.addLayoutAlias('intro-banner', 'layouts/intro-banner.njk');
@@ -45,7 +46,7 @@ module.exports = function(config) {
     dateFilter.setDefaultFormat('MMMM Do');
 
     // Custom collections
-    // config.addCollection('tagList', require(".src/filters/getTagList.js"));
+    config.addCollection('tagList', require('./src/filters/getTagList.js'));
 
     config.addCollection('newsArticles', collection => {
         return [...collection.getFilteredByGlob('./src/content/news/*.md')]

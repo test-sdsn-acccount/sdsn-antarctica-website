@@ -317,15 +317,12 @@ a.link {
 }
 
 a.link.dark:hover,
-*.dark a:-webkit-any-link {
+.dark * {
     color: #575757;
-    border-bottom: .2rem solid #575757!important;
 }
 
-a.link.light:hover,
-*.light a:-webkit-any-link {
+a.link.light:hover{
     color: #eeeeee;
-    border-bottom: .2rem solid #eeeeee!important;
 }
 
 .map-svg {

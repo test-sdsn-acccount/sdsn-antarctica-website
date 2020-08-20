@@ -1,0 +1,20 @@
+---
+title: Tags
+layout: page-white
+permalink: /tags/
+---
+
+{% block content %}
+<section class="intro-banner">
+  <ul>
+  {% for tag in collections.tagList %}
+    {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+    <li><a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a> ({{ collections[tag].length }})</li>
+  {% endfor %}
+  </ul>
+</section>
+{% endblock %}
+
+
+
+

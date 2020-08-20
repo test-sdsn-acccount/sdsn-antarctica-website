@@ -17,17 +17,13 @@
 </section>    
 <section class="intro-banner resources-bgs">
     <div class="content-container">
-        <div class="split-boxes-50-50 left">
             <div class="search-section">
                 <label for="searchField"></label>
                     <ol id="searchResults" />
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"></script>
             </div>
-        </div>
-        <div class="split-boxes-50-50 right">
-            <div class="section-banner-title">
-                {% set tagSubtitle = 'Search via tags' | safe %}
-                <p class="four">{{ tagSubtitle | safe }}</p>
+                        <div class="section-banner-title">
+                <p class="four">{{ wdefaults.commonWords.tagSubtitle | safe }}</p>
             </div>
             <div class="section-banner-body banner-sub-title">
                 <ul>
@@ -37,10 +33,7 @@
                 {% endfor %}
                 </ul>
             </div>
-        </div>
-    </div>
-
-        
+      </div>
     </section>
 {% endblock %}
 

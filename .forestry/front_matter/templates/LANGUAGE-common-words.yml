@@ -84,3 +84,12 @@ fields:
   label: Previous Page Button
   hidden: false
   default: Previous
+- name: tagSubtitle
+  type: text
+  config:
+    required: false
+  label: Search Tag Text
+  hidden: false
+  default: Search via tags
+pages:
+- src/_data/wdefaults/commonWords.json
