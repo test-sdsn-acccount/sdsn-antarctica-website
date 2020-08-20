@@ -16,24 +16,27 @@ fields:
     schema:
       format: html-blocks
   label: Team Description
+- name: leadershipCouncil
+  type: boolean
+  label: Network Leadership Council
+  description: Turn on or off the Leadership Council section
+- name: networkManagers
+  type: boolean
+  label: Network Managers
+  description: Turn on or off the Network Managers section
+- name: youthCoordinators
+  type: boolean
+  label: Youth Network Coordinators
+  description: Turn on or off the Youth Network Coordinators section
 - name: lcTitle
   type: text
   config:
     required: true
   label: Leadership Council Title
   default: Leadership Council
-- name: nmTitle
-  type: text
-  config:
-    required: true
-  label: Network Managers Title
-  default: Network Managers
-- name: youthTitle
-  type: text
-  config:
-    required: true
-  label: Youth Team Title
-  default: Youth Team
+  showOnly:
+      field: leadershipCouncil
+      value: true
 - name: lcdesc
   type: textarea
   default: The Network is guided by a Leadership Council, which brings together global
@@ -45,6 +48,9 @@ fields:
     schema:
       format: html-blocks
   label: Network Leadership Council Description
+  showOnly:
+      field: leadershipCouncil
+      value: true
 - name: lcprofiles
   type: field_group_list
   fields:
@@ -88,6 +94,18 @@ fields:
     max: 
     labelField: 
   label: Leadership Council Profiles
+  showOnly:
+      field: leadershipCouncil
+      value: true
+- name: nmTitle
+  type: text
+  config:
+    required: true
+  label: Network Managers Title
+  default: Network Managers
+  showOnly:
+    field: networkManagers
+    value: true
 - name: nmdesc
   type: textarea
   default: Network Managers coordinate the network, working with Member Institutions
@@ -99,6 +117,9 @@ fields:
       format: html-blocks
   label: Network Manager Description
   description: What do the Network Managers do?
+  showOnly:
+    field: networkManagers
+    value: true
 - name: nmprofiles
   type: field_group_list
   fields:
@@ -123,6 +144,18 @@ fields:
     max: 
     labelField: 
   label: Network Managers Profiles
+  showOnly:
+    field: networkManagers
+    value: true
+- name: youthTitle
+  type: text
+  config:
+    required: true
+  label: Youth Team Title
+  default: Youth Team
+  showOnly:
+    field: youthCoordinators
+    value: true
 - name: youthprofiles
   type: field_group_list
   fields:
@@ -150,6 +183,9 @@ fields:
     max: 
     labelField: 
   label: Youth Team Profiles
+  showOnly:
+    field: youthCoordinators
+    value: true
 - name: youthdesc
   type: textarea
   default: The Youth Team mobilizes young people locally to create sustainable solutions.
@@ -160,5 +196,8 @@ fields:
       format: html-blocks
   label: Youth Team Description
   description: What do the Youth Team do?
+  showOnly:
+    field: youthCoordinators
+    value: true
 pages:
 - src/_data/information/TeamInfo.json

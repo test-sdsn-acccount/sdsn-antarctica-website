@@ -1,5 +1,8 @@
 {
   "teamDesc": "Lorem ipsum",
+  "leadershipCouncil": true,
+  "networkManagers": true,
+  "youthCoordinators": true,
   "lcTitle": "Leadership Council",
   "nmTitle": "Network Managers",
   "youthTitle": "Lorem ipsum",

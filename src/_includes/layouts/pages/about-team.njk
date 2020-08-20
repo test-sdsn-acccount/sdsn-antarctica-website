@@ -12,7 +12,7 @@
     {% endif %}
   </section>
   <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if information.teamInfo.lcdesc | length !== 0 %}
+    {% if information.teamInfo.leadershipCouncil == true %}
         {% set header = information.teamInfo.lcTitle %}
         {% set subtitle = information.teamInfo.lcdesc | safe %}
             {% include "layouts/section-banner.njk" %}
@@ -21,7 +21,7 @@
     {% endif %}
   </section>
   <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if information.teamInfo.nmdesc | length !== 0 %}
+    {% if information.teamInfo.networkManagers == true %}
         {% set header = information.teamInfo.nmTitle %}
         {% set subtitle = information.teamInfo.nmdesc | safe %}
             {% include "layouts/section-banner.njk" %}
@@ -30,7 +30,7 @@
     {% endif %}
   </section>
   <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if information.teamInfo.youthdesc | length !== 0 %}
+    {% if information.teamInfo.youthCoordinators == true %}
         {% set header = information.teamInfo.youthTitle %}
         {% set subtitle = information.teamInfo.youthdesc | safe %}
             {% include "layouts/section-banner.njk" %}
