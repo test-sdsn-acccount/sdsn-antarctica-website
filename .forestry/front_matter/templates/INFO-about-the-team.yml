@@ -8,6 +8,7 @@ fields:
     required: true
   label: Page Title
   default: The Team
+  description: 'This page will show all the team information. '
 - name: teamDesc
   type: textarea
   config:
@@ -35,8 +36,8 @@ fields:
   label: Leadership Council Title
   default: Leadership Council
   showOnly:
-      field: leadershipCouncil
-      value: true
+    field: leadershipCouncil
+    value: true
 - name: lcdesc
   type: textarea
   default: The Network is guided by a Leadership Council, which brings together global
@@ -49,8 +50,8 @@ fields:
       format: html-blocks
   label: Network Leadership Council Description
   showOnly:
-      field: leadershipCouncil
-      value: true
+    field: leadershipCouncil
+    value: true
 - name: lcprofiles
   type: field_group_list
   fields:
@@ -95,8 +96,8 @@ fields:
     labelField: 
   label: Leadership Council Profiles
   showOnly:
-      field: leadershipCouncil
-      value: true
+    field: leadershipCouncil
+    value: true
 - name: nmTitle
   type: text
   config:
