@@ -1,4 +1,4 @@
-# rn-networks-template
+# Regional / National Network Website Boilerplate Template
 Repository for Regional/National Networks Website Boilerplate Template
 
 # Deployment 
