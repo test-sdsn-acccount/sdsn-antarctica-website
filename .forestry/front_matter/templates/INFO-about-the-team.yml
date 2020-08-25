@@ -1,0 +1,204 @@
+---
+label: About the team
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Page Title
+  default: The Team
+  description: 'This page will show all the team information. '
+- name: teamDesc
+  type: textarea
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Team Description
+- name: leadershipCouncil
+  type: boolean
+  label: Network Leadership Council
+  description: Turn on or off the Leadership Council section
+- name: networkManagers
+  type: boolean
+  label: Network Managers
+  description: Turn on or off the Network Managers section
+- name: youthCoordinators
+  type: boolean
+  label: Youth Network Coordinators
+  description: Turn on or off the Youth Network Coordinators section
+- name: lcTitle
+  type: text
+  config:
+    required: true
+  label: Leadership Council Title
+  default: Leadership Council
+  showOnly:
+    field: leadershipCouncil
+    value: true
+- name: lcdesc
+  type: textarea
+  default: The Network is guided by a Leadership Council, which brings together global
+    sustainable development leaders from all regions and all sectors, including civil
+    society, public, and private sectors.
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Network Leadership Council Description
+  showOnly:
+    field: leadershipCouncil
+    value: true
+- name: lcprofiles
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Full name
+  - name: email
+    type: text
+    config:
+      required: false
+    label: Email
+  - name: networkposition
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Network Position Title
+  - name: position
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Position Title (if applicable)
+    description: If the Leadership Council has a position outside that you want to
+      highlight, list it here.
+  - name: photo
+    type: file
+    config:
+      maxSize: 0.8
+    label: Photo
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Leadership Council Profiles
+  showOnly:
+    field: leadershipCouncil
+    value: true
+- name: nmTitle
+  type: text
+  config:
+    required: true
+  label: Network Managers Title
+  default: Network Managers
+  showOnly:
+    field: networkManagers
+    value: true
+- name: nmdesc
+  type: textarea
+  default: Network Managers coordinate the network, working with Member Institutions
+    to identify potential collaboration within the network.
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Network Manager Description
+  description: What do the Network Managers do?
+  showOnly:
+    field: networkManagers
+    value: true
+- name: nmprofiles
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Full Name
+  - name: networkposition
+    type: text
+    config:
+      required: false
+    label: Network Manager Position Title
+    default: Network Manager
+  - name: photo
+    type: file
+    config:
+      maxSize: 0.7
+    label: Photo
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Network Managers Profiles
+  showOnly:
+    field: networkManagers
+    value: true
+- name: youthTitle
+  type: text
+  config:
+    required: true
+  label: Youth Team Title
+  default: Youth Team
+  showOnly:
+    field: youthCoordinators
+    value: true
+- name: youthprofiles
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Full name
+  - name: networkposition
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Youth Member Position Title
+  - name: photo
+    type: file
+    config:
+      maxSize: 0.7
+    label: Photo
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Youth Team Profiles
+  showOnly:
+    field: youthCoordinators
+    value: true
+- name: youthdesc
+  type: textarea
+  default: The Youth Team mobilizes young people locally to create sustainable solutions.
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Youth Team Description
+  description: What do the Youth Team do?
+  showOnly:
+    field: youthCoordinators
+    value: true
+pages:
+- src/_data/information/TeamInfo.json

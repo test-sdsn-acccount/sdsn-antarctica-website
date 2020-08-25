@@ -1,0 +1,103 @@
+---
+label: Contact Information
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Contact Information
+  hidden: true
+- name: contactProfiles
+  type: field_group_list
+  fields:
+  - name: photo
+    type: file
+    config:
+      maxSize: 0.7
+    label: Photo
+  - name: contactHeader
+    type: text
+    default: Contact our Network Manager
+    config:
+      required: true
+    label: Contact Title
+  - name: contactDesc
+    type: text
+    default: Discuss partnerships opportunities or how to join our network.
+    config:
+      required: true
+    label: Contact Description
+  - name: ctaTitle
+    type: text
+    default: Contact our team
+    config:
+      required: true
+    label: CTA Text
+  - name: ctaEmail
+    type: text
+    config:
+      required: true
+    label: CTA Email
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Contact profiles
+- name: socialMedia
+  type: boolean
+  label: Social Media
+  description: Turn on or off the Social Media section
+- name: socialMediaProfiles
+  type: field_group_list
+  fields:
+  - name: platform
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - Linkedin
+      - Instagram
+      - Whatsapp
+      - Facebook
+      - WeChat
+      - Newsletter
+      - Website
+      source:
+        type: documents
+        section: edit-social-media-icons
+        file: src/_data/wdefaults/socialMediaIcons.json
+        path: ''
+    label: Platform
+  - name: socialHeader
+    type: text
+    config:
+      required: true
+    label: Social Media Title
+  - name: ctaTitle
+    type: text
+    default: Follow us
+    config:
+      required: true
+    label: CTA Text
+  - name: ctaLink
+    type: textarea
+    default: https://
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Link to social media
+    description: Please make sure to include https://
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Social Media Platforms
+  showOnly:
+    field: socialMedia
+    value: true
+pages:
+- src/_data/information/contactInfo.json

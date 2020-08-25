@@ -1,0 +1,73 @@
+{% if wdefaults.navigation.items %}
+<a name="top"></a>
+<section class="mobile-nav">
+    <nav role="navigation" {% if bgcolor %} style="background-color:{{ bgcolor }}"{% endif %}>
+            <div id="menuToggle">
+              <input type="checkbox" />
+                <span {% if bgText %} style="background:{{ bgText }}"{% endif %}></span>
+                <span {% if bgText %} style="background:{{ bgText }}"{% endif %}></span>
+                <span {% if bgText %} style="background:{{ bgText }}"{% endif %}></span>
+            <ul id="bar">
+            <ul><a href="/" class="link"><h5>{{ wdefaults.commonWords.homepage }}</h5></a></ul>
+            {% for item in wdefaults.navigation.items %}
+                {% if item.megamenu == true %}
+                    <ul>
+                        <h5>{{ item.text }}</h5>
+                        {% for drop in item.menuitems %} 
+                            <li class="mobile-nav"><a href="{{ drop.url }}">{{ drop.text }}</a></li>
+                        {% endfor %}
+                    </ul>
+                
+                {% endif %}
+              {% endfor %}
+            </ul>
+           </div>
+    </nav>
+</section>
+<section class="nav-section">
+            <a href="/" class="link">
+            <img src="/assets{{ logo }}" class="nav-logo"/>
+            </a>
+  <nav class="bar">
+  
+        <div class="not mega-menu">
+            <a href="/" class="link nav-item"{{ 'aria-current=page' if page.url == '/' | safe }} {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+                <span class="visually-hidden">{{ wdefaults.commonWords.homepage }}</span>
+            </a>
+        </div>
+       
+        {% for item in wdefaults.navigation.items %}
+            {% set relAttribute = '' %}
+
+            {% if item.rel %}
+                {% set relAttribute = ' rel="' + item.rel + '"' %}
+            {% endif %}
+
+            {% if item.megamenu == true %}
+            <div class="mega-menu">
+                <button class="mega-menu-button" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+                    <span>{{ item.text }}{% include "src/assets/images/arrow.svg" %}</span>
+                </button>
+                <div class="mega-menu-content" {% if megaMenuBg %} style="background-color:{{ megaMenuBg }}"{% endif %}>
+                    <ul class="mega-menu-list" aria-label="submenu">
+                        {% for drop in item.menuitems %}   
+                        <li class="nav"><a href="{{ drop.url }}" class="nav-list-item" {% if megaMenuFontColor %} style="color:{{ megaMenuFontColor }}"{% endif %}>{{ drop.text }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {% else %}
+                {% set currentAttribute = '' %}
+
+                {% if page.url == item.url %}
+                    {% set currentAttribute = ' aria-current="page"' %}
+                {% endif %}
+               
+                    <a href="{{ item.url }}" class="link nav-item"{{ relAttribute | safe }}{{ currentAttribute | safe }} {% if bgText %} style="color:{{ bgText }}"{% endif %}><span>{{ item.text }}</span></a>
+               
+            {% endif %}
+        {% endfor %}
+    </ul>
+  </nav>
+  </section>
+{% endif %}

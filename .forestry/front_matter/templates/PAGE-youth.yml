@@ -1,0 +1,95 @@
+---
+label: 'Page Content: Youth'
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Page Content Youth
+  hidden: true
+- name: header
+  type: text
+  config:
+    required: true
+  label: Banner Title
+  default: Our Youth Initiative
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: Banner Title
+  default: Our Youth Initiative
+- name: youthObjectives
+  type: field_group_list
+  fields:
+  - name: objTitle
+    type: text
+    config:
+      required: true
+    label: Objective sub title
+  - name: objective
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Objective Description
+    description: Please try to keep this under 70 words
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Relevant link for objective (optional)
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Youth Team Objectives and Activities
+  description: Space to add details about the initiatives of the youth team e.g. student
+    engagement
+- name: highlightProjectsHeader
+  type: text
+  config:
+    required: false
+  label: Projects Header
+  default: Highlight projects
+- name: highlightProjectsSubtitle
+  type: text
+  config:
+    required: false
+  label: Projects Subtitle
+  default: Read more about our current work
+- name: youthMemberTitle
+  type: text
+  config:
+    required: false
+  label: Member List Title
+  default: Youth Member List
+- name: youthMemberSubtitle
+  type: text
+  config:
+    required: false
+  label: Member List Subtitle
+- name: youthContactTitle
+  type: text
+  config:
+    required: false
+  label: Youth Contact Title
+  default: Work together with us.
+- name: youthContactCTA
+  type: text
+  config:
+    required: false
+  label: Youth Contact Subtitle
+  default: Get in touch with our youth team
+- name: youthContactCTAURL
+  type: text
+  config:
+    required: false
+  label: Call to action URL
+  description: If linking to a website, please put https:// in the front
+pages:
+- src/_data/pages/what/youthPage.json

@@ -1,0 +1,49 @@
+{% extends 'layouts/base.njk' %}
+{% set pageType = 'About the Team' %}
+
+{% block content %}
+<main id="main-content" tabindex="-1">
+<div class="home-container">
+  <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+    {% if information.teamInfo %}
+        {% set introHeader = pages.about.aboutTeamPage.pagetitle %}
+        {% set introSubtitle = information.teamInfo.teamDesc | safe %}
+            {% include "layouts/intro-banner.njk" %}
+    {% endif %}
+  </section>
+  <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+    {% if information.teamInfo.leadershipCouncil == true %}
+        {% set header = information.teamInfo.lcTitle %}
+        {% set subtitle = information.teamInfo.lcdesc | safe %}
+            {% include "layouts/section-banner.njk" %}
+        {% set people = information.teamInfo.lcprofiles %}
+          {% include "partials/components/people.njk" %}
+    {% endif %}
+  </section>
+  <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+    {% if information.teamInfo.networkManagers == true %}
+        {% set header = information.teamInfo.nmTitle %}
+        {% set subtitle = information.teamInfo.nmdesc | safe %}
+            {% include "layouts/section-banner.njk" %}
+        {% set people = information.teamInfo.nmprofiles %}
+            {% include "partials/components/people.njk" %}
+    {% endif %}
+  </section>
+  <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+    {% if information.teamInfo.youthCoordinators == true %}
+        {% set header = information.teamInfo.youthTitle %}
+        {% set subtitle = information.teamInfo.youthdesc | safe %}
+            {% include "layouts/section-banner.njk" %}
+        {% set people = information.teamInfo.youthprofiles %}
+            {% include "partials/components/people.njk" %}
+    {% endif %}
+  </section>
+  <section class="contact-us-banner" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
+      {% set contactHeader = pages.about.aboutTeamPage.teamCtaTitle %}
+      {% set cta = pages.about.aboutTeamPage.teamCtaText %}
+      {% set email = information.networkInfo.networkEmail %}
+      {% include "partials/components/contact-us-banner.njk" %}
+  </section>
+</div>
+</main>
+{% endblock %}

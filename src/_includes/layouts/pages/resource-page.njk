@@ -1,0 +1,32 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+  <main id="main-content" class="content-colour" tabindex="-1">
+    <div class="content-container ">
+      <div class="news-page-title-info">
+        <h2>{{ title }}</h2>
+        {{ wdefaults.commonWords.writtenBy }} {{ author }} </br><i> {{ date | date("MMMM Do YYYY")}}</i>
+          <div class="post-list-tags">
+            {% for tag in tags %}
+              <a href="/tags/{{ tag }}/"><p class="tag-item">
+                {{ tag }}
+              </p></a>
+            {% endfor %}
+          <div class="post-list-tags">
+      </div>
+      <div class="news-page-img">
+        {% if fImage !== "" %}
+          <img src="/assets{{ fImage }}" class="news-img" /> 
+        {% else %} 
+          <div class="img-replacement">
+            <img src="/assets{{ logo }}" class="img-replacement" />
+          </div>
+        {% endif %}
+      </div>
+      <div class="news-page-content">
+        {{ content | safe }}
+      </div>
+    </div>
+  </main>
+{% endblock %}
+

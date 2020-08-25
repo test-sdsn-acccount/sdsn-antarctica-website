@@ -1,0 +1,23 @@
+<div class="text-top-metrics-bottom-container">
+    <div class="text-top">
+        <div class="split-boxes-30-70 left">
+            <div class="text-top-title">
+                <h2 class="close-header">{{ ttmheader }}</h2>
+            </div>
+        </div>
+        <div class="split-boxes-30-70 right three">
+        <p class="three">{{ ttmdesc }}</p>
+        </div>
+    </div>
+    <div class="feature-card-cont">
+        {% for met in ttmitem %}
+        <div class="feature-card big metric" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>               
+            
+            <div class="feature-card content">
+            <h2>{{ met.header }}</h2>
+                {{ met.desc | safe }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

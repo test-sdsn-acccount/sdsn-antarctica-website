@@ -1,0 +1,53 @@
+---
+label: Social Media Icons
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+  default: 
+  hidden: true
+- name: Linkedin
+  type: file
+  config:
+    maxSize: 1
+  label: Linkedin
+- name: Instagram
+  type: file
+  config:
+    maxSize: 1
+  label: Instagram
+- name: Facebook
+  type: file
+  config:
+    maxSize: 1
+  label: Facebook
+- name: WeChat
+  type: file
+  config:
+    maxSize: 1
+  label: WeChat
+- name: Kakao
+  type: file
+  config:
+    maxSize: 1
+  label: Kakao
+- name: Whatsapp
+  type: file
+  config:
+    maxSize: 1
+  label: Whatsapp
+- name: Website
+  type: file
+  config:
+    maxSize: 1
+  label: Website
+- name: Newsletter
+  type: file
+  config:
+    maxSize: 1
+  label: Newsletter
+pages:
+- src/_data/wdefaults/socialMediaIcons.json

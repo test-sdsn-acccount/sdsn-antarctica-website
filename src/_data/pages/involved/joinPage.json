@@ -1,0 +1,39 @@
+{
+  "header": "Join the network",
+  "subtitle": "<p>Applying for SDSN membership is simple and free! Just complete the online membership application form (available in English, French, Portuguese, Russian, and Spanish) and submit. our Executive Committee reviews applications on a quarterly basis.</p>",
+  "ourImpactHeader": "Member Benefits",
+  "ourImpactSubTitle": "<p><b>Accelerating practical problem solving for sustainable development.</b></p><p>Our mission is to accelerate practical problem solving for sustainable development, including the implementation of the Sustainable Development Goals (SDGs) at local, national, and global scales.</p>",
+  "memberBenefits": [
+    {
+      "header": "Engage with the media",
+      "desc": "<p>The SDSN and its members are regularly approached by media outlets to provide contributions and viewpoints on sustainable development. We work with SDSN members to showcase their work.</p>"
+    },
+    {
+      "header": "Share teaching solutions for sustainable development",
+      "desc": "<p>SDSN seeks to identify best practices, key actors, and to promote the difusion of good practices. To this end, we will launch a survey on teaching initiatives on sustainable development that are undertaken or planned by SDSN members. The results of the survey will be disseminated to all SDSN members.</p>"
+    },
+    {
+      "header": " Design and share online educational materials and courses",
+      "desc": "<p>All SDSN members are invited to use the online resources developed by the SDSN and its members. Members of the SDSN Academic Advisory Committee will also help shape the network’s strategy for online education, with a view towards eventually creating an online university for sustainable development.</p>"
+    },
+    {
+      "header": "Pursue joint fundraising",
+      "desc": "<p>SDSN members are better positioned to mobilize resources locally and internationally through SDSN brand recognition and additional networking opportunities. The SDSN team will support member organizations in mobilizing resources for Solutions Initiatives, National or Regional SDSNs, and other eforts done under the SDSN banner.</p>"
+    },
+    {
+      "header": "Get involved in SDSN Solutions Initiatives",
+      "desc": "<p>SDSN members are invited to participate hands-on in the implementation of SDSN Solutions Initiatives. Many initiatives are already under way; others will be launched in the near future.</p>"
+    },
+    {
+      "header": "Participate in National and Regional SDSNs",
+      "desc": "<p>SDSN members can participate in one or more of the National or Regional SDSNs depending on their interests and areas of activity. Active participation in these networks will enable SDSN members to propose and participate in the implementation of Solutions Initiatives, education and training eforts (including access to online education material), joint research, and policy work with governments.</p>"
+    }
+  ],
+  "joinHeader": "Member Requirements",
+  "joinSubtitle": "<p>Membership in the Sustainable Development Solutions Network is free and open to not-for-profit institutions (not individuals).</p> <p>Institutions must be knowledge-generating, i.e. they must conduct research, analyses, and/or data collection, and can be universities, research institutions, foundations, or civil society groups. Member institutions should have deep expertise in one or more areas related to sustainable development and commit a substantial amount of their own work towards finding and/or implementing solutions for the SDGs.<p>",
+  "joinCta": "Join our network",
+  "joinCtaURL": "https://www.unsdsn.org/join-the-sdsn",
+  "contactHeader": "Want to learn more?",
+  "contactCta": "Get in touch at antarc@unsdsn.org",
+  "title": "Join the network page"
+}

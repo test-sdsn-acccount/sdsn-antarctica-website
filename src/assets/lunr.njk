@@ -1,0 +1,12 @@
+---
+permalink: /lunr.json
+---
+
+[
+    {% for news in collections.newsArticles %}
+        {
+        "title":"{{news.data.title}}",
+        "url":"{{news.url}}"
+        } {% if forloop.last == false %},{% endif %}
+    {% endfor %} 
+]

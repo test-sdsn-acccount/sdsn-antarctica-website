@@ -1,0 +1,96 @@
+
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+<main id="main-content" tabindex="-1">
+    <div class="cont-us-container">
+        <section class="contact-us-container" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+                <div class="width-40">
+                    <div class="intro-banner-title">
+                        <h1>{{ pages.involved.contactPage.bannerTitle }}</h1>
+                    </div>
+                    <div class="intro-banner-body banner-sub-title">
+                        {{ pages.involved.contactPage.bannerDesc }}
+                    </div>
+                </div>
+
+                <div class="two-half-wrapper repeat-grid-2">
+                    {% for person in information.contactInfo.contactProfiles %}
+                        <div class="contact-box-card">
+                            <div class="contact-box img">
+                                <img src="/assets{{ person.contactImg }}" class="border-radius-50"></img>
+                            </div>
+                            <div class="contact-box title">
+                                <h2>{{ person.contactHeader }}</h2>
+                            </div>
+                            <div class="contact-box subtitle">
+                                <p>{{ person.contactDesc }}</p>
+                            </div>
+                            <div class="contact-box button">
+                                <a href="mailto:{{ person.ctaEmail }}" class="resource-link">
+                                    <button class="btn-link wide animate" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}><p class="five">{{ person.ctaTitle }}</p></button>
+                                </a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+
+                <div class="two-half-more-content">
+                    <div class="row">
+                        <div class="intro-banner-title">
+                            <h1>{{ pages.involved.contactPage.locationTitle }}</h1>
+                        </div>
+                    </div>
+
+                    {% for host in information.hostInformation.hostInstitution %}
+                    <div class="lean-container">
+                        <div class="split-boxes-30-70 left block align-items-top">
+                            <h3>{{ host.hiName | safe }}</h3>
+                            <div class="white-bg-logo">
+                                <img src="/assets{{ host.hiLogo }}" class="nav-logo"></img>
+                            </div>
+                        </div>
+                        <div class="split-boxes-30-70 right align-items-top">
+                            <div class="embed-container">
+                            {{ host.map | safe }}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                </div>
+                <div class="two-half-more-content">
+                    <div class="row">
+                        <div class="intro-banner-title">
+                            <h1>{{ pages.involved.contactPage.socialsTitle }}</h1>
+                        </div>
+                        <div class="intro-banner-body banner-sub-title">
+                            <p class="three">{{ pages.involved.contactPage.socialsDesc | safe }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% if information.contactInfo.socialMedia == true %}
+                <div class="two-half-wrapper repeat-grid-4 width-100">
+                    {% for pltm in information.contactInfo.socialMediaProfiles %}
+                        <div class="contact-box-card socials">
+                            <div class="contact-box img">
+                                {% set selectedPlatform = pltm.platform %}
+                                {% include "partials/components/get-social-media-icon.njk" %}
+
+                            </div>
+                            <div class="contact-box title">
+                                <h2>{{ pltm.socialHeader }}</h2>
+                            </div>
+                            <div class="contact-box button">
+                                <a href="{{ pltm.ctaLink }}" class="resource-link">
+                                    <button class="btn-link wide animate" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}><p class="five">{{ pltm.ctaTitle }}</p></button>
+                                </a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+        </section>
+    </div>
+</main>
+{% endblock %}

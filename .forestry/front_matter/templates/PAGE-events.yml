@@ -1,0 +1,28 @@
+---
+label: CONTENT Events
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Page Title
+  default: Events Landing Page
+  hidden: true
+- name: header
+  type: text
+  config:
+    required: true
+  label: Page Header
+  default: Events
+- name: subtitle
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Banner Sub Title
+pages:
+- src/_data/pages/involved/eventsPage.json

@@ -1,0 +1,21 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+<main id="main-content" tabindex="-1">
+<div class="resource-landing-container">
+  <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+      <div class="intro-banner-wrapper">
+        <div class="intro-banner-title">
+          <h1>{{ title }}</h1>
+        </div>
+      </div>
+  </section>
+  <section class="full-bleed resources-bg dark">
+      <div class="content-container" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+          <h4>{{ pageContent | safe }}</h4>
+          {{ content | safe }}
+      </div>
+  </section>
+  </div>
+</main>
+{% endblock %}

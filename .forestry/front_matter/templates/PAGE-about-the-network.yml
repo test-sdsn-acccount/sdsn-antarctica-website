@@ -1,0 +1,51 @@
+---
+label: 'Page Content: About SDSN'
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Page Content About SDSN
+  hidden: true
+- name: bannerTitle
+  type: text
+  config:
+    required: true
+  label: Banner Title
+  default: The Sustainable Development Solutions Network
+- name: aboutsdsn
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: About SDSN
+- name: featuretitle
+  type: text
+  config:
+    required: false
+  label: Feature Title
+  default: Mobilizing sustainable development in Antarctica
+- name: metricsheader
+  type: text
+  config:
+    required: false
+  label: Our Impact Title
+  default: Our Impact
+- name: hostedPretext
+  type: text
+  config:
+    required: true
+  label: Hosted by Pretext
+  default: HOSTED BY
+- name: hostCtaText
+  type: text
+  config:
+    required: true
+  label: Hosted by CTA Text
+  default: Learn more
+pages:
+- src/_data/pages/about/aboutPage.json

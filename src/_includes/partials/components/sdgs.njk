@@ -1,0 +1,8 @@
+<div class="sdg-section">
+    {% for goal in wdefaults.sdgIcons.sdgs %}
+    {# Only have a link on the image if there is a url in the data #}
+        {% if goal.sdgLink %}<a href="{{ goal.sdgLink }}" class="link">{% endif %}
+            <img src="/assets{{ goal.icon }}"></img>
+        {% if goal.sdgLink %}</a>{% endif %}
+    {% endfor %}
+</div>

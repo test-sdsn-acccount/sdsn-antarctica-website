@@ -1,0 +1,92 @@
+{
+    "title": "SDG Icons",
+    "sdgs" : [
+        {
+            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-1-no-poverty.html",
+            "icon": "/images/sdgs/SDG1.png"
+        },
+        {
+            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-2-zero-hunger.html",    
+            "icon": "/images/sdgs/SDG2.png"
+        },
+        {
+            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-3-good-health-and-well-being.html",
+            "icon": "/images/sdgs/SDG3.png"
+        },
+        {
+            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-4-quality-education.html",
+            "icon": "/images/sdgs/SDG4.png"
+        },
+        {
+            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-5-gender-equality.html",
+            "icon": "/images/sdgs/SDG5.png"
+        },
+        {
+            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-6-clean-water-and-sanitation.html",
+            "icon": "/images/sdgs/SDG6.png"
+        },
+        {
+            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-7-affordable-and-clean-energy.html",
+            "icon": "/images/sdgs/SDG7.png"
+        },
+        {
+            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-8-decent-work-and-economic-growth.html",
+            "icon": "/images/sdgs/SDG8.png"
+        },
+        {
+            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-9-industry-innovation-and-infrastructure.html",
+            "icon": "/images/sdgs/SDG9.png"
+        },
+        {
+            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-10-reduced-inequalities.html",
+            "icon": "/images/sdgs/SDG10.png"
+        },
+        {
+            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-11-sustainable-cities-and-communities.html",
+            "icon": "/images/sdgs/SDG11.png"
+        },
+        {
+            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-12-responsible-consumption-and-production.html",
+            "icon": "/images/sdgs/SDG12.png"
+        },
+        {
+            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-13-climate-action.html",
+            "icon": "/images/sdgs/SDG13.png"
+        },
+        {
+            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-14-life-below-water.html",
+            "icon": "/images/sdgs/SDG14.png"
+        },
+        {
+            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-15-life-on-land.html",
+            "icon": "/images/sdgs/SDG15.png"
+        },
+        {
+            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-16-peace-justice-and-strong-institutions.html",
+            "icon": "/images/sdgs/SDG16.png"
+        },
+        {
+            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-17-partnerships-for-the-goals.html",
+            "icon": "/images/sdgs/SDG17.png"
+        }
+    ]
+
+  }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

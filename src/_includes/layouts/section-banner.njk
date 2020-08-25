@@ -1,0 +1,13 @@
+<div class="section-banner-wrapper">
+    <div class="section-banner-title">
+      <h1>{{ header | safe }}</h1>
+    </div>
+    <div class="section-banner-body banner-sub-title">
+      <p>{{ subtitle | safe }}</p>
+      {{ content | safe }}
+    </div>
+    {% if sbCta | length !== 0 %}
+      {% set cta = sbCta %}
+      {% include "partials/components/cta-button.njk" %}
+    {% endif %}
+</div>

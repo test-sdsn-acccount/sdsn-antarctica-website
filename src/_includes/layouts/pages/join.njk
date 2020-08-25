@@ -1,0 +1,41 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+<main id="main-content" tabindex="-1">
+<div class="get-involved-container">
+  <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+    {% if information.networkInfo %}
+        {% set introHeader = pages.involved.joinPage.header %}
+        {% set introSubtitle = pages.involved.joinPage.subtitle | safe %}
+            {% include "layouts/intro-banner.njk" %}
+    {% endif %}
+  </section>
+    <section class="text-top-metrics-bottom" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+    {% if pages.involved.joinPage.memberBenefits %}
+        {% set ttmheader = pages.involved.joinPage.ourImpactHeader %}
+        {% set ttmdesc = pages.involved.joinPage.ourImpactSubTitle | safe %}
+        {% set ttmitem = pages.involved.joinPage.memberBenefits %}
+            {% include "partials/components/text-top-metrics-bottom.njk" %}
+    {% endif %}
+    </section>
+    <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+        {% if pages.involved.joinPage %}
+            {% set header = pages.involved.joinPage.joinHeader | safe %}
+            {% set subtitle = pages.involved.joinPage.joinSubtitle | safe %}
+            {% if pages.involved.joinPage.joinCta %}
+                {% set sbCta = pages.involved.joinPage.joinCta  %}
+                {% set ctaLink = pages.involved.joinPage.joinCtaURL %}
+            {% endif %}
+            {% set ctaColour = bgText %}
+                {% include "layouts/section-banner.njk" %}
+        {% endif %}
+    </section>
+    <section class="contact-us-banner" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
+        {% set contactHeader = pages.involved.joinPage.contactHeader %}
+        {% set cta = pages.involved.joinPage.contactCta %}
+        {% set ctaColour = fcolor1Text %}
+        {% include "partials/components/contact-us-banner.njk" %}
+    </section>
+</div>
+</main>
+{% endblock %}

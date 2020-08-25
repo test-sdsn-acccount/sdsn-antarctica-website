@@ -1,0 +1,105 @@
+---
+title: Style Guide
+permalink: /style/
+---
+
+{% extends 'layouts/base.njk' %}
+
+
+{% block content %}
+<main id="main-content" tabindex="-1">
+  <div class="home-container">
+    <section class="intro-banner with-logo" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+      <div class="intro-banner-wrapper">
+        <div class="intro-banner-title">
+          <h1>{{ title }}</h1>
+          <p class="four">The Style Guide defines standard style requirements to improve communication by ensuring consistency both within a document, and across multiple documents.</p>
+        </div>
+      </div>
+
+    <div class="content-container" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+        <h1>Logos</h1>
+        <div class="two-half-wrapper margin-top-1 repeat-grid-2">
+          <div class="white-circle-border margin-right-1" style="background-color:{{ bgcolor }};">
+            <img src="/assets{{ information.networkInfo.whitelogo }}"></img>
+          </div>
+          <div class="white-bg-logo">
+            <img src="/assets{{ information.networkInfo.logo }}"></img>
+          </div>
+        </div>
+
+
+        <h1>Color Palette</h1>
+        <div class="two-half-wrapper resources-bgs margin-top-1 width-100 repeat-grid-4">
+          <div class="display-inline-block margin-2em" {% if bgcolor %} style="background-color:{{ bgcolor }};"{% endif %}>
+            <div class="display-grid height-100 margin-1em align-text-left" style="color:{{ bgText }};">
+                <p><b>Menu color bg </b> {{ bgcolor }}</p>
+                <p><b>Menu color Text </b> {{ bgText }}</p>
+            </div>
+          </div>
+          <div class="display-inline-block margin-2em" {% if fcolor1 %} style="background-color:{{ fcolor1 }};"{% endif %}>
+            <div class="display-grid height-100 margin-1em align-text-left" style="color:{{ fcolor1Text }};">
+                <p><b>Menu color bg </b> {{ fcolor1 }}</p>
+                <p><b>Menu color Text </b> {{ fcolor1Text }}</p>
+            </div>
+          </div>
+          <div class="display-inline-block margin-2em" {% if fcolor2 %} style="background-color:{{ fcolor2 }};"{% endif %}>
+              <div class="display-grid height-100 margin-1em align-text-left" style="color:{{ fcolor2Text }};">
+                <p><b>Feature color 2 bg </b> {{ fcolor2 }}</p>
+                <p><b>Feature color 2 Text </b> {{ fcolor2Text }}</p>
+              </div>
+          </div>
+          <div class="display-inline-block margin-2em" {% if megaMenuBg %} style="background-color:{{ megaMenuBg }};"{% endif %}>
+            <div class="display-grid height-100 margin-1em align-text-left" style="color:{{ megaMenuFontColor }};">
+                <p><b>Menu color bg </b> {{ megaMenuBg }}</p>
+                <p><b>Menu color Text </b> {{ megaMenuFontColor }}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="min-container">
+            <h1 class="margin-right-1 styled-underline">Lato</h1>
+            <h1>The quick brown fox jumps over the lazy dog</h1>
+            <h2>The quick brown fox jumps over the lazy dog</h2>
+            <h3>The quick brown fox jumps over the lazy dog</h3>
+            <h4>The quick brown fox jumps over the lazy dog</h4>
+            <h5>The quick brown fox jumps over the lazy dog</h5>
+            <h6>The quick brown fox jumps over the lazy dog</h6>
+        </div>
+        <div class="min-container">
+            <p class="one margin-right-1 styled-underline">Crimson Text', serif</p>
+            <p class="one">The quick brown fox jumps over the lazy dog</p>
+            <p class="two">The quick brown fox jumps over the lazy dog</p>
+            <p class="three">The quick brown fox jumps over the lazy dog</p>
+            <p class="four">The quick brown fox jumps over the lazy dog</p>
+            <p class="five">The quick brown fox jumps over the lazy dog</p>
+            <p class="six">The quick brown fox jumps over the lazy dog</p>
+            <p>The quick brown fox jumps over the lazy dog</p>
+        </div>
+          
+        <div class="min-container">
+          <h1>Imagery</h1>
+          <div class="split-boxes-50-50 left">
+            <img src="/assets/images/globev3.svg" class="height-20em margin-right-1 object-fit-contain"></img>
+          </div>
+          <div class="split-boxes-50-50 left">
+            <img src="/assets/images/stock-sdg-work.jpg" class="height-20em object-fit-contain"></img>
+          </div>
+        </div>
+
+        <div class="min-container text-alight-left">
+          <h1>Icons</h1>
+          <div class="split-boxes-50-50 left">
+            <img src="/assets/images/arrow.svg" class="height-10em width-100 margin-right-1"></img>
+          </div>
+          <div class="split-boxes-50-50 right">
+            <img src="/assets/images/magnifying-glass.svg" class="height-10em"></img>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+

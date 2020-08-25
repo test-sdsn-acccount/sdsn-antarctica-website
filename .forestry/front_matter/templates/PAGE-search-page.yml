@@ -1,0 +1,26 @@
+---
+label: CONTENT Search Page
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Page Title
+  default: Search Page
+  hidden: true
+- name: searchHeader
+  type: text
+  config:
+    required: true
+  label: Search Title
+  default: Search
+- name: searchSubtitle
+  type: textarea
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Search Subtitle
+  default: Search this site

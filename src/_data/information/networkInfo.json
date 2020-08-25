@@ -1,0 +1,42 @@
+{
+  "logo": "/uploads/sdsn-antarc.png",
+  "whitelogo": "/uploads/sdsn-antsarc.png",
+  "networkName": "Antarctica",
+  "networkdesc": "<p>SDSN Antarctica is a community of universities, research centers, and other knowledge institutions to translate the latest expertise in sustainable development into action</p>",
+  "networkVision": "Mobilizing SDG implementation through solution initiatives and long-term pathways in Antarctica.",
+  "networkObjectives": [
+    {
+      "objTitle": "Localize the SDGs to Antarctica 1",
+      "objective": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.</p>",
+      "link": "sdgstudent.org"
+    },
+    {
+      "objTitle": "Localize the SDGs to Antarctica 5",
+      "objective": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.</p>",
+      "link": "sdgstudent.org"
+    },
+    {
+      "objTitle": "Localize the SDGs to Antarctica 3",
+      "objective": "",
+      "link": "sdgstudent.org"
+    }
+  ],
+  "impactSection": true,
+  "networkimpact": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu. Vivamus fermentum ex ut mauris feugiat convallis. Fusce cursus diam vel nunc lobortis, nec finibus orci lacinia.</p>",
+  "networkmetrics": [
+    {
+      "header": "3 years",
+      "desc": "<p>Awarded the Sustainability Award in Antarctica, 3 years in a row.</p>"
+    },
+    {
+      "header": "129",
+      "desc": "<p>Scored 129 in the Antarctic region for driving SDG implementation.</p>"
+    },
+    {
+      "header": "20",
+      "desc": "<p>Member Institutions in the South Pole - covering academia, fisheries and ice cap management firms.</p>"
+    }
+  ],
+  "networkEmail": "antarc@unsdsn.org",
+  "title": "Network Information"
+}

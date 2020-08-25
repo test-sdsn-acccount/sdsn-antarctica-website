@@ -1,0 +1,33 @@
+---
+label: CONTENT Our Members
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Page Title
+  default: Our Members
+- name: membedesc
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Membership Description
+- name: memberCtaTitle
+  type: text
+  config:
+    required: true
+  label: Call to Action Title
+  default: See benefits
+- name: membercta
+  type: text
+  config:
+    required: true
+  label: Call to Action
+  default: See benefits of joining the network
+pages:
+- src/_data/pages/what/ourMembers.json

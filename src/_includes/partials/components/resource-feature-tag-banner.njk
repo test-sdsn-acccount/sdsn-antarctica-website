@@ -1,0 +1,46 @@
+<div class="resource-feature-banner-container">
+    <div class="inner-wrapper">
+    {# Show the first three posts #}
+    {% set length = sectionList.length if sectionList.length < 4 else 4 %} 
+    {% for section in sectionList %}
+      {% for tag in section.data.tags %}
+        {% if tag == 'youth' %}
+        <ol class="post-item">
+            <div class="post-card-top">
+              <a href="{{ section.url }}">
+                {% if section.data.fImage !== "" %}
+                  <img src="/assets{{ section.data.fImage }}" class="post-item-img" /> 
+                {% else %} 
+                  <div class="img-replacement">
+                    {# If there is no feature image, the img-replacement div will show the logo in a grey box instead #}
+                    <img src="/assets{{ logo }}" class="img-replacement" />
+                  </div>
+                {% endif %}
+                
+              </a>
+            </div>
+            <div class="post-card-content">
+              <div class="post-list-tags">
+                {% for tag in section.data.tags %}
+                  <a href="/tags/{{ tag }}/"><p class="tag-item">
+                    {{ tag }}
+                  </p></a>
+                {% endfor %}
+              </div>
+              <div class="post-list-title">
+                    <a href="{{ section.url }}"><h3>{{ section.data.title }}</h3></a>
+              </div>
+              <div class="post-list-excerpt">
+                <p class="post-excerpt">
+                    {{ section.data.quote | safe }}
+                </p>
+              </div>
+              <div class="post-list-author">
+                    <i>{{ wdefaults.commonWords.writtenBy }} {{ section.data.author }}</i>
+              </div>
+          </ol>
+            {% endif %}
+          {% endfor %}
+      {% endfor %}
+    </div>
+</div>

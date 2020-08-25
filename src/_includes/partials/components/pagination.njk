@@ -1,0 +1,9 @@
+<nav aria-labelledby="my-pagination">
+  <div class="pagination-nav">
+      <li class="pagination-option">{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}" class="link">{{ wdefaults.commonWords.previousPage }}</a>{% else %}{% endif %}</li>
+  {%- for pageEntry in pagination.pages %}
+      <li class="pagination-option item"><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %} class="link"> {{ loop.index }}</a></li>
+  {%- endfor %}
+      <li class="pagination-option">{% if pagination.href.next %}<a href="{{ pagination.href.next }}" class="link">{{ wdefaults.commonWords.nextPage }}</a>{% else %}{% endif %}</li>
+  </div>
+</nav>

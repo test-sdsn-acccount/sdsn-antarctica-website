@@ -1,0 +1,93 @@
+---
+label: Language - Common Words
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Language - Common Words
+  hidden: true
+- name: by
+  type: text
+  config:
+    required: false
+  label: By
+  hidden: false
+  default: by
+  description: This post is written BY Sally
+- name: writtenBy
+  type: text
+  config:
+    required: false
+  label: Written by
+  hidden: false
+  default: Written by
+  description: This post is Written BY Sally
+- name: description
+  type: text
+  config:
+    required: false
+  label: Description
+  hidden: false
+  default: Description
+  description: Event Description
+- name: dateTime
+  type: text
+  config:
+    required: false
+  label: Date and Time
+  hidden: false
+  default: Date and Time
+  description: Date and Time for an event
+- name: location
+  type: text
+  config:
+    required: false
+  label: Location
+  hidden: false
+  default: Location
+  description: Location of an event
+- name: backToTop
+  type: text
+  config:
+    required: false
+  label: Back to top
+  hidden: false
+  default: Back to top
+  description: Back to top (of the page)
+- name: genericCta
+  type: text
+  config:
+    required: false
+  label: Generic Call To Action
+  hidden: false
+  default: Learn more
+- name: homepage
+  type: text
+  config:
+    required: false
+  label: Homepage
+  hidden: false
+  default: HOMEPAGE
+- name: nextPage
+  type: text
+  config:
+    required: false
+  label: Next Page Button
+  hidden: false
+  default: Next
+- name: previousPage
+  type: text
+  config:
+    required: false
+  label: Previous Page Button
+  hidden: false
+  default: Previous
+- name: tagSubtitle
+  type: text
+  config:
+    required: false
+  label: Search Tag Text
+  hidden: false
+  default: Search via tags

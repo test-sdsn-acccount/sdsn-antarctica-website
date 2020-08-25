@@ -1,0 +1,48 @@
+---
+label: 'Page Content: Contact us'
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Page Content Contact us
+  hidden: true
+- name: bannerTitle
+  type: text
+  config:
+    required: true
+  label: Banner Title
+  default: Contact us
+- name: bannerDesc
+  type: textarea
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Banner Sub Title
+  default: "<p>Get in touch with us and let's work towards acheiving the SDGs together.</p>"
+- name: locationTitle
+  type: text
+  config:
+    required: true
+  label: Location Section Title
+  default: Where you can find us
+- name: socialsTitle
+  type: text
+  config:
+    required: true
+  label: Social Media Section Title
+  default: Follow us online
+- name: socialsDesc
+  type: textarea
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Social Media Description
+  default: Like us on social media!
+pages:
+- src/_data/pages/involved/contactPage.json

@@ -1,0 +1,21 @@
+{% if selectedPlatform == "Whatsapp" %}
+    <img src="/assets{{ wdefaults.socialMediaIcons.Whatsapp }}"></img>
+{% elif selectedPlatform == "Linkedin" %}
+    <img src="/assets{{ wdefaults.socialMediaIcons.Linkedin }}"></img>
+{% elif selectedPlatform == "Instagram" %}
+    <img src="/assets{{ wdefaults.socialMediaIcons.Instagram }}"></img>
+{% elif selectedPlatform == "Facebook" %}
+    <img src="/assets{{ wdefaults.socialMediaIcons.Facebook }}"></img>
+{% elif selectedPlatform == "WeChat" %}
+    <img src="/assets{{ wdefaults.socialMediaIcons.WeChat }}"></img>
+{% elif selectedPlatform == "Kakao" %}
+    <img src="/assets{{ wdefaults.socialMediaIcons.Kakao }}"></img>
+{% elif selectedPlatform == "Website" %}
+    <img src="/assets{{ wdefaults.socialMediaIcons.Website }}"></img>
+{% elif selectedPlatform == "Newsletter" %}
+    <img src="/assets{{ wdefaults.socialMediaIcons.Newsletter }}"></img>
+{% elif selectedPlatform == "Custom" %}
+    <img src="/assets{{ wdefaults.socialMediaIcons.Custom }}"></img>
+{% else %}
+    <img src="/assets{{ wdefaults.socialMediaIcons.Website }}"></img>
+{% endif %}

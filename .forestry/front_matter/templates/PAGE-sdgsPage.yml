@@ -1,0 +1,103 @@
+---
+label: CONTENT SDGs in Local
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Page Title
+  default: SDGs Page
+  hidden: true
+- name: header
+  type: text
+  config:
+    required: true
+  label: Page Header
+  default: SDGs in
+- name: subtitle
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Banner Sub Title
+- name: sdgsHeader
+  type: text
+  config:
+    required: true
+  label: SDGs Section Header
+  default: The Sustainable Development Goals
+- name: sdgsSubtitle
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: SDGs Section Sub Title
+- name: sdgsCta
+  type: text
+  config:
+    required: true
+  label: SDGs Call to Action Text
+  default: Learn more about the SDGs
+- name: sdgsCtaURL
+  type: text
+  config:
+    required: true
+  label: SDGs Call to Action URL
+  default: https://www.undp.org/content/undp/en/home/sustainable-development-goals.html
+- name: featuredActions
+  type: field_group_list
+  fields:
+  - name: pretextFeature
+    type: text
+    config:
+      required: true
+    label: Action by..
+    default: ACTION BY
+  - name: featureHeader
+    type: text
+    default: ''
+    config:
+      required: false
+    label: Initiative Owner
+    description: For example, local government
+  - name: featureSubtitle
+    type: text
+    default: ''
+    config:
+      required: false
+    label: Initiative Description
+    description: Write a short description about this initiative
+  - name: featureCta
+    type: text
+    default: Read more
+    config:
+      required: false
+    label: Call to action
+    description: What can people do with this information?
+  - name: featureCtaURL
+    type: text
+    config:
+      required: false
+    label: Relevant link for objective (optional)
+    descrtipion: Where can people learn about this? Please link a URL
+  - name: featureImg
+    type: file
+    config:
+      maxSize: 0.8
+    label: Logo of the featured initiative owner
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Featured Non SDSN Initiatives
+  description: Feature national/regional initiatives for the SDGs here. For example,
+    does the government have a grant for SDG research or grants?
+pages:
+- src/_data/pages/sdgs/sdgsPage.json

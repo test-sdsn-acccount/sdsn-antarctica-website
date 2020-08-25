@@ -1,0 +1,69 @@
+backend:
+  name: git-gateway
+  branch: master
+publish_mode: editorial_workflow
+site_url: "https://sdsn-rn-network.netlify.app"
+media_folder: "src/assets/images"
+public_folder: "images"
+collections:
+  - name: "homepage"
+    label: "Homepages"
+    files:
+      - name: "home"
+        label: "Homepage"
+        delete: false
+        file: "src/index.md"
+        slug: "{{slug}}"
+        create: false
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/homepage.njk"}
+          - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
+          - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - name: "404"
+        label: "404"
+        delete: false
+        file: "src/404.md"
+        slug: "{{slug}}"
+        create: false
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
+          - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
+          - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+          - {label: "Body", name: "body", widget: "markdown"}
+  - name: "News"
+    label: "News"
+    folder: "src/content/news"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "/{{slug}}" 
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/news-page.njk"}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Author", name: "author", widget: "string", required: true}
+      - {label: "Tags", name: "tags", widget: [], required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Resources"
+    label: "News"
+    folder: "src/content/news"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "/{{slug}}" 
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/resource-page.njk"}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Author", name: "author", widget: "string", required: true}
+      - {label: "Tags", name: "tags", widget: [], required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Events"
+    label: "Events"
+    folder: "src/content/events"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "/{{slug}}" 
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/events-page.njk"}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Author", name: "author", widget: "string", required: true}
+      - {label: "Tags", name: "tags", widget: [], required: false}
+      - {label: "Body", name: "body", widget: "markdown"}

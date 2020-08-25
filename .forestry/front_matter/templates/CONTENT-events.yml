@@ -1,0 +1,77 @@
+---
+label: CONTENT Events
+hide_body: false
+fields:
+- name: pagetitle
+  type: text
+  config:
+    required: false
+  label: Page Title
+  default: Event
+  hidden: true
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: MM/DD/YYYY
+    time_format: h:mm A Z
+    display_utc: true
+    export_format: YYYY-MM-DDThh:mm:ssZ
+  default: now
+- name: author
+  type: text
+  config:
+    required: false
+  label: Author
+  default: Network Secretariat
+- name: fImage
+  type: file
+  config:
+    maxSize: 0.7
+  label: Featured Image
+- name: toggle
+  type: boolean
+  label: Featured content
+  description: Mark this content if you want it featured on the homepage or What we
+    do pages.
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: Put some tags to make finding content easier for your website visitors!
+    E.g. Antarctica, Youth, Climate change, etc.
+- name: desc
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Description
+- name: ctaURL
+  type: text
+  config:
+    required: false
+  label: Call to action URL
+- name: ctaTitle
+  type: text
+  default: Register
+  config:
+    required: false
+  label: Call to action button text
+- name: location
+  type: textarea
+  default: ''
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Location

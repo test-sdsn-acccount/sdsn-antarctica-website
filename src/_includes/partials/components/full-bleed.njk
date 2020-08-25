@@ -1,0 +1,12 @@
+<div class="section-banner-wrapper">
+    <div class="section-banner-title">
+      <h1>{{ fbHeader }}</h1>
+    </div>
+    <div class="section-banner-body banner-sub-title">
+      <p>{{ content | safe }}</p>
+      {% if fbCta | length !== 0 %}
+        {% set cta = fbCta %}
+        {% include "partials/components/cta-button.njk" %}
+      {% endif %}
+    </div>
+</div>

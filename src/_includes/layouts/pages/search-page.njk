@@ -1,0 +1,41 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+
+ <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+      <div class="section-banner-wrapper">
+          <div class="section-banner-title">
+              <h1>{{ pages.searchPage.searchHeader }}</h1>
+          </div>
+          <div class="section-banner-body banner-sub-title">
+              <p>{{ pages.searchPage.searchSubtitle | safe }}</p>
+              <div class="field">
+                <label for="searchField"></label>
+                <input type="search" placeholder="Search..." id="searchField" class="search-box">
+              </div>
+              
+          </div>
+      </div>
+</section>    
+<section class="intro-banner resources-bgs">
+  <div class="content-container">
+      <div class="search-section">
+        <ol id="searchResults"/>
+      </div>
+      <div class="section-banner-title">
+            <p class="four">{{ wdefaults.commonWords.tagSubtitle | safe }}</p>
+      </div>
+      <div class="section-banner-body banner-sub-title">
+          <ul>
+            {% for tag in collections.tagList %}
+                {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+                <li><a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a> ({{ collections[tag].length }})</li>
+            {% endfor %}
+          </ul>
+      </div>
+  </div>
+</section>
+
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"></script>
+                  <script type="text/javascript" src="/js/search.js"></script>
+{% endblock %}
