@@ -3,7 +3,11 @@
         {% for person in people %}
         <div class="people-card big small-card {% if bgText %} style="color:{{ bgText }}"{% endif %}">
             <div class="people-card title closer-header">
-                <img src="/assets/{{ person.photo }}" class="people-profile"/>
+                {% if person.photo | length !== 0 %}
+                    <img src="/assets/{{ person.photo }}" class="people-profile"/>
+                {% else %} 
+                    <img src="/assets/{{ information.teamInfo.defaultPhoto }}" class="people-profile" />
+                {% endif %}
             </div>
             <div class="people-card content">
                 <h3 class="closer-header">{{ person.name }}</h3>

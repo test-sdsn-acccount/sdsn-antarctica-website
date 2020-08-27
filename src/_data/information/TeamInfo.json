@@ -14,7 +14,7 @@
       "name": "The Fifth Member",
       "networkposition": "Council Member",
       "position": "",
-      "photo": "/uploads/photo-of-woman-wearing-head-scarf-2951093.jpg",
+      "photo": "",
       "email": ""
     },
     {
@@ -71,5 +71,6 @@
       "email": "antarctica@sdsnyouth.org"
     }
   ],
+  "defaultPhoto": "/images/person.png",
   "title": "The Team"
 }

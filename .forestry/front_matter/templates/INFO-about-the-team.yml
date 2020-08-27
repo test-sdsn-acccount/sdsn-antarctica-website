@@ -207,5 +207,11 @@ fields:
   showOnly:
     field: youthCoordinators
     value: true
+- name: defaultPhoto
+  type: file
+  config:
+    maxSize: 0.7
+  label: Default photo
+  description: Show this image for team members with no photo
 pages:
 - src/_data/information/teamInfo.json
