@@ -50,12 +50,14 @@
     {
       "name": "John Name",
       "networkposition": "Network Manager",
+      "position": "",
       "photo": "/uploads/men-s-wearing-black-suit-jacket-and-pants-937481.jpg",
       "email": ""
     },
     {
       "name": "Marie Name",
       "networkposition": "Network Manager",
+      "position": "",
       "photo": "/uploads/photo-of-woman-wearing-head-scarf-2951093.jpg",
       "email": ""
     }
@@ -64,6 +66,7 @@
     {
       "name": "Lee Name",
       "networkposition": "Youth Network Coordinator",
+      "position": "",
       "photo": "/uploads/man-in-red-jacket-1681010.jpg",
       "email": "antarctica@sdsnyouth.org"
     }

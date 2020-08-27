@@ -31,8 +31,6 @@ fields:
   description: Turn on or off the Youth Network Coordinators section
 - name: lcTitle
   type: text
-  config:
-    required: true
   label: Leadership Council Title
   default: Leadership Council
   showOnly:
@@ -66,22 +64,14 @@ fields:
       required: false
     label: Email
   - name: networkposition
-    type: textarea
-    default: ''
+    type: text
     config:
       required: false
-      wysiwyg: true
-      schema:
-        format: html-blocks
     label: Network Position Title
   - name: position
-    type: textarea
-    default: ''
+    type: text
     config:
       required: false
-      wysiwyg: true
-      schema:
-        format: html-blocks
     label: Position Title (if applicable)
     description: If the Leadership Council has a position outside that you want to
       highlight, list it here.
@@ -100,8 +90,6 @@ fields:
     value: true
 - name: nmTitle
   type: text
-  config:
-    required: true
   label: Network Managers Title
   default: Network Managers
   showOnly:
@@ -129,12 +117,24 @@ fields:
     config:
       required: false
     label: Full Name
+  - name: email
+    type: text
+    config:
+      required: false
+    label: Email
   - name: networkposition
     type: text
     config:
       required: false
     label: Network Manager Position Title
     default: Network Manager
+  - name: position
+    type: text
+    config:
+      required: false
+    label: Position Title (if applicable)
+    description: If the Network Manager has a position outside that you want to
+      highlight, list it here.
   - name: photo
     type: file
     config:
@@ -150,8 +150,6 @@ fields:
     value: true
 - name: youthTitle
   type: text
-  config:
-    required: true
   label: Youth Team Title
   default: Youth Team
   showOnly:
@@ -165,15 +163,24 @@ fields:
     config:
       required: false
     label: Full name
-  - name: networkposition
-    type: textarea
-    default: ''
+  - name: email
+    type: text
     config:
       required: false
-      wysiwyg: true
-      schema:
-        format: html-blocks
+    label: Email
+  - name: networkposition
+    type: text
+    config:
+      required: false
+    default: Youth Network Coordinator
     label: Youth Member Position Title
+  - name: position
+    type: text
+    config:
+      required: false
+    label: Position Title (if applicable)
+    description: If the Network Manager has a position outside that you want to
+      highlight, list it here.
   - name: photo
     type: file
     config:
@@ -201,4 +208,4 @@ fields:
     field: youthCoordinators
     value: true
 pages:
-- src/_data/information/TeamInfo.json
+- src/_data/information/teamInfo.json
