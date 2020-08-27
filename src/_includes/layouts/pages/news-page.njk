@@ -15,7 +15,7 @@
           <div class="post-list-tags">
       </div>
       <div class="news-page-img">
-        {% if fImage !== "" %}
+        {% if fImage | length !== 0 %}
           <img src="/assets{{ fImage }}" class="news-img" /> 
         {% else %} 
           <div class="img-replacement">
