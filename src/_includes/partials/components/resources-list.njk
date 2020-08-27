@@ -1,5 +1,5 @@
-    <div class="inner-wrapper">
-      {% for section in sectionList %}
+  <div class="inner-wrapper">
+    {% for section in sectionList %}
         <ol class="resource-item">
             <div class="resource-card-img">
                 {% if section.data.fImage !== "" %}
@@ -9,58 +9,56 @@
                     <img src="/assets{{ logo }}" class="img-replacement" />
                   </div>
                 {% endif %}
-              </div>
-            <div class="resource-card-content">
-              <div class="resource-card-content-left">
-                <div class="resource-list-tags">
-                  {% for tag in section.data.tags %}
-                    <a href="/tags/{{ tag }}/"><p class="tag-item">
-                      {{ tag }}
-                    </p></a>
-                  {% endfor %}
-                </div>
-                  <div class="resource-list-title">
-                        <a href="{{ section.url }}"><h3>{{ section.data.title }}</h3></a>
-                  </div>
-                  <div class="resource-list-excerpt">
-                    <p class="resource-excerpt">
-                        {{ section.data.desc }}
-                    </p>
-                  </div>
-                  <div class="resource-list-author">
-                        <i>{{ wdefaults.commonWords.writtenBy }} {{ section.data.author }}</i>
-                  </div>
-                  {% if section.data.ctaURL | length !== 0 %}
-                      <a href="{{ section.data.ctaURL }}" class="resource-link">
-                        {% include "partials/components/btn-small.njk" %}
-                      </a>
-                  {% endif %}
-                </div>
-              <div class="resource-card-content-right">
-                  {% if section.data.oResources | length !== 0 %}
-                    <h4>{{ section.data.oResources }}<h4>
-                    <ul class="extra-list">
-                  {% for resource in section.data.otherResources %}
-                      {% if resource.resourceFile | length !== 0 %}
-                        <a href="/assets{{ resource.resourceFile }}">
-                          <li class="resource-sub-title"><p>{{ resource.oResourceContent | safe }}</p></li>
-                        </a>
-                      {% elif resource.resourceURL | length !== 0 %}
-                        <a href="{{ resource.resourceURL }}">
-                          <li class="resource-sub-title"><p>{{ resource.oResourceContent | safe }}</p></li>
-                        </a> 
-                      {% else %}
-                      {% endif %}
-                  {% endfor %}
-                  </ul>
-                  {% endif %}
-
-
-
-
-              </div>
-
             </div>
+            <div class="resource-card-content-wrapper">
+                  <div class="resource-card-content">
+                      <div class="resource-card-content-left">
+                          <div class="resource-list-title">
+                                <a href="{{ section.url }}"><h4>{{ section.data.title }}</h4></a>
+                          </div>
+                          <div class="resource-list-excerpt">
+                            <p class="six resource-excerpt">
+                                {{ section.data.desc }}
+                            </p>
+                          </div>
+                          <div class="resource-list-author">
+                                <i>{{ wdefaults.commonWords.writtenBy }} {{ section.data.author }}</i>
+                          </div>
+                          {% if section.data.ctaURL | length !== 0 %}
+                              <a href="{{ section.data.ctaURL }}" class="resource-link">
+                                {% include "partials/components/btn-small.njk" %}
+                              </a>
+                          {% endif %}
+                        </div>
+                        <div class="resource-card-content-right">
+                            {% if section.data.oResources | length !== 0 %}
+                              <h4>{{ section.data.oResources }}<h4>
+                              <ul class="extra-list">
+                            {% for resource in section.data.otherResources %}
+                                {% if resource.resourceFile | length !== 0 %}
+                                  <a href="/assets{{ resource.resourceFile }}">
+                                    <li class="resource-sub-title seven"><p>{{ resource.oResourceContent | safe }}</p></li>
+                                  </a>
+                                {% elif resource.resourceURL | length !== 0 %}
+                                  <a href="{{ resource.resourceURL }}">
+                                    <li class="resource-sub-title seven"><p>{{ resource.oResourceContent | safe }}</p></li>
+                                  </a> 
+                                {% else %}
+                                <li></li>
+                                {% endif %}
+                            {% endfor %}
+                            </ul>
+                            {% endif %}
+                            <div class="resource-list-tags">
+                              {% for tag in section.data.tags %}
+                                <a href="/tags/{{ tag }}/"><p class="tag-item">
+                                  {{ tag }}
+                                </p></a>
+                              {% endfor %}
+                            </div>
+                  </div>
+              </div>
+
           </ol>
       {% endfor %}
     </div>

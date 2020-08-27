@@ -29,15 +29,15 @@
                 {% endfor %}
               </div>
               <div class="post-list-title">
-                    <a href="{{ section.url }}"><h3>{{ section.data.title }}</h3></a>
+                    <a href="{{ section.url }}"><h4>{{ section.data.title }}</h4></a>
               </div>
               <div class="post-list-excerpt">
-                <p class="post-excerpt">
+                <p class="post-excerpt six">
                     {{ section.data.quote }}
                 </p>
               </div>
               <div class="post-list-author">
-                    <i>{{ wdefaults.commonWords.writtenBy }} {{ section.data.author }}</i>
+                    <p class="seven"><i>{{ wdefaults.commonWords.writtenBy }} {{ section.data.author }}</i></p>
               </div>
           </ol>
           {% endif %}

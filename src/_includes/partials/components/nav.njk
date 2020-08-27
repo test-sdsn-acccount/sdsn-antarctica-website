@@ -32,7 +32,7 @@
   
         <div class="not mega-menu">
             <a href="/" class="link nav-item"{{ 'aria-current=page' if page.url == '/' | safe }} {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-                <span class="visually-hidden">{{ wdefaults.commonWords.homepage }}</span>
+                <span class="visually-hidden six">{{ wdefaults.commonWords.homepage }}</span>
             </a>
         </div>
        
@@ -46,7 +46,7 @@
             {% if item.megamenu == true %}
             <div class="mega-menu">
                 <button class="mega-menu-button" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-                    <span>{{ item.text }}{% include "src/assets/images/arrow.svg" %}</span>
+                    <span class="six">{{ item.text }}{% include "src/assets/images/arrow.svg" %}</span>
                 </button>
                 <div class="mega-menu-content" {% if megaMenuBg %} style="background-color:{{ megaMenuBg }}"{% endif %}>
                     <ul class="mega-menu-list" aria-label="submenu">
@@ -63,7 +63,7 @@
                     {% set currentAttribute = ' aria-current="page"' %}
                 {% endif %}
                
-                    <a href="{{ item.url }}" class="link nav-item"{{ relAttribute | safe }}{{ currentAttribute | safe }} {% if bgText %} style="color:{{ bgText }}"{% endif %}><span>{{ item.text }}</span></a>
+                    <a href="{{ item.url }}" class="link nav-item"{{ relAttribute | safe }}{{ currentAttribute | safe }} {% if bgText %} style="color:{{ bgText }}"{% endif %}><span class="six">{{ item.text }}</span></a>
                
             {% endif %}
         {% endfor %}
