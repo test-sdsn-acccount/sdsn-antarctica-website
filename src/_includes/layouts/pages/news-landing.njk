@@ -17,7 +17,7 @@
     </div>
   </section>
     <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if information.networkInfo %}
+    {% if information.networkDetails %}
         {% set introHeader = pages.what.newsPage.globalHeader | safe %}
         {% set introSubtitle = pages.what.newsPage.globalSubtitle | safe %}
             {% include "layouts/intro-banner.njk" %}

@@ -119,4 +119,4 @@ fields:
     required: true
   label: Network Email
 pages:
-- src/_data/information/networkInfo.json
+- src/_data/information/networkDetails.json

@@ -4,7 +4,7 @@
 <main id="main-content" tabindex="-1">
 <div class="get-involved-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if information.networkInfo %}
+    {% if information.networkDetails %}
         {% set introHeader = pages.involved.joinPage.header %}
         {% set introSubtitle = pages.involved.joinPage.subtitle | safe %}
             {% include "layouts/intro-banner.njk" %}
