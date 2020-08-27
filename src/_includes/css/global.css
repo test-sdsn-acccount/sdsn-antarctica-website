@@ -21,6 +21,26 @@ main#main-content {
     margin: 0;
 }
 
+footer {
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.footer-container {
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 18% 1fr;
+}
+
+.footer-some.img {
+    width: 20px;
+}
+
+.footer-some.img img {
+    width: 100%;
+}
+
 li {
     font-family: 'Crimson Text', serif;
     line-height: 1.7rem;
@@ -76,7 +96,7 @@ p.seven, .seven p, ul.extra-list, *.seven, *.seven p  {
     font-size: 1.1rem;
 }
 
-.tag-item {
+.tag-item, .footer-container p {
     line-height: 1rem;
     font-weight: 400;
     font-size: 0.9rem;
@@ -172,6 +192,15 @@ ul {
 
 .align-text-right {
     text-align: right;
+}
+
+p.squash {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+p.squash-top {
+    margin-block-start: 0;
 }
 
 .place-items-center {
@@ -276,6 +305,14 @@ ul {
         padding-bottom: 0!important;
         padding: 1em;
     }
+
+    .repeat-grid-4, .repeat-grid-3 {
+        grid-template-columns: none;
+    }
+
+    .social-media-content {
+        text-align: left!important;
+    }
 }
 
 @media screen and (max-width: 640px) {    
@@ -300,6 +337,10 @@ ul {
     vertical-align: top;
 }
 
+.align-items-middle {
+    vertical-align: middle;
+}
+
 .padding-top-1 {
     padding-top: 1em;
 }
@@ -314,6 +355,10 @@ ul {
 
 .margin-top-1 {
     margin-top: 1em;
+}
+
+.margin-bottom-1 {
+    margin-bottom: 1em;
 }
 
 .margin-right-1 {

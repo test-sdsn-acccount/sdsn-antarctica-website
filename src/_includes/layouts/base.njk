@@ -12,6 +12,7 @@
   {% set megaMenuBg = themes.theme1.megaMenuBg %}
   {% set megaMenuFontColor = themes.theme1.megaMenuFontColor %}
   {% set logo = information.networkDetails.whitelogo %}
+  {% set footerLogo = information.networkDetails.logo %}
 {% elif wdefaults.websitecolours.colourtheme == "Theme2" %}
   {% set bgcolor = themes.theme2.bgcolor %}
   {% set bgText = themes.theme2.bgText %}
@@ -25,6 +26,7 @@
   {% set megaMenuBg = themes.theme2.megaMenuBg %}
   {% set megaMenuFontColor = themes.theme2.megaMenuFontColor %}
   {% set logo = information.networkDetails.logo %}
+  {% set footerLogo = information.networkDetails.whitelogo %}
 {% elif wdefaults.websitecolours.colourtheme == "Theme3" %}
   {% set bgcolor = themes.theme3.bgcolor %}
   {% set bgText = themes.theme3.bgText %}
@@ -38,6 +40,7 @@
   {% set megaMenuBg = themes.theme3.megaMenuBg %}
   {% set megaMenuFontColor = themes.theme3.megaMenuFontColor %}
   {% set logo = information.networkDetails.logo %}
+  {% set footerLogo = information.networkDetails.logo %}
 {% elif wdefaults.websitecolours.colourtheme == "Theme4" %}
   {% set bgcolor = themes.theme4.bgcolor %}
   {% set bgText = themes.theme4.bgText %}
@@ -51,6 +54,7 @@
   {% set megaMenuBg = themes.theme4.megaMenuBg %}
   {% set megaMenuFontColor = themes.theme4.megaMenuFontColor %}
   {% set logo = information.networkDetails.logo %}
+  {% set footerLogo = information.networkDetails.whitelogo %}
 {% elif wdefaults.websitecolours.colourtheme == "Theme5" %}
   {% set bgcolor = themes.theme5.bgcolor %}
   {% set bgText = themes.theme5.bgText %}
@@ -64,6 +68,7 @@
   {% set megaMenuBg = themes.theme5.megaMenuBg %}
   {% set megaMenuFontColor = themes.theme5.megaMenuFontColor %}
   {% set logo = information.networkDetails.whitelogo %}
+  {% set footerLogo = information.networkDetails.logo %}
 {% else %}
   {% set bgcolor = "#fff" %}
   {% set bgText = "#04263D" %}
@@ -77,6 +82,7 @@
   {% set megaMenuBg = "#fff" %}
   {% set megaMenuFontColor = "#22222" %}
   {% set logo = information.networkDetails.whitelogo %}
+  {% set footerLogo = information.networkDetails.whitelogo %}
 {% endif %}
 <html lang="en" class="no-js" {% if bgcolor %} style="background-color:{{ bgcolor }}"{% endif %}>
 <head>
@@ -92,6 +98,9 @@
   {% include "partials/global/site-head.njk" %}
   {% block content %}
   {% endblock content %}
+  {% include "partials/global/site-footer.njk" %}
+  {% block foot %}
+  {% endblock %}
 </body>
   <a href="#top" class="back-to-top-button">
       <button class="btn-link wide top-button" {% if btnColor %} style="background-color:{{ btnColor }};color:{{ btnText }};"{% endif %}><p class="seven">{{ wdefaults.commonWords.backToTop }}</p></button>
