@@ -7,6 +7,7 @@ html, body {
     bottom: 0;
     margin: 0;
     overflow-x: hidden;
+    font-size: 100%;
 }
 
 
@@ -20,97 +21,108 @@ main#main-content {
     margin: 0;
 }
 
-p {
-    font-family: 'Crimson Text', serif;
-    line-height: 1.6em;
-    font-size: 1em;
-}
-
 li {
     font-family: 'Crimson Text', serif;
-    line-height: 1.3em;
+    line-height: 1.4rem;
 }
 
 h1, h2, h3, h4, h5, h6, span {
     font-family: 'Lato', sans-serif;
 }
 
+p {
+    font-family: 'Crimson Text', serif;
+}
+
 h1, p.one, .one p {
     font-weight: 600;
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 h2, p.two, .two p {
     font-weight: 600;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 h3, p.three, .three p {
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.7rem;
 }
 
-h4, p.four, .four p {
+h4, p.four, .four p, .banner-sub-title, .banner-sub-title p {
     font-weight: 400;
-    font-size: 1.4em;
+    font-size: 1.6rem;
 }
 
-h5, p.five, .five p, .banner-sub-title, .banner-sub-title p {
+h5, p.five, .five p {
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1.5rem;
 }
 
-h6, p.six, .six p, .tag-item, button.btn-link {
+h6, p.six, .six p, button.btn-link, *.six, *.six p {
+    line-height: 2.2rem;
     font-weight: 400;
-    font-size: .9em;
+    font-size: 1.2rem;
 }
 
-p.seven, .seven p, ul.extra-list {
+p, span {
+    line-height: 2.7rem;
+    font-size: 1.4rem;
+}
+
+p.seven, .seven p, ul.extra-list, *.seven, *.seven p  {
+    line-height: 2.3rem;
     font-weight: 400;
-    font-size: .8em;
+    font-size: 1.1rem;
 }
 
-@media screen and (min-width: 1900px) {
+.tag-item {
+    line-height: 1rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 1800px) {
     h1, p.one, .one p {
-        font-size: 3em;
+        font-size: 3.5rem!important;
     }
-
+    
     h2, p.two, .two p {
-        font-size: 1.9em;
+        font-size: 2.3rem!important;
     }
     
     h3, p.three, .three p {
-        font-size: 1.9em!important;
+        font-size: 2rem!important;
     }
     
-    h4, p.four, .four p {
-        font-size: 1.7em!important;
+    h4, p.four, .four p, .banner-sub-title, .banner-sub-title p {
+        font-size: 1.9rem!important;
     }
     
-    h5, p.five, .five p, .banner-sub-title, .banner-sub-title p {
-        font-size: 1.9em!important;
+    h5, p.five, .five p {
+        font-size: 1.5rem!important;
     }
     
-    h6, p.six, .six p, .tag-item, button.btn-link {
-        font-size: 1em!important;
+    h6, p.six, .six p, button.btn-link, span.six {
+        font-size: 1.2rem!important;
     }
     
-    p.seven, .seven p, ul.extra-list {
-        font-size: 1.4em!important;
+    p, span {
+        font-size: 1.4rem!important;
     }
-
-    p {
-        font-size: 1.4em!important;
+    
+    p.seven, .seven p, ul.extra-list, .tag-item{
+        font-size: 1rem!important;
     }
 }
 
 @media screen and (max-width: 500px) {
     h1, p.one, .one p {
-        font-size: 2em;
+        font-size: 2rem!important;
     }
 
     p {
-        font-size: 1.2em!important;
+        font-size: 1.2rem!important;
     }
 }
 
@@ -1247,9 +1259,13 @@ button.btn-link {
     width: 100%;
 }
 
-.content-container.events a.resource-link:hover,
-button.btn-link:hover {
-    color: #494949 !important;
+
+button.btn-link.medium {
+    margin-top: .9em;
+    padding: .7em;
+    border: none;
+    cursor: pointer;
+    width: 70%;
 }
 
 button.animate:hover {

@@ -28,7 +28,7 @@
                             </div>
                             <div class="contact-box button">
                                 <a href="mailto:{{ person.ctaEmail }}" class="resource-link">
-                                    <button class="btn-link wide animate" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}><p class="five">{{ person.ctaTitle }}</p></button>
+                                    <button class="btn-link wide animate" {% if btnColor %} style="background-color:{{ btnColor }};color:{{ btnText }};"{% endif %}><p class="five">{{ person.ctaTitle }}</p></button>
                                 </a>
                             </div>
                         </div>
@@ -83,7 +83,7 @@
                             </div>
                             <div class="contact-box button">
                                 <a href="{{ pltm.ctaLink }}" class="resource-link">
-                                    <button class="btn-link wide animate" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}><p class="five">{{ pltm.ctaTitle }}</p></button>
+                                    <button class="btn-link wide animate" {% if btnColor %} style="background-color:{{ btnColor }};color:{{ btnText }};"{% endif %}><p class="five">{{ pltm.ctaTitle }}</p></button>
                                 </a>
                             </div>
                         </div>
