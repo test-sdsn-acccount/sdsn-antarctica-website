@@ -25,13 +25,13 @@
         {% endif %}
     </section>
     <section class="full-bleed" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }}"{% endif %}>
-        {% if information.networkDetails.networkObjectives %}
+        {% if information.networkDetails.networkVision %}
             {% set fbHeader = information.networkDetails.networkVision %}
                 {% include "partials/components/full-bleed.njk" %}
         {% endif %}
     </section>
     <section class="one-image-two-text" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-        {% if information.networkDetails.networkObjectives %}
+        {% if information.hostInformation.hostInstitution %}
             {% set pretext = pages.about.aboutPage.hostedPretext %}
             {% for host in information.hostInformation.hostInstitution %}
                 {% set header = host.hiName %}

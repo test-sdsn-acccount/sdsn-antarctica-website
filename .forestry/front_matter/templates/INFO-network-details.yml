@@ -1,5 +1,5 @@
 ---
-label: Network Information
+label: Network Details
 hide_body: false
 fields:
 - name: title
@@ -7,7 +7,7 @@ fields:
   config:
     required: false
   label: Title
-  default: Network Information
+  default: Network Details
   hidden: true
 - name: logo
   type: file
@@ -27,7 +27,6 @@ fields:
   description: e.g. Andes, Kenya, Northern Europe
 - name: networkdesc
   type: textarea
-  default: ''
   config:
     required: false
     wysiwyg: true
@@ -38,8 +37,8 @@ fields:
 - name: networkVision
   type: text
   config:
-    required: false
-  label: Network Vision
+    required: true
+  label: Network Vision Statement
 - name: networkObjectives
   type: field_group_list
   fields:
@@ -47,10 +46,9 @@ fields:
     type: text
     config:
       required: true
-    label: Objective sub title
+    label: Objective Sub Title
   - name: objective
     type: textarea
-    default: ''
     config:
       required: false
       wysiwyg: true
@@ -75,7 +73,6 @@ fields:
   description: Turn on or off the Impact section
 - name: networkimpact
   type: textarea
-  default: ''
   config:
     required: false
     wysiwyg: true
@@ -96,7 +93,6 @@ fields:
     label: Metric Title
   - name: desc
     type: textarea
-    default: ''
     config:
       required: false
       wysiwyg: true

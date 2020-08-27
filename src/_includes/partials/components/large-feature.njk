@@ -7,7 +7,9 @@
         <div class="feature-card content">
         <h2>{{ obj.objTitle }}</h2>
             <div class="six">{{ obj.objective | safe }}
-                <a href="{{ obj.link | safe }}" class="link text-button with-arrow" rel="bookmark" {% if fcolor1Text %} style="color:{{ fcolor1Text }}"{% endif %}><p>{{ wdefaults.commonWords.genericCta }} {% include "src/assets/images/right-arrow.svg" %}</p></a>
+                {% if obj.link | length !== 0 %}
+                    <a href="{{ obj.link | safe }}" class="link text-button with-arrow" rel="bookmark" {% if fcolor1Text %} style="color:{{ fcolor1Text }}"{% endif %}><p>{{ wdefaults.commonWords.genericCta }} {% include "src/assets/images/right-arrow.svg" %}</p></a>
+                {% endif %}
             </div>
         </div>
     </div>
