@@ -5,6 +5,10 @@ author: Lauren Barredo
 tags:
 - United Nations
 - Universities
+- Tag1
+- Tag1
+- Tag2
+- Really long tag tag tag
 title: University Support to Decade of Action
 quote: We are at a critical juncture, where new thinking is needed more than ever;
   there is an important role for universities to play.
