@@ -9,6 +9,11 @@ fields:
   label: Page Title
   default: Get involved page
   hidden: true
+- name: toggle
+  type: boolean
+  label: Page Toggle
+  default: true
+  description: Turn this page on or off
 - name: header
   type: text
   config:

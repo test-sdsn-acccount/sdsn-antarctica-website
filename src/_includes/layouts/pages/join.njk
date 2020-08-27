@@ -1,6 +1,7 @@
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
+{% if pages.involved.joinPage.toggle == true %}
 <main id="main-content" tabindex="-1">
 <div class="get-involved-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
@@ -38,4 +39,5 @@
     </section>
 </div>
 </main>
+{% endif %}
 {% endblock %}

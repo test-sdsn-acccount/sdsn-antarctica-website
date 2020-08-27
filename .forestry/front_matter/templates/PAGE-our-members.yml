@@ -8,6 +8,11 @@ fields:
     required: true
   label: Page Title
   default: Our Members
+- name: toggle
+  type: boolean
+  label: Page Toggle
+  default: true
+  description: Turn this page on or off
 - name: membedesc
   type: textarea
   default: ''

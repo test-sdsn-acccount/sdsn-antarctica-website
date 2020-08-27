@@ -2,6 +2,7 @@
 {% set pageType = 'About the Team' %}
 
 {% block content %}
+{% if pages.what.ourMembers == true %}
 <main id="main-content" tabindex="-1">
 <div class="what-we-do-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
@@ -34,5 +35,5 @@
     </section>
 </div>
 </main>
-
+{% endif %}
 {% endblock %}

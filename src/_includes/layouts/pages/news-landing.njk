@@ -1,6 +1,7 @@
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
+{% if pages.what.newsPage.toggle == true %}
 <main id="main-content" tabindex="-1">
 <div class="home-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
@@ -34,4 +35,5 @@
   </section>
 </div>
 </main>
+{% endif %}
 {% endblock %}
