@@ -23,6 +23,11 @@
       "text": "WHAT WE DO",
       "menuitems": [
         {
+          "text": "News and Activities",
+          "url": "/news",
+          "external": false
+        },
+        {
           "text": "Our Network and Members",
           "url": "/what-we-do",
           "external": false
@@ -30,11 +35,6 @@
         {
           "text": "Youth-led Action",
           "url": "/youth",
-          "external": false
-        },
-        {
-          "text": "News and Activities",
-          "url": "/news",
           "external": false
         }
       ],

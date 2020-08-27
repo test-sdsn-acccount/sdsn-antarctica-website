@@ -133,8 +133,8 @@ fields:
     config:
       required: false
     label: Position Title (if applicable)
-    description: If the Network Manager has a position outside that you want to
-      highlight, list it here.
+    description: If the Network Manager has a position outside that you want to highlight,
+      list it here.
   - name: photo
     type: file
     config:
@@ -179,8 +179,8 @@ fields:
     config:
       required: false
     label: Position Title (if applicable)
-    description: If the Network Manager has a position outside that you want to
-      highlight, list it here.
+    description: If the Network Manager has a position outside that you want to highlight,
+      list it here.
   - name: photo
     type: file
     config:
@@ -214,4 +214,4 @@ fields:
   label: Default photo
   description: Show this image for team members with no photo
 pages:
-- src/_data/information/teamInfo.json
+- src/_data/information/TeamInfo.json
