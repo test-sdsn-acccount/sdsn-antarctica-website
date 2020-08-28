@@ -20,7 +20,7 @@ sections:
   create: documents
   match: "**/*.md"
   templates:
-  - PAGE-news
+  - CONTENT-news
 - type: directory
   path: src/content/resources
   label: Resources
