@@ -36,7 +36,7 @@
             {% for host in information.hostInformation.hostInstitution %}
                 {% set header = host.hiName %}
                 {% set logoImg = host.hiLogo %}
-                {% set actionContent = host.hidescription | safe %}
+                {% set actionContent = host.hiDescription | safe %}
                 {% if host.hiLink | length !== 0 %}
                     {% set ctaColour = bgText %}
                     {% set oneTwoCta = pages.about.aboutPage.hostCtaText %}
