@@ -33,5 +33,3 @@ fields:
   showOnly:
     field: socialMediaSection
     value: true
-pages:
-- src/_data/information/footerIngo.json

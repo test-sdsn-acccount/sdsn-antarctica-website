@@ -17,16 +17,6 @@ fields:
     config:
       required: true
     label: Host Institution Name
-  - name: map
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: markdown
-    label: Address
-    description: Please copy and paste Google Map code here
   - name: hiLogo
     type: file
     config:
@@ -50,6 +40,16 @@ fields:
       schema:
         format: markdown
     label: Host Institution Website (optional)
+  - name: map
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Address
+    description: Please copy and paste Google Map code here
   config:
     min: 
     max: 
