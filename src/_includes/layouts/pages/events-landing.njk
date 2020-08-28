@@ -1,6 +1,8 @@
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
+{% if pages.involved.eventPage.toggle == true %}
+
 <main id="main-content" tabindex="-1">
 <div class="resource-landing-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
@@ -19,4 +21,5 @@
 
 </div>
 </main>
+{% endif %}
 {% endblock %}
