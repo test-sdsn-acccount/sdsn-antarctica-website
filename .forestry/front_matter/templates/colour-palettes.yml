@@ -1,0 +1,88 @@
+---
+label: Website Colour Scheme
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Page Title
+  default: Website Colours
+  hidden: true
+- name: bgcolor
+  type: color
+  label: Background Colour
+  config:
+    required: true
+    color_format: Hex
+  default: "#1F5382"
+- name: bgText
+  type: color
+  label: Corresponding font colour for background
+  config:
+    required: true
+    color_format: Hex
+  default: "#ffff"
+- name: bgTextHighlight
+  type: color
+  label: Highlight colour for background text
+  config:
+    required: true
+    color_format: Hex
+  default: "#575757"
+- name: fcolor1
+  type: color
+  label: Primary feature colour
+  config:
+    required: true
+    color_format: Hex
+  default: "#12635E"
+- name: fcolor1Text
+  type: color
+  label: Corresponding font colour for 1st feature color
+  config:
+    required: true
+    color_format: Hex
+  default: "#ffff"
+- name: fcolor2
+  type: color
+  label: Secondary feature colour
+  config:
+    required: true
+    color_format: Hex
+  default: "#EAEAEA"
+- name: fcolor2Text
+  type: color
+  label: Corresponding font colour for 2nd feature color
+  config:
+    required: true
+    color_format: Hex
+  default: "#ffff"
+- name: btnColor
+  type: color
+  label: Highlight CTA Button Color
+  config:
+    required: true
+    color_format: Hex
+  default: "#0D4A46"
+- name: btnText
+  type: color
+  label: Highlight CTA Text Color
+  config:
+    required: true
+    color_format: Hex
+  default: "#fff"
+- name: megaMenuBg
+  type: color
+  label: Navigation menu background colour
+  config:
+    required: true
+    color_format: Hex
+  default: "#f9f9f9"
+- name: megaMenuFontColor
+  type: color
+  label: Navigation menu font colour
+  config:
+    required: true
+    color_format: Hex
+  default: "#222222"

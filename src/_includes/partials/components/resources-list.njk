@@ -14,7 +14,7 @@
                   <div class="resource-card-content">
                       <div class="resource-card-content-left">
                           <div class="resource-list-title">
-                                <a href="{{ section.url }}"><h4>{{ section.data.title }}</h4></a>
+                                <h4>{{ section.data.title }}</h4>
                           </div>
                           <div class="resource-list-excerpt">
                             <p class="six resource-excerpt">
@@ -44,7 +44,6 @@
                                     <li class="resource-sub-title seven"><p>{{ resource.oResourceContent | safe }}</p></li>
                                   </a> 
                                 {% else %}
-                                <li></li>
                                 {% endif %}
                             {% endfor %}
                             </ul>
