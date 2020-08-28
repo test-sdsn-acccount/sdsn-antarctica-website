@@ -48,8 +48,7 @@ fields:
 - name: toggle
   type: boolean
   label: Featured content
-  description: Mark this content if you want it featured on the What we
-    do pages.
+  description: Mark this content if you want it featured on the What we do pages.
 - name: tags
   type: tag_list
   default: []

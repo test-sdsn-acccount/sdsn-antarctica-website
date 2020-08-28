@@ -27,7 +27,7 @@ sections:
   create: documents
   match: "**/*.md"
   templates:
-  - PAGE-resources
+  - CONTENT-resources
 - type: directory
   path: src/content/events
   label: Events
