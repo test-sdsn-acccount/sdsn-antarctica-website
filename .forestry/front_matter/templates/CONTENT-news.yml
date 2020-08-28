@@ -1,5 +1,5 @@
 ---
-label: CONTENT News
+label: CONTENT News Template
 hide_body: false
 fields:
 - name: pagetitle
@@ -48,7 +48,7 @@ fields:
 - name: toggle
   type: boolean
   label: Featured content
-  description: Mark this content if you want it featured on the homepage or What we
+  description: Mark this content if you want it featured on the What we
     do pages.
 - name: tags
   type: tag_list

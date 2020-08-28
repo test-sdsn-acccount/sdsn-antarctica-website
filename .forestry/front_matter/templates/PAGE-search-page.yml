@@ -1,5 +1,5 @@
 ---
-label: CONTENT Search Page
+label: 'Page Content: Search Page'
 hide_body: false
 fields:
 - name: title

@@ -1,5 +1,5 @@
 ---
-label: CONTENT News
+label: 'Page Content: News'
 hide_body: false
 fields:
 - name: title

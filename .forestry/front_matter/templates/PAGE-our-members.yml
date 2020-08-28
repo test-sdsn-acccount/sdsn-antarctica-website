@@ -1,5 +1,5 @@
 ---
-label: CONTENT Our Members
+label: 'Page Content: Our Members'
 hide_body: false
 fields:
 - name: title
