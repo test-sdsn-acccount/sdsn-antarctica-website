@@ -9,11 +9,6 @@ fields:
   label: Page Title
   default: Resource
   hidden: true
-- name: title
-  type: text
-  config:
-    required: true
-  label: Title
 - name: date
   type: datetime
   label: Date
@@ -25,33 +20,16 @@ fields:
     display_utc: true
     export_format: YYYY-MM-DDThh:mm:ssZ
   default: now
-- name: author
-  type: text
-  config:
-    required: false
-  label: Author
-  default: Network Secretariat
 - name: fImage
   type: file
   config:
     maxSize: 0.7
   label: Featured Image
-- name: toggle
-  type: boolean
-  label: Featured content
-  description: Mark this content if you want it featured on the homepage or What we
-    do pages.
-- name: tags
-  type: tag_list
-  default: []
-  label: Tags
-  description: Put some tags to make finding content easier for your website visitors!
-    E.g. Antarctica, Youth, Climate change, etc.
-- name: file
-  type: file
+- name: title
+  type: text
   config:
-    maxSize: 5
-  label: File
+    required: true
+  label: Title
 - name: desc
   type: textarea
   default: ''
@@ -61,16 +39,42 @@ fields:
     schema:
       format: html-blocks
   label: Description
-- name: ctaURL
+- name: author
   type: text
   config:
     required: false
-  label: Call to action URL
+  label: Author
+  default: Network Secretariat
 - name: ctaTitle
   type: text
   config:
     required: false
   label: Call to action button text
+- name: mainUploadToggle
+  type: boolean
+  label: Upload OR Link Toggle
+  description: 'Toggle this to send your website viewers to another link or to download
+    a file. This is for the main button. '
+- name: ctaURL
+  type: text
+  config:
+    required: false
+  label: Call to action URL
+  showOnly:
+    field: mainUploadToggle
+- name: file
+  type: file
+  config:
+    maxSize: 50
+  label: File
+  showOnly:
+    field: mainUploadToggle
+    value: true
+- name: toggle
+  type: boolean
+  label: Featured content
+  description: Mark this content if you want it featured on the homepage or What we
+    do pages.
 - name: oResources
   type: text
   config:
@@ -79,16 +83,6 @@ fields:
 - name: otherResources
   type: field_group_list
   fields:
-  - name: resourceFile
-    type: file
-    config:
-      maxSize: 2
-    label: Upload File
-  - name: resourceURL
-    type: text
-    config:
-      required: false
-    label: OR - URL to resource
   - name: oResourceContent
     type: textarea
     default: ''
@@ -98,12 +92,37 @@ fields:
       schema:
         format: html-blocks
     label: Highlight Information Content
+  - name: uploadToggle
+    type: boolean
+    label: Upload OR Link
+    description: Toggle to send website viewers to another link or download your file
+  - name: resourceFile
+    type: file
+    config:
+      maxSize: 40
+    label: Upload File
+    showOnly:
+      field: uploadToggle
+      value: true
+  - name: resourceURL
+    type: text
+    config:
+      required: false
+    label: URL to resource
+    showOnly:
+      field: uploadToggle
   config:
     min: 
     max: 
     labelField: 
   label: Other Highlight Content
   description: If you want to highlight more content, you can put it here.
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: Put some tags to make finding content easier for your website visitors!
+    E.g. Antarctica, Youth, Climate change, etc.
 pages:
 - src/content/resources/Example-resource-no-img.md
 - src/content/resources/Example-resource-no-links.md
