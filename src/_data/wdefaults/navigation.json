@@ -2,13 +2,8 @@
   "items": [
     {
       "megamenu": true,
-      "text": "ABOUT US",
+      "text": "ABOUT",
       "menuitems": [
-        {
-          "text": "SDSN Global",
-          "url": "unsdsn.org",
-          "external": true
-        },
         {
           "text": "About SDSN",
           "url": "/about/sdsn",
