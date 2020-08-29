@@ -9,7 +9,7 @@ sections:
 - type: directory
   path: src/_data/information
   label: Network Information
-  create: all
+  create: documents
   match: "*.json"
   new_doc_ext: json
 - type: heading
@@ -71,14 +71,12 @@ sections:
 - type: document
   path: src/_data/wdefaults/commonWords.json
   label: Edit Default Words
-  match: "**/*"
 - type: document
   path: src/_data/wdefaults/websitecolours.json
   label: Edit Colour Theme
 - type: document
   path: src/_data/wdefaults/sdgIcons.json
   label: Edit SDG Icons
-  match: "**/*"
 - type: document
   path: src/_data/wdefaults/socialMediaIcons.json
   label: Edit Social Media Icons

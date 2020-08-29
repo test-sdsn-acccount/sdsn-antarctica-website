@@ -214,4 +214,4 @@ fields:
   label: Default photo
   description: Show this image for team members with no photo
 pages:
-- src/_data/information/teamInfo.json
+- src/_data/information/TeamInfo.json
