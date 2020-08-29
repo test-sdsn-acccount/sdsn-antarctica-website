@@ -21,6 +21,7 @@
                     <h2>{{ title }}</h2>
                     <h4>{{ wdefaults.commonWords.by }} {{ author }}</h4>
                     <a href="{{ ctaURL }}" class="resource-link width-50 animate">
+                     {% set buttonCTA = ctaTitle %}
                           {% include "partials/components/btn.njk" %}
                     </a>
                 </div>

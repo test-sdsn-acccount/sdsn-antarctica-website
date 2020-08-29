@@ -30,6 +30,7 @@
                                 </div>
                                 {% if section.data.ctaURL | length !== 0 %}
                                     <a href="{{ section.url }}" class="resource-link">
+                                    {% set buttonCTA = wdefaults.commonWords.genericCta %}
                                       {% include "partials/components/btn-small.njk" %}
                                     </a>
                                 {% endif %}
