@@ -22,9 +22,10 @@ main#main-content {
 }
 
 footer {
-    position: absolute;
-    right: 0;
+    position: fixed;
+    width: 100%;
     left: 0;
+    bottom: 0;
 }
 
 .footer-container {
@@ -1291,7 +1292,7 @@ p.post-excerpt,
     height: 100%;
     display: grid;
     place-items: center;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .resource-card-content {
