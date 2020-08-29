@@ -12,6 +12,11 @@ fields:
 - name: sdgs
   type: field_group_list
   fields:
+  - name: sdgTitle
+    type: text
+    config:
+      required: false
+    label: SDG Title
   - name: sdgLink
     type: text
     config:
@@ -28,3 +33,6 @@ fields:
     max: 
     labelField: 
   label: SDG Icons
+pages:
+- src/_data/wdefaults/sdgIcons.json
+
