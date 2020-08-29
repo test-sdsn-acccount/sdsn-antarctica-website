@@ -13,11 +13,6 @@
           "text": "About the Team",
           "url": "/about/team",
           "external": false
-        },
-        {
-          "text": "Global SDSN",
-          "url": "https://unsdsn.org/",
-          "external": true
         }
       ],
       "url": "",
