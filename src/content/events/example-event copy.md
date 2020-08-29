@@ -7,7 +7,7 @@ toggle: true
 tags:
 - Antarctica
 - Launch
-desc: ''
+desc: "<p>Launch event of SDSN Cyprus</p>"
 location: Online webinar
 pagetitle: ''
 ctaTitle: Register
