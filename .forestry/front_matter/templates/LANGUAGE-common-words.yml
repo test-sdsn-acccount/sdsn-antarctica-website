@@ -91,3 +91,5 @@ fields:
   label: Search Tag Text
   hidden: false
   default: Search via tags
+pages:
+- src/_data/wdefaults/commonWords.json
