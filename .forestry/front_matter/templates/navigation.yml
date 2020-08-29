@@ -40,6 +40,7 @@ fields:
       config:
         required: false
       label: Drop Down Item Link
+      description: If this is an external link, remember to add https:// in the beginning
     - name: external
       type: boolean
       label: External Link
