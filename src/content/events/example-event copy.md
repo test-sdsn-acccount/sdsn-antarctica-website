@@ -2,16 +2,16 @@
 title: Example Webinar
 date: 2012-06-17T01:00:00.000+00:00
 author: SDSN Antarctica
-fImage: ""
+fImage: "/uploads/rainforest-during-foggy-day-975771.jpg"
 toggle: true
 tags:
 - Antarctica
 - Launch
 desc: ''
-location: 'Online webinar'
+location: Online webinar
 pagetitle: ''
-ctaTitle: 'Register'
-ctaURL: 'https://futureearth.org/2020/06/04/launch-event-for-the-sdsn-cyprus-network/'
+ctaTitle: Register
+ctaURL: https://futureearth.org/2020/06/04/launch-event-for-the-sdsn-cyprus-network/
 
 ---
 The Leadership Council of the Cyprus branch of the UN Sustainable Development Solutions Network (SDSN Cyprus), is proud to announce the official launching ceremony of SDSN Cyprus, which will take place online, in the presence of H.E. The President of the Republic of Cyprus, Mr. Nicos Anastasiades, of leading economist Prof. Jeffrey Sachs and of the Honourable Minister of Agriculture, Rural Development and Environment, Dr. Costas Kadis.
