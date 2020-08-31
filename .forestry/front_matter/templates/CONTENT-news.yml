@@ -54,7 +54,7 @@ fields:
   default: []
   label: Tags
   description: Put some tags to make finding content easier for your website visitors!
-    E.g. Antarctica, Youth, Climate change, etc.
+    E.g. Antarctica, Youth, Climate change, etc. Press enter after each tag.
 - name: aboutAuthor
   type: textarea
   default: ''
