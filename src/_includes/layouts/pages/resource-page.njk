@@ -26,6 +26,11 @@
       <div class="news-page-content">
         {{ content | safe }}
       </div>
+      <div class="social-media-share-container">
+        {% include "partials/components/facebook-btn.njk" %}
+        {% include "partials/components/linkedin-btn.njk" %}
+        {% include "partials/components/twitter-btn.njk" %}
+      </div>
     </div>
   </main>
 {% endblock %}

@@ -114,5 +114,17 @@ fields:
   config:
     required: true
   label: Network Email
+- name: websiteTitle
+  type: text
+  config:
+    required: true
+  label: Website Title
+- name: websiteURL
+  type: text
+  default: https://
+  config:
+    required: false
+  label: Website URL
+  description: Please make sure to include https://
 pages:
 - src/_data/information/networkDetails.json

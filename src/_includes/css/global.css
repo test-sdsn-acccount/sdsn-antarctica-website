@@ -1139,6 +1139,18 @@ img.people-profile {
 
 /* News feed */
 
+.social-media-share-btn,
+.social-media-share-btn iframe,
+.social-media-share-btn span:nth-child(1) {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.social-media-share-btn .IN-widget {
+    line-height: 1!important;
+}
+
+
 .nav-item-line {
     border-top: 1px solid #dadada;
 }

@@ -38,5 +38,7 @@
     }
   ],
   "networkEmail": "antarc@unsdsn.org",
+  "websiteTitle": "SDSN Antarctica",
+  "websiteURL": "https://sdsn-rn-network.netlify.app/",
   "title": "Network Details"
 }

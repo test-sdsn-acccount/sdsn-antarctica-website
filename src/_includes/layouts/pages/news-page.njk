@@ -3,7 +3,7 @@
 {% block content %}
   <main id="main-content" class="content-colour" tabindex="-1">
     <div class="content-container ">
-        {% set previousPage = "/news" %}
+        {% set previousPage = "/news" | url %}
         {% set previousPageText = pages.what.newsPage.previousPageText %}
         {% include "partials/components/back-to-prev-page.njk" %}
       <div class="news-page-title-info">
@@ -26,7 +26,7 @@
           </div>
         {% endif %}
       </div>
-      <div class="banner-sub-title">
+      <div class="banner-sub-title fb-quote">
         <i>{{ quote | safe }}</i> 
       </div>
       <div class="news-page-content">
@@ -41,13 +41,21 @@
           {% endfor %}
         {% endif %}
       </div>
+      <div class="social-media-share-container">
+        {% include "partials/components/facebook-btn.njk" %}
+        {% include "partials/components/linkedin-btn.njk" %}
+        {% include "partials/components/twitter-btn.njk" %}
+      </div>
+      {% if aboutAuthor | length !== 0 %}
       <div class="news-page-supp-line">
       </div>
       <div class="news-page-supp-info">
         <p>{{ aboutAuthor | safe }}</p>
       </div>
-        
+      {% endif %}
+      {% include "partials/components/pagination-page.njk" %}
     </div>
   </main>
+
 {% endblock %}
 
