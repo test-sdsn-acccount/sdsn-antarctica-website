@@ -44,5 +44,11 @@ fields:
     schema:
       format: html-blocks
   label: Global News Sub Title
+- name: previousPageText
+  type: text
+  config:
+    required: true
+  label: Previous page button text
+  default: Go to back to News
 pages:
 - src/_data/pages/what/newsPage.json

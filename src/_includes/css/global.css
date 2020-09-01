@@ -695,6 +695,18 @@ section.mobile-nav li {
     text-align: right;
 }
 
+.pagination-just-back {
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.pagination-just-back li {
+    list-style: none;
+    display: inline;
+    color: rgb(74, 74, 74);
+    text-decoration: none;
+}
+
 .pagination-nav li {
     list-style: none;
     display: inline;
@@ -703,7 +715,7 @@ section.mobile-nav li {
     text-decoration: none;
 }
 
-.pagination-nav li:hover a {
+.pagination-nav li:hover a, .pagination-just-back li:hover a {
     color: #a2a2a2;
 }
 
