@@ -40,7 +40,7 @@
                                   <li class="list-style-none six">{{ date | date("MMMM Do YYYY")}}</li>
 
                                   <h5 class="small-squash">{{ wdefaults.commonWords.location }}</h5>
-                                  <li class="list-style-none six margin-bottom-1">{{ section.data.location }}</li>
+                                  <li class="list-style-none six margin-bottom-1">{{ section.data.location | safe }}</li>
                                   <div class="resource-list-tags">
                                     {% for tag in section.data.tags %}
                                       <a href="/tags/{{ tag }}/"><p class="tag-item">

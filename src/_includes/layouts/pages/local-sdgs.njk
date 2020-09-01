@@ -8,14 +8,14 @@
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if pages.sdgs.sdgsPage %}
         {% set introHeader = pages.sdgs.sdgsPage.header %}
-        {% set introSubtitle = pages.sdgs.sdgsPage.subtitle %}
+        {% set introSubtitle = pages.sdgs.sdgsPage.subtitle | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
     <section class="full-bleed" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}>
         {% if information.networkDetails.networkObjectives %}
             {% set header = pages.sdgs.sdgsPage.sdgsHeader %}
-            {% set subtitle = pages.sdgs.sdgsPage.sdgsSubtitle %}
+            {% set subtitle = pages.sdgs.sdgsPage.sdgsSubtitle | safe %}
             {% set sbCta = pages.sdgs.sdgsPage.sdgsCta %}
             {% set ctaLink = pages.sdgs.sdgsPage.sdgsCtaURL %}
             {% set ctaColour = fcolor2Text %}

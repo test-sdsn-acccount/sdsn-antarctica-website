@@ -13,7 +13,13 @@ fields:
   label: Page Toggle
   default: true
   description: Turn this page on or off
-- name: membedesc
+- name: header
+  type: text
+  config:
+    required: true
+  label: Banner Title
+  default: What we do
+- name: memberDesc
   type: textarea
   default: ''
   config:
@@ -22,17 +28,50 @@ fields:
     schema:
       format: html-blocks
   label: Membership Description
-- name: memberCtaTitle
+- name: highlightProjectsHeader
+  type: text
+  config:
+    required: false
+  label: Projects Header
+  default: Highlight projects
+- name: highlightProjectsSubtitle
+  type: text
+  config:
+    required: false
+  label: Projects Subtitle
+  default: Read more about our current work
+- name: memberTitle
+  type: text
+  config:
+    required: false
+  label: Member List Title
+  default: Member List
+- name: memberSubtitle
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Membership List Sub Title
+- name: contactTitle
   type: text
   config:
     required: true
   label: Call to Action Title
   default: See benefits
-- name: membercta
+- name: contactCTA
   type: text
   config:
     required: true
   label: Call to Action
   default: See benefits of joining the network
+- name: contactCTAURL
+  type: text
+  config:
+    required: false
+  label: Call to action URL
+  description: If linking to a website, please put https:// in the front
 pages:
 - src/_data/pages/what/ourMembers.json

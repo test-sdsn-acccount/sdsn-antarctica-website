@@ -2,7 +2,7 @@
   "title" : "Page: Network Activities Members",
   "toggle": true,
   "header" : "What we do",
-  "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.",
+  "memberDesc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.",
   "highlightProjectsHeader" : "Highlight projects",
   "highlightProjectsSubtitle" : "Read more about our current work",
   "memberTitle" : "Member List",
