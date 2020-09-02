@@ -1,6 +1,7 @@
 {
   "logo": "/uploads/sdsn-antarc.png",
   "whitelogo": "/uploads/sdsn-antsarc.png",
+  "favicon": "/uploads/favicon.png",
   "networkName": "Antarctica",
   "networkdesc": "<p>SDSN Antarctica is a community of universities, research centers, and other knowledge institutions to translate the latest expertise in sustainable development into action</p>",
   "networkVision": "Mobilizing SDG implementation through solution initiatives and long-term pathways in Antarctica.",

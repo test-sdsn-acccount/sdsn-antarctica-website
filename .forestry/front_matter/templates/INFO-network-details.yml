@@ -19,6 +19,11 @@ fields:
   config:
     maxSize: 0.7
   label: White Network Logo
+- name: favicon
+  type: file
+  config:
+    maxSize: 0.2
+  label: Favicon
 - name: networkName
   type: text
   config:
