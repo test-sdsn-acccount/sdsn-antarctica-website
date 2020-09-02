@@ -6,6 +6,7 @@
   <main id="main-content" class="content-colour" tabindex="-1">
     <div class="content-container ">
         {% set previousPage = "/news" | url %}
+        {% set previousPageText = pages.what.newsPage.previousPageText %}
         {% include "partials/components/breadcrumbs.njk" %}
       <div class="news-page-title-info">
         <h2>{{ title }}</h2>
