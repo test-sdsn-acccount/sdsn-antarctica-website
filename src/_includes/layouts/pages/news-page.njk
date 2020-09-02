@@ -3,6 +3,7 @@
 {% set nextPost = collections.newsArticles  | getNextCollectionItem(page) %}
                         
 {% block content %}
+<title>{{ title }}</title>
   <main id="main-content" class="content-colour" tabindex="-1">
     <div class="content-container ">
         {% set previousPage = "/news" | url %}
