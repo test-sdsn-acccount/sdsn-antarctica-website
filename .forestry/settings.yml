@@ -4,6 +4,11 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: directory
+  path: src/content/pages
+  label: pages
+  create: documents
+  match: "**/*"
 - type: heading
   label: Edit network information
 - type: directory
