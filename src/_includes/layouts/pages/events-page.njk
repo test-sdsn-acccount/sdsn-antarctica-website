@@ -1,11 +1,12 @@
 {% extends 'layouts/base.njk' %}
+{% set previousPost = collections.eventsArticles | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.eventsArticles  | getNextCollectionItem(page) %}
 
 {% block content %}
   <main id="main-content" class="content-colour" tabindex="-1">
     <div class="content-container events">
         {% set previousPage = "/events" %}
-        {% set previousPageText = pages.involved.eventsPage.previousPageText %}
-        {% include "partials/components/back-to-prev-page.njk" %}
+        {% include "partials/components/breadcrumbs.njk" %}
       <div class="news-page-title-info">
             <div class="resource-card-content">
                 <div class="resource-card-content-left">

@@ -1,11 +1,12 @@
 {% extends 'layouts/base.njk' %}
-
+{% set previousPost = collections.newsArticles | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.newsArticles  | getNextCollectionItem(page) %}
+                        
 {% block content %}
   <main id="main-content" class="content-colour" tabindex="-1">
     <div class="content-container ">
         {% set previousPage = "/news" | url %}
-        {% set previousPageText = pages.what.newsPage.previousPageText %}
-        {% include "partials/components/back-to-prev-page.njk" %}
+        {% include "partials/components/breadcrumbs.njk" %}
       <div class="news-page-title-info">
         <h2>{{ title }}</h2>
         {{ wdefaults.commonWords.writtenBy }} {{ author }} <br/> <i>{{ date | date("MMMM Do YYYY")}} </i>
