@@ -44,6 +44,12 @@ fields:
     schema:
       format: html-blocks
   label: Global News Sub Title
+- name: globalCTA
+  type: text
+  config:
+    required: true
+  label: Call to action to go to the SDSN Global Website
+  default: Read more on the Global SDSN website
 - name: previousPageText
   type: text
   config:

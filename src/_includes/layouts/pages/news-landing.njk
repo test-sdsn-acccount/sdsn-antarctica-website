@@ -28,10 +28,11 @@
   <section class="full-bleed resources-bgs">
     <div class="content-container ">
       <div class="rss-post-list">
-      {# {% include "/js/components/rss.js" %} #}
-      {# <script type="text/javascript" src="/js/components/rss.js"></script> #}
-{# <script src="//rss.bloople.net/?url=https%3A%2F%2Fwww.unsdsn.org%2Ffeed%2Frss2&detail=-1&limit=5&showtitle=false&type=js"></script> #}
-<script src="//rss.bloople.net/?url=https%3A%2F%2Fwww.unsdsn.org%2Ffeed%2Frss2&detail=40&limit=5&showtitle=false&type=js"></script>      </div>
+        <script src="//rss.bloople.net/?url=https%3A%2F%2Fwww.unsdsn.org%2Ffeed%2Frss2&detail=40&limit=4&showtitle=false&type=js"></script>      
+      </div>
+        {% set ctaLink = "https://unsdsn.org/"%}
+        {% set cta = pages.what.newsPage.globalCTA %}
+        {% include "partials/components/cta-button.njk" %}
     </div>
   </section>
 </div>
