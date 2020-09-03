@@ -1,90 +1,90 @@
 {
     "title": "SDG Icons",
-    "sdgs" : [
+    "tImages" : [
         {
-            "sdgTitle": "SDG 1",
-            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-1-no-poverty.html",
-            "icon": "/images/sdgs/SDG1.png"
+            "tTitle": "SDG 1",
+            "tLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-1-no-poverty.html",
+            "tImg": "/images/sdgs/SDG1.png"
         },
         {
-            "sdgTitle": "SDG 2",
-            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-2-zero-hunger.html",    
-            "icon": "/images/sdgs/SDG2.png"
+            "tTitle": "SDG 2",
+            "tLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-2-zero-hunger.html",    
+            "tImg": "/images/sdgs/SDG2.png"
         },
         {
-            "sdgTitle": "SDG 3",
-            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-3-good-health-and-well-being.html",
-            "icon": "/images/sdgs/SDG3.png"
+            "tTitle": "SDG 3",
+            "tLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-3-good-health-and-well-being.html",
+            "tImg": "/images/sdgs/SDG3.png"
         },
         {
-            "sdgTitle": "SDG 4",
-            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-4-quality-education.html",
-            "icon": "/images/sdgs/SDG4.png"
+            "tTitle": "SDG 4",
+            "tLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-4-quality-education.html",
+            "tImg": "/images/sdgs/SDG4.png"
         },
         {
-            "sdgTitle": "SDG 5",
-            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-5-gender-equality.html",
-            "icon": "/images/sdgs/SDG5.png"
+            "tTitle": "SDG 5",
+            "tLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-5-gender-equality.html",
+            "tImg": "/images/sdgs/SDG5.png"
         },
         {
-            "sdgTitle": "SDG 6",
-            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-6-clean-water-and-sanitation.html",
-            "icon": "/images/sdgs/SDG6.png"
+            "tTitle": "SDG 6",
+            "tLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-6-clean-water-and-sanitation.html",
+            "tImg": "/images/sdgs/SDG6.png"
         },
         {
-            "sdgTitle": "SDG 7",
-            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-7-affordable-and-clean-energy.html",
-            "icon": "/images/sdgs/SDG7.png"
+            "tTitle": "SDG 7",
+            "tLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-7-affordable-and-clean-energy.html",
+            "tImg": "/images/sdgs/SDG7.png"
         },
         {
-            "sdgTitle": "SDG 8",
-            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-8-decent-work-and-economic-growth.html",
-            "icon": "/images/sdgs/SDG8.png"
+            "tTitle": "SDG 8",
+            "tLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-8-decent-work-and-economic-growth.html",
+            "tImg": "/images/sdgs/SDG8.png"
         },
         {
-            "sdgTitle": "SDG 9",
-            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-9-industry-innovation-and-infrastructure.html",
-            "icon": "/images/sdgs/SDG9.png"
+            "tTitle": "SDG 9",
+            "tLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-9-industry-innovation-and-infrastructure.html",
+            "tImg": "/images/sdgs/SDG9.png"
         },
         {
-            "sdgTitle": "SDG 10",
-            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-10-reduced-inequalities.html",
-            "icon": "/images/sdgs/SDG10.png"
+            "tTitle": "SDG 10",
+            "tLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-10-reduced-inequalities.html",
+            "tImg": "/images/sdgs/SDG10.png"
         },
         {
-            "sdgTitle": "SDG 11",
-            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-11-sustainable-cities-and-communities.html",
-            "icon": "/images/sdgs/SDG11.png"
+            "tTitle": "SDG 11",
+            "tLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-11-sustainable-cities-and-communities.html",
+            "tImg": "/images/sdgs/SDG11.png"
         },
         {
-            "sdgTitle": "SDG 12",
-            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-12-responsible-consumption-and-production.html",
-            "icon": "/images/sdgs/SDG12.png"
+            "tTitle": "SDG 12",
+            "tLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-12-responsible-consumption-and-production.html",
+            "tImg": "/images/sdgs/SDG12.png"
         },
         {
-            "sdgTitle": "SDG 13",
-            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-13-climate-action.html",
-            "icon": "/images/sdgs/SDG13.png"
+            "tTitle": "SDG 13",
+            "tLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-13-climate-action.html",
+            "tImg": "/images/sdgs/SDG13.png"
         },
         {
-            "sdgTitle": "SDG 14",
-            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-14-life-below-water.html",
-            "icon": "/images/sdgs/SDG14.png"
+            "tTitle": "SDG 14",
+            "tLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-14-life-below-water.html",
+            "tImg": "/images/sdgs/SDG14.png"
         },
         {
-            "sdgTitle": "SDG 15",
-            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-15-life-on-land.html",
-            "icon": "/images/sdgs/SDG15.png"
+            "tTitle": "SDG 15",
+            "tLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-15-life-on-land.html",
+            "tImg": "/images/sdgs/SDG15.png"
         },
         {
-            "sdgTitle": "SDG 16",
-            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-16-peace-justice-and-strong-institutions.html",
-            "icon": "/images/sdgs/SDG16.png"
+            "tTitle": "SDG 16",
+            "tLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-16-peace-justice-and-strong-institutions.html",
+            "tImg": "/images/sdgs/SDG16.png"
         },
         {
-            "sdgTitle": "SDG 17",
-            "sdgLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-17-partnerships-for-the-goals.html",
-            "icon": "/images/sdgs/SDG17.png"
+            "tTitle": "SDG 17",
+            "tLink": "https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-17-partnerships-for-the-goals.html",
+            "tImg": "/images/sdgs/SDG17.png"
         }
     ]
 

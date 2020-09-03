@@ -20,8 +20,9 @@
             {% set sbCta = pages.sdgs.sdgsPage.sdgsCta %}
             {% set ctaLink = pages.sdgs.sdgsPage.sdgsCtaURL %}
             {% set ctaColour = fcolor2Text %}
+            {% set imgList = wdefaults.sdgIcons.tImages %}
             {% include "layouts/section-banner.njk" %}
-            {% include "partials/components/sdgs.njk" %}
+            {% include "partials/components/tiled-imgs.njk" %}
         {% endif %}
     </section>
     <section class="one-image-two-text" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
