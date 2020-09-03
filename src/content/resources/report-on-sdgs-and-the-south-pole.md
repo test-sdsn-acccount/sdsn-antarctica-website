@@ -14,7 +14,7 @@ file: ''
 toggle: true
 oResources: See related information
 otherResources:
-- oResourceContent: "<p>This section will tell you more details.</p>"
+- oResourceContent: This section will tell you more details.
   uploadToggle: false
   resourceFile: ''
   resourceURL: https://unsdsn.org

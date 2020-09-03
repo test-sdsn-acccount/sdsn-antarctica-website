@@ -20,7 +20,7 @@ resourcesToggle: true
 oResources: Explore the data
 otherResources:
 - resourceURL: https://sdsna.github.io/2019LACIndex/2019LACIndexRankings.pdf
-  oResourceContent: "<p>2019 Rankings and Scores</p>"
+  oResourceContent: 2019 Rankings and Scores
 pagetitle: ''
 
 ---

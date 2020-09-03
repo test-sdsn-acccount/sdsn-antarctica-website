@@ -29,5 +29,11 @@ fields:
     schema:
       format: html-blocks
   label: Banner Sub Title
+- name: previousPageText
+  type: text
+  config:
+    required: true
+  label: Previous page button text
+  default: Go to back to Resources
 pages:
 - src/_data/pages/sdgs/resourcePage.json
