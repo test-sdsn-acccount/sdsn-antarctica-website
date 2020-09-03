@@ -103,11 +103,10 @@
   {% include "partials/global/site-head.njk" %}
   {% block content %}
   {% endblock content %}
+  {% include "partials/global/site-footer.njk" %}
 </body>
   <a href="#top" class="back-to-top-button">
       <button class="btn-link wide top-button" {% if btnColor %} style="background-color:{{ btnColor }};color:{{ btnText }};"{% endif %}><p class="seven">{{ wdefaults.commonWords.backToTop }}</p></button>
   </a>
-    {% include "partials/global/site-footer.njk" %}
-  {% block foot %}
-  {% endblock %}
+
 </html>
