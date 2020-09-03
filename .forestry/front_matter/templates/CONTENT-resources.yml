@@ -79,13 +79,14 @@ fields:
   type: boolean
   label: Other Highlight information
   description: Turn this on if you want to add links to other relevant websites
+  default: true
 - name: oResources
   type: text
   config:
     required: false
   label: Sub Title for additional informational section
   showOnly:
-    field: mainUploadToggle
+    field: resourcesToggle
     value: true
 - name: otherResources
   type: field_group_list
@@ -120,7 +121,7 @@ fields:
     labelField: 
   label: Other Highlight Content
   showOnly:
-    field: mainUploadToggle
+    field: resourcesToggle
     value: true
   description: If you want to highlight more content, you can put it here.
 - name: tags
