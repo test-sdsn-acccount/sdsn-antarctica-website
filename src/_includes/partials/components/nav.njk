@@ -30,43 +30,40 @@
             <img src="/assets{{ logo }}" class="nav-logo"/>
             </a>
   <nav class="bar">
-  
-        <div class="not mega-menu">
+    <ul class="nav-ul">
+        <li class="nav-btns">
             <a href="/" class="link nav-item"{{ 'aria-current=page' if page.url == '/' | safe }} {% if bgText %} style="color:{{ bgText }}"{% endif %}>
                 <span class="visually-hidden six">{{ wdefaults.commonWords.homepage }}</span>
             </a>
-        </div>
-       
+        </li>
         {% for item in wdefaults.navigation.items %}
             {% set relAttribute = '' %}
-
             {% if item.rel %}
                 {% set relAttribute = ' rel="' + item.rel + '"' %}
             {% endif %}
-
+        <li class="nav-btns">
             {% if item.megamenu == true %}
-            <div class="mega-menu">
-                <button class="mega-menu-button" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-                    <span class="six">{{ item.text }}{% include "src/assets/images/arrow.svg" %}</span>
-                </button>
-                <div class="mega-menu-content" {% if megaMenuBg %} style="background-color:{{ megaMenuBg }}"{% endif %}>
-                    <ul class="mega-menu-list" aria-label="submenu">
-                        {% for drop in item.menuitems %}   
-                        <li class="nav"><a href="{{ drop.url }}" class="nav-list-item seven" {% if megaMenuFontColor %} style="color:{{ megaMenuFontColor }}"{% endif %}>{{ drop.text }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
+                <span class="six" {% if bgText %} style="color:{{ bgText }}"{% endif %}>{{ item.text }}{% include "src/assets/images/arrow.svg" %}</span>
+                <ul class="drop-down-submenu" {% if megaMenuBg %} style="background-color:{{ megaMenuBg }}"{% endif %}>
+                    {% for drop in item.menuitems %}  
+                    <li class="nav-drops">
+                        <a href="{{ drop.url }}" class="link" {% if megaMenuFontColor %} style="color:{{ megaMenuFontColor }}"{% endif %}>
+                            <span class="seven">{{ drop.text }}<span>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
             {% else %}
                 {% set currentAttribute = '' %}
-
                 {% if page.url == item.url %}
                     {% set currentAttribute = ' aria-current="page"' %}
                 {% endif %}
-               
-                    <a href="{{ item.url }}" class="link nav-item"{{ relAttribute | safe }}{{ currentAttribute | safe }} {% if bgText %} style="color:{{ bgText }}"{% endif %}><span class="six">{{ item.text }}</span></a>
-               
+
+                <a href="{{ item.url }}" class="link nav-item"{{ relAttribute | safe }}{{ currentAttribute | safe }} {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+                    <span class="six">{{ item.text }}</span>
+                </a>
             {% endif %}
+        </li>
         {% endfor %}
     </ul>
   </nav>
