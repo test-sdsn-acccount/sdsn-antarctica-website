@@ -35,7 +35,7 @@
                 </div>
             </div>
       <div class="news-page-content">
-                <div class="resource-card-content-wrapper">
+        <div class="resource-card-content-wrapper">
                   <div class="resource-card-content">
                       <div class="resource-card-content-left">
                           <div class="resource-list-excerpt">
@@ -44,6 +44,8 @@
                             </p>
                           </div>
                         </div>
+
+                        {% if resourcesToggle == true %}
                         <div class="resource-card-content-right margin-left-1">
                             {% if oResources | length !== 0 %}
                               <h4>{{ oResources }}<h4>
@@ -51,20 +53,21 @@
                             {% for resource in otherResources %}
                                 {% if resource.resourceFile | length !== 0 %}
                                   <a href="/assets{{ resource.resourceFile }}">
-                                    <li class="resource-sub-title seven"><p>{{ resource.oResourceContent | safe }}</p></li>
+                                    <li class="resource-sub-title seven"><p>{{ resource.oResourceContent }}</p></li>
                                   </a>
                                 {% elif resource.resourceURL | length !== 0 %}
                                   <a href="{{ resource.resourceURL }}">
-                                    <li class="resource-sub-title seven"><p>{{ resource.oResourceContent | safe }}</p></li>
+                                    <li class="resource-sub-title seven"><p>{{ resource.oResourceContent }}</p></li>
                                   </a> 
                                 {% else %}
                                 {% endif %}
                             {% endfor %}
                             </ul>
                             {% endif %}
+                        </div>
+                      {% endif %}
                   </div>
-              </div>
-
+        </div>
       </div>
       <div class="social-media-share-container">
         {% include "partials/components/facebook-btn.njk" %}

@@ -49,6 +49,9 @@
                             {% endfor %}
                             </ul>
                             {% endif %}
+                            {% if (section.data.tags | length !== 0) and (section.data.oResources | length == 0) %}
+                              <h4>Tags<h4>
+                            {% endif %}
                             <div class="resource-list-tags">
                               {% for tag in section.data.tags %}
                                 <a href="/tags/{{ tag }}/"><p class="tag-item">

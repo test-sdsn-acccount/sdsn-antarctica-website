@@ -75,23 +75,26 @@ fields:
   label: Featured content
   description: Mark this content if you want it featured on the homepage or What we
     do pages.
+- name: resourcesToggle
+  type: boolean
+  label: Other Highlight information
+  description: Turn this on if you want to add links to other relevant websites
 - name: oResources
   type: text
   config:
     required: false
   label: Sub Title for additional informational section
+  showOnly:
+  field: mainUploadToggle
+  value: true
 - name: otherResources
   type: field_group_list
   fields:
   - name: oResourceContent
-    type: textarea
-    default: ''
+    type: text
     config:
       required: false
-      wysiwyg: true
-      schema:
-        format: html-blocks
-    label: Highlight Information Content
+    label: Highlight Information Call to Action Text
   - name: uploadToggle
     type: boolean
     label: Upload OR Link
@@ -116,6 +119,9 @@ fields:
     max: 
     labelField: 
   label: Other Highlight Content
+  showOnly:
+  field: mainUploadToggle
+  value: true
   description: If you want to highlight more content, you can put it here.
 - name: tags
   type: tag_list
