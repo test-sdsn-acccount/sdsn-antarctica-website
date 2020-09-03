@@ -85,8 +85,8 @@ fields:
     required: false
   label: Sub Title for additional informational section
   showOnly:
-  field: mainUploadToggle
-  value: true
+    field: mainUploadToggle
+    value: true
 - name: otherResources
   type: field_group_list
   fields:
@@ -120,8 +120,8 @@ fields:
     labelField: 
   label: Other Highlight Content
   showOnly:
-  field: mainUploadToggle
-  value: true
+    field: mainUploadToggle
+    value: true
   description: If you want to highlight more content, you can put it here.
 - name: tags
   type: tag_list
