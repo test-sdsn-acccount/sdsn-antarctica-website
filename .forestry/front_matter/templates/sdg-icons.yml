@@ -1,5 +1,5 @@
 ---
-label: SDG Icons
+label: Tiled Images
 hide_body: true
 fields:
 - name: title
@@ -7,31 +7,30 @@ fields:
   config:
     required: false
   label: title
-  default: SDG Icons
-  hidden: true
-- name: sdgs
+  hidden: false
+- name: tImages
   type: field_group_list
   fields:
-  - name: sdgTitle
+  - name: tTitle
     type: text
     config:
       required: false
     label: SDG Title
-  - name: sdgLink
+  - name: tLink
     type: text
     config:
       required: false
-    label: SDG URL
+    label: URL
     description: Please make sure to include https://
-  - name: icon
+  - name: tImg
     type: file
     config:
       maxSize: 1
-    label: SDG Icon
+    label: Image
   config:
     min: 
     max: 
     labelField: 
-  label: SDG Icons
+  label: Image section
 pages:
 - src/_data/wdefaults/sdgIcons.json
