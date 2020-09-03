@@ -1447,6 +1447,12 @@ img.news-img {
     object-fit: cover;
 }
 
+img.resource-img {
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+}
+
 .embed-container {
     position: relative;
     overflow: hidden;
