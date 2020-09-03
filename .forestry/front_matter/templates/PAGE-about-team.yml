@@ -13,19 +13,19 @@ fields:
   config:
     required: false
   label: Banner Title
-  hidden: true
+  hidden: false
 - name: teamCtaTitle
   type: text
   config:
     required: false
   label: Team Page CTA
-  hidden: true
+  hidden: false
 - name: teamCtaText
   type: text
   config:
     required: false
   label: Team Page CTA
-  hidden: true
+  hidden: false
 - name: teamCtaLink
   type: textarea
   config:
