@@ -1,7 +1,5 @@
 html, body {
     width: 100%;
-    height: 100%;
-    min-height: 100%;
     left: 0;
     right: 0;
     top: 0;
@@ -11,8 +9,12 @@ html, body {
     font-size: 100%;
 }
 
-.footer-push {
-    height: 300px;
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
 }
 
 main#main-content {
@@ -22,18 +24,17 @@ main#main-content {
     right: 0;
     top: 0;
     bottom: 0;
-    margin-bottom: 300px;
 }
 
 footer {
     width: 100%;
-    height: 300px;
     margin-top: 300px;
 }
 
 .footer-container {
     padding: 5%;
     display: grid;
+    width: 90%;
     grid-template-columns: 18% 1fr;
 }
 
@@ -219,7 +220,6 @@ ul {
     margin-block-start: .5em;
     margin-block-end: .5em;
 }
-
 
 *.squash-top {
     margin-block-start: 0;
@@ -588,6 +588,23 @@ section.mobile-nav li {
     color: #212121!important;
 }
 
+section.mobile-nav ul.nv-item {
+        text-align: left;
+        margin: 0;
+        padding-left: 0;
+        color: #212121!important;
+      
+        -ms-box-orient: vertical;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: flex;
+    
+        flex-direction: column;
+}
+
 @media screen and (max-width: 829px) {
 
     /* Mobile navigation menu button */
@@ -613,6 +630,7 @@ section.mobile-nav li {
         z-index: 1;
         -webkit-user-select: none;
         user-select: none;
+        height: 100%;
     }
     
     #menuToggle input {
@@ -667,8 +685,8 @@ section.mobile-nav li {
     
     #bar {
         position: absolute;
-        width: 220px;
-        height: 800px;
+        width: 520px;
+        height: 100%;
         left: -3%;
         padding: 50px;
         -webkit-font-smoothing: antialiased;
@@ -678,7 +696,7 @@ section.mobile-nav li {
     }
     
     #bar li {
-        padding: 10px 0;
+        padding: 0;
         transition-delay: 2s;
     }
     
@@ -689,6 +707,24 @@ section.mobile-nav li {
 
     /* Go to the top box */
 
+}
+
+@media screen and (max-width: 660px) {
+    #bar {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #bar {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #bar {
+        width: 200px;
+    }
 }
 
 /* Pagination */
@@ -1142,9 +1178,10 @@ img.people-profile {
 
 .social-media-share-btn,
 .social-media-share-btn iframe,
-.social-media-share-btn span:nth-child(1) {
+.social-media-share-btn span:nth-child(1),
+.fb_iframe_widget span {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: middle!important;
 }
 
 .social-media-share-btn .IN-widget {

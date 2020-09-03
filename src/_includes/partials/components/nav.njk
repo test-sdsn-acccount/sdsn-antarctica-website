@@ -8,17 +8,18 @@
                 <span {% if bgText %} style="background:{{ bgText }}"{% endif %}></span>
                 <span {% if bgText %} style="background:{{ bgText }}"{% endif %}></span>
             <ul id="bar">
-            <ul><a href="/" class="link"><h5>{{ wdefaults.commonWords.homepage }}</h5></a></ul>
+            <ul class="nv-item"><a href="/" class="link"><h5 class="small-squash">{{ wdefaults.commonWords.homepage }}</h5></a></ul>
             {% for item in wdefaults.navigation.items %}
+                <ul class="nv-item">
                 {% if item.megamenu == true %}
-                    <ul>
-                        <h5>{{ item.text }}</h5>
+                        <h5 class="small-squash">{{ item.text }}</h5>
                         {% for drop in item.menuitems %} 
-                            <li class="mobile-nav"><a href="{{ drop.url }}">{{ drop.text }}</a></li>
+                            <li class="mobile-nav six small-squash"><a href="{{ drop.url }}">{{ drop.text }}</a></li>
                         {% endfor %}
-                    </ul>
-                
+                {% else %}
+                    <a href="{{ item.url }}" class="link"><h5>{{ item.text }}</h5></a>
                 {% endif %}
+                </ul>
               {% endfor %}
             </ul>
            </div>
