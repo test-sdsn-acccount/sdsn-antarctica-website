@@ -25,6 +25,11 @@
     <section class="full-bleed" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}>
         {% set header = pages.what.ourMembers.memberTitle %}
         {% set subtitle = pages.what.ourMembers.memberSubtitle | safe %}
+        {% include "layouts/section-banner.njk" %}
+        {% if pages.what.ourMembers.featuredMembers == true %}
+            {% set imgList = pages.what.memberFeatureLogos.tImages %}
+            {% include "partials/components/tiled-imgs.njk" %}
+        {% endif %}
         {% include "partials/components/table-section.njk" %}
     </section>
     <section class="contact-us-banner" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>

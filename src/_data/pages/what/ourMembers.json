@@ -7,6 +7,7 @@
   "highlightProjectsSubtitle" : "Read more about our current work",
   "memberTitle" : "Member List",
   "memberSubtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.",
+  "featuredMembers" : true,
   "contactTitle" : "See benefits",
   "contactCTA" : "See benefits of joining the network",
   "contactCTAURL" : "/join"

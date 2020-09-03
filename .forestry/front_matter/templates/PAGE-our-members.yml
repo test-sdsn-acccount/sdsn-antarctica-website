@@ -55,6 +55,11 @@ fields:
     schema:
       format: html-blocks
   label: Membership List Sub Title
+- name: featuredMembers
+  type: boolean
+  label: Featured Member Institution Logos
+  default: true
+  description: Turn this on to add an images section
 - name: contactTitle
   type: text
   config:
