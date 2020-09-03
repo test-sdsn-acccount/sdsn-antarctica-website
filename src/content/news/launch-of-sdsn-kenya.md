@@ -6,9 +6,9 @@ tags:
 - Kenya
 - Launch
 title: 'Launch of SDSN-Kenya '
-quote: ''
+desc: ''
 fImage: "/uploads/sustainable-dev-report-cover-2020.png"
-toggle: false
+featuredToggle: false
 aboutAuthor: "<p>Felix is the Network Coordinator of SDSN Kenya</p>"
 embeddedcontent: []
 

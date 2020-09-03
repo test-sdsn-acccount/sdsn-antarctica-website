@@ -29,7 +29,7 @@ fields:
 - name: teamCtaLink
   type: textarea
   config:
-    required: true
+    required: false
     wysiwyg: true
     schema:
       format: markdown

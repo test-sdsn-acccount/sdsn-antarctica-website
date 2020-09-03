@@ -7,9 +7,9 @@ tags:
 - sdg
 title: "“Sustainability Science and Sustainability Solutions in the Era of Sustainable
   Development Goals” Symposium 2019"
-quote: "<p>Test</p>"
+desc: "<p>Test</p>"
 fImage: ''
-toggle: false
+featuredToggle: false
 aboutAuthor: ''
 embeddedcontent: []
 

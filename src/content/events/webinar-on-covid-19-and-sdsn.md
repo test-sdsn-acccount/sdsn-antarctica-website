@@ -7,7 +7,7 @@ tags:
 ctaTitle: Register
 title: Webinar on COVID-19 and SDSN
 fImage: "/uploads/rainforest-during-foggy-day-975771.jpg"
-toggle: true
+featuredToggle: true
 desc: "<p>Hello excerpt</p>"
 ctaURL: https://s3.amazonaws.com/sustainabledevelopment.report/2019/2019_lac_sdg_index.pdf
 location: Online webinar

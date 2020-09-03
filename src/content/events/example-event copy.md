@@ -3,7 +3,7 @@ title: Example Webinar
 date: 2012-06-17T01:00:00.000+00:00
 author: SDSN Antarctica
 fImage: "/uploads/rainforest-during-foggy-day-975771.jpg"
-toggle: true
+featuredToggle: false
 tags:
 - Antarctica
 - Launch

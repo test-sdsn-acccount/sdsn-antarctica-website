@@ -10,12 +10,12 @@ tags:
 - Tag2
 - Really long tag tag tag
 title: University Support to Decade of Action
-quote: We are at a critical juncture, where new thinking is needed more than ever;
+desc: We are at a critical juncture, where new thinking is needed more than ever;
   there is an important role for universities to play.
 ctaTitle: 'A full summary of the meeting is available online. '
 ctaURL: https://irp-cdn.multiscreensite.com/6f2c9f57/files/uploaded/200716%20Summary%20University%20Sector%20Support%20to%20SDGs.pdf
 fImage: "/uploads/rainforest-during-foggy-day-975771.jpg"
-toggle: false
+featuredToggle: false
 aboutAuthor: "<p>This is written by the SDSN Secretariat.</p>"
 embeddedcontent:
 - embedlink: <iframe width="560" height="315" src="https://www.youtube.com/embed/2JSRLGzCYO0"

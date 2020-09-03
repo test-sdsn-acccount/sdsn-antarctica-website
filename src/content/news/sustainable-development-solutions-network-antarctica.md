@@ -4,17 +4,13 @@ title: Lanzan la primera iniciativa científica mundial de alto nivel dedicada a
 buttonlink: ''
 order: 1
 date: 2014-08-02T14:00:00Z
-desc: Con la asesoría de políticos, presidentes de compañías, íconos culturales y
-  líderes indígenas, el panel científico dirigido por Carlos Nobre, Andrea Encalada
-  y Jeffrey Sachs presentará el camino hacia una bioeconomía equitativa, basada en
-  la biodiversidad, y el conocimiento tradicional.
 ctaURL: https://www.theamazonwewant.org/
 ctaTitle: Visit El Panel Científico por la Amazonía to learn more
 fImage: "/uploads/rainforest-during-foggy-day-975771.jpg"
-toggle: false
+featuredToggle: false
 pagetitlenj: ''
 author: Jessica Tome
-quote: Con la asesoría de políticos, presidentes de compañías, íconos culturales y
+desc: Con la asesoría de políticos, presidentes de compañías, íconos culturales y
   líderes indígenas, el panel científico dirigido por Carlos Nobre, Andrea Encalada
   y Jeffrey Sachs presentará el camino hacia una bioeconomía equitativa, basada en
   la biodiversidad, y el conocimiento tradicional.

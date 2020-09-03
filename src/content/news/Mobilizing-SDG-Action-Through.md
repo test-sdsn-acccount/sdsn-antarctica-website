@@ -4,20 +4,13 @@ title: Mobilizing SDG Action Through Campaigning Reflections From A Municipal Ca
 buttonlink: ''
 order: 1
 date: 2018-08-02T14:00:00.000+00:00
-desc: Con la asesoría de políticos, presidentes de compañías, íconos culturales y
-  líderes indígenas, el panel científico dirigido por Carlos Nobre, Andrea Encalada
-  y Jeffrey Sachs presentará el camino hacia una bioeconomía equitativa, basada en
-  la biodiversidad, y el conocimiento tradicional.
 ctaURL: https://www.theamazonwewant.org/
 ctaTitle: Visit El Panel Científico por la Amazonía to learn more
 fImage: "/uploads/img_2825-ajit-bhatta.jpeg"
-toggle: false
+featuredToggle: false
 pagetitlenj: ''
 author: Ajit Bhatta
-quote: "<p>Child marriage has been a serious issue in most of the rural areas in Nepal.
-  This has led to multiple drawbacks from individual to social and from social to
-  economic development paradigm in the Nepalese society. Leaving beside other societal
-  issues, Child marriage has been a ‘need to end’ concern in Nepal.</p>"
+desc: "<p>Child marriage has been a serious issue in most of the rural areas in Nepal. This has led to multiple drawbacks from individual to social and from social to economic development paradigm in the Nepalese society. Leaving beside other societal issues, Child marriage has been a ‘need to end’ concern in Nepal.</p>"
 tags:
 - youth
 - Amazon

@@ -70,7 +70,7 @@ fields:
   showOnly:
     field: mainUploadToggle
     value: true
-- name: toggle
+- name: featuredToggle
   type: boolean
   label: Featured content
   description: Mark this content if you want it featured on the homepage or What we

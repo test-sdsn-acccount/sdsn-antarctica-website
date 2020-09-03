@@ -3,7 +3,7 @@ title: 2019 SDG Index for Antarctica No File
 date: 2012-06-17T01:00:00.000+00:00
 author: SDSN Antarctica
 fImage: ''
-toggle: true
+featuredToggle: true
 tags:
 - Antarctica
 - Sustainable Development
@@ -16,7 +16,7 @@ desc: The 2019 SDG Index for Latin America and the Caribbean presents the first 
   Colombia, and it is based on SDSN global SDG Index initiative.
 ctaURL: https://s3.amazonaws.com/sustainabledevelopment.report/2019/2019_lac_sdg_index.pdf
 ctaTitle: Download the report
-resourcesToggle: true
+resourcesToggle: false
 oResources: Explore the data
 otherResources:
 - oResourceContent: 2019 Rankings and Scores

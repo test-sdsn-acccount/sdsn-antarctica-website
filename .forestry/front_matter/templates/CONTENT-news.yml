@@ -31,7 +31,7 @@ fields:
     required: false
   label: Author
   default: Network Secretariat
-- name: quote
+- name: desc
   type: textarea
   default: ''
   config:
@@ -45,7 +45,7 @@ fields:
   config:
     maxSize: 0.7
   label: Featured Image
-- name: toggle
+- name: featuredToggle
   type: boolean
   label: Featured content
   description: Mark this content if you want it featured on the What we do pages.

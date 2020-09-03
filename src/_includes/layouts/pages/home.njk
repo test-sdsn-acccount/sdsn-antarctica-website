@@ -26,7 +26,7 @@
         {% include "layouts/section-banner.njk" %}
     </section>
     <section class="resource-feature-banner">
-        {% set sectionList = collections.newsArticles %}
+        {% set sectionList = collections.all %}
         {% include "partials/components/resource-recent-banner.njk" %}
     </section>
     <section class="contact-us-banner" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>

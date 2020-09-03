@@ -3,7 +3,7 @@ title: Example Event
 date: 2012-06-17T01:00:00.000+00:00
 author: SDSN Antarctica
 fImage: ""
-toggle: true
+featuredToggle: false
 tags:
 - Antarctica
 - Launch

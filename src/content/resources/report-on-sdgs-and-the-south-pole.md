@@ -11,7 +11,8 @@ ctaTitle: Download the report
 mainUploadToggle: false
 ctaURL: https://www.theamazonwewant.org/
 file: ''
-toggle: true
+featuredToggle: true
+resourcesToggle: true
 oResources: See related information
 otherResources:
 - oResourceContent: This section will tell you more details.
