@@ -46,6 +46,11 @@
       "text": "THE SDGs",
       "menuitems": [
         {
+          "text": "SDGs Report in the South Pole",
+          "url": "content/resources/report-on-sdgs-and-the-south-pole/",
+          "external": false
+        },
+        {
           "text": "The SDGs in Antarctica",
           "url": "/antarctica",
           "external": false
