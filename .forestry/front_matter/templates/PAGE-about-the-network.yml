@@ -47,5 +47,25 @@ fields:
     required: true
   label: Hosted by CTA Text
   default: Learn more
+- name: aboutNetworkCtaTitle
+  type: text
+  config:
+    required: false
+  label: About Network Page CTA
+  hidden: false
+- name: aboutNetworkCtaText
+  type: text
+  config:
+    required: false
+  label: About Network Page CTA
+  hidden: false
+- name: aboutNetworkCtaLink
+  type: textarea
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: About Network Page CTA Link
 pages:
 - src/_data/pages/about/aboutPage.json
