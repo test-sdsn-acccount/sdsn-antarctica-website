@@ -14,10 +14,10 @@
                 {% if item.megamenu == true %}
                         <h5 class="small-squash">{{ item.text }}</h5>
                         {% for drop in item.menuitems %} 
-                            <li class="mobile-nav six small-squash"><a href="{{ drop.url }}">{{ drop.text }}</a></li>
+                            <li class="mobile-nav six small-squash"><a href="{{ drop.url }}" {% if external == true %}target="_blank"{% endif %}>{{ drop.text }}</a></li>
                         {% endfor %}
                 {% else %}
-                    <a href="{{ item.url }}" class="link"><h5>{{ item.text }}</h5></a>
+                    <a href="{{ item.url }}" {% if external == true %}target="_blank"{% endif %} class="link"><h5>{{ item.text }}</h5></a>
                 {% endif %}
                 </ul>
               {% endfor %}
@@ -47,7 +47,7 @@
                 <ul class="drop-down-submenu" {% if megaMenuBg %} style="background-color:{{ megaMenuBg }}"{% endif %}>
                     {% for drop in item.menuitems %}  
                     <li class="nav-drops">
-                        <a href="{{ drop.url }}" class="link" {% if megaMenuFontColor %} style="color:{{ megaMenuFontColor }}"{% endif %}>
+                        <a href="{{ drop.url }}" {% if external == true %}target="_blank"{% endif %} class="link" {% if megaMenuFontColor %} style="color:{{ megaMenuFontColor }}"{% endif %}>
                             <span class="seven">{{ drop.text }}<span>
                         </a>
                     </li>
@@ -59,7 +59,7 @@
                     {% set currentAttribute = ' aria-current="page"' %}
                 {% endif %}
 
-                <a href="{{ item.url }}" class="link nav-item"{{ relAttribute | safe }}{{ currentAttribute | safe }} {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+                <a href="{{ item.url }}" {% if external == true %}target="_blank"{% endif %} class="link nav-item"{{ relAttribute | safe }}{{ currentAttribute | safe }} {% if bgText %} style="color:{{ bgText }}"{% endif %}>
                     <span class="six">{{ item.text }}</span>
                 </a>
             {% endif %}
