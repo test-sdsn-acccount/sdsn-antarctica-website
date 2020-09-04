@@ -6,66 +6,66 @@
   "lcTitle": "Leadership Council",
   "nmTitle": "Network Managers",
   "youthTitle": "Lorem ipsum",
-  "lcdesc": "The Network is guided by a Leadership Council, which brings together global sustainable development leaders from all regions and all sectors, including civil society, public, and private sectors.",
-  "nmdesc": "Network Managers coordinate the network, working with Member Institutions to identify potential collaboration within the network.",
-  "youthdesc": "The Youth Team mobilizes young people locally to create sustainable solutions.",
-  "lcprofiles": [
+  "lcDesc": "The Network is guided by a Leadership Council, which brings together global sustainable development leaders from all regions and all sectors, including civil society, public, and private sectors.",
+  "nmDesc": "Network Managers coordinate the network, working with Member Institutions to identify potential collaboration within the network.",
+  "youthDesc": "The Youth Team mobilizes young people locally to create sustainable solutions.",
+  "lcProfiles": [
     {
       "name": "The Fifth Member",
-      "networkposition": "Council Member",
+      "networkPosition": "Council Member",
       "position": "",
       "photo": "",
       "email": ""
     },
     {
       "name": "Sally by the Seashore",
-      "networkposition": "Council Member",
+      "networkPosition": "Council Member",
       "position": "",
       "photo": "/uploads/men-s-wearing-black-suit-jacket-and-pants-937481.jpg",
       "email": ""
     },
     {
       "name": "Bob The Builder",
-      "networkposition": "Council Advisor",
+      "networkPosition": "Council Advisor",
       "position": "",
       "photo": "/uploads/man-in-red-jacket-1681010.jpg",
       "email": ""
     },
     {
       "name": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "networkposition": "Council Advisor",
+      "networkPosition": "Council Advisor",
       "position": "CEO, AOIF",
       "photo": "/uploads/man-wearing-black-zip-up-jacket-near-beach-smiling-at-the-736716.jpg",
       "email": ""
     },
     {
       "name": "Shiloh Name",
-      "networkposition": "Network Chair",
+      "networkPosition": "Network Chair",
       "position": "",
       "photo": "/uploads/photo-of-woman-wearing-yellow-floral-top-871495.jpg",
       "email": ""
     }
   ],
-  "nmprofiles": [
+  "nmProfiles": [
     {
       "name": "John Name",
-      "networkposition": "Network Manager",
+      "networkPosition": "Network Manager",
       "position": "",
       "photo": "/uploads/men-s-wearing-black-suit-jacket-and-pants-937481.jpg",
       "email": ""
     },
     {
       "name": "Marie Name",
-      "networkposition": "Network Manager",
+      "networkPosition": "Network Manager",
       "position": "",
       "photo": "/uploads/photo-of-woman-wearing-head-scarf-2951093.jpg",
       "email": ""
     }
   ],
-  "youthprofiles": [
+  "youthProfiles": [
     {
       "name": "Lee Name",
-      "networkposition": "Youth Network Coordinator",
+      "networkPosition": "Youth Network Coordinator",
       "position": "",
       "photo": "/uploads/man-in-red-jacket-1681010.jpg",
       "email": "antarctica@sdsnyouth.org"

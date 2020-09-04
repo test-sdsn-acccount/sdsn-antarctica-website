@@ -8,7 +8,7 @@ ctaURL: https://www.theamazonwewant.org/
 ctaTitle: Visit El Panel Científico por la Amazonía to learn more
 fImage: "/uploads/rainforest-during-foggy-day-975771.jpg"
 featuredToggle: false
-pagetitlenj: ''
+pageTitlenj: ''
 author: Jessica Tome
 desc: Con la asesoría de políticos, presidentes de compañías, íconos culturales y
   líderes indígenas, el panel científico dirigido por Carlos Nobre, Andrea Encalada
@@ -26,8 +26,8 @@ aboutAuthor: <p><em>El Panel Científico por la Amazonía (</em><a href="https:/
   y los cambios climáticos de la Amazonía, y las implicaciones a largo plazo del bienestar
   de la región, así como explorar oportunidades y opciones relevantes para las políticas
   de conservación y desarrollo sostenible de la Amazonía. </em></p>
-pagetitle: ''
-embeddedcontent: []
+pageTitle: ''
+embeddedContent: []
 
 ---
 **Nota del editor:** _El 3 de septiembre de 2020, el Panel Científico por la Amazonía organizará un seminario científico online donde se presentarán los principales temas que aborda el informe sobre el estado de la Amazonía, incluida la necesidad de contar con la biodiversidad y el conocimiento indígena para crear una bioeconomía. Para inscribirse, los periodistas pueden escribir a: jessica.tome@unsdsn.org._

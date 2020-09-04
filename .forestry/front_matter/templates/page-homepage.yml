@@ -26,13 +26,13 @@ fields:
   label: Banner Sub Title
   description: e.g. Mobilizing SDG implementation through solution initiatives and
     long-term pathways in Antarctica.
-- name: featuretitle
+- name: featureTitle
   type: text
   config:
     required: false
   label: Feature Title
   default: About the network
-- name: featurecontent
+- name: featureContent
   type: textarea
   default: "<p>The network is a community of universities, research centers, and other
     knowledge institutions to translate the latest expertise in sustainable development

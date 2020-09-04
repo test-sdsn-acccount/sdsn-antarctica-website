@@ -36,7 +36,7 @@ fields:
   showOnly:
     field: leadershipCouncil
     value: true
-- name: lcdesc
+- name: lcDesc
   type: textarea
   default: The Network is guided by a Leadership Council, which brings together global
     sustainable development leaders from all regions and all sectors, including civil
@@ -50,7 +50,7 @@ fields:
   showOnly:
     field: leadershipCouncil
     value: true
-- name: lcprofiles
+- name: lcProfiles
   type: field_group_list
   fields:
   - name: name
@@ -63,7 +63,7 @@ fields:
     config:
       required: false
     label: Email
-  - name: networkposition
+  - name: networkPosition
     type: text
     config:
       required: false
@@ -95,7 +95,7 @@ fields:
   showOnly:
     field: networkManagers
     value: true
-- name: nmdesc
+- name: nmDesc
   type: textarea
   default: Network Managers coordinate the network, working with Member Institutions
     to identify potential collaboration within the network.
@@ -109,7 +109,7 @@ fields:
   showOnly:
     field: networkManagers
     value: true
-- name: nmprofiles
+- name: nmProfiles
   type: field_group_list
   fields:
   - name: name
@@ -122,7 +122,7 @@ fields:
     config:
       required: false
     label: Email
-  - name: networkposition
+  - name: networkPosition
     type: text
     config:
       required: false
@@ -155,7 +155,7 @@ fields:
   showOnly:
     field: youthCoordinators
     value: true
-- name: youthprofiles
+- name: youthProfiles
   type: field_group_list
   fields:
   - name: name
@@ -168,7 +168,7 @@ fields:
     config:
       required: false
     label: Email
-  - name: networkposition
+  - name: networkPosition
     type: text
     config:
       required: false
@@ -194,7 +194,7 @@ fields:
   showOnly:
     field: youthCoordinators
     value: true
-- name: youthdesc
+- name: youthDesc
   type: textarea
   default: The Youth Team mobilizes young people locally to create sustainable solutions.
   config:

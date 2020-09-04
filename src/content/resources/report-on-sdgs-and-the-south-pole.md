@@ -1,5 +1,5 @@
 ---
-pagetitle: Resource
+pageTitle: Resource
 date: 2020-09-30T01:24:41+00:00
 author: Network Secretariat
 tags:

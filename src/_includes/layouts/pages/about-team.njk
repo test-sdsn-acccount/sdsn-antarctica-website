@@ -2,12 +2,12 @@
 {% set pageType = 'About the Team' %}
 
 {% block content %}
-<title>{{ pages.about.aboutTeamPage.pagetitle }}</title>
+<title>{{ pages.about.aboutTeamPage.pageTitle }}</title>
 <main id="main-content" tabindex="-1">
 <div class="home-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.teamInfo %}
-        {% set introHeader = pages.about.aboutTeamPage.pagetitle %}
+        {% set introHeader = pages.about.aboutTeamPage.pageTitle %}
         {% set introSubtitle = information.teamInfo.teamDesc | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
@@ -15,27 +15,27 @@
   <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.teamInfo.leadershipCouncil == true %}
         {% set header = information.teamInfo.lcTitle %}
-        {% set subtitle = information.teamInfo.lcdesc | safe %}
+        {% set subtitle = information.teamInfo.lcDesc | safe %}
             {% include "layouts/section-banner.njk" %}
-        {% set people = information.teamInfo.lcprofiles %}
+        {% set people = information.teamInfo.lcProfiles %}
           {% include "partials/components/people.njk" %}
     {% endif %}
   </section>
   <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.teamInfo.networkManagers == true %}
         {% set header = information.teamInfo.nmTitle %}
-        {% set subtitle = information.teamInfo.nmdesc | safe %}
+        {% set subtitle = information.teamInfo.nmDesc | safe %}
             {% include "layouts/section-banner.njk" %}
-        {% set people = information.teamInfo.nmprofiles %}
+        {% set people = information.teamInfo.nmProfiles %}
             {% include "partials/components/people.njk" %}
     {% endif %}
   </section>
   <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.teamInfo.youthCoordinators == true %}
         {% set header = information.teamInfo.youthTitle %}
-        {% set subtitle = information.teamInfo.youthdesc | safe %}
+        {% set subtitle = information.teamInfo.youthDesc | safe %}
             {% include "layouts/section-banner.njk" %}
-        {% set people = information.teamInfo.youthprofiles %}
+        {% set people = information.teamInfo.youthProfiles %}
             {% include "partials/components/people.njk" %}
     {% endif %}
   </section>

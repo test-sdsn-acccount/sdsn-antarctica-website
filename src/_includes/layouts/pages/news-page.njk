@@ -36,8 +36,8 @@
         {{ content | safe }}
       </div>
       <div class="news-page-video">
-        {% if embeddedcontent.length !== 0 %}
-          {% for item in embeddedcontent %}
+        {% if embeddedContent.length !== 0 %}
+          {% for item in embeddedContent %}
             <div class="embed-container">
             {{ item.embedlink | safe }}
             </div>

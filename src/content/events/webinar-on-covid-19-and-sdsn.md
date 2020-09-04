@@ -1,5 +1,5 @@
 ---
-pagetitle: Event
+pageTitle: Event
 date: 2020-09-16T02:26:21+00:00
 author: Network Secretariat
 tags:

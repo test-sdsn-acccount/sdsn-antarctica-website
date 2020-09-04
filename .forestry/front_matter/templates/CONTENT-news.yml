@@ -2,7 +2,7 @@
 label: CONTENT News Template
 hide_body: false
 fields:
-- name: pagetitle
+- name: pageTitle
   type: text
   config:
     required: false
@@ -66,7 +66,7 @@ fields:
   label: About the author
   description: Put any additional information you want to write about the author,
     organization, or initiative here.
-- name: embeddedcontent
+- name: embeddedContent
   type: field_group_list
   fields:
   - name: embedlink

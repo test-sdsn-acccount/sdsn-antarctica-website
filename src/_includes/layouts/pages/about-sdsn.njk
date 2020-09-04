@@ -8,14 +8,14 @@
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if pages.about.aboutPage %}
         {% set introHeader = pages.about.aboutPage.bannerTitle %}
-        {% set introSubtitle = pages.about.aboutPage.aboutsdsn | safe %}
+        {% set introSubtitle = pages.about.aboutPage.aboutSDSN | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
   <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if information.networkDetails %}
         {% set header = information.networkDetails.networkName %}
-        {% set subtitle = information.networkDetails.networkdesc | safe %}
+        {% set subtitle = information.networkDetails.networkDesc | safe %}
             {% include "layouts/section-banner.njk" %}
     {% endif %}
   </section>
@@ -51,9 +51,9 @@
     <section class="text-top-metrics-bottom containers pop-out">
         <div class="popped-container-left" {% if fcolor2Text %} style="color:{{ fcolor2Text }};background-color:{{ fcolor2 }}"{% endif %}>
             {% if information.networkDetails.impactSection == true %}
-                {% set ttmheader = pages.about.aboutPage.metricsheader %}
-                {% set ttmdesc = information.networkDetails.networkimpact | safe %}
-                {% set ttmitem = information.networkDetails.networkmetrics %}
+                {% set ttmheader = pages.about.aboutPage.metricsHeader %}
+                {% set ttmdesc = information.networkDetails.networkImpact | safe %}
+                {% set ttmitem = information.networkDetails.networkMetrics %}
                     {% include "partials/components/text-top-metrics-bottom.njk" %}
             {% endif %}
         </div>

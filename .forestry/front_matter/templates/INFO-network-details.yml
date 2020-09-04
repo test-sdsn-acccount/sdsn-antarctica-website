@@ -30,7 +30,7 @@ fields:
     required: true
   label: Network Nation/Region
   description: e.g. Andes, Kenya, Northern Europe
-- name: networkdesc
+- name: networkDesc
   type: textarea
   config:
     required: false
@@ -83,7 +83,7 @@ fields:
   type: boolean
   label: Impact Section
   description: Turn on or off the Impact section
-- name: networkimpact
+- name: networkImpact
   type: textarea
   config:
     required: false
@@ -95,7 +95,7 @@ fields:
   showOnly:
     field: impactSection
     value: true
-- name: networkmetrics
+- name: networkMetrics
   type: field_group_list
   fields:
   - name: header

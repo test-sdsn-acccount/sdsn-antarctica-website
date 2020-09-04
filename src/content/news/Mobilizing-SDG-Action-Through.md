@@ -8,7 +8,7 @@ ctaURL: https://www.theamazonwewant.org/
 ctaTitle: Visit El Panel Científico por la Amazonía to learn more
 fImage: "/uploads/img_2825-ajit-bhatta.jpeg"
 featuredToggle: false
-pagetitlenj: ''
+pageTitlenj: ''
 author: Ajit Bhatta
 desc: "<p>Child marriage has been a serious issue in most of the rural areas in Nepal. This has led to multiple drawbacks from individual to social and from social to economic development paradigm in the Nepalese society. Leaving beside other societal issues, Child marriage has been a ‘need to end’ concern in Nepal.</p>"
 tags:
@@ -16,8 +16,8 @@ tags:
 - Amazon
 - Nepal
 aboutAuthor: "<p>Ajit Bhatta is an SDG Coordinator for Nepal</p>"
-pagetitle: ''
-embeddedcontent: []
+pageTitle: ''
+embeddedContent: []
 
 ---
 Child marriage has been a serious issue in most of the rural areas in Nepal. This has led to multiple drawbacks from individual to social and from social to economic development paradigm in the Nepalese society. Leaving beside other societal issues, Child marriage has been a ‘need to end’ concern in Nepal.

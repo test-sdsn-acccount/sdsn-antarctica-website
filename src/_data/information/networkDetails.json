@@ -3,7 +3,7 @@
   "whitelogo": "/uploads/sdsn-antsarc.png",
   "favicon": "/uploads/favicon.png",
   "networkName": "Antarctica",
-  "networkdesc": "<p>SDSN Antarctica is a community of universities, research centers, and other knowledge institutions to translate the latest expertise in sustainable development into action</p>",
+  "networkDesc": "<p>SDSN Antarctica is a community of universities, research centers, and other knowledge institutions to translate the latest expertise in sustainable development into action</p>",
   "networkVision": "Mobilizing SDG implementation through solution initiatives and long-term pathways in Antarctica.",
   "networkVisionSubtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.",
   "networkObjectives": [
@@ -24,8 +24,8 @@
     }
   ],
   "impactSection": true,
-  "networkimpact": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu. Vivamus fermentum ex ut mauris feugiat convallis. Fusce cursus diam vel nunc lobortis, nec finibus orci lacinia.</p>",
-  "networkmetrics": [
+  "networkImpact": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu. Vivamus fermentum ex ut mauris feugiat convallis. Fusce cursus diam vel nunc lobortis, nec finibus orci lacinia.</p>",
+  "networkMetrics": [
     {
       "header": "3 years",
       "desc": "<p>Awarded the Sustainability Award in Antarctica, 3 years in a row.</p>"

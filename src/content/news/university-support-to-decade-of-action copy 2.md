@@ -1,5 +1,5 @@
 ---
-pagetitle: Resource News Stories Pages
+pageTitle: Resource News Stories Pages
 date: 2020-07-21T01:00:00.000+00:00
 author: Lauren Barredo
 tags:
@@ -17,7 +17,7 @@ ctaURL: https://irp-cdn.multiscreensite.com/6f2c9f57/files/uploaded/200716%20Sum
 fImage: "/uploads/rainforest-during-foggy-day-975771.jpg"
 featuredToggle: false
 aboutAuthor: "<p>This is written by the SDSN Secretariat.</p>"
-embeddedcontent:
+embeddedContent:
 - embedlink: <iframe width="560" height="315" src="https://www.youtube.com/embed/2JSRLGzCYO0"
     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe>

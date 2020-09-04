@@ -9,7 +9,7 @@ tags:
 - Launch
 desc: 'Launch event of SDSN Cyprus'
 location: 'Online webinar'
-pagetitle: ''
+pageTitle: ''
 ctaTitle: 'Register'
 ctaURL: 'https://futureearth.org/2020/06/04/launch-event-for-the-sdsn-cyprus-network/'
 

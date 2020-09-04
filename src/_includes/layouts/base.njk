@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% if wdefaults.websitecolours.colourtheme == "Theme1" %}
+{% if wdefaults.websitecolours.colourTheme == "Theme1" %}
   {% set bgcolor = themes.theme1.bgcolor %}
   {% set bgText = themes.theme1.bgText %}
   {% set bgTextHighlight = themes.theme1.bgTextHighlight %}
@@ -13,7 +13,7 @@
   {% set megaMenuFontColor = themes.theme1.megaMenuFontColor %}
   {% set logo = information.networkDetails.whitelogo %}
   {% set footerLogo = information.networkDetails.logo %}
-{% elif wdefaults.websitecolours.colourtheme == "Theme2" %}
+{% elif wdefaults.websitecolours.colourTheme == "Theme2" %}
   {% set bgcolor = themes.theme2.bgcolor %}
   {% set bgText = themes.theme2.bgText %}
   {% set bgTextHighlight = themes.theme2.bgTextHighlight %}
@@ -27,7 +27,7 @@
   {% set megaMenuFontColor = themes.theme2.megaMenuFontColor %}
   {% set logo = information.networkDetails.logo %}
   {% set footerLogo = information.networkDetails.whitelogo %}
-{% elif wdefaults.websitecolours.colourtheme == "Theme3" %}
+{% elif wdefaults.websitecolours.colourTheme == "Theme3" %}
   {% set bgcolor = themes.theme3.bgcolor %}
   {% set bgText = themes.theme3.bgText %}
   {% set bgTextHighlight = themes.theme3.bgTextHighlight %}
@@ -41,7 +41,7 @@
   {% set megaMenuFontColor = themes.theme3.megaMenuFontColor %}
   {% set logo = information.networkDetails.logo %}
   {% set footerLogo = information.networkDetails.logo %}
-{% elif wdefaults.websitecolours.colourtheme == "Theme4" %}
+{% elif wdefaults.websitecolours.colourTheme == "Theme4" %}
   {% set bgcolor = themes.theme4.bgcolor %}
   {% set bgText = themes.theme4.bgText %}
   {% set bgTextHighlight = themes.theme4.bgTextHighlight %}
@@ -55,7 +55,7 @@
   {% set megaMenuFontColor = themes.theme4.megaMenuFontColor %}
   {% set logo = information.networkDetails.logo %}
   {% set footerLogo = information.networkDetails.whitelogo %}
-{% elif wdefaults.websitecolours.colourtheme == "Theme5" %}
+{% elif wdefaults.websitecolours.colourTheme == "Theme5" %}
   {% set bgcolor = themes.theme5.bgcolor %}
   {% set bgText = themes.theme5.bgText %}
   {% set bgTextHighlight = themes.theme5.bgTextHighlight %}
@@ -92,7 +92,7 @@
   <meta property="og:url"           content="{{ information.networkDetails.websiteURL }}" />
   <meta property="og:type"          content="website" />
   <meta property="og:title"         content="{{ information.networkDetails.websiteTitle }}" />
-  <meta property="og:description"   content="{{ information.networkDetails.networkdesc }}" />
+  <meta property="og:description"   content="{{ information.networkDetails.networkDesc }}" />
   <meta property="og:image"         content="/assets/{{ logo }}" />
   <link rel="alternate" type="application/rss+xml" title="{{ information.networkDetails.websiteTitle }}" href="{{ information.networkDetails.websiteURL }}feed.xml" />
   <link rel="icon" href="/assets{{ information.networkDetails.favicon }}" type="image/png" />

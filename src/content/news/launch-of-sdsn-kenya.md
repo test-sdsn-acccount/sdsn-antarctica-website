@@ -1,5 +1,5 @@
 ---
-pagetitle: News Stories Pages
+pageTitle: News Stories Pages
 date: 2020-09-02T09:08:56+00:00
 author: SDSN Kenya
 tags:
@@ -10,7 +10,7 @@ desc: ''
 fImage: "/uploads/sustainable-dev-report-cover-2020.png"
 featuredToggle: false
 aboutAuthor: "<p>Felix is the Network Coordinator of SDSN Kenya</p>"
-embeddedcontent: []
+embeddedContent: []
 
 ---
 We will launch a new network in **_September_**.

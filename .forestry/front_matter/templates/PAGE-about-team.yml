@@ -8,7 +8,7 @@ fields:
     required: false
   label: Page Content About the team
   hidden: true
-- name: pagetitle
+- name: pageTitle
   type: text
   config:
     required: false

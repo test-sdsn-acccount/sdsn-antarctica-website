@@ -1,9 +1,9 @@
 {
   "items": [
     {
-      "megamenu": true,
+      "megaMenu": true,
       "text": "ABOUT US",
-      "menuitems": [
+      "menuItems": [
         {
           "text": "About SDSN",
           "url": "/about/sdsn",
@@ -19,9 +19,9 @@
       "external": false
     },
     {
-      "megamenu": true,
+      "megaMenu": true,
       "text": "WHAT WE DO",
-      "menuitems": [
+      "menuItems": [
         {
           "text": "News and Activities",
           "url": "/news",
@@ -42,9 +42,9 @@
       "external": false
     },
     {
-      "megamenu": true,
+      "megaMenu": true,
       "text": "THE SDGs",
-      "menuitems": [
+      "menuItems": [
         {
           "text": "The SDGs in Antarctica",
           "url": "/antarctica",
@@ -65,9 +65,9 @@
       "external": false
     },
     {
-      "megamenu": true,
+      "megaMenu": true,
       "text": "GET INVOLVED",
-      "menuitems": [
+      "menuItems": [
         {
           "text": "Join the network",
           "url": "/join",
@@ -88,11 +88,11 @@
       "external": false
     },
     {
-      "megamenu": false,
+      "megaMenu": false,
       "text": "SEARCH",
       "url": "/search",
       "external": false,
-      "menuitems": [
+      "menuItems": [
 
       ]
     }

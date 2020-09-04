@@ -10,7 +10,7 @@ desc: MDP of Universidad de los Andes grants 25 scholarships to leaders of Colom
   Pacific Region.
 tags:
 - MDP
-pagetitle: ''
+pageTitle: ''
 date: 2012-07-27T01:00:00+00:00
 author: Network Secretariat
 aboutAuthor: ''

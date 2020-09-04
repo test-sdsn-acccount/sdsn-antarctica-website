@@ -1,5 +1,5 @@
 ---
-pagetitle: News Stories Pages
+pageTitle: News Stories Pages
 date: 2020-08-31T04:07:39+00:00
 author: Sheyrin
 tags:
@@ -11,7 +11,7 @@ desc: "<p>Test</p>"
 fImage: ''
 featuredToggle: false
 aboutAuthor: ''
-embeddedcontent: []
+embeddedContent: []
 
 ---
 **Hello**

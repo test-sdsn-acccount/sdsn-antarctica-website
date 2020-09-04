@@ -11,9 +11,9 @@
             <ul class="nv-item"><a href="/" class="link"><p class="small-squash mobile-nav-itm">{{ wdefaults.commonWords.homepage }}</p></a></ul>
             {% for item in wdefaults.navigation.items %}
                 <ul class="nv-item">
-                {% if item.megamenu == true %}
+                {% if item.megaMenu == true %}
                         <div class="nav-header small-squash">{{ item.text }}</h7>
-                        {% for drop in item.menuitems %} 
+                        {% for drop in item.menuItems %} 
                             <li class="mobile-nav six small-squash mobile-nav-itm drops"><a href="{{ drop.url }}" {% if external == true %}target="_blank"{% endif %} class="link">{{ drop.text }}</a></li>
                         {% endfor %}
                 {% else %}
@@ -47,10 +47,10 @@
                 {% set relAttribute = ' rel="' + item.rel + '"' %}
             {% endif %}
         <li class="nav-btns">
-            {% if item.megamenu == true %}
+            {% if item.megaMenu == true %}
                 <span class="six" {% if bgText %} style="color:{{ bgText }}"{% endif %}>{{ item.text }}{% include "src/assets/images/arrow.svg" %}</span>
                 <ul class="drop-down-submenu" {% if megaMenuBg %} style="background-color:{{ megaMenuBg }}"{% endif %}>
-                    {% for drop in item.menuitems %}  
+                    {% for drop in item.menuItems %}  
                     <li class="nav-drops">
                         <a href="{{ drop.url }}" {% if external == true %}target="_blank"{% endif %} class="link" {% if megaMenuFontColor %} style="color:{{ megaMenuFontColor }}"{% endif %}>
                             <span class="seven">{{ drop.text }}<span>

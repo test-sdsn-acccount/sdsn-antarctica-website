@@ -21,7 +21,7 @@ oResources: Explore the data
 otherResources:
 - resourceURL: https://sdsna.github.io/2019LACIndex/2019LACIndexRankings.pdf
   oResourceContent: 2019 Rankings and Scores
-pagetitle: ''
+pageTitle: ''
 
 ---
 
