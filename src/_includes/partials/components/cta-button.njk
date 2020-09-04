@@ -1,7 +1,7 @@
         <div class="contact-us-subtitle">
                 <p class="four">
                 {% if ctaLink | length !== 0%}
-                        <a href="{{ctaLink | safe }}" class="link with-arrow" {% if ctaColour %} style="color:{{ ctaColour }}"{% endif %}>
+                        <a href="{{ctaLink | safe }}" {% if external == true %}target="_blank"{% endif %} class="link with-arrow" {% if ctaColour %} style="color:{{ ctaColour }}"{% endif %}>
                                 <span>{{ cta | safe }}{% include "src/assets/images/right-arrow.svg" %}</span>
                         </a>
                 {% elif cta | length !== 0 %}
