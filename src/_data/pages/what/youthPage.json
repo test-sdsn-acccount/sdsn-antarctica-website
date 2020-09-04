@@ -26,5 +26,6 @@
     "youthMemberSubtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.",
     "youthContactTitle" : "Work together with us.",
     "youthContactCTA" : "Get in touch with our youth team",
-    "youthContactCTAURL" : "mailto:antarc@sdsnyouth.org"
+    "youthContactCTAURL" : "mailto:antarc@sdsnyouth.org",
+    "featuredMembers": true
 }

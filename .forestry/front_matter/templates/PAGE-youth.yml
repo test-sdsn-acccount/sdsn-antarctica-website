@@ -78,6 +78,19 @@ fields:
   config:
     required: false
   label: Member List Subtitle
+- name: featuredMembers
+  type: boolean
+  label: Featured Member Institution Logos
+  default: true
+  description: Turn this on to add an images section
+- name: featuredMOs
+  type: include
+  config: {}
+  template: tiled-imgs
+  label: Featured Member Organization Logos
+  showOnly:
+    field: featuredMembers
+    value: true
 - name: youthContactTitle
   type: text
   config:

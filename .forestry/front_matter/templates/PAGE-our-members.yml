@@ -63,7 +63,7 @@ fields:
 - name: featuredMIs
   type: include
   config: {}
-  template: sdg-icons
+  template: tiled-imgs
   label: Featured Member Institution Logos
   showOnly:
     field: featuredMembers
