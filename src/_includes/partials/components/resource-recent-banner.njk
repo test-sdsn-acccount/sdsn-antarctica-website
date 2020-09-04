@@ -21,23 +21,16 @@
               </a>
             </div>
             <div class="post-card-content">
-              <div class="post-list-tags">
-                {% for tag in section.data.tags %}
-                  <a href="/tags/{{ tag }}/"><p class="tag-item">
-                    {{ tag }}
-                  </p></a>
-                {% endfor %}
-              </div>
               <div class="post-list-title">
-                    <a href="{{ section.url }}"><h4>{{ section.data.title }}</h4></a>
+                    <a href="{{ section.url }}"><h5 class="small-squash">{{ section.data.title }}</h5></a>
               </div>
-              <div class="post-list-excerpt">
-                <p class="post-excerpt six">
+              <div class="post-list-excerpt seven">
+                <p class="post-excerpt seven">
                     {{ section.data.desc | safe }}
                 </p>
               </div>
               <div class="post-list-author">
-                    <p class="seven"><i>{{ wdefaults.commonWords.writtenBy }} {{ section.data.author }}</i></p>
+                    <p class="seven squash"><i>{{ wdefaults.commonWords.writtenBy }} {{ section.data.author }}</i></p>
               </div>
           </ol>
           {% endif %}
