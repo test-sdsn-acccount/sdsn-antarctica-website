@@ -49,7 +49,7 @@
                         <div class="split-boxes-30-70 left block align-items-top">
                             <h3>{{ host.hiName | safe }}</h3>
                             {% if host.hiShortDesc | length !== 0 %}
-                            <div class="four">{{ host.hiShortDesc | safe }}</div>
+                            <p>{{ host.hiShortDesc | safe }}</p>
                             {% endif %}
                             <div class="white-bg-logo">
                                 <img src="/assets{{ host.hiLogo }}" class="nav-logo"></img>
@@ -70,7 +70,7 @@
                             <h1>{{ pages.involved.contactPage.socialsTitle }}</h1>
                         </div>
                         <div class="intro-banner-body banner-sub-title">
-                            <p class="three">{{ pages.involved.contactPage.socialsDesc | safe }}</p>
+                            <p>{{ pages.involved.contactPage.socialsDesc | safe }}</p>
                         </div>
                     </div>
                 </div>

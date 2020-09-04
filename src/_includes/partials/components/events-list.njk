@@ -37,10 +37,10 @@
                           </div>
                           <div class="resource-card-content-right margin-left-1">
                                   <h5 class="small-squash">{{ wdefaults.commonWords.dateTime }}</h5>
-                                  <li class="list-style-none six">{{ date | date("MMMM Do YYYY")}}</li>
+                                  <li class="list-style-none"><p>{{ date | date("MMMM Do YYYY")}}</p></li>
 
                                   <h5 class="small-squash">{{ wdefaults.commonWords.location }}</h5>
-                                  <li class="list-style-none six margin-bottom-1">{{ section.data.location | safe }}</li>
+                                  <li class="list-style-none margin-bottom-1"><p>{{ section.data.location | safe }}</p></li>
                                   <div class="resource-list-tags">
                                     {% for tag in section.data.tags %}
                                       <a href="/tags/{{ tag }}/"><p class="tag-item">

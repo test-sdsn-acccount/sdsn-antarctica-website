@@ -52,8 +52,8 @@ section.containers {
 }
 
 li {
-    font-family: 'Crimson Text', serif;
-    line-height: 1.7rem;
+    font-family: 'Lora', serif;
+    line-height: 1.55rem;
 }
 
 h1, h2, h3, h4, h5, h6, span, .nav-header {
@@ -61,25 +61,25 @@ h1, h2, h3, h4, h5, h6, span, .nav-header {
 }
 
 p {
-    font-family: 'Crimson Text', serif;
+    font-family: 'Lora', serif;
 }
 
-h1, p.one, .one p {
+h1 {
     font-weight: 600;
     font-size: 3rem;
 }
 
-h2, p.two, .two p {
+h2 {
     font-weight: 600;
     font-size: 2rem;
 }
 
-h3, p.three, .three p {
+h3 {
     font-weight: 400;
     font-size: 1.7rem;
 }
 
-h4, p.four, .four p, .banner-sub-title, .banner-sub-title p {
+h4, p.four, .four p {
     font-weight: 400;
     font-size: 1.6rem;
 }
@@ -95,13 +95,13 @@ h6, p.six, .six p, button.btn-link, *.six, *.six p {
     font-size: 1.2rem;
 }
 
-p, span {
-    line-height: 2.7rem;
-    font-size: 1.4rem;
+p, span, .banner-sub-title, .banner-sub-title p  {
+    line-height: 2rem;
+    font-size: 1.3rem;
 }
 
 li, .news-page-content * {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 p.seven, .seven p, ul.extra-list, *.seven, *.seven p  {
