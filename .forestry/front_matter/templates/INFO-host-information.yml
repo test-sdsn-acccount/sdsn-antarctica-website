@@ -22,6 +22,14 @@ fields:
     config:
       maxSize: 0.7
     label: Host Institution Logo
+  - name: hiShortDesc
+    type: textarea
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Host Institution Short Desription Less than 20 words!
   - name: hiDescription
     type: textarea
     default: ''

@@ -1627,19 +1627,21 @@ section.contact-us-container {
 }
 
 section.contact-us-container::before {
-    background-image: url(/assets/images/stock-sdg-work.jpg);
-    background-position: left center;
-    height: 70%;
+    background-image: url(/assets/images/globev3.svg);
+    background-position: left top;
+    background-attachment: scroll;
+    height: 134%;
     position: absolute;
     right: 0;
-    top: 27%;
-    width: 50%;
+    top: 10%;
+    width: 70%;
     background-repeat: no-repeat;
     background-size: cover;
     content: "";
     display: block;
-    margin: 0 0 1rem;
     z-index: -1;
+    color: #c9c9c927;
+   
 }
 
 .two-half-wrapper {
@@ -1694,12 +1696,11 @@ section.contact-us-container::before {
     height: 100px;
     place-items: center;
     display: grid;
-    box-shadow: 1px 5px 6px -6px rgba(53, 53, 53, 0.57);
 }
 
 .contact-box-card.socials > .contact-box.img img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
 }
 

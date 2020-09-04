@@ -2,6 +2,7 @@
   "hostInstitution": [
     {
       "hiName": "University of the South Pole",
+      "hiShortDesc": "<p>Example description</p>",
       "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11438.47688822849!2d35.27799216791971!3d0.5126212796744566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178101178732fe35%3A0x4a9e8d0e2d40ebfc!2sMOI%20UNIVERSITY!5e0!3m2!1sen!2sau!4v1596686975190!5m2!1sen!2sau\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>",
       "hiLogo": "/uploads/sdsn-antarc.png",
       "hiDescription": "<p>Lorem ipsum dolor sit amet**, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu. Vivamus fermentum ex ut mauris feugiat convallis. Fusce cursus diam vel nunc lobortis, nec finibus orci lacinia.   \n  \nNulla tempus vestibulum purus posuere facilisis. In aliquam consectetur blandit. Nulla posuere sollicitudin mi vitae accumsan. Duis malesuada eros risus, a lacinia quam interdum ut. Quisque aliquet laoreet nibh, sit amet maximus orci mattis ac.</p>",
@@ -9,6 +10,7 @@
     },
     {
       "hiName": "Antarc university",
+      "hiShortDesc": "",
       "map": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11438.47688822849!2d35.27799216791971!3d0.5126212796744566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x574d0c883551eb67!2sUniversity%20Of%20Nairobi!5e0!3m2!1sen!2sau!4v1596689983664!5m2!1sen!2sau\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>",
       "hiLogo": "/uploads/sdsn-antarc.png",
       "hiDescription": "<p>Lorem ipsum dolor sit amet**, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu. Vivamus fermentum ex ut mauris feugiat convallis. Fusce cursus diam vel nunc lobortis, nec finibus orci lacinia.   \n  \nNulla tempus vestibulum purus posuere facilisis. In aliquam consectetur blandit. Nulla posuere sollicitudin mi vitae accumsan. Duis malesuada eros risus, a lacinia quam interdum ut. Quisque aliquet laoreet nibh, sit amet maximus orci mattis ac.</p>",
