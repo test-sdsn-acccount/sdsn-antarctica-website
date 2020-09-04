@@ -28,6 +28,7 @@
     <section class="full-bleed" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }}"{% endif %}>
         {% if information.networkDetails.networkVision %}
             {% set fbHeader = information.networkDetails.networkVision %}
+            {% set fbSubtitle = information.networkDetails.networkVisionSubtitle %}
                 {% include "partials/components/full-bleed.njk" %}
         {% endif %}
     </section>

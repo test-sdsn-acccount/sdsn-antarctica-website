@@ -44,6 +44,11 @@ fields:
   config:
     required: true
   label: Network Vision Statement
+- name: networkVisionSubtitle
+  type: text
+  config:
+    required: false
+  label: Network Vision Description
 - name: networkObjectives
   type: field_group_list
   fields:

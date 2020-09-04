@@ -5,6 +5,7 @@
   "networkName": "Antarctica",
   "networkdesc": "<p>SDSN Antarctica is a community of universities, research centers, and other knowledge institutions to translate the latest expertise in sustainable development into action</p>",
   "networkVision": "Mobilizing SDG implementation through solution initiatives and long-term pathways in Antarctica.",
+  "networkVisionSubtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.",
   "networkObjectives": [
     {
       "objTitle": "Localize the SDGs to Antarctica 1",
