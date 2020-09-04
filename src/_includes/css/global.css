@@ -56,7 +56,7 @@ li {
     line-height: 1.7rem;
 }
 
-h1, h2, h3, h4, h5, h6, span {
+h1, h2, h3, h4, h5, h6, span, .nav-header {
     font-family: 'Lato', sans-serif;
 }
 
@@ -100,7 +100,7 @@ p, span {
     font-size: 1.4rem;
 }
 
-li {
+li, .news-page-content * {
     font-size: 1.4rem;
 }
 
@@ -114,6 +114,11 @@ p.seven, .seven p, ul.extra-list, *.seven, *.seven p  {
     line-height: 1rem;
     font-weight: 400;
     font-size: 0.9rem;
+}
+
+.nav-header {
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 @media screen and (min-width: 1800px) {
@@ -141,11 +146,11 @@ p.seven, .seven p, ul.extra-list, *.seven, *.seven p  {
         font-size: 1.2rem!important;
     }
     
-    p, span {
+    p, span, .news-page-content * {
         font-size: 1.4rem!important;
     }
     
-    p.seven, .seven p, ul.extra-list, .tag-item{
+    p.seven, .seven p, ul.extra-list, .tag-item {
         font-size: 1rem!important;
     }
 
@@ -159,7 +164,7 @@ p.seven, .seven p, ul.extra-list, *.seven, *.seven p  {
         font-size: 2rem!important;
     }
 
-    p {
+    p, span, .news-page-content * {
         font-size: 1.2rem!important;
     }
 }
@@ -515,6 +520,32 @@ section.mobile-nav {
     display: none;
 }
 
+.mobile-nav-logo {
+    height: 100%;
+    margin-left: 10%;
+    top: 12px;
+    position: relative;
+}
+
+.mobile-nav-logo img {
+    height: 60%;
+}
+
+.mobile-nav-itm {
+    text-transform: uppercase;
+}
+
+.mobile-nav-itm.drops {
+    border-bottom: 1px solid #c7c7c7;
+    padding-bottom: 1.4rem;
+}
+
+.mobile-nav-itm.drops:nth-child(1) {
+    border-top: 1px solid #c7c7c7;
+    padding-top: 1.4rem;
+    margin-top: .5rem;
+}
+
 nav.bar {
     text-align: right;
     vertical-align: middle;
@@ -589,7 +620,7 @@ nav.bar a.nav-item::after {
 }
 
 section.mobile-nav li {
-    list-style: disc;
+    list-style: none;
     text-align: left;
 	margin: 0;
     padding-left: 0;
@@ -597,20 +628,21 @@ section.mobile-nav li {
 }
 
 section.mobile-nav ul.nv-item {
-        text-align: left;
-        margin: 0;
-        padding-left: 0;
-        color: #212121!important;
-      
-        -ms-box-orient: vertical;
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -moz-flex;
-        display: -webkit-flex;
-        display: flex;
+    text-align: left;
+    margin: 0;
+    padding-left: 0;
+    color: #212121!important;
+    padding-bottom: .5rem;
     
-        flex-direction: column;
+    -ms-box-orient: vertical;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+
+    flex-direction: column;
 }
 
 @media screen and (max-width: 829px) {
@@ -634,7 +666,7 @@ section.mobile-nav ul.nv-item {
         flex-direction: column;
         position: absolute;
         top: 25px;
-        left: 25px;
+        left: 3%;
         z-index: 1;
         -webkit-user-select: none;
         user-select: none;
@@ -805,7 +837,7 @@ section.mobile-nav ul.nv-item {
 
 @media screen and (max-width: 1129px) {
     .intro-banner-wrapper, .section-banner-wrapper {
-        padding: 2em 29% 5% 15%!important;
+        padding: 4% 29% 4% 15%!important;
     }
 
     .content-container, .resource-feature-banner {
@@ -815,7 +847,7 @@ section.mobile-nav ul.nv-item {
 
 @media screen and (max-width: 882px) {
     .intro-banner-wrapper, .section-banner-wrapper, .contact-us-container, .text-top-metrics-bottom-container {
-        padding: 1% 5% 5% 5%!important;
+        padding: 4% 5% 4% 5%!important;
     }
 
     .content-container, .resource-feature-banner, .sdg-section {
@@ -825,7 +857,7 @@ section.mobile-nav ul.nv-item {
 
 @media screen and (max-width: 600px) {
     .intro-banner-wrapper, .section-banner-wrapper, .contact-us-container, .text-top-metrics-bottom-container {
-        padding: 10px 3% 5% 3%!important;
+        padding: 4% 3% 4% 3%!important;
     }
 
     .content-container, .resource-feature-banner, .sdg-section {
@@ -1462,6 +1494,7 @@ button.animate:hover {
 
     .resource-card-content-right {
         padding-left: 0;
+        margin-left: 0;
     }
 }
 

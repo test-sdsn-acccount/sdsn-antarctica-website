@@ -68,6 +68,8 @@ fields:
     description: Please try to keep this under 70 words
   - name: link
     type: text
+    default: https://
+    description: Please make sure to include https://
     config:
       required: false
     label: Relevant link for objective (optional)
