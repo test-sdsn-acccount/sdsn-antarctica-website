@@ -46,6 +46,11 @@ footer {
     width: 100%;
 }
 
+section.containers {
+    width: 100%;
+    height: 100%;    
+}
+
 li {
     font-family: 'Crimson Text', serif;
     line-height: 1.7rem;
@@ -323,7 +328,7 @@ ul {
         width: 95%!important;
     }
     
-    .split-boxes-50-50-focus-left.right, .section.contact-us-banner, .split-boxes-15-83.right {
+    .split-boxes-50-50-focus-left.right, .split-boxes-15-83.right {
         width: 100%!important;
     }
 
@@ -956,14 +961,13 @@ section.full-bleed.resources-bg {
 }
 
 /* Text Top and Metrics Bottom Banner */
-
 .text-top-metrics-bottom-container {
-    padding: 2em 13em 5em 6em;
+    padding: 2rem 13rem 5em 6em;
     vertical-align: top;
 }
 
 .text-top  {
-    min-height: 15em;
+    min-height: 15rem;
     margin-top: 5%;
 }
 .text-top  > * {
@@ -977,30 +981,30 @@ section.full-bleed.resources-bg {
 
 /* Big side feature green */
 
-section.pop-out {
-    float: right;
-    margin-bottom: 7%;
-    min-height: 20em;
-    width: 90%;
+section.pop-out .popped-container-left {
+    margin-left: 8%;
+    margin-bottom: 3%;
+}
+
+section.pop-out .popped-container-right {
+    margin-right: 9%;
+    margin-bottom: 3%;
 }
 
 .big-side-feature-container, .contact-us-container {
-    padding: 2em 0 5em 6em;
+    padding: 5em 0 5em 6em;
     vertical-align: top;
-    margin-top: 5%;
     height: 100%;
     right: 0;
 }
 
 @media screen and (max-width: 1050px) {
 
-    section.pop-out, section.contact-us-banner  {
-        float: none;
-        width: 100%;
-    }
-
-    section.contact-us-banner {
-        padding-right: 0!important;
+    section.pop-out .popped-container-left,
+    section.pop-out .popped-container-right {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 2%;
     }
 
     .embed-container.map {
@@ -1062,18 +1066,6 @@ section.pop-out {
 .resource-feature-banner .img-replacement {
     height: 20vh;
 }
-
-
-
-/* Contact us banner */
-
-section.contact-us-banner {
-    float: right;
-    padding-right: 60%;
-    margin-bottom: 1%;
-    height: 100%;
-}
-
 
 /* People Cards */
 

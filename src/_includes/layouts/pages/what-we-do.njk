@@ -32,12 +32,14 @@
         {% endif %}
         {% include "partials/components/table-section.njk" %}
     </section>
-    <section class="contact-us-banner" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
+    <section class="contact-us-banner containers pop-out">
+        <div class="popped-container-right" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
         {% set contactHeader = pages.what.ourMembers.contactTitle %}
         {% set cta = pages.what.ourMembers.contactCTA %}
         {% set ctaLink = pages.what.ourMembers.contactCTAURL%}
         {% set ctaColour = fcolor1Text %}
         {% include "partials/components/contact-us-banner.njk" %}
+        </div>
     </section>
 </div>
 </main>

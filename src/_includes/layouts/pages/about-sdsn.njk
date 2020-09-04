@@ -47,19 +47,23 @@
             {% endfor %}
         {% endif %}
     </section>
-    <section class="text-top-metrics-bottom pop-out" {% if fcolor2Text %} style="color:{{ fcolor2Text }};background-color:{{ fcolor2 }}"{% endif %}>
-    {% if information.networkDetails.impactSection == true %}
-        {% set ttmheader = pages.about.aboutPage.metricsheader %}
-        {% set ttmdesc = information.networkDetails.networkimpact | safe %}
-        {% set ttmitem = information.networkDetails.networkmetrics %}
-            {% include "partials/components/text-top-metrics-bottom.njk" %}
-    {% endif %}
+    <section class="text-top-metrics-bottom containers pop-out">
+        <div class="popped-container-left" {% if fcolor2Text %} style="color:{{ fcolor2Text }};background-color:{{ fcolor2 }}"{% endif %}>
+            {% if information.networkDetails.impactSection == true %}
+                {% set ttmheader = pages.about.aboutPage.metricsheader %}
+                {% set ttmdesc = information.networkDetails.networkimpact | safe %}
+                {% set ttmitem = information.networkDetails.networkmetrics %}
+                    {% include "partials/components/text-top-metrics-bottom.njk" %}
+            {% endif %}
+        </div>
     </section>
-    <section class="contact-us-banner" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
-      {% set contactHeader = pages.about.aboutPage.aboutNetworkCtaTitle %}
-      {% set cta = pages.about.aboutPage.aboutNetworkCtaText %}
-      {% set ctaLink = pages.about.aboutPage.aboutNetworkCtaLink %}
-      {% include "partials/components/contact-us-banner.njk" %}
+    <section class="contact-us-banner containers pop-out">
+        <div class="popped-container-right"  {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
+        {% set contactHeader = pages.about.aboutPage.aboutNetworkCtaTitle %}
+        {% set cta = pages.about.aboutPage.aboutNetworkCtaText %}
+        {% set ctaLink = pages.about.aboutPage.aboutNetworkCtaLink %}
+        {% include "partials/components/contact-us-banner.njk" %}
+        </div>
     </section>
 </div>
 </main>
