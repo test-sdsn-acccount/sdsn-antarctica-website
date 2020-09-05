@@ -8,6 +8,7 @@ fields:
     required: true
   label: Page Title
   default: Our Members
+  hidden: true
 - name: toggle
   type: boolean
   label: Page Toggle
