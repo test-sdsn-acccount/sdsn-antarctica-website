@@ -9,9 +9,12 @@ fields:
   label: Footer Information
   hidden: true
 - name: description
-  type: text
+  type: textarea
   config:
-    required: false
+    required: true
+    wysiwyg: true
+    schema:
+      format: html-blocks
   label: Footer Information
 - name: footerContent
   type: textarea

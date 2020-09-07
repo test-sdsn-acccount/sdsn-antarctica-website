@@ -5,7 +5,7 @@
             <img src="/assets{{ footerLogo }}" class="nav-logo margin-bottom-1"/>
             </a>
             <p class="squash" {% if fcolor2Text %} style="color:{{ fcolor2Text }};" {% endif %}>
-                {{ information.footerInfo.description }}
+                {{ information.footerInfo.description | safe }}
             </p>
         </div>
         <div class="custom-footer-content">
