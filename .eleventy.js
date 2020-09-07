@@ -39,9 +39,6 @@ module.exports = function(config) {
     config.addPassthroughCopy('src/filters');
     config.addPassthroughCopy('src/js');
 
-    // Plugins
-    config.addPlugin(pluginRss);
-
     // Filters
     config.addFilter('search', searchFilter);
 
@@ -66,7 +63,9 @@ module.exports = function(config) {
       .reverse();
     });
 
-    
+    // Plugins
+    config.addPlugin(pluginRss);
+
     // 404 
     config.setBrowserSyncConfig({
       callbacks: {
