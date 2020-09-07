@@ -17,12 +17,12 @@
   <subtitle>{{ metadata.desc }}</subtitle>
   <link href="{{ metadata.feedUrl }}" rel="self"/>
   <link href="{{ metadata.url }}"/>
-  <updated>{{ collections.newsArticles | rssLastUpdatedDate }}</updated>
+  <updated>{{ collections.all | rssLastUpdatedDate }}</updated>
   <id>{{ information.networkDetails.websiteURL }}{{ metadata.url }}</id>
   <author>
     <name>{{ metadata.author }}</name>
   </author>
-  {%- for post in collections.newsArticles %}
+  {% for post in collections.newsArticles %}
   {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>
@@ -31,5 +31,25 @@
     <id>{{ absolutePostUrl }}</id>
     <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
   </entry>
-  {%- endfor %}
+  {% endfor %}
+    {% for post in collections.resourceArticles %}
+  {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ absolutePostUrl }}"/>
+    <updated>{{ post.date | rssDate }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+  </entry>
+  {% endfor %}
+    {% for post in collections.eventsArticles %}
+  {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ absolutePostUrl }}"/>
+    <updated>{{ post.date | rssDate }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+  </entry>
+  {% endfor %}
 </feed>
