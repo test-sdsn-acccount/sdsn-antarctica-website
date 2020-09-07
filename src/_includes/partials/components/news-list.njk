@@ -24,6 +24,7 @@
                 </div>
             </div>
               <div class="news-card-img">
+              <a href="{{ section.url }}">
                 {% if section.data.fImage !== "" %}
                   <div class="news-img-container">
                     <img src="/assets{{ section.data.fImage }}" class="news-item-img" /> 
@@ -33,7 +34,8 @@
                     <img src="/assets{{ logo }}" class="img-replacement" />
                   </div>
                 {% endif %}
-                </div>
+                </a>
+              </div>
           </ol>
           {% endif %}
       {% endfor %}

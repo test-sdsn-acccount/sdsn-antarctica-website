@@ -2,6 +2,7 @@
     {% for section in sectionList %}
         <ol class="resource-item">
             <div class="resource-card-img">
+              <a href="{{ section.url }}">
                 {% if section.data.fImage !== "" %}
                   <img src="/assets{{ section.data.fImage }}" class="resource-item-img" /> 
                 {% else %} 
@@ -9,6 +10,7 @@
                     <img src="/assets{{ logo }}" class="img-replacement" />
                   </div>
                 {% endif %}
+              </a>
             </div>
             <div class="resource-card-content-wrapper">
                   <div class="resource-card-content">
