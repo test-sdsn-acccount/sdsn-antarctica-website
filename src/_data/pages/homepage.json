@@ -8,5 +8,21 @@
   "newsSubtitle": "Read more about our current work",
   "homeCtaTitle": "Contact us",
   "homeCtaText": "Get in touch at antarc@unsdsn.org",
-  "title": "Page: Homepage"
+  "title": "Page: Homepage",
+  "showBenefits": true,
+  "involvedBenefits": [
+    {
+      "desc": "",
+      "header": "Get access to academic expertise and work together with different sectors"
+    },
+    {
+      "header": "Contribute to the sustainable development in your community",
+      "desc": ""
+    },
+    {
+      "desc": "",
+      "header": "Get access to tools, resources, and opportunities to further your solutions"
+    }
+  ],
+  "benefitsTitle": "Join our global network and work on practical solutions for sustainable development"
 }
