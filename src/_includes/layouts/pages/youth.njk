@@ -37,7 +37,7 @@
             {% set imgList = pages.what.youthPage.tImages %}
             {% include "partials/components/tiled-imgs.njk" %}
         {% endif %}
-        {% set memberData = information.networkDetails.youthMembersList %}
+        {% set memberData = pages.what.youthPage.youthMembersList %}
         {% include "partials/components/table-section.njk" %}
     </section>
     <section class="contact-us-banner containers pop-out">

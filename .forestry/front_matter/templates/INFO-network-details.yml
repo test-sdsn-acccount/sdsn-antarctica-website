@@ -147,14 +147,5 @@ fields:
       format: markdown
   label: Members List Code
   description: Please copy and paste Airtable code here
-- name: youthMembersList
-  type: textarea
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: Members List Code
-  description: Please copy and paste Airtable code here
 pages:
 - src/_data/information/networkDetails.json

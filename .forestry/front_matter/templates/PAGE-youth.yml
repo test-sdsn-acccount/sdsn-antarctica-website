@@ -109,5 +109,14 @@ fields:
     required: false
   label: Call to action URL
   description: If linking to a website, please put https:// in the front
+- name: youthMembersList
+  type: textarea
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Youth Members List Code
+  description: Please copy and paste Airtable code here
 pages:
 - src/_data/pages/what/youthPage.json
