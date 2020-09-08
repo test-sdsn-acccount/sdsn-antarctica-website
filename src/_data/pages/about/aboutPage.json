@@ -1,12 +1,12 @@
 {
-    "bannerTitle": "The Sustainable Development Solutions Network",
-    "aboutSDSN": "<p>The UN Sustainable Development Solutions Network (SDSN) has been operating since 2012 under the auspices of the UN Secretary-General. It mobilizes global scientific and technological knowledge on the challenges of sustainable development, including the design and implementation of the SDGs.</p><p>To mobilize universities and other knowledge centers for practical problem solving on sustainable development at local, national, and regional scales, SDSN built a network of National and Regional SDSNs.</p><p>These networks coordinate SDSN’s 1,100 member institutions, which cover over 100 countries. Members include universities, research centers, think tanks, and civil society organizations.</p>",
-    "featureTitle": "SDSN Antarctica",
-    "metricsHeader": "Our Impact",
-    "hostedPretext": "HOSTED BY",
-    "hostCtaText": "Learn more",
-    "aboutNetworkCtaTitle": "Want to learn more about what we do?",
-    "aboutNetworkCtaText": "See our activities and members",
-    "aboutNetworkCtaLink": "/what-we-do/",
-    "title": "Page: About the network"
+  "bannerTitle": "The Sustainable Development Solutions Network",
+  "aboutSDSN": "<p>The UN Sustainable Development Solutions Network (SDSN) has been operating since 2012 under the auspices of the UN Secretary-General. It mobilizes global scientific and technological knowledge on the challenges of sustainable development, including the design and implementation of the SDGs.</p><p>To mobilize these knowledge centers for practical problem solving on sustainable development, SDSN built a network of National and Regional SDSNs.</p><p>These networks coordinate SDSN’s 1000s of member institutions - universities, research centers, think tanks, and civil society organizations.</p><p>Our network is hosted by the University of the South Pole - focusing on the mobilizing SDG implementation in Antarctica.</p>",
+  "featureTitle": "SDSN Antarctica",
+  "metricsHeader": "Our Impact",
+  "hostedPretext": "HOSTED BY",
+  "hostCtaText": "Learn more",
+  "aboutNetworkCtaTitle": "Want to learn more about what we do?",
+  "aboutNetworkCtaText": "See our activities and members",
+  "aboutNetworkCtaLink": "/what-we-do/",
+  "title": "Page: About the network"
 }
