@@ -64,8 +64,9 @@ fields:
 - name: benefitsTitle
   type: text
   label: Benefits Title
-  default: Join a global network of problem solvers and contribute to practical solutions for sustainable development. 
-  hidden: true
+  default: Join a global network of problem solvers and contribute to practical solutions
+    for sustainable development.
+  hidden: false
   showOnly:
     field: showBenefits
     value: true
