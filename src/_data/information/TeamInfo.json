@@ -1,12 +1,12 @@
 {
-  "teamDesc": "Lorem ipsum",
+  "teamDesc": "<p>Our team works together to coordinate the network activities, engage with our members, and collaborate with other stakeholders within the country.</p>",
   "leadershipCouncil": true,
   "networkManagers": true,
   "youthCoordinators": true,
   "lcTitle": "Leadership Council",
   "nmTitle": "Network Managers",
-  "youthTitle": "Lorem ipsum",
-  "lcDesc": "The Network is guided by a Leadership Council, which brings together global sustainable development leaders from all regions and all sectors, including civil society, public, and private sectors.",
+  "youthTitle": "The Youth Team",
+  "lcDesc": "<p>The Network is guided by a Leadership Council - made up of global sustainable development leaders from all regions and all sectors, including civil society, public, and private sectors.</p>",
   "nmDesc": "Network Managers coordinate the network, working with Member Institutions to identify potential collaboration within the network.",
   "youthDesc": "The Youth Team mobilizes young people locally to create sustainable solutions.",
   "lcProfiles": [
