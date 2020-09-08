@@ -2,9 +2,9 @@
   "title": "SDGs in Antarctica Page",
   "toggle": true,
   "header": "SDGs in Antarctica",
-  "subtitle": "<p>test</p>",
+  "subtitle": "<p>Learn about action being taken in Antarctica on the SDGs.</p>",
   "sdgsHeader": "The Sustainable Development Goals",
-  "sdgsSubtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.",
+  "sdgsSubtitle": "<p>In 2015, world leaders agreed to the 17 Sustainable Development Goals (SDGs) - a shared blueprint for peace, prosperity for people, and the planet, now and into the future. </p><p>The SDGs call for a global partnership to end poverty; improve health and education; reduce inequality; spur economic growth; and tackle climate change. </p>",
   "sdgsCta": "Learn more about the SDGs",
   "sdgsCtaURL": "https://www.undp.org/content/undp/en/home/sustainable-development-goals.html",
   "featuredActions": [

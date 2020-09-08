@@ -1,8 +1,8 @@
 {
   "header": "Join the network",
   "toggle": true,
-  "subtitle": "<p>Applying for SDSN membership is simple and free! Just complete the online membership application form (available in English, French, Portuguese, Russian, and Spanish) and submit. our Executive Committee reviews applications on a quarterly basis.</p>",
-  "ourImpactHeader": "Member Benefits",
+  "subtitle": "<p>Applying for SDSN membership is simple and free! Just complete the online membership application form (available in English, French, Portuguese, Russian, and Spanish) and submit. Our Executive Committee reviews applications on a quarterly basis.</p>",
+  "ourImpactHeader": "Benefits of becoming a member",
   "ourImpactSubTitle": "<p><b>Accelerating practical problem solving for sustainable development.</b></p><p>Our mission is to accelerate practical problem solving for sustainable development, including the implementation of the Sustainable Development Goals (SDGs) at local, national, and global scales.</p>",
   "memberBenefits": [
     {
@@ -31,7 +31,7 @@
     }
   ],
   "joinHeader": "Member Requirements",
-  "joinSubtitle": "<p>Membership in the Sustainable Development Solutions Network is free and open to not-for-profit institutions (not individuals).</p> <p>Institutions must be knowledge-generating, i.e. they must conduct research, analyses, and/or data collection, and can be universities, research institutions, foundations, or civil society groups. Member institutions should have deep expertise in one or more areas related to sustainable development and commit a substantial amount of their own work towards finding and/or implementing solutions for the SDGs.<p>",
+  "joinSubtitle": "<p>Membership in the Sustainable Development Solutions Network is <strong>free and open</strong> to not-for-profit institutions (not individuals).</p><p>Institutions must be knowledge-generating, i.e. they must conduct research, analyses, and/or data collection, and can be universities, research institutions, foundations, or civil society groups. </p><p>Member institutions should have deep expertise in one or more areas related to sustainable development and commit a substantial amount of their own work towards finding and/or implementing solutions for the SDGs.</p>",
   "joinCta": "Join our network",
   "joinCtaURL": "https://www.unsdsn.org/join-the-sdsn",
   "contactHeader": "Want to learn more?",
