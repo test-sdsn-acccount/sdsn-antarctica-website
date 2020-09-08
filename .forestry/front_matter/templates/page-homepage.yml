@@ -57,5 +57,42 @@ fields:
       format: markdown
   label: Address
   description: Please copy and paste Google Map code here
+- name: showBenefits
+  type: boolean
+  label: Show a benefits section
+  default: true
+- type: text
+  name: title
+  label: Homepage
+  default: Homepage
+  hidden: true
+  showOnly:
+    field: showBenefits
+    value: true
+- name: involvedBenefits
+  type: field_group_list
+  fields:
+  - name: header
+    type: text
+    config:
+      required: false
+    label: Benefit Title
+  - name: desc
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Benefit Description
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Benefits of Getting Involved
+  showOnly:
+    field: showBenefits
+    value: true
 pages:
 - src/_data/pages/homepage.json
