@@ -83,7 +83,7 @@ fields:
     and/or implementing solutions for the SDGs.
   config:
     required: true
-    max: 70
+    max: 
     wysiwyg: true
     schema:
       format: html-blocks
