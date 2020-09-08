@@ -16,7 +16,11 @@
         }
       ],
       "url": "",
-      "external": false
+      "external": false,
+      "megamenu": false,
+      "menuitems": [
+
+      ]
     },
     {
       "megaMenu": true,
@@ -39,7 +43,11 @@
         }
       ],
       "url": "",
-      "external": false
+      "external": false,
+      "megamenu": true,
+      "menuitems": [
+
+      ]
     },
     {
       "megaMenu": true,
@@ -54,15 +62,14 @@
           "text": "SDG Resources",
           "url": "/resources",
           "external": false
-        },
-        {
-          "text": "SDGs Report NEW!",
-          "url": "/content/resources/report-on-sdgs-and-the-south-pole/",
-          "external": false
         }
       ],
       "url": "",
-      "external": false
+      "external": false,
+      "megamenu": false,
+      "menuitems": [
+
+      ]
     },
     {
       "megaMenu": true,
@@ -85,7 +92,11 @@
         }
       ],
       "url": "",
-      "external": false
+      "external": false,
+      "megamenu": false,
+      "menuitems": [
+
+      ]
     },
     {
       "megaMenu": false,
@@ -93,6 +104,10 @@
       "url": "/search",
       "external": false,
       "menuItems": [
+
+      ],
+      "megamenu": false,
+      "menuitems": [
 
       ]
     }
