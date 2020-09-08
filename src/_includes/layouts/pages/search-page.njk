@@ -1,6 +1,7 @@
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
+{% if pages.searchPage.toggle == true %}
 <title>{{ pages.searchPage.searchHeader }}</title>
  <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
       <div class="section-banner-wrapper">
@@ -35,7 +36,7 @@
       </div>
   </div>
 </section>
-
-                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"></script>
-                  <script type="text/javascript" src="/js/search.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"></script>
+<script type="text/javascript" src="/js/search.js"></script>
+{% endif %}
 {% endblock %}

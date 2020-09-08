@@ -1,12 +1,7 @@
 {
-  "title": "News Landing Page",
+  "title": "Page Content: About the team",
   "pagetitle": "The Team",
   "teamCtaTitle": "Contact us",
   "teamCtaText": "Get in touch at antarc@unsdsn.org",
-  "teamCtaLink": "",
-  "toggle": true,
-  "header": "News",
-  "globalHeader": "SDSN Global News",
-  "previousPageText": "Go to back to News",
-  "pageTitle": "The Team"
+  "teamCtaLink": ""
 }
