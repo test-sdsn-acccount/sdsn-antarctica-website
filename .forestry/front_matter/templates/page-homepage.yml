@@ -61,10 +61,10 @@ fields:
   type: boolean
   label: Show a benefits section
   default: true
-- type: text
-  name: title
-  label: Homepage
-  default: Homepage
+- name: benefitsTitle
+  type: text
+  label: Benefits Title
+  default: Join a global network of problem solvers and contribute to practical solutions for sustainable development. 
   hidden: true
   showOnly:
     field: showBenefits

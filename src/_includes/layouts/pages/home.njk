@@ -22,6 +22,15 @@
         {% endif %}
         </div>
     </section>
+    <section class="text-top-metrics-bottom containers pop-out">
+        <div class="popped-container-left" {% if fcolor2Text %} style="color:{{ fcolor2Text }};background-color:{{ fcolor2 }}"{% endif %}>
+            {% if pages.homepage.showBenefits == true %}
+                {% set ttmheader = pages.homepage.benefitsTitle %}
+                {% set ttmitem = pages.homepage.involvedBenefits %}
+                    {% include "partials/components/text-top-metrics-bottom.njk" %}
+            {% endif %}
+        </div>
+    </section>
     <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
         {% set header = pages.homepage.newsHeader %}
         {% set subtitle = pages.homepage.newsSubtitle %}
