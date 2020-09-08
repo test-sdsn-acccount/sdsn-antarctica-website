@@ -52,12 +52,12 @@ fields:
 - name: networkObjectives
   type: field_group_list
   fields:
-  - name: objTitle
+  - name: header
     type: text
     config:
       required: true
     label: Objective Sub Title
-  - name: objective
+  - name: desc
     type: textarea
     config:
       required: false

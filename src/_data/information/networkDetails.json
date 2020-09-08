@@ -8,18 +8,18 @@
   "networkVisionSubtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.",
   "networkObjectives": [
     {
-      "objTitle": "Localize the SDGs to Antarctica 1",
-      "objective": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.</p>",
+      "header": "Localize the SDGs to Antarctica 1",
+      "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.</p>",
       "link": ""
     },
     {
-      "objTitle": "Localize the SDGs to Antarctica 5",
-      "objective": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.</p>",
+      "header": "Localize the SDGs to Antarctica 5",
+      "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.</p>",
       "link": "sdgstudent.org"
     },
     {
-      "objTitle": "Localize the SDGs to Antarctica 3",
-      "objective": "",
+      "header": "Localize the SDGs to Antarctica 3",
+      "desc": "",
       "link": "sdgstudent.org"
     }
   ],
