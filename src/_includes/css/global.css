@@ -1049,11 +1049,21 @@ section.pop-out .popped-container-right {
         padding-top: 50%!important;
     }
 
-    .big-side-feature-container, .contact-us-container {
+    .big-side-feature-container{
         padding: 0;
         margin: 1px;
     }
 }
+
+
+@media screen and (max-width: 650px) {
+
+    .contact-us-container {
+        padding: 2em 0 2em 4em;
+        margin: 1px;
+    }
+}
+
 
 .split-boxes-50-50-focus-left.left.feature  {
     height: 100%;

@@ -30,6 +30,7 @@
             {% set imgList = pages.what.ourMembers.tImages %}
             {% include "partials/components/tiled-imgs.njk" %}
         {% endif %}
+        {% set memberData = information.networkDetails.membersList %}
         {% include "partials/components/table-section.njk" %}
     </section>
     <section class="contact-us-banner containers pop-out">
