@@ -2,38 +2,34 @@
   "title": "Page: Youth",
   "toggle": true,
   "header": "Our Youth Initiative",
-  "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.",
+  "subtitle": "Creating the next generation of leaders in sustainable development.",
   "youthObjectives": [
     {
-      "objTitle": "Localize the SDGs to Antarctica 1",
-      "objective": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.</p>",
-      "link": "https://sdgstudent.org"
+      "objTitle": "Train young leaders and organizations.",
+      "objective": "<p>Many young people are passionate about positive changes but face challenges in achieving them. Many education systems do not equip them with knowledge of sustainable development, nor provided the opportunity to create practical changes. We bridge the gap by educating them with the understanding of these challenges, and how they can contribute to solving them.</p>",
+      "link": ""
     },
     {
-      "objTitle": "Localize the SDGs to Antarctica 5",
-      "objective": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.",
-      "link": "https://sdgstudent.org"
+      "objTitle": "Ideate and collaborate in communities.",
+      "objective": "<p>We've created a community of passionate young people that allows for peer-to-peer learning, collaboration, and a space to try new ideas.</p>",
+      "link": ""
     },
     {
-      "objTitle": "Localize the SDGs to Antarctica 3",
-      "objective": "",
-      "link": "https://sdgstudent.org"
+      "objTitle": "Support the implementation and scaling of the solutions.",
+      "objective": "<p>We provide young innovators with access to mentorship, funding, training, and opportunities to grow and scale their solutions.</p>",
+      "link": ""
     }
   ],
   "highlightProjectsHeader": "Highlight projects",
-  "highlightProjectsSubtitle": "Read more about our current work",
+  "highlightProjectsSubtitle": "Read more about our current work.",
   "youthMemberTitle": "Youth Member List",
-  "youthMemberSubtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.",
+  "youthMemberSubtitle": "The Youth Membership Program is a network of student associations, youth-led and youth-focused organizations, and other institutions dedicated to youth empowerment and the implementation of the Sustainable Development Goals.",
   "youthContactTitle": "Work together with us.",
-  "youthContactCTA": "Get in touch with our youth team",
+  "youthContactCTA": "Get in touch with our youth team.",
   "youthContactCTAURL": "mailto:antarc@sdsnyouth.org",
   "featuredMembers": true,
   "tImages": [
-    {
-      "tTitle": "",
-      "tLink": "",
-      "tImg": "/uploads/map.png"
-    }
+
   ],
   "youthMembersList": "<iframe class=\"airtable-embed\" src=\"https://airtable.com/embed/shrWwqPRdslHOsp88?backgroundColor=yellow&viewControls=on\" frameborder=\"0\" onmousewheel=\"\" width=\"100%\" height=\"533\" style=\"background: transparent; border: 1px solid #ccc;\"></iframe>"
 }
