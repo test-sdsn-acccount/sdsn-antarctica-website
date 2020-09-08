@@ -1,7 +1,7 @@
 {
-    "title" : "Events Landing Page",
-    "toggle": true,
-    "header" : "Events",
-    "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis mattis dolor, eu dapibus nisi lacinia eu. Fusce id mauris rhoncus, fermentum justo vitae, tempor arcu.",
-    "previousPageText": "Go back to Events"
+  "title": "Events Landing Page",
+  "toggle": true,
+  "header": "Events",
+  "subtitle": "<p>See our latest events.</p>",
+  "previousPageText": "Go back to Events"
 }
