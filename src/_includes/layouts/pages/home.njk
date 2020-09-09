@@ -44,6 +44,7 @@
         <div class="popped-container-right" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
         {% set contactHeader = pages.homepage.homeCtaTitle %}
         {% set cta = pages.homepage.homeCtaText %}
+        {% set ctaColour = fcolor1Text %}
         {% set email = information.networkDetails.networkEmail %}
         {% include "partials/components/contact-us-banner.njk" %}
         </div>

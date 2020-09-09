@@ -6,36 +6,34 @@
 <main id="main-content" tabindex="-1">
 <div class="home-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if information.teamInfo %}
         {% set introHeader = pages.about.aboutTeamPage.pageTitle %}
-        {% set introSubtitle = information.teamInfo.teamDesc | safe %}
+        {% set introSubtitle = information.TeamInfo.teamDesc | safe %}
             {% include "layouts/intro-banner.njk" %}
-    {% endif %}
   </section>
   <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if information.teamInfo.leadershipCouncil == true %}
-        {% set header = information.teamInfo.lcTitle %}
-        {% set subtitle = information.teamInfo.lcDesc | safe %}
+    {% if information.TeamInfo.leadershipCouncil == true %}
+        {% set header = information.TeamInfo.lcTitle %}
+        {% set subtitle = information.TeamInfo.lcDesc | safe %}
             {% include "layouts/section-banner.njk" %}
-        {% set people = information.teamInfo.lcProfiles %}
+        {% set people = information.TeamInfo.lcProfiles %}
           {% include "partials/components/people.njk" %}
     {% endif %}
   </section>
   <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if information.teamInfo.networkManagers == true %}
-        {% set header = information.teamInfo.nmTitle %}
-        {% set subtitle = information.teamInfo.nmDesc | safe %}
+    {% if information.TeamInfo.networkManagers == true %}
+        {% set header = information.TeamInfo.nmTitle %}
+        {% set subtitle = information.TeamInfo.nmDesc | safe %}
             {% include "layouts/section-banner.njk" %}
-        {% set people = information.teamInfo.nmProfiles %}
+        {% set people = information.TeamInfo.nmProfiles %}
             {% include "partials/components/people.njk" %}
     {% endif %}
   </section>
   <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if information.teamInfo.youthCoordinators == true %}
-        {% set header = information.teamInfo.youthTitle %}
-        {% set subtitle = information.teamInfo.youthDesc | safe %}
+    {% if information.TeamInfo.youthCoordinators == true %}
+        {% set header = information.TeamInfo.youthTitle %}
+        {% set subtitle = information.TeamInfo.youthDesc | safe %}
             {% include "layouts/section-banner.njk" %}
-        {% set people = information.teamInfo.youthProfiles %}
+        {% set people = information.TeamInfo.youthProfiles %}
             {% include "partials/components/people.njk" %}
     {% endif %}
   </section>
@@ -43,6 +41,7 @@
       <div class="popped-container-right" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
       {% set contactHeader = pages.about.aboutTeamPage.teamCtaTitle %}
       {% set cta = pages.about.aboutTeamPage.teamCtaText %}
+      {% set ctaColour = fcolor1Text %}
       {% include "partials/components/contact-us-banner.njk" %}
       </div>
   </section>

@@ -44,6 +44,7 @@
                     {% set oneTwoCta = pages.about.aboutPage.hostCtaText %}
                     {% set ctaLink = host.hiLink | safe %}
                 {% endif %}
+                {% set ctaColour = bgText %}
                 {% include "partials/components/one-image-two-text.njk" %}
             {% endfor %}
         {% endif %}
@@ -63,6 +64,7 @@
         {% set contactHeader = pages.about.aboutPage.aboutNetworkCtaTitle %}
         {% set cta = pages.about.aboutPage.aboutNetworkCtaText %}
         {% set ctaLink = pages.about.aboutPage.aboutNetworkCtaLink %}
+        {% set ctaColour = fcolor1Text %}
         {% include "partials/components/contact-us-banner.njk" %}
         </div>
     </section>

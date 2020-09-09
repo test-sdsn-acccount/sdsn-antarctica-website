@@ -5,6 +5,6 @@
   "theme3": "<p><strong>Theme 3</strong></p><p><img src=\"/images/theme-screenshots/theme3A.png\"></p><p><img src=\"/images/theme-screenshots/theme3B.png\"></p>",
   "theme4": "<p><strong>Theme 4</strong></p><p><img src=\"/images/theme-screenshots/theme4A.png\"></p><p><img src=\"/images/theme-screenshots/theme4B.png\"></p>",
   "theme5": "<p><strong>Theme 5</strong></p><p><img src=\"/images/theme-screenshots/theme5A.png\"></p><p><img src=\"/images/theme-screenshots/theme5B.png\"></p>",
-  "colourTheme": "Theme5",
+  "colourTheme": "Theme1",
   "description": "<p>Please scroll down the page, and review the different color palettes. You can choose any of the color palettes by selecting a theme in the drop-down below.</p>"
 }
