@@ -286,7 +286,7 @@ ul {
 }
 
 .split-boxes-30-70.right {
-    width: 69%;
+    width: 67%;
 }
 
 .split-boxes-70-30.left {
@@ -379,6 +379,10 @@ ul {
 
 .padding-top-1 {
     padding-top: 1em;
+}
+
+.padding-left-1 {
+    padding-left: 1em;
 }
 
 .margin-1em {
@@ -1052,6 +1056,10 @@ section.pop-out .popped-container-right {
     .big-side-feature-container{
         padding: 0;
         margin: 1px;
+    }
+
+    .padding-left-1 {
+        padding-left: 0;
     }
 }
 
