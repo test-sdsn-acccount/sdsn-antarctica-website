@@ -2,10 +2,12 @@
 {% set pageType = 'About the Team' %}
 
 {% block content %}
+{% if pages.what.youthPage.toggle == true %}
+<title>{{ pages.what.youthPage.header }}</title>
 <main id="main-content" tabindex="-1">
 <div class="home-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if information.networkInfo %}
+    {% if information.networkDetails %}
         {% set introHeader = pages.what.youthPage.header %}
         {% set introSubtitle = pages.what.youthPage.subtitle | safe %}
             {% include "layouts/intro-banner.njk" %}
@@ -30,14 +32,24 @@
     <section class="full-bleed" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}>
         {% set header = pages.what.youthPage.youthMemberTitle %}
         {% set subtitle = pages.what.youthPage.youthMemberSubtitle %}
+        {% include "layouts/section-banner.njk" %}
+        {% if pages.what.youthPage.featuredMembers == true %}
+            {% set imgList = pages.what.youthPage.tImages %}
+            {% include "partials/components/tiled-imgs.njk" %}
+        {% endif %}
+        {% set memberData = pages.what.youthPage.youthMembersList %}
         {% include "partials/components/table-section.njk" %}
     </section>
-    <section class="contact-us-banner" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
+    <section class="contact-us-banner containers pop-out">
+        <div class="popped-container-right" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
         {% set contactHeader = pages.what.youthPage.youthContactTitle %}
         {% set cta = pages.what.youthPage.youthContactCTA %}
         {% set ctaLink = pages.what.youthPage.youthContactCTAURL %}
+        {% set ctaColour = fcolor1Text %}
         {% include "partials/components/contact-us-banner.njk" %}
+        </div>
     </section>
 </div>
 </main>
+{% endif %}
 {% endblock %}

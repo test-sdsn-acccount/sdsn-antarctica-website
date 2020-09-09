@@ -1,5 +1,5 @@
 ---
-label: CONTENT News
+label: 'Page Content: News'
 hide_body: false
 fields:
 - name: title
@@ -9,6 +9,11 @@ fields:
   label: Page Title
   default: News Landing Page
   hidden: true
+- name: toggle
+  type: boolean
+  label: Page Toggle
+  default: true
+  description: Turn this page on or off
 - name: header
   type: text
   config:
@@ -39,5 +44,17 @@ fields:
     schema:
       format: html-blocks
   label: Global News Sub Title
+- name: globalCTA
+  type: text
+  config:
+    required: true
+  label: Call to action to go to the SDSN Global Website
+  default: Read more on the Global SDSN website
+- name: previousPageText
+  type: text
+  config:
+    required: true
+  label: Previous page button text
+  default: Go to back to News
 pages:
 - src/_data/pages/what/newsPage.json

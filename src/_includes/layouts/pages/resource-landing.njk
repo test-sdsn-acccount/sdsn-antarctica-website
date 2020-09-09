@@ -1,10 +1,13 @@
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
+{% if pages.sdgs.resourcePage.toggle == true %}
+<title>{{ pages.sdgs.resourcePage.header }}</title>
+
 <main id="main-content" tabindex="-1">
 <div class="resource-landing-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if information.networkInfo %}
+    {% if information.networkDetails %}
         {% set introHeader =  pages.sdgs.resourcePage.header %}
         {% set introSubtitle = pages.sdgs.resourcePage.subtitle | safe %}
             {% include "layouts/intro-banner.njk" %}
@@ -19,4 +22,5 @@
 
 </div>
 </main>
+{% endif %}
 {% endblock %}

@@ -14,7 +14,7 @@ fields:
     required: true
   label: Banner Title
   default: The Sustainable Development Solutions Network
-- name: aboutsdsn
+- name: aboutSDSN
   type: textarea
   default: ''
   config:
@@ -23,13 +23,13 @@ fields:
     schema:
       format: html-blocks
   label: About SDSN
-- name: featuretitle
+- name: featureTitle
   type: text
   config:
     required: false
   label: Feature Title
   default: Mobilizing sustainable development in Antarctica
-- name: metricsheader
+- name: metricsHeader
   type: text
   config:
     required: false
@@ -47,5 +47,25 @@ fields:
     required: true
   label: Hosted by CTA Text
   default: Learn more
+- name: aboutNetworkCtaTitle
+  type: text
+  config:
+    required: false
+  label: About Network Page CTA
+  hidden: false
+- name: aboutNetworkCtaText
+  type: text
+  config:
+    required: false
+  label: About Network Page CTA
+  hidden: false
+- name: aboutNetworkCtaLink
+  type: textarea
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: About Network Page CTA Link
 pages:
 - src/_data/pages/about/aboutPage.json

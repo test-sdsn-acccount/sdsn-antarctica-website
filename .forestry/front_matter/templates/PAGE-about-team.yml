@@ -8,28 +8,28 @@ fields:
     required: false
   label: Page Content About the team
   hidden: true
-- name: pagetitle
+- name: pageTitle
   type: text
   config:
     required: false
   label: Banner Title
-  hidden: true
+  hidden: false
 - name: teamCtaTitle
   type: text
   config:
     required: false
   label: Team Page CTA
-  hidden: true
+  hidden: false
 - name: teamCtaText
   type: text
   config:
     required: false
   label: Team Page CTA
-  hidden: true
+  hidden: false
 - name: teamCtaLink
   type: textarea
   config:
-    required: true
+    required: false
     wysiwyg: true
     schema:
       format: markdown

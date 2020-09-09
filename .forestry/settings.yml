@@ -9,7 +9,7 @@ sections:
 - type: directory
   path: src/_data/information
   label: Network Information
-  create: all
+  create: documents
   match: "*.json"
   new_doc_ext: json
 - type: heading
@@ -20,14 +20,14 @@ sections:
   create: documents
   match: "**/*.md"
   templates:
-  - PAGE-news
+  - CONTENT-news
 - type: directory
   path: src/content/resources
   label: Resources
   create: documents
   match: "**/*.md"
   templates:
-  - PAGE-resources
+  - CONTENT-resources
 - type: directory
   path: src/content/events
   label: Events
@@ -39,38 +39,44 @@ sections:
   label: Edit Page headings
 - type: document
   path: src/_data/pages/homepage.json
-  label: Homepage content
+  label: HOMEPAGE content
 - type: directory
   path: src/_data/pages/about
-  label: About page content
+  label: ABOUT US
   create: none
   match: "**/*"
 - type: directory
   path: src/_data/pages/what
-  label: What we do content
+  label: WHAT WE DO
   create: none
   match: "**/*"
 - type: directory
   path: src/_data/pages/sdgs
-  label: Local SDGs content
+  label: THE SDGs
   create: none
   match: "**/*"
 - type: directory
   path: src/_data/pages/involved
-  label: Get Involved content
+  label: GET INVOLVED
   create: none
   match: "**/*"
 - type: document
   path: src/_data/pages/searchPage.json
-  label: Search page
+  label: SEARCH
 - type: heading
   label: Website structure
 - type: document
   path: src/_data/wdefaults/navigation.json
   label: Navigation Bar
 - type: document
+  path: src/_data/wdefaults/commonWords.json
+  label: Edit Default Words
+- type: document
   path: src/_data/wdefaults/websitecolours.json
   label: Edit Colour Theme
+- type: document
+  path: src/_data/wdefaults/sdgIcons.json
+  label: Edit SDG Icons
 - type: document
   path: src/_data/wdefaults/socialMediaIcons.json
   label: Edit Social Media Icons

@@ -1,5 +1,5 @@
 ---
-label: CONTENT Events
+label: 'Page Content: Events'
 hide_body: false
 fields:
 - name: title
@@ -9,6 +9,11 @@ fields:
   label: Page Title
   default: Events Landing Page
   hidden: true
+- name: toggle
+  type: boolean
+  label: Page Toggle
+  default: true
+  description: Turn this page on or off
 - name: header
   type: text
   config:
@@ -24,5 +29,11 @@ fields:
     schema:
       format: html-blocks
   label: Banner Sub Title
+- name: previousPageText
+  type: text
+  config:
+    required: true
+  label: Previous page button text
+  default: Go to back to Events
 pages:
 - src/_data/pages/involved/eventsPage.json

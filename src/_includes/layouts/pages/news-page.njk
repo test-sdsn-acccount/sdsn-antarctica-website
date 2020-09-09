@@ -1,8 +1,14 @@
 {% extends 'layouts/base.njk' %}
-
+{% set previousPost = collections.newsArticles | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.newsArticles  | getNextCollectionItem(page) %}
+                        
 {% block content %}
+<title>{{ title }}</title>
   <main id="main-content" class="content-colour" tabindex="-1">
     <div class="content-container ">
+        {% set previousPage = "/news" | url %}
+        {% set previousPageText = pages.what.newsPage.previousPageText %}
+        {% include "partials/components/breadcrumbs.njk" %}
       <div class="news-page-title-info">
         <h2>{{ title }}</h2>
         {{ wdefaults.commonWords.writtenBy }} {{ author }} <br/> <i>{{ date | date("MMMM Do YYYY")}} </i>
@@ -15,7 +21,7 @@
           <div class="post-list-tags">
       </div>
       <div class="news-page-img">
-        {% if fImage !== "" %}
+        {% if fImage | length !== 0 %}
           <img src="/assets{{ fImage }}" class="news-img" /> 
         {% else %} 
           <div class="img-replacement">
@@ -23,28 +29,36 @@
           </div>
         {% endif %}
       </div>
-      <div class="banner-sub-title">
-        <i>{{ quote | safe }}</i> 
+      <div class="banner-sub-title fb-quote">
+        <i>{{ desc | safe }}</i> 
       </div>
       <div class="news-page-content">
         {{ content | safe }}
       </div>
       <div class="news-page-video">
-        {% if embeddedcontent.length !== 0 %}
-          {% for item in embeddedcontent %}
+        {% if embeddedContent.length !== 0 %}
+          {% for item in embeddedContent %}
             <div class="embed-container">
             {{ item.embedlink | safe }}
             </div>
           {% endfor %}
         {% endif %}
       </div>
+      <div class="social-media-share-container">
+        {% include "partials/components/facebook-btn.njk" %}
+        {% include "partials/components/linkedin-btn.njk" %}
+        {% include "partials/components/twitter-btn.njk" %}
+      </div>
+      {% if aboutAuthor | length !== 0 %}
       <div class="news-page-supp-line">
       </div>
       <div class="news-page-supp-info">
         <p>{{ aboutAuthor | safe }}</p>
       </div>
-        
+      {% endif %}
+      {% include "partials/components/pagination-page.njk" %}
     </div>
   </main>
+
 {% endblock %}
 

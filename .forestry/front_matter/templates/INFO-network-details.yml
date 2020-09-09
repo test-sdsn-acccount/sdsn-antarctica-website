@@ -1,0 +1,151 @@
+---
+label: Network Details
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  default: Network Details
+  hidden: true
+- name: logo
+  type: file
+  config:
+    maxSize: 0.7
+  label: Blue Network Logo
+- name: whitelogo
+  type: file
+  config:
+    maxSize: 0.7
+  label: White Network Logo
+- name: favicon
+  type: file
+  config:
+    maxSize: 0.2
+  label: Favicon
+- name: networkName
+  type: text
+  config:
+    required: true
+  label: Network Nation/Region
+  description: e.g. Andes, Kenya, Northern Europe
+- name: networkDesc
+  type: textarea
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Network Description
+  description: Please try to keep this under 70 words
+- name: networkVision
+  type: text
+  config:
+    required: true
+  label: Network Vision Statement
+- name: networkVisionSubtitle
+  type: text
+  config:
+    required: false
+  label: Network Vision Description
+- name: networkObjectives
+  type: field_group_list
+  fields:
+  - name: header
+    type: text
+    config:
+      required: true
+    label: Objective Sub Title
+  - name: desc
+    type: textarea
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Objective Description
+    description: Please try to keep this under 70 words
+  - name: link
+    type: text
+    default: https://
+    description: Please make sure to include https://
+    config:
+      required: false
+    label: Relevant link for objective (optional)
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Network Objectives
+  description: Please add between 1-3 objectives
+- name: impactSection
+  type: boolean
+  label: Impact Section
+  description: Turn on or off the Impact section
+- name: networkImpact
+  type: textarea
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Network Impact Description
+  description: Please try to keep this under 70 words
+  showOnly:
+    field: impactSection
+    value: true
+- name: networkMetrics
+  type: field_group_list
+  fields:
+  - name: header
+    type: text
+    config:
+      required: true
+    label: Metric Title
+  - name: desc
+    type: textarea
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Metric Description
+    description: Please try to keep this under 50 words
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Network Impact
+  description: Please add between 1-3 items
+  showOnly:
+    field: impactSection
+    value: true
+- name: networkEmail
+  type: text
+  config:
+    required: true
+  label: Network Email
+- name: websiteTitle
+  type: text
+  config:
+    required: true
+  label: Website Title
+- name: websiteURL
+  type: text
+  default: https://
+  config:
+    required: false
+  label: Website URL
+  description: Please make sure to include https://
+- name: membersList
+  type: textarea
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Members List Code
+  description: Please copy and paste Airtable code here
+pages:
+- src/_data/information/networkDetails.json

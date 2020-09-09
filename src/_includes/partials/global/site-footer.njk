@@ -1,0 +1,32 @@
+<footer {% if fcolor2Text %} style="color:{{ fcolor2Text }};background-color:{{ fcolor2 }}"{% endif %}>
+    <div class="footer-container repeat-grid-3">
+        <div class="network-info">
+            <a href="/" class="link">
+            <img src="/assets{{ footerLogo }}" class="nav-logo margin-bottom-1"/>
+            </a>
+            <p class="squash" {% if fcolor2Text %} style="color:{{ fcolor2Text }};" {% endif %}>
+                {{ information.footerInfo.description | safe }}
+            </p>
+        </div>
+        <div class="custom-footer-content">
+            <p>{{ information.footerInfo.footerContent | safe }}</p>
+        </div>
+        {% if (information.footerInfo.socialMediaSection == true) and (information.footerInfo.socialMediaSection == true) %}
+        <div class="social-media-content align-text-right margin-right-1">
+            <p class="squash-top"><b>{{ information.footerInfo.socialMediaTitle }}</b></p>
+            {% for pltm in information.contactInfo.socialMediaProfiles %}
+                <div class="footer socials">
+                    <div class="footer-some img display-inline-block margin-right-1 align-items-middle">
+                        {% set selectedPlatform = pltm.platform %}
+                        {% include "partials/components/get-social-media-icon.njk" %}
+                    </div>
+                    <div class="footer-some display-inline-block align-items-middle">
+                        <a href="{{ pltm.ctaLink | safe }}" class="resource-link link"><p class="seven squash" {% if fcolor2Text %} style="color:{{ fcolor2Text }};" {% endif %}>{{ pltm.socialHeader }}</p></a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+      
+    </div>
+</footer>

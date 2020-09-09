@@ -5,8 +5,8 @@
                 <h2 class="close-header">{{ ttmheader }}</h2>
             </div>
         </div>
-        <div class="split-boxes-30-70 right three">
-        <p class="three">{{ ttmdesc }}</p>
+        <div class="split-boxes-30-70 right three padding-left-1">
+            {{ ttmdesc }}
         </div>
     </div>
     <div class="feature-card-cont">
@@ -15,7 +15,7 @@
             
             <div class="feature-card content">
             <h2>{{ met.header }}</h2>
-                {{ met.desc | safe }}
+            <div class="six">{{ met.desc | safe }}</div>
             </div>
         </div>
         {% endfor %}

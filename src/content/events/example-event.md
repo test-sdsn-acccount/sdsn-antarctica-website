@@ -3,13 +3,13 @@ title: Example Event
 date: 2012-06-17T01:00:00.000+00:00
 author: SDSN Antarctica
 fImage: ""
-toggle: true
+featuredToggle: false
 tags:
 - Antarctica
 - Launch
-desc: ''
+desc: 'Launch event of SDSN Cyprus'
 location: 'Online webinar'
-pagetitle: ''
+pageTitle: ''
 ctaTitle: 'Register'
 ctaURL: 'https://futureearth.org/2020/06/04/launch-event-for-the-sdsn-cyprus-network/'
 

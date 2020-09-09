@@ -1,5 +1,6 @@
 {
-    "title": "Search Page",
-    "searchHeader": "Search",
-    "searchSubtitle": "Search this site"
+  "title": "Search Page",
+  "searchHeader": "Searching for something?",
+  "searchSubtitle": "<p>Search this site.</p>",
+  "toggle": true
 }

@@ -1,19 +1,19 @@
 ---
-pagetitle: Resource News Stories Pages
+pageTitle: Resource News Stories Pages
 date: 2015-07-21T01:00:00.000+00:00
 author: Lauren Barredo
 tags:
 - United Nations
 - Universities
 title: University Support to Decade of Action
-quote: We are at a critical juncture, where new thinking is needed more than ever;
+desc: We are at a critical juncture, where new thinking is needed more than ever;
   there is an important role for universities to play.
 ctaTitle: 'A full summary of the meeting is available online. '
 ctaURL: https://irp-cdn.multiscreensite.com/6f2c9f57/files/uploaded/200716%20Summary%20University%20Sector%20Support%20to%20SDGs.pdf
 fImage: ''
-toggle: true
+featuredToggle: true
 aboutAuthor: ''
-embeddedcontent:
+embeddedContent:
 - embedlink: <iframe width="560" height="315" src="https://www.youtube.com/embed/2JSRLGzCYO0"
     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe>

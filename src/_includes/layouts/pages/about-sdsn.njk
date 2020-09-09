@@ -2,57 +2,71 @@
 {% set pageType = 'About Network' %}
 
 {% block content %}
+<title>{{ pages.about.aboutPage.bannerTitle }}</title>
 <main id="main-content" tabindex="-1">
 <div class="about-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if pages.about.aboutPage %}
         {% set introHeader = pages.about.aboutPage.bannerTitle %}
-        {% set introSubtitle = pages.about.aboutPage.aboutsdsn | safe %}
+        {% set introSubtitle = pages.about.aboutPage.aboutSDSN | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
   <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if information.networkInfo %}
-        {% set header = information.networkInfo.networkName %}
-        {% set subtitle = information.networkInfo.networkdesc | safe %}
+    {% if information.networkDetails %}
+        {% set header = information.networkDetails.networkName %}
+        {% set subtitle = information.networkDetails.networkDesc | safe %}
             {% include "layouts/section-banner.njk" %}
     {% endif %}
   </section>
     <section class="feature-banner">
-        {% if information.networkInfo.networkObjectives %}
-            {% set item = information.networkInfo.networkObjectives %}
+        {% if information.networkDetails.networkObjectives %}
+            {% set item = information.networkDetails.networkObjectives %}
                 {% include "partials/components/large-feature.njk" %}
         {% endif %}
     </section>
     <section class="full-bleed" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }}"{% endif %}>
-        {% if information.networkInfo.networkObjectives %}
-            {% set fbHeader = information.networkInfo.networkVision %}
+        {% if information.networkDetails.networkVision %}
+            {% set fbHeader = information.networkDetails.networkVision %}
+            {% set fbSubtitle = information.networkDetails.networkVisionSubtitle %}
                 {% include "partials/components/full-bleed.njk" %}
         {% endif %}
     </section>
     <section class="one-image-two-text" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-        {% if information.networkInfo.networkObjectives %}
+        {% if information.hostInformation.hostInstitution %}
             {% set pretext = pages.about.aboutPage.hostedPretext %}
             {% for host in information.hostInformation.hostInstitution %}
                 {% set header = host.hiName %}
                 {% set logoImg = host.hiLogo %}
-                {% set actionContent = host.hidescription | safe %}
+                {% set actionContent = host.hiDescription | safe %}
                 {% if host.hiLink | length !== 0 %}
                     {% set ctaColour = bgText %}
                     {% set oneTwoCta = pages.about.aboutPage.hostCtaText %}
                     {% set ctaLink = host.hiLink | safe %}
                 {% endif %}
+                {% set ctaColour = bgText %}
                 {% include "partials/components/one-image-two-text.njk" %}
             {% endfor %}
         {% endif %}
     </section>
-    <section class="text-top-metrics-bottom pop-out" {% if fcolor2Text %} style="color:{{ fcolor2Text }};background-color:{{ fcolor2 }}"{% endif %}>
-    {% if information.networkInfo.impactSection == true %}
-        {% set ttmheader = pages.about.aboutPage.metricsheader %}
-        {% set ttmdesc = information.networkInfo.networkimpact | safe %}
-        {% set ttmitem = information.networkInfo.networkmetrics %}
-            {% include "partials/components/text-top-metrics-bottom.njk" %}
-    {% endif %}
+    <section class="text-top-metrics-bottom containers pop-out">
+        <div class="popped-container-left" {% if fcolor2Text %} style="color:{{ fcolor2Text }};background-color:{{ fcolor2 }}"{% endif %}>
+            {% if information.networkDetails.impactSection == true %}
+                {% set ttmheader = pages.about.aboutPage.metricsHeader %}
+                {% set ttmdesc = information.networkDetails.networkImpact | safe %}
+                {% set ttmitem = information.networkDetails.networkMetrics %}
+                    {% include "partials/components/text-top-metrics-bottom.njk" %}
+            {% endif %}
+        </div>
+    </section>
+    <section class="contact-us-banner containers pop-out">
+        <div class="popped-container-right"  {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
+        {% set contactHeader = pages.about.aboutPage.aboutNetworkCtaTitle %}
+        {% set cta = pages.about.aboutPage.aboutNetworkCtaText %}
+        {% set ctaLink = pages.about.aboutPage.aboutNetworkCtaLink %}
+        {% set ctaColour = fcolor1Text %}
+        {% include "partials/components/contact-us-banner.njk" %}
+        </div>
     </section>
 </div>
 </main>

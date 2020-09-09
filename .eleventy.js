@@ -1,7 +1,7 @@
 var dateFilter = require('nunjucks-date-filter');
 const searchFilter = require('./src/filters/searchFilter.js');
 const fs = require('fs');
-
+const pluginRss = require('@11ty/eleventy-plugin-rss');
 
 module.exports = function(config) {
 
@@ -63,7 +63,9 @@ module.exports = function(config) {
       .reverse();
     });
 
-    
+    // Plugins
+    config.addPlugin(pluginRss);
+
     // 404 
     config.setBrowserSyncConfig({
       callbacks: {

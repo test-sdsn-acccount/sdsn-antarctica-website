@@ -1,16 +1,18 @@
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
+{% if pages.involved.joinPage.toggle == true %}
+<title>{{ pages.involved.joinPage.header }}</title>
 <main id="main-content" tabindex="-1">
 <div class="get-involved-container">
   <section class="intro-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
-    {% if information.networkInfo %}
+    {% if information.networkDetails %}
         {% set introHeader = pages.involved.joinPage.header %}
         {% set introSubtitle = pages.involved.joinPage.subtitle | safe %}
             {% include "layouts/intro-banner.njk" %}
     {% endif %}
   </section>
-    <section class="text-top-metrics-bottom" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+    <section class="text-top-metrics-bottom containers" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
     {% if pages.involved.joinPage.memberBenefits %}
         {% set ttmheader = pages.involved.joinPage.ourImpactHeader %}
         {% set ttmdesc = pages.involved.joinPage.ourImpactSubTitle | safe %}
@@ -30,12 +32,15 @@
                 {% include "layouts/section-banner.njk" %}
         {% endif %}
     </section>
-    <section class="contact-us-banner" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
+    <section class="contact-us-banner containers pop-out">
+        <div class="popped-container-right" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
         {% set contactHeader = pages.involved.joinPage.contactHeader %}
         {% set cta = pages.involved.joinPage.contactCta %}
         {% set ctaColour = fcolor1Text %}
         {% include "partials/components/contact-us-banner.njk" %}
+        </div>
     </section>
 </div>
 </main>
+{% endif %}
 {% endblock %}

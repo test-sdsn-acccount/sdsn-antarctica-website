@@ -9,7 +9,7 @@ fields:
   label: Page Title
   default: Edit website color palette
   hidden: true
-- name: colourtheme
+- name: colourTheme
   type: select
   default: Theme1
   config:

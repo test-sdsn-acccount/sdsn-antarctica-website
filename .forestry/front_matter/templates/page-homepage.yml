@@ -26,13 +26,13 @@ fields:
   label: Banner Sub Title
   description: e.g. Mobilizing SDG implementation through solution initiatives and
     long-term pathways in Antarctica.
-- name: featuretitle
+- name: featureTitle
   type: text
   config:
     required: false
   label: Feature Title
   default: About the network
-- name: featurecontent
+- name: featureContent
   type: textarea
   default: "<p>The network is a community of universities, research centers, and other
     knowledge institutions to translate the latest expertise in sustainable development
@@ -57,5 +57,43 @@ fields:
       format: markdown
   label: Address
   description: Please copy and paste Google Map code here
+- name: showBenefits
+  type: boolean
+  label: Show a benefits section
+  default: true
+- name: benefitsTitle
+  type: text
+  label: Benefits Title
+  default: Join a global network of problem solvers and contribute to practical solutions
+    for sustainable development.
+  hidden: false
+  showOnly:
+    field: showBenefits
+    value: true
+- name: involvedBenefits
+  type: field_group_list
+  fields:
+  - name: header
+    type: text
+    config:
+      required: false
+    label: Benefit Title
+  - name: desc
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    label: Benefit Description
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Benefits of Getting Involved
+  showOnly:
+    field: showBenefits
+    value: true
 pages:
 - src/_data/pages/homepage.json

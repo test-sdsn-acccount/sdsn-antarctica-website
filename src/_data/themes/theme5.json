@@ -7,6 +7,8 @@
   "fcolor1Text": "#292929",
   "fcolor2": "#E4CC37",
   "fcolor2Text": "#292929",
+  "btnColor": "#E4CC37",
+  "btnText": "#292929",
   "megaMenuBg": "#f9f9f9",
   "megaMenuFontColor": "#222222"
 }

@@ -2,6 +2,8 @@
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
+{% if pages.involved.contactPage.toggle == true %}
+<title>{{ pages.involved.contactPage.bannerTitle }}</title>
 <main id="main-content" tabindex="-1">
     <div class="cont-us-container">
         <section class="contact-us-container" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
@@ -10,7 +12,7 @@
                         <h1>{{ pages.involved.contactPage.bannerTitle }}</h1>
                     </div>
                     <div class="intro-banner-body banner-sub-title">
-                        {{ pages.involved.contactPage.bannerDesc }}
+                        {{ pages.involved.contactPage.bannerDesc | safe }}
                     </div>
                 </div>
 
@@ -18,7 +20,7 @@
                     {% for person in information.contactInfo.contactProfiles %}
                         <div class="contact-box-card">
                             <div class="contact-box img">
-                                <img src="/assets{{ person.contactImg }}" class="border-radius-50"></img>
+                                <img src="/assets{{ person.photo }}" class="border-radius-50"></img>
                             </div>
                             <div class="contact-box title">
                                 <h2>{{ person.contactHeader }}</h2>
@@ -28,7 +30,7 @@
                             </div>
                             <div class="contact-box button">
                                 <a href="mailto:{{ person.ctaEmail }}" class="resource-link">
-                                    <button class="btn-link wide animate" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}><p class="five">{{ person.ctaTitle }}</p></button>
+                                    <button class="btn-link wide animate" {% if btnColor %} style="background-color:{{ btnColor }};color:{{ btnText }};"{% endif %}><p class="five">{{ person.ctaTitle }}</p></button>
                                 </a>
                             </div>
                         </div>
@@ -46,6 +48,9 @@
                     <div class="lean-container">
                         <div class="split-boxes-30-70 left block align-items-top">
                             <h3>{{ host.hiName | safe }}</h3>
+                            {% if host.hiShortDesc | length !== 0 %}
+                            <p>{{ host.hiShortDesc | safe }}</p>
+                            {% endif %}
                             <div class="white-bg-logo">
                                 <img src="/assets{{ host.hiLogo }}" class="nav-logo"></img>
                             </div>
@@ -65,7 +70,7 @@
                             <h1>{{ pages.involved.contactPage.socialsTitle }}</h1>
                         </div>
                         <div class="intro-banner-body banner-sub-title">
-                            <p class="three">{{ pages.involved.contactPage.socialsDesc | safe }}</p>
+                            <p>{{ pages.involved.contactPage.socialsDesc | safe }}</p>
                         </div>
                     </div>
                 </div>
@@ -79,11 +84,11 @@
 
                             </div>
                             <div class="contact-box title">
-                                <h2>{{ pltm.socialHeader }}</h2>
+                                <h3><b>{{ pltm.socialHeader }}</b></h3>
                             </div>
                             <div class="contact-box button">
-                                <a href="{{ pltm.ctaLink }}" class="resource-link">
-                                    <button class="btn-link wide animate" {% if fcolor2 %} style="background-color:{{ fcolor2 }};color:{{ fcolor2Text }};"{% endif %}><p class="five">{{ pltm.ctaTitle }}</p></button>
+                                <a href="{{ pltm.ctaLink | safe }}" class="resource-link">
+                                    <button class="btn-link wide animate" {% if btnColor %} style="background-color:{{ btnColor }};color:{{ btnText }};"{% endif %}><p class="six">{{ pltm.ctaTitle }}</p></button>
                                 </a>
                             </div>
                         </div>
@@ -93,4 +98,5 @@
         </section>
     </div>
 </main>
+{% endif %}
 {% endblock %}

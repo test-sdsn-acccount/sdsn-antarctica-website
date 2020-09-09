@@ -1,5 +1,5 @@
 ---
-label: CONTENT Search Page
+label: 'Page Content: Search Page'
 hide_body: false
 fields:
 - name: title
@@ -9,6 +9,11 @@ fields:
   label: Page Title
   default: Search Page
   hidden: true
+- name: toggle
+  type: boolean
+  label: Page Toggle
+  default: true
+  description: Turn this page on or off
 - name: searchHeader
   type: text
   config:
@@ -24,3 +29,5 @@ fields:
       format: html-blocks
   label: Search Subtitle
   default: Search this site
+pages:
+- src/_data/pages/searchPage.json

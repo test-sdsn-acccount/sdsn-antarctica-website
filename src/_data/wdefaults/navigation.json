@@ -1,9 +1,9 @@
 {
   "items": [
     {
-      "megamenu": true,
-      "text": "ABOUT",
-      "menuitems": [
+      "megaMenu": true,
+      "text": "ABOUT US",
+      "menuItems": [
         {
           "text": "About SDSN",
           "url": "/about/sdsn",
@@ -16,12 +16,21 @@
         }
       ],
       "url": "",
-      "external": false
+      "external": false,
+      "megamenu": false,
+      "menuitems": [
+
+      ]
     },
     {
-      "megamenu": true,
+      "megaMenu": true,
       "text": "WHAT WE DO",
-      "menuitems": [
+      "menuItems": [
+        {
+          "text": "News and Activities",
+          "url": "/news",
+          "external": false
+        },
         {
           "text": "Our Network and Members",
           "url": "/what-we-do",
@@ -31,20 +40,19 @@
           "text": "Youth-led Action",
           "url": "/youth",
           "external": false
-        },
-        {
-          "text": "News and Activities",
-          "url": "/news",
-          "external": false
         }
       ],
       "url": "",
-      "external": false
+      "external": false,
+      "megamenu": true,
+      "menuitems": [
+
+      ]
     },
     {
-      "megamenu": true,
+      "megaMenu": true,
       "text": "THE SDGs",
-      "menuitems": [
+      "menuItems": [
         {
           "text": "The SDGs in Antarctica",
           "url": "/antarctica",
@@ -57,12 +65,16 @@
         }
       ],
       "url": "",
-      "external": false
+      "external": false,
+      "megamenu": false,
+      "menuitems": [
+
+      ]
     },
     {
-      "megamenu": true,
+      "megaMenu": true,
       "text": "GET INVOLVED",
-      "menuitems": [
+      "menuItems": [
         {
           "text": "Join the network",
           "url": "/join",
@@ -80,13 +92,21 @@
         }
       ],
       "url": "",
-      "external": false
+      "external": false,
+      "megamenu": false,
+      "menuitems": [
+
+      ]
     },
     {
-      "megamenu": false,
+      "megaMenu": false,
       "text": "SEARCH",
       "url": "/search",
       "external": false,
+      "menuItems": [
+
+      ],
+      "megamenu": false,
       "menuitems": [
 
       ]

@@ -1,0 +1,8 @@
+  <div class="pagination-buttons margin-top-1">
+    <div class="split-boxes-50-50 left align-text-left">
+    {% if previousPost %}<a href="{{ previousPost.url }}">⟵ {{ wdefaults.commonWords.previousPage }} </a>{% endif %}
+    </div>
+    <div class="split-boxes-50-50 right align-text-right">
+    {% if nextPost %}<a href="{{ nextPost.url }}">{{ wdefaults.commonWords.nextPage }} ⟶</a>{% endif %}
+    </div>
+  </div>

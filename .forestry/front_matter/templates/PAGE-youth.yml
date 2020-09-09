@@ -8,6 +8,11 @@ fields:
     required: false
   label: Page Content Youth
   hidden: true
+- name: toggle
+  type: boolean
+  label: Page Toggle
+  default: true
+  description: Turn this page on or off
 - name: header
   type: text
   config:
@@ -73,6 +78,19 @@ fields:
   config:
     required: false
   label: Member List Subtitle
+- name: featuredMembers
+  type: boolean
+  label: Featured Member Institution Logos
+  default: true
+  description: Turn this on to add an images section
+- name: featuredMOs
+  type: include
+  config: {}
+  template: tiled-imgs
+  label: Featured Member Organization Logos
+  showOnly:
+    field: featuredMembers
+    value: true
 - name: youthContactTitle
   type: text
   config:
@@ -91,5 +109,14 @@ fields:
     required: false
   label: Call to action URL
   description: If linking to a website, please put https:// in the front
+- name: youthMembersList
+  type: textarea
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Youth Members List Code
+  description: Please copy and paste Airtable code here
 pages:
 - src/_data/pages/what/youthPage.json

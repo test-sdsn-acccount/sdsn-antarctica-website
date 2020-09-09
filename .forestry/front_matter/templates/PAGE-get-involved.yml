@@ -1,5 +1,5 @@
 ---
-label: CONTENT Get Involved
+label: 'Page Content: Get Involved'
 hide_body: false
 fields:
 - name: title
@@ -9,6 +9,11 @@ fields:
   label: Page Title
   default: Get involved page
   hidden: true
+- name: toggle
+  type: boolean
+  label: Page Toggle
+  default: true
+  description: Turn this page on or off
 - name: header
   type: text
   config:
@@ -78,7 +83,7 @@ fields:
     and/or implementing solutions for the SDGs.
   config:
     required: true
-    max: 70
+    max: 
     wysiwyg: true
     schema:
       format: html-blocks

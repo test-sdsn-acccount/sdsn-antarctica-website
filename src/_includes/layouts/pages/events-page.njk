@@ -1,8 +1,14 @@
 {% extends 'layouts/base.njk' %}
+{% set previousPost = collections.eventsArticles | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.eventsArticles  | getNextCollectionItem(page) %}
 
 {% block content %}
+<title>{{ title }}</title>
   <main id="main-content" class="content-colour" tabindex="-1">
     <div class="content-container events">
+        {% set previousPage = "/events" %}
+        {% set previousPageText = pages.involved.eventsPage.previousPageText %}
+        {% include "partials/components/breadcrumbs.njk" %}
       <div class="news-page-title-info">
             <div class="resource-card-content">
                 <div class="resource-card-content-left">
@@ -21,6 +27,7 @@
                     <h2>{{ title }}</h2>
                     <h4>{{ wdefaults.commonWords.by }} {{ author }}</h4>
                     <a href="{{ ctaURL }}" class="resource-link width-50 animate">
+                     {% set buttonCTA = ctaTitle %}
                           {% include "partials/components/btn.njk" %}
                     </a>
                 </div>
@@ -39,7 +46,7 @@
                     {{ date | date("MMMM Do YYYY")}}
 
                     <h3>{{ wdefaults.commonWords.location }}</h3>
-                    {{ location }}
+                    {{ location | safe }}
                     <div class="post-list-tags margin-top-1">
                     {% for tag in tags %}
                     <a href="/tags/{{ tag }}/"><p class="tag-item">
@@ -49,14 +56,12 @@
                     </div>
                 </div>
             </div>
-        
-        
-
       </div>
-
-
-
-        
+      <div class="social-media-share-container">
+        {% include "partials/components/facebook-btn.njk" %}
+        {% include "partials/components/linkedin-btn.njk" %}
+        {% include "partials/components/twitter-btn.njk" %}
+      </div>
     </div>
   </main>
 {% endblock %}

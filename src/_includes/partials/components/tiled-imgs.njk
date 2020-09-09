@@ -1,0 +1,10 @@
+<div class="sdg-section">
+    {% for goal in imgList %}
+        {% if goal.tImg | length !== 0 %}
+        {# Only have a link on the image if there is a url in the data #}
+            {% if goal.tLink %}<a href="{{ goal.tLink }}" class="link">{% endif %}
+                <img src="/assets{{ goal.tImg }}"></img>
+            {% if goal.tLink %}</a>{% endif %}
+        {% endif %}
+    {% endfor %}
+</div>

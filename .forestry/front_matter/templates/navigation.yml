@@ -5,7 +5,7 @@ fields:
 - name: items
   type: field_group_list
   fields:
-  - name: megamenu
+  - name: megaMenu
     type: boolean
     label: Drop Down Menu
   - name: text
@@ -18,15 +18,16 @@ fields:
     config:
       required: false
     label: Link
+    description: If this is an external link, remember to add https:// in the beginning
     showOnly:
-      field: megamenu
+      field: megaMenu
   - name: external
     type: boolean
     label: External Link
     description: Does this link outside of this website?
     showOnly:
-      field: megamenu
-  - name: menuitems
+      field: megaMenu
+  - name: menuItems
     type: field_group_list
     fields:
     - name: text
@@ -39,6 +40,7 @@ fields:
       config:
         required: false
       label: Drop Down Item Link
+      description: If this is an external link, remember to add https:// in the beginning
     - name: external
       type: boolean
       label: External Link
@@ -49,7 +51,7 @@ fields:
       labelField: 
     label: Drop down items
     showOnly:
-      field: megamenu
+      field: megaMenu
       value: true
   config:
     min: 

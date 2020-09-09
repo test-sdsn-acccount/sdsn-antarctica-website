@@ -1,13 +1,16 @@
 <div class="content-container feature-card-cont">
     {% for obj in item %}
-    <div class="feature-card big pop-out" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }}"{% endif %}>
+    <div class="feature-card big" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }}"{% endif %}>
         {# <div class="feature-card title">
             
         </div> #}
         <div class="feature-card content">
-        <h3>{{ obj.objTitle }}</h3>
-            {{ obj.objective | safe }}
-            <a href="{{ obj.link | safe }}" class="link text-button with-arrow" rel="bookmark" {% if fcolor1Text %} style="color:{{ fcolor1Text }}"{% endif %}><p>{{ wdefaults.commonWords.genericCta }} {% include "src/assets/images/right-arrow.svg" %}</p></a>
+        <h2>{{ obj.header }}</h2>
+            <div class="six">{{ obj.desc | safe }}
+                {% if obj.link | length !== 0 %}
+                    <a href="{{ obj.link | safe }}" class="link text-button with-arrow" rel="bookmark" {% if fcolor1Text %} style="color:{{ fcolor1Text }}"{% endif %}><p>{{ wdefaults.commonWords.genericCta }} {% include "src/assets/images/right-arrow.svg" %}</p></a>
+                {% endif %}
+            </div>
         </div>
     </div>
     {% endfor %}

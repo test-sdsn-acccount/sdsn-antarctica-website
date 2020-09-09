@@ -1,8 +1,8 @@
 ---
-label: CONTENT News
+label: CONTENT News Template
 hide_body: false
 fields:
-- name: pagetitle
+- name: pageTitle
   type: text
   config:
     required: false
@@ -31,7 +31,7 @@ fields:
     required: false
   label: Author
   default: Network Secretariat
-- name: quote
+- name: desc
   type: textarea
   default: ''
   config:
@@ -45,17 +45,16 @@ fields:
   config:
     maxSize: 0.7
   label: Featured Image
-- name: toggle
+- name: featuredToggle
   type: boolean
   label: Featured content
-  description: Mark this content if you want it featured on the homepage or What we
-    do pages.
+  description: Mark this content if you want it featured on the What we do pages.
 - name: tags
   type: tag_list
   default: []
   label: Tags
   description: Put some tags to make finding content easier for your website visitors!
-    E.g. Antarctica, Youth, Climate change, etc.
+    E.g. Antarctica, Youth, Climate change, etc. Press enter after each tag.
 - name: aboutAuthor
   type: textarea
   default: ''
@@ -67,7 +66,7 @@ fields:
   label: About the author
   description: Put any additional information you want to write about the author,
     organization, or initiative here.
-- name: embeddedcontent
+- name: embeddedContent
   type: field_group_list
   fields:
   - name: embedlink
@@ -89,5 +88,8 @@ fields:
   description: 'Add any embedded content here. '
 pages:
 - src/content/news/about-the-network.md
+- src/content/news/launch-of-sdsn-kenya.md
+- src/content/news/sdsn-gl.md
+- src/content/news/sustainability-science-and-sustainability-solutions-in-the-era-of-sustainable-development-goals-symposium-2019.md
 - src/content/news/sustainable-development-solutions-network-antarctica.md
 - src/content/news/university-support-to-decade-of-action.md

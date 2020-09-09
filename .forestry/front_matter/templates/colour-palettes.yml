@@ -58,6 +58,20 @@ fields:
     required: true
     color_format: Hex
   default: "#ffff"
+- name: btnColor
+  type: color
+  label: Highlight CTA Button Color
+  config:
+    required: true
+    color_format: Hex
+  default: "#0D4A46"
+- name: btnText
+  type: color
+  label: Highlight CTA Text Color
+  config:
+    required: true
+    color_format: Hex
+  default: "#fff"
 - name: megaMenuBg
   type: color
   label: Navigation menu background colour

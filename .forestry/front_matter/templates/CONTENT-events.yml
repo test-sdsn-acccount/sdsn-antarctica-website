@@ -1,8 +1,8 @@
 ---
-label: CONTENT Events
+label: CONTENT Events Template
 hide_body: false
 fields:
-- name: pagetitle
+- name: pageTitle
   type: text
   config:
     required: false
@@ -36,7 +36,7 @@ fields:
   config:
     maxSize: 0.7
   label: Featured Image
-- name: toggle
+- name: featuredToggle
   type: boolean
   label: Featured content
   description: Mark this content if you want it featured on the homepage or What we
@@ -46,7 +46,7 @@ fields:
   default: []
   label: Tags
   description: Put some tags to make finding content easier for your website visitors!
-    E.g. Antarctica, Youth, Climate change, etc.
+    E.g. Antarctica, Youth, Climate change, etc. Press enter after each tag.
 - name: desc
   type: textarea
   default: ''
@@ -55,7 +55,7 @@ fields:
     wysiwyg: true
     schema:
       format: html-blocks
-  label: Description
+  label: Excerpt
 - name: ctaURL
   type: text
   config:
@@ -75,3 +75,7 @@ fields:
     max: 
     labelField: 
   label: Location
+pages:
+- src/content/events/example-event copy.md
+- src/content/events/example-event.md
+- src/content/events/webinar-on-covid-19-and-sdsn.md

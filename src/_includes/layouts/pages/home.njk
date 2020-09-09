@@ -2,6 +2,7 @@
 {% set pageType = 'Homepage' %}
 
 {% block content %}
+<title>{{ pages.homepage.header }}</title>
 <main id="main-content" tabindex="-1">
 <div class="home-container">
     <section class="intro-banner with-logo" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
@@ -11,12 +12,23 @@
                 {% include "layouts/intro-banner.njk" %}
         {% endif %}
     </section>
-    <section class="big-side-feature pop-out" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
-        {% if pages.homepage.featuretitle %}
-                {% set header = pages.homepage.featuretitle %}
-                {% set subtitle = pages.homepage.featurecontent | safe %}
+    <section class="big-side-feature pop-out">
+        <div class="popped-container-left" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
+        {% if pages.homepage.featureTitle %}
+                {% set header = pages.homepage.featureTitle %}
+                {% set subtitle = pages.homepage.featureContent | safe %}
                 {% set featureContent = pages.homepage.map %}
                 {% include "partials/components/big-side-feature.njk" %}
+        {% endif %}
+        </div>
+    </section>
+    <section class="feature-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
+        {% if pages.homepage.showBenefits == true %}
+            {% set header = pages.homepage.benefitsTitle %}
+            {% set subtitle = "" %}
+        {% include "layouts/section-banner.njk" %}
+            {% set item = pages.homepage.involvedBenefits %}
+                {% include "partials/components/large-feature.njk" %}
         {% endif %}
     </section>
     <section class="section-banner" {% if bgText %} style="color:{{ bgText }}"{% endif %}>
@@ -25,14 +37,17 @@
         {% include "layouts/section-banner.njk" %}
     </section>
     <section class="resource-feature-banner">
-        {% set sectionList = collections.newsArticles %}
+        {% set sectionList = collections.all %}
         {% include "partials/components/resource-recent-banner.njk" %}
     </section>
-    <section class="contact-us-banner" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
+    <section class="contact-us-banner containers pop-out">
+        <div class="popped-container-right" {% if fcolor1 %} style="background-color:{{ fcolor1 }};color:{{ fcolor1Text }};"{% endif %}>
         {% set contactHeader = pages.homepage.homeCtaTitle %}
         {% set cta = pages.homepage.homeCtaText %}
-        {% set email = information.networkInfo.networkEmail %}
+        {% set ctaColour = fcolor1Text %}
+        {% set email = information.networkDetails.networkEmail %}
         {% include "partials/components/contact-us-banner.njk" %}
+        </div>
     </section>
 </div>
 </main>

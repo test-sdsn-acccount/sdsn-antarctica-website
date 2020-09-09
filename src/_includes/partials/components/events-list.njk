@@ -1,32 +1,58 @@
-    <div class="inner-wrapper feature-card-cont-two">
+    <div class="inner-wrapper">
       {% for section in sectionList %}
-        <a href="{{ section.url }}" class="card-entire-link">
-            <ol class="event-item">
-                <div class="resource-card-img">
-                    {% if section.data.fImage !== "" %}
-                      <img src="/assets{{ section.data.fImage }}" class="resource-item-img" /> 
-                    {% else %} 
-                      <div class="img-replacement">
-                        <img src="/assets{{ logo }}" class="img-replacement" />
-                      </div>
-                    {% endif %}
-                </div>
-                <div class="event-card-content">
-                  <div class="resource-card-content-left">
-                  
-                      <div class="resource-list-tags">
-                          {{ section.data.date | date("MMMM Do YYYY") }}
-                      </div>
-                      <div class="resource-list-title">
-                            <h3>{{ section.data.title }}</h3>
-                      </div>
-                      <div class="resource-list-author">
-                            <i>{{ wdefaults.commonWords.by }} {{ section.data.author }}</i>
-                      </div>
-                      
-                    </div>
-                </div>
-              </ol>
-          </a>
+        <ol class="resource-item">
+            <div class="resource-card-img">
+                  <a href="{{ section.url }}">
+                {% if section.data.fImage !== "" %}
+                  <img src="/assets{{ section.data.fImage }}" class="resource-item-img" /> 
+                {% else %} 
+                  <div class="img-replacement">
+                    <img src="/assets{{ logo }}" class="img-replacement" />
+
+                  </div>
+                {% endif %}
+                  </a>                
+            </div>
+            <div class="resource-card-content-wrapper">
+                  <div class="resource-card-content">
+
+                          <div class="resource-card-content-left">
+                                <div class="resource-list-title">
+                                            <a href="{{ section.url }}"><h4>{{ section.data.title }}</h4></a>
+                                </div>
+                                <div class="resource-list-excerpt six">
+                                  <p class="six resource-excerpt">
+                                      {{ section.data.desc | safe }}
+                                  </p>
+                                </div>
+                                <div class="resource-list-author">
+                                      <i>{{ wdefaults.commonWords.by }} {{ section.data.author }}</i>
+                                </div>
+                                {% if section.data.ctaURL | length !== 0 %}
+                                    <a href="{{ section.url }}" class="resource-link">
+                                    {% set buttonCTA = wdefaults.commonWords.genericCta %}
+                                      {% include "partials/components/btn-small.njk" %}
+                                    </a>
+                                {% endif %}
+                          </div>
+                          <div class="resource-card-content-right margin-left-1">
+                                  <h5 class="small-squash">{{ wdefaults.commonWords.dateTime }}</h5>
+                                  <li class="list-style-none"><p>{{ date | date("MMMM Do YYYY")}}</p></li>
+
+                                  <h5 class="small-squash">{{ wdefaults.commonWords.location }}</h5>
+                                  <li class="list-style-none margin-bottom-1"><p>{{ section.data.location | safe }}</p></li>
+                                  <div class="resource-list-tags">
+                                    {% for tag in section.data.tags %}
+                                      <a href="/tags/{{ tag }}/"><p class="tag-item">
+                                        {{ tag }}
+                                      </p></a>
+                                    {% endfor %}
+                                  </div>
+                          </div>
+
+                  </div>
+            </div>
+
+          </ol>
       {% endfor %}
     </div>
