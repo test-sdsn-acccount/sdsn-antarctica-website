@@ -5,18 +5,18 @@
   "subtitle": "Creating the next generation of leaders in sustainable development.",
   "youthObjectives": [
     {
-      "objTitle": "Train young leaders and organizations.",
-      "objective": "<p>Many young people are passionate about positive changes but face challenges in achieving them. Many education systems do not equip them with knowledge of sustainable development, nor provided the opportunity to create practical changes. We bridge the gap by educating them with the understanding of these challenges, and how they can contribute to solving them.</p>",
+      "header": "Train young leaders and organizations.",
+      "desc": "<p>Many young people are passionate about positive changes but face challenges in achieving them. Many education systems do not equip them with knowledge of sustainable development, nor provided the opportunity to create practical changes. We bridge the gap by educating them with the understanding of these challenges, and how they can contribute to solving them.</p>",
       "link": ""
     },
     {
-      "objTitle": "Ideate and collaborate in communities.",
-      "objective": "<p>We've created a community of passionate young people that allows for peer-to-peer learning, collaboration, and a space to try new ideas.</p>",
+      "header": "Ideate and collaborate in communities.",
+      "desc": "<p>We've created a community of passionate young people that allows for peer-to-peer learning, collaboration, and a space to try new ideas.</p>",
       "link": ""
     },
     {
-      "objTitle": "Support the implementation and scaling of the solutions.",
-      "objective": "<p>We provide young innovators with access to mentorship, funding, training, and opportunities to grow and scale their solutions.</p>",
+      "header": "Support the implementation and scaling of the solutions.",
+      "desc": "<p>We provide young innovators with access to mentorship, funding, training, and opportunities to grow and scale their solutions.</p>",
       "link": ""
     }
   ],
